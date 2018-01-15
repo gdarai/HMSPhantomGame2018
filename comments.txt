@@ -1,0 +1,51 @@
+<T>Saganamiho Valecna Hra
+Hraje cela' skupina za jednu posa'dku lodi. Skupina si zvoli' kapita'na a ten si zvoli' hlavni' posa'dku.
+
+<CH>Hlavni' posa'dka
+Kapita'n - Rozhoduje co bude lod' de''lat da'l a da'va' posa'dce sme''r.
+
+<CH>Ci'l hry
+Hra je real-time. Hra'c'i maji' lod' a ta ma' sve' parametry. A pak je tu nepr'i'tel, druha' lod' ktera' se va's snaz'i' znic'it. Ta ma' take' sve' parametry. Lode'' jsou uprostr'ed souboje, ze ktere'ho vyjde ven z'iva' jen jedna. Nepr'i'tel se k va'm snaz'i' dostat na bli'zko, aby mohl pouz'i't sve' o moc silne'js'i' paprskove' zbrane''. Vy ale ma'te leps'i' motory a mu'z'ete si udrz'ovat dostatec'ny' odstup, pokud budete chti't. Probl'em je, z'e vas'e zbrane' na da'lku, i kdyz' jsou leps'i' nez' zbrane' vas'eho nepr'i'tele nejsou dost dobre' na to aby va'm ten boj vyhra'ly. Budete muset obe'tovat c'a'st rychlosti, aby ste zi'skali vi'c palebn'e si'ly.
+
+<CH>Moz'ne' polohy lodi
+Prcha' - Let'ite maxima'lni' rychlosti' pryc' od nepr'itele, nepr'i'tel str'i'li' pod sukni. Maxima'lni' rychlost, postih na obranu a za'd'ova' vy'zbroj.
+Klic'kuje - Nepr'i'tel nemu'z'e str'i'let pod sukni, protoz'e mu mane'vrujete. Maly' postih na rychlost, a na obranu, za'd'ova' vy'zbroj.
+Bokem - Odkry'va'te nepr'i'teli bok a pa'li'te ze vs'ech boc'ni'ch zbrani'. Velky' postih na rychlost, mohutna' boc'ni' vy'zbroj.
+Kryt za kli'nem - Nastavujete nepr'i'teli pouze kli'n. Velky' postih na rychlost, zadna vy'zbroj, bonus na obranu.
+Kazde kolo se kapita'n rozhoduje, jakou polohu lod' bude mi't. Podle toho se v moment vy'str'elu urc'i' kolik str'el na nepr'i'tele vypa'li'te. A tak'e jak moc velkou s'anci bude mi't on, zasa'hnout va's. Kola jsou urc'ena c'asem, tr'eba tak, z'e kaz'dou minutu tikne jedno.
+
+<CH>Parametry nepr'i'itele
+Pro jednoduchost je nepr'i'tel definovany' pouze rychlosti', poc'tem str'el a poc'tem de''l. Podle toho, kolikra't je zrane''ny', mu postupne'' podle pr'edepsane' tabulky parametry klesaji'. Kdyz' je zasaz'en dostatec'ne' kra't, je znic'en a hra'c'i zvi'te''zili.
+
+<CH>Pr'esnost str'el
+Jak moc trefujete nepr'i'tele za'lez'i' na vas'i' pr'esnosti. Pr'i kaz'de'm vy'str'elu mu'z'ete pouz'i't az' jeden za'kladni' bonus do pr'esnosti a jeden pokroc'ily'. Ti'm mu'z'ete mi't bonus +1 nebo +2 do pr'esnosti.
+Kolik str'el vystr'eli'te za'lez'i' na vas'i' rychlosti nabi'jeni' a poc'tu vy'metnic v poloze v jake' zrovna vas'e lod' bojuje. Za'sahy se rozhoduji' hodem kostkou. V z'akladu trefi' jen 6, ale s bonusama to mu'z'ou by't i 4-6. Co jste trefili vi' jen Velitel Simulace, vy jen vi'te, kolikra't jste ho trefili.
+
+<CH>Obrana proti nepr'i'teli
+Nepr'i'tel sve' u''spe''chy take' rozhoduje kostkami. V za'kladu ma' take' za'sah jen na 6. Pokud str'i'li' pod sukni, je to 5-6 a pokud se kryjete kli'nem, je to 6+(5-6). Kdyz' vi'me kolik str'el trefilo, je potr'eba rozhodnout co trefily. To se ude'la' tahem z klobouku. Klobouky jsou dva, pro za'sahy vs'ude a pro za'sahy pod sukni.
+
+<CH>Za'sahy
+Kaz'da' oblast, ktera' je zasaz'ena' je pos'kozena'. Jsou tr'i stupne' pos'kozeni', z'lute', c'ervene' a c'erne'. C'erne' pos'kozeni' je konec'ne', oblast pak uz' nejde spravit a je vyr'azena' na trvalo. Kaz'da' oblast ma' definova'no, co to de''la', kdyz' je pos'kozena', nebo znic'ena'. Konkre'tne'':
+<I>Reaktory, Kompenz'atory a Prstence sniz'uji' rychlost lodi.
+<I>Vy'metnice a De''la sniz'uji' poc'et vy'str'elu' za kolo.
+<I>Chodby a Sklady Munice sniz'uji' rychlost nabi'jeni'.
+<I>Specia'lni' mi'stnosti, jako os'etrovna, mu'stek, centra oprav a CIC maji' specia'lni' vlastnosti.
+Kaz'da' c'a'st ma' take' struktura'lni' du'lez'itost. Pokud pos'kozeni' lodi dosa'hne urc'ite' hranice (souc'et struktura'lni' du'lez'itosti di'lku' pos'kozeny'ch alsepon' na c'ervenou) lod' se rozpadne a vy jste prohra'li.
+
+<CH>Opravy
+Kapita'n nebo CIC posi'la' c'leny posa'dky prova'de''t opravy lodi. Kaz'dy' los za'sahu je za'roven' kartic'kou pos'kozeni'. Pokud ji ne''jaky' c'len posa'dky donese na patr'ic'ne' stanovis'te'' a splni' tam u''kol, kartic'ka se oznac'i' jako opravena'. Pokud ji' pak odnese zpa'tky na mu'stek, Velitel Simulace pos'kozeni' uzna' za opravene' a pos'kozeni' c'a'sti sni'z''i' nebo i zcela odstrani', pokud bylo pouze z'lute'. Kaz'dy' c'len posa'dky sebou vs'ak mu'z'e ne'st jen jednu kartic'ku pos'kozeni'. Pokud se jich vs'ak sejde na stanovis'ti vi'c, mu'z'ou si navza'jem pomoct, i kdyz' tam kaz'dy' pr'is'li z jine'ho du'vodu.
+
+<CH>U'koly oprav
+Opravy se budou de'lat na stanovis'ti'ch. Hra'c' si bude moct vybrat, zda chce fizicky' u''kol nebo s'ifru. Pokud u'kol splni', oznac'i' mu Velitel Stanovis'te'' z'e u'kol splnil a oprava je hotova'.
+
+<CH>Bonusy do str'elby
+Bonusy do za'sahu pr'i str'elbe'' jsou jednora'zove', tj. daji' se pouz'i't vz'dy jen na jediny' vy'str'el (salvu). Pak se zahodi'. Zi'ska'vaji' se r'es'eni'm matematicky'ch u'loh na mu'stku. Lehky'ch pro za'kladni' bonus, te'z'ky'ch pro pokroc'ily' bonus. (Nebo z'e by sudoku?)
+
+<CH>Co zati'm chybi'
+Na'sleduji'ci' poloz'ky se musi' ude''lat, aby byla hra hratelna':
+<I>Vymyslet s'ifry
+<I>Vymyslet matematicke' u''lohy, nebo ta sudoku.
+<I>Pr'iravit pla'nek lodi s oblastma.
+<I>Pr'ipravit losy oblasti'
+<I>Ujasnit a pr'ipravit kartic'ky pos'kozeni'.
+<I>Spoc'i'tat vhodnou obti'z'nost a pr'ipravit tabulku pos'kozeni' pro nepr'i'tele.
