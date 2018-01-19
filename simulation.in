@@ -1,0 +1,26 @@
+{
+    "enemy_lives": 100, 
+    "enemy_success_beam": 5, 
+    "enemy_success_misile": 6, 
+    "enemy_wpn_beam": 6, 
+    "enemy_wpn_missile": 4, 
+    "glob_distance_close": 4, 
+    "glob_log_out": 10, 
+    "glob_tries": 1, 
+    "init_distance": 10, 
+    "sequence": [
+        0, 
+        1, 
+        1
+    ], 
+    "ship_munition_storage": 4, 
+    "ship_other_body": 50, 
+    "ship_other_head": 40, 
+    "ship_ring": 4, 
+    "ship_service_room": 6, 
+    "ship_special_rooms": 4, 
+    "ship_wpn_head_beam": 1, 
+    "ship_wpn_head_missile": 2, 
+    "ship_wpn_side_beam": 4, 
+    "ship_wpn_side_missile": 7
+}
