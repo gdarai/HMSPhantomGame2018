@@ -39,6 +39,33 @@ def parseLine(line):
 
 def expandCzechLetters(line):
     line = re.sub(r"\n","", line)
+    line = re.sub(r"a\'","á", line)
+    line = re.sub(r"A\'","Á", line)
+    line = re.sub(r"c\'","č", line)
+    line = re.sub(r"C\'","Č", line)
+    line = re.sub(r"d\'","ď", line)
+    line = re.sub(r"D\'","Ď", line)
+    line = re.sub(r"e\'\'","ě", line)
+    line = re.sub(r"E\'\'","Ě", line)
+    line = re.sub(r"i\'","í", line)
+    line = re.sub(r"I\'","Í", line)
+    line = re.sub(r"n\'","ň", line)
+    line = re.sub(r"N\'","Ň", line)
+    line = re.sub(r"o\'","ó", line)
+    line = re.sub(r"O\'","Ó", line)
+    line = re.sub(r"r\'","ř", line)
+    line = re.sub(r"R\'","Ř", line)
+    line = re.sub(r"s\'","š", line)
+    line = re.sub(r"S\'","Š", line)
+    line = re.sub(r"t\'","ť", line)
+    line = re.sub(r"T\'","Ť", line)
+    line = re.sub(r"u\'\'","ú", line)
+    line = re.sub(r"U\'\'","Ú", line)
+    line = re.sub(r"u\'","ů", line)
+    line = re.sub(r"y\'","ý", line)
+    line = re.sub(r"Y\'","Ý", line)
+    line = re.sub(r"z\'","ž", line)
+    line = re.sub(r"Z\'","Ž", line)
     return line
 
 def parseName(name):
