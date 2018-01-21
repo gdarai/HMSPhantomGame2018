@@ -28,6 +28,7 @@ DEF_SETTING = {
     'ship_wpn_side_missile': 7,
     'ship_wpn_side_beam': 4,
     'ship_special_rooms': 4,
+	'ship_max_damage': 20,
     'init_distance': 10,
     'glob_distance_close': 4,
     'glob_log_out': 10,
@@ -164,8 +165,26 @@ def rollDice( num, chance ):
             if reRollDice(chance-6):
                 success += 1
                 continue
-    addLog(5, 'diceRoll: dices:'+str(num)+'('+str(chance)+'): '+str(success))
+    addLog(5, ' - - diceRoll: dices:'+str(num)+'('+str(chance)+'): '+str(success))
     return success
+
+def doPoll( poll, hits ):
+	if hits>=len(poll):
+		return poll[:]
+	idx = range(0, len(poll))
+	pick = random.sample(idx, hits)
+	selection = []
+	for i in pick: selection.append(poll[i])
+	return selection
+
+def doDamage( hit, isDestroyed ):
+	return 1
+
+def getCICReport( damage, ship ):
+	report = []
+	for d in damage:
+		report.append([d, ship[d]])
+	return report
 
 ########
 # Process
@@ -237,29 +256,78 @@ poll_head.extend(addShipParts('V', setting['ship_wpn_head_missile']))
 poll_head.extend(addShipParts('D', setting['ship_wpn_head_beam']))
 poll_head.extend(addShipParts('O', other_head))
 
-poll = [poll_head, poll_side]
-
-ship = {};
-for key in poll_side:
-    ship[key] = 0
-
 # Run the Simulation
-state = {
-    'distance': setting['init_distance'],
-    'onDistance': True,
-    'stand': setting['sequence'][0],
-}
+
 results = {}
 for tryIndex in range(0, setting['glob_tries']):
-    distText = 'on Distance' if state['onDistance'] else 'up Close'
-    addLog(0, 'Try '+str(tryIndex+1)+', '+distText)
+	# One Game
+	state = {
+		'distance': setting['init_distance'],
+		'onDistance': True,
+		'stand': setting['sequence'][0],
+		'sequenceLength': len(setting['sequence']),
+		'damage': 0,
+		'victory': False,
+		'lost': False,
+	}
+	
+	poll = {
+		'poll_head': poll_head[:],
+		'poll_side': poll_side[:],
+	}
+	toRepair = []
+	destroyed = []
+	
+	ship = {};
+	for key in poll_side:
+		ship[key] = 0
+	
+	turnCount = 0;
+		
+	addLog(0, '==> Game #'+str(tryIndex+1)+' ==')
+	while True:
+		turnCount += 1
+		# One Turn
+		distText = 'on Distance' if state['onDistance'] else 'up Close'
+		stand = STANDS[state['stand']]
+		addLog(0, 'Turn #'+str(turnCount)+', '+distText+', '+stand['name'])
 
-    # Getting numbers
-    stand = STANDS[state['stand']]
+		# Enemy Fires
+		enemy = [setting['enemy_wpn_missile'], setting['enemy_success_misile']+stand['enemy_success']]
+		if not state['onDistance']: enemy = [setting['enemy_wpn_beam'], setting['enemy_success_beam']+stand['enemy_success']]
+		hits = rollDice(enemy[0], enemy[1])		
+		pollHits = doPoll(poll[stand['poll']], hits)
+		addLog(4, ' - Enemy hits: '+str(pollHits))
 
-    # Enemy Fires
-    enemy = [setting['enemy_wpn_missile'], setting['enemy_success_misile']+stand['enemy_success']]
-    if not state['onDistance']: enemy = [setting['enemy_wpn_beam'], setting['enemy_success_beam']+stand['enemy_success']]
-    hits = rollDice(enemy[0], enemy[1])
-    poll = doPoll(poll[stand['poll']], hits)
-    addLog(4, 'Enemy hits: '+str(poll))
+		# Do Damage
+		for hit in pollHits:
+			if ship[hit] == 2:
+				state['damage'] += doDamage(hit, True)
+				ship[hit] = 3
+				poll['poll_head'].remove(hit)
+				poll['poll_side'].remove(hit)
+				destroyed.append(hit)
+				toRepair.remove(hit)
+			elif ship[hit] == 1:
+				state['damage'] += doDamage(hit, False)
+				ship[hit] = 2
+			elif ship[hit] == 0:
+				ship[hit] = 1
+				toRepair.append(hit)
+		
+		# Lost Condition
+		if state['damage'] >= setting['ship_max_damage']:
+			state['lost'] = True
+			break
+		
+		# Ship Summary
+		addLog(2, ' - Ship Damage('+str(state['damage'])+'/'+str(setting['ship_max_damage'])+'): '+str(getCICReport(toRepair, ship)))
+		addLog(2, ' - - Destroyed: '+str(destroyed))	
+
+		# Evasive Action
+		state['stand'] = setting['sequence'][turnCount % state['sequenceLength']]
+
+	addLog(0, '')
+	if state['lost']: addLog(0, 'GAME LOST')
+	if state['victory']: addLog(0, 'VICTORY')
+	addLog(0, '')
