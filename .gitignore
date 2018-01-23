@@ -1,0 +1,10 @@
+# Compiled Objects
+*.tex
+*.log
+*.aux
+
+# Specific files
+simulation.in
+
+# Folders
+simulation/

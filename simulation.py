@@ -13,16 +13,16 @@ DIRECTORY = 'simulation'
 OUTFILE = 'simuResult'
 
 DEF_SETTING = {
-    'glob_tries': 10,
+    'glob_tries': 100,
     'enemy_lives': 60,
-    'enemy_wpn_missile': 4,
-    'enemy_wpn_beam': 8,
-    'enemy_success_missile': 6,
-    'enemy_success_beam': 4,
+    'enemy_wpn_missile': 6,
+    'enemy_wpn_beam': 14,
+    'enemy_success_missile': 5,
+    'enemy_success_beam': 3,
     'enemy_speed': 20,
-    'ship_speed': 21,
-    'ship_other_head': 40,
-    'ship_other_body': 50,
+    'ship_speed': [23, 0.5],
+    'ship_other_head': 0,
+    'ship_other_body': 0,
     'ship_munition_storage': 4,
     'ship_service_room': 6,
     'ship_ring': 4,
@@ -31,21 +31,51 @@ DEF_SETTING = {
     'ship_wpn_side_missile': 7,
     'ship_wpn_side_beam': 4,
     'ship_special_rooms': 4,
-    'ship_success_missile': 5,
-    'ship_success_beam': 4,
-    'ship_wpn_effectiveness': [2.2, 0.1],
+    'ship_success_missile': 6,
+    'ship_success_beam': 3,
+    "ship_success_discount": [90, 50],
+    'ship_wpn_effectiveness': [2.2, 0.2],
 	'ship_max_damage': 20,
     'init_distance': 100,
     'glob_distance_close': 40,
     'glob_distance_death': 0,
-    'glob_log_out': 10,
-#    'sequence': [0,1,1],
-    'sequence': [2],
-    'enemy_lost_beam': 30,
+    'glob_log_out': 1,
+    'sequence': [2, 1, 1],
+    'enemy_lost_beam': 20,
     'enemy_lost_missile': 20,
-    'enemy_lost_speed': 15,
+    'enemy_lost_speed': 30,
     'repair_crews': 10,
     'repair_delay': 5,
+    'scenarios': [
+        {
+            'name': 'All in attack, no repair',
+            'ship_success_discount': [100, 100],
+            'repair_crews': 0,
+            'sequence': [2],
+        },
+        {
+            'name': 'All in attack, with repairs',
+            'ship_success_discount': [100, 100],
+            'sequence': [2],
+        },
+        {
+            'name': '50:50, 1/2 dodge',
+            'ship_success_discount': [100, 70],
+            'repair_crews': 5,
+            'sequence': [2, 1],
+        },
+        {
+            'name': 'Full Repair, 2/3 dodge',
+            'ship_success_discount': [90, 50],
+            'sequence': [2, 1, 1],
+        },
+        {
+            'name': 'Super Crew, 3/4 dodge',
+            'ship_success_discount': [100, 90],
+            'sequence': [2, 1, 1, 1],
+            'repair_crews': 30,
+        }
+    ],
 }
 
 STANDS = [
@@ -58,24 +88,24 @@ STANDS = [
     },
     {
         'name': 'Dodge',
-        'enemy_success': -1,
+        'enemy_success': 0,
         'poll': 'poll_head',
         'weapons': 'head',
-        'speed': -3,
+        'speed': -2,
     },
     {
         'name': 'Side',
         'enemy_success': 0,
         'poll': 'poll_side',
         'weapons': 'side',
-        'speed': -6,
+        'speed': -10,
     },
     {
         'name': 'Wedge',
         'enemy_success': +2,
         'poll': 'poll_side',
         'weapons': 'none',
-        'speed': -6,
+        'speed': -10,
     },
 ]
 
@@ -201,11 +231,14 @@ def doPoll( poll, hits ):
 def doDamage( hit, isDestroyed ):
 	return 1
 
-def getCICReport( damage, ship ):
-	report = []
-	for d in damage:
-		report.append([d, ship[d]])
-	return report
+def getCICReport( ship ):
+    report = []
+    keys = ship.keys()
+    for sys in keys:
+        dmg = ship[sys]
+        if (dmg>0)and(dmg<3):
+            report.append([sys, dmg])
+    return report
 
 def getShipWeapons( stand, setting, state, turnCount ):
     out = [0, 6]
@@ -221,6 +254,11 @@ def getShipWeapons( stand, setting, state, turnCount ):
     count2 = math.floor(count1)
     if (count1 != count2) and (turnCount % 2 == 0): count2 += 1
     out[0] = int(count2)
+
+    roll = random.randint(0, 100)
+    for val in setting['ship_success_discount']:
+        if roll<val: out[1] -= 1
+
     return out
 
 def getEnemyWeapons( state, setting ):
@@ -247,8 +285,10 @@ def addDamagedSystem( state, hit ):
         state['speed_down'] += 1
 
 def calcNewSpeed( setting, state ):
-    out = setting['enemy_speed']-setting['ship_speed']-STANDS[state['stand']]['speed']
-    out += state['speed_down'] - math.floor(state['enemy_damage']/setting['enemy_lost_speed'])
+    out = setting['enemy_speed']-setting['ship_speed'][0]-STANDS[state['stand']]['speed']
+    out -= math.floor(state['enemy_damage']/setting['enemy_lost_speed'])
+    out += math.floor(state['speed_down']*setting['ship_speed'][1])
+
     return int(out)
 
 ########
@@ -263,8 +303,11 @@ if(len(files)!=1):
         json.dump(DEF_SETTING, outfile, sort_keys=True, indent=4)
 
 setting = json.load(open(SETTING))
-currKeys = setting.keys();
-allKeys = DEF_SETTING.keys();
+currKeys = setting.keys()
+allKeys = DEF_SETTING.keys()
+copyKeys = allKeys[:]
+copyKeys.remove('scenarios')
+
 test = False
 
 for key in currKeys:
@@ -283,6 +326,10 @@ if test:
     print('\nSetting changed, reprinting into: '+SETTING)
     with open(SETTING, 'w') as outfile:
         json.dump(setting, outfile, sort_keys=True, indent=4)
+
+setting_backup = {}
+for key in copyKeys:
+    setting_backup[key] = setting[key]
 
 # Can simulate?
 print('\nCan Run: '+str(canPrint))
@@ -323,108 +370,198 @@ poll_head.extend(addShipParts('O', other_head))
 
 # Run the Simulation
 
-results = {}
-for tryIndex in range(0, setting['glob_tries']):
-	# One Game
-    state = {
-        'distance': setting['init_distance'],
-        'onDistance': True,
-        'stand': setting['sequence'][0],
-        'sequenceLength': len(setting['sequence']),
-        'damage': 0,
-        'victory': False,
-        'lost': False,
-        'head_missile_down': 0,
-        'head_beam_down': 0,
-        'side_missile_down': 0,
-        'side_beam_down': 0,
-        'wpn_effectiveness_down': 0,
-        'speed_down': 0,
-        'enemy_damage': 0,
-        'our_damage_total': 0,
-        'speed': setting['enemy_speed']-setting['ship_speed']-STANDS[setting['sequence'][0]]['speed'],
-    }
-
-    poll = {
-        'poll_head': poll_head[:],
-        'poll_side': poll_side[:],
-    }
-    toRepair = []
-    destroyed = []
-
-    ship = {};
-    for key in poll_side:
-        ship[key] = 0
-
-    turnCount = 0;
-
-    addLog(0, '==> Game #'+str(tryIndex+1)+' ==')
-    while True:
-        turnCount += 1
-		# One Turn
-        distText = 'on Distance' if state['onDistance'] else '!! UP CLOSE !!'
-        stand = STANDS[state['stand']]
-        we = getShipWeapons(stand, setting, state, turnCount)
-        enemy = getEnemyWeapons(state, setting)
-        addLog(0, 'Turn #'+str(turnCount)+', Distance: '+str(state['distance'])+' '+distText+', Stand: '+stand['name']+', Closing Speed: '+str(state['speed']))
-        addLog(2, ' - We: '+str(we[0])+'('+str(we[1])+'), Enemy: '+str(enemy[0])+'('+str(enemy[1])+')')
-		# Enemy Fires
-        hits = rollDice(enemy[0], enemy[1])
-        pollHits = doPoll(poll[stand['poll']], hits)
-        state['our_damage_total'] += hits
-        addLog(4, ' - Enemy hits: '+str(pollHits)+ ' ('+str(state['our_damage_total'])+')')
-
-		# Do Damage
-        for hit in pollHits:
-            if ship[hit] == 2:
-                state['damage'] += doDamage(hit, True)
-                ship[hit] = 3
-                if hit in poll['poll_head']: poll['poll_head'].remove(hit)
-                poll['poll_side'].remove(hit)
-                destroyed.append(hit)
-                toRepair.remove(hit)
-            elif ship[hit] == 1:
-                state['damage'] += doDamage(hit, False)
-                ship[hit] = 2
-            elif ship[hit] == 0:
-                ship[hit] = 1
-                toRepair.append(hit)
-                addDamagedSystem(state, hit)
-
-        # We Fires
-        hits = rollDice(we[0], we[1])
-        state['enemy_damage'] += hits
-        addLog(4, ' - We hits: +'+str(hits)+' ('+str(state['enemy_damage'])+'/'+str(setting['enemy_lives'])+')')
-
-
-		# Lost Condition
-        if state['damage'] >= setting['ship_max_damage']:
-            state['lost'] = True
-            break
-
-		# Win Condition
-        if state['enemy_damage'] >= setting['enemy_lives']:
-            state['victory'] = True
-            break
-
-		# Ship Summary
-        addLog(2, ' - Ship Damage('+str(state['damage'])+'/'+str(setting['ship_max_damage'])+'): '+str(getCICReport(toRepair, ship)))
-        addLog(2, ' - - Destroyed: '+str(destroyed))
-
-		# Calc new Distances
-        state['distance'] -= state['speed']
-        state['onDistance'] = state['distance'] > setting['glob_distance_close']
-
-		# Lost Distance Condition
-        if state['distance'] <= setting['glob_distance_death']:
-            state['lost'] = True
-            break
-
-		# Evasive Action
-        state['stand'] = setting['sequence'][turnCount % state['sequenceLength']]
-        state['speed'] = calcNewSpeed(setting, state)
-
+statistics = []
+idxCh = 0
+for ch in setting['scenarios']:
+    idxCh += 1
     addLog(0, '')
-    if state['lost']: addLog(0, 'GAME LOST')
-    if state['victory']: addLog(0, 'VICTORY')
-    addLog(0, '')
+    addLog(-1, '[[ Scenario #'+str(idxCh)+' ]]: '+ch['name'])
+
+    # Processing setting differences
+    for key in copyKeys:
+        setting[key] = setting_backup[key]
+
+    newKeys = ch.keys()
+    newKeys.remove('name')
+    for key in newKeys:
+        setting[key] = ch[key]
+        addLog(0, '> New '+key+': '+str(ch[key]))
+
+    results = []
+    for tryIndex in range(0, setting['glob_tries']):
+    	# One Game
+        state = {
+            'distance': setting['init_distance'],
+            'onDistance': True,
+            'stand': setting['sequence'][0],
+            'sequenceLength': len(setting['sequence']),
+            'damage': 0,
+            'victory': False,
+            'lost': False,
+            'head_missile_down': 0,
+            'head_beam_down': 0,
+            'side_missile_down': 0,
+            'side_beam_down': 0,
+            'wpn_effectiveness_down': 0,
+            'speed_down': 0,
+            'enemy_damage': 0,
+            'our_damage_total': 0,
+            'speed': setting['enemy_speed']-setting['ship_speed'][0]-STANDS[setting['sequence'][0]]['speed'],
+            'repair': [[]]*(setting['repair_delay']+1),
+            'free_crew': setting['repair_crews'],
+            'hurt_crew': 0,
+        }
+
+        poll = {
+            'poll_head': poll_head[:],
+            'poll_side': poll_side[:],
+        }
+        toRepair = []
+        destroyed = []
+
+        ship = {};
+        for key in poll_side:
+            ship[key] = 0
+
+        turnCount = 0;
+
+        addLog(1, '==> Game #'+str(tryIndex+1)+' ==')
+        while True:
+            turnCount += 1
+    		# One Turn
+            distText = 'on Distance' if state['onDistance'] else '!! UP CLOSE !!'
+            stand = STANDS[state['stand']]
+            we = getShipWeapons(stand, setting, state, turnCount)
+            enemy = getEnemyWeapons(state, setting)
+            addLog(2, 'Turn #'+str(turnCount)+', Distance: '+str(state['distance'])+' '+distText+', Stand: '+stand['name']+', Closing Speed: '+str(state['speed']))
+            addLog(4, ' - We: '+str(we[0])+'('+str(we[1])+'), Enemy: '+str(enemy[0])+'('+str(enemy[1])+')')
+    		# Enemy Fires
+            hits = rollDice(enemy[0], enemy[1])
+            pollHits = doPoll(poll[stand['poll']], hits)
+            state['our_damage_total'] += hits
+            addLog(3, ' - Enemy hits: +'+str(len(pollHits))+' ('+str(pollHits)+ ') (total '+str(state['our_damage_total'])+')')
+
+    		# Do Damage
+            for hit in pollHits:
+                if ship[hit] == 2:
+                    state['damage'] += doDamage(hit, True)
+                    ship[hit] = 3
+                    if hit in poll['poll_head']: poll['poll_head'].remove(hit)
+                    poll['poll_side'].remove(hit)
+                    destroyed.append(hit)
+                    if hit in toRepair: toRepair.remove(hit)
+
+                elif ship[hit] == 1:
+                    state['damage'] += doDamage(hit, False)
+                    ship[hit] = 2
+                elif ship[hit] == 0:
+                    ship[hit] = 1
+                    toRepair.append(hit)
+                    addDamagedSystem(state, hit)
+
+            # We Fires
+            hits = rollDice(we[0], we[1])
+            state['enemy_damage'] += hits
+            addLog(3, ' - We hits: +'+str(hits)+' ('+str(state['enemy_damage'])+'/'+str(setting['enemy_lives'])+')')
+
+            # Do repair
+            repResult = []
+            for rep in state['repair'][0]:
+                if ship[rep] == 3:
+                    state['hurt_crew'] += 1
+                    repResult.append([rep,'Failed'])
+                else:
+                    if ship[rep] == 2:
+                        state['damage'] -= doDamage(hit, False)
+                        toRepair.append(rep)
+                    ship[rep] -= 1
+                    state['free_crew'] += 1
+                    repResult.append([rep,'Ok'])
+            addLog(4, ' - Repairs: '+str(repResult))
+
+            for i in range(0, setting['repair_delay']):
+                state['repair'][i] = state['repair'][i+1]
+            state['repair'][setting['repair_delay']] = []
+
+            # Assign new repair
+            while (state['free_crew']>0) and (len(toRepair)>0):
+                state['repair'][setting['repair_delay']].append(toRepair.pop(0))
+                state['free_crew'] -= 1
+            addLog(5, ' - New Repairs: +'+str(state['repair'][setting['repair_delay']]))
+
+    		# Lost Condition
+            if state['damage'] >= setting['ship_max_damage']:
+                state['lost'] = True
+                break
+
+    		# Win Condition
+            if state['enemy_damage'] >= setting['enemy_lives']:
+                state['victory'] = True
+                break
+
+    		# Ship Summary
+            damageInfo = str(state['damage'])+'/'+str(setting['ship_max_damage'])
+            addLog(4, ' - - Ship Status: '+str(getCICReport(ship)))
+            addLog(3, ' - Destroyed: '+str(destroyed))
+            addLog(2, ' - Ship Damage: '+damageInfo)
+
+    		# Calc new Distances
+            state['distance'] -= state['speed']
+            state['onDistance'] = state['distance'] > setting['glob_distance_close']
+
+    		# Lost Distance Condition
+            if state['distance'] <= setting['glob_distance_death']:
+                state['distance'] = setting['glob_distance_death']
+    #            state['lost'] = True
+    #            break
+
+    		# Evasive Action
+            state['stand'] = setting['sequence'][turnCount % state['sequenceLength']]
+            state['speed'] = calcNewSpeed(setting, state)
+
+        theResult = {
+            'time': turnCount,
+            'win': True,
+            'distance': state['distance'],
+        }
+
+        addLog(2, '')
+        if state['lost']:
+            addLog(1, 'GAME LOST')
+            theResult['win'] = False
+        if state['victory']:
+            addLog(1, 'VICTORY')
+        results.append(theResult)
+        addLog(2, '')
+
+    wins = list(filter(lambda d: d['win'] == True, results))
+    losts = list(filter(lambda d: d['win'] == False, results))
+    winRatio = int((len(wins) * 100) / len(results))
+
+    lostTime = 0
+    lostDist = -1
+    lostDistL = []
+    if len(losts)>0:
+        for g in losts:
+            lostTime += g['time']
+            lostDistL.append(g['distance'])
+        lostTime = lostTime / len(losts)
+        lostDist = sorted(lostDistL)[int(math.floor(len(lostDistL)/2))]
+
+    winTime = 0
+    winDist = -1
+    winDistL = []
+    if len(wins)>0:
+        for g in wins:
+            winTime += g['time']
+            winDistL.append(g['distance'])
+        winTime = winTime / len(wins)
+        winDist = sorted(winDistL)[int(math.floor(len(winDistL)/2))]
+
+    addLog(0, 'Played '+str(len(results))+' games')
+    addLog(0, 'With Sequence '+str(setting['sequence']))
+    addLog(0, 'Victory in '+str(winRatio)+'% cases')
+    addLog(0, 'Mean Distance on victory '+str(winDist))
+    addLog(0, 'Mean Distance on lost '+str(lostDist))
+    addLog(0, 'Average Win Time is '+str(winTime)+' turns')
+    addLog(0, 'Average Lost Time is '+str(lostTime)+' turns')
