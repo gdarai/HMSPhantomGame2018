@@ -1,0 +1,62 @@
+Detach Stress Matrix	StressMatrix	Feature
+	The Stress Matrix Tool should be detachable the same way, Vega and Delta tools are.
+
+Portfolio ARID 0	DashboardBtts	Bug?
+	When SIT2 project is created with >0 ARID, the first arid suggested in Refresh Prices is 0, is this correct?
+
+onRow to Resize		Frames		Tweak
+	On Row should be named something more relevant, like Resize
+
+Stuck on Move		Frames		Bug?
+	Frames are stuck and don't move when some of them are hidden (hypothesis).
+
+Stop Render		Frames		Feature
+	There should be possibility to stop rendering frames during complex reorganisation.
+
+Confirm + Apply		Vega		Bug?
+	Apply should also confirm, but it does not, not when we have changes.
+		Scenario: Remove all Rest Hedges, do Apply, check if Vega on rest is the same as before.
+
+Selectbox improvement	SelectBox	Feature
+	Selectbox should give user option to clear its selection no matter it's filter state.
+		Solution 1: On ENTER not only change the state of all visible keys but also clear selection
+		Solution 2: For multiselects, split the 'Select All' button, to two buttons: Add/Remove All/None
+		Preffered: Both.
+
+Align Default Maturity	Vega		Feature
+	When Default hedging instrument is in different than default maturity, currently it was put onto custom maturity line, from now on the default maturity should be changed instead.
+
+Vega Table Format	Vega		Fetaure (BIG)
+	New vega table format should be implemented, using custom columns instead of custom lines and grouping columns by bucket.
+
+Frames Setting pos	Frames		Tweak
+	Frames setting button should be closer to the frame title (Before or After it)
+
+Detach inside Frames	Frames		Feature
+	Detach button should move to be inside the Frames Setting Menu.
+
+Mark Frames Split	Frames		Feature
+	Current split should be marked on the Frames menu.
+
+Underlying price	Sensitivities	Feature
+	Underlying price should be renamed to Forward Underlying Price and should not be aggregated. New Column for the real Underlying price should be added with the current mean_value aggregation.
+
+Align table		Sensitivities	Tweak
+	Align the columns in sensitivity tablel, make first column to take as little space as possible, align the others no matter the numbers in them.
+
+Behaviour Alignment	Vega & Delta	Feature
+	There is difference between behavour of vega nad delta.
+	Delta: Has sepparated functions of Confirm, Recalculate and Apply
+	Vega:  On Confirm, Vega does Recalculate&Confirm, plain confirm and plain recalculate is not available.
+	Question: Is this required? What is the exact behavior? Which entered values are preserved? Which are recalculated? How can I force a value to Vega?
+
+Partial Empty/Apply	Vega		Feature
+	The Apply, should be possible BY Underlying. Also new Empty_table should be available by underlying setting all contracts in one underlying to 0.
+
+After Apply		Vega		Bug
+	When hedges are applied, the vega recalculation behaves like if they are not and hedges back to original portfolio.
+	Scenario: SIT2, TUBDU-All, Vega, 1) Remove rest, 2)Confirm, 3)Apply, 4)Add STD-ODAX-2017_12 to hedge biggest vega source, SEE: Rest suggests hedge to -1.1mm, which is the original Vega before the apply and removal of ODAX vega.
+
+Rest vs SX5E		Vega		Bug
+	When hedge on Rest is added, its vega is added to the Rest coverage. Well, the hedge was done using SX5E, so the vega should be in SX5E, not in Rest.
+	Scenario: Add some hedge in Rest, Confirm, Apply, observe difference between vega of SX5E in Sensitivities and vega table.
