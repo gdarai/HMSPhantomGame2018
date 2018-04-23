@@ -1,109 +1,62 @@
 {
-    "enemy_lives": 60,
-    "enemy_lost_beam": 20,
-    "enemy_lost_missile": 20,
-    "enemy_lost_speed": 30,
-    "enemy_speed": 20,
-    "enemy_success_beam": 3,
-    "enemy_success_missile": 5,
-    "enemy_wpn_beam": 14,
-    "enemy_wpn_missile": 6,
-    "glob_distance_close": 40,
-    "glob_distance_death": 0,
-    "glob_log_out": 1,
-    "glob_tries": 100,
-    "init_distance": 100,
-    "repair_crews": 10,
-    "repair_delay": 5,
+    "battle_max_time": 50, 
+    "enemy_lives": 100, 
+    "enemy_lost_beam": 20, 
+    "enemy_lost_missile": 20, 
+    "enemy_lost_speed": 30, 
+    "enemy_speed": 20, 
+    "enemy_success_beam": 3, 
+    "enemy_success_missile": 6, 
+    "enemy_wpn_beam": 14, 
+    "enemy_wpn_missile": 6, 
+    "glob_distance_close": 40, 
+    "glob_distance_death": 0, 
+    "glob_log_out": 6, 
+    "glob_tries": 100, 
+    "init_distance": 100, 
+    "repair_crews": 10, 
+    "repair_delay": 5, 
     "scenarios": [
         {
-            "name": "All in attack, no repair",
-            "repair_crews": 0,
+            "name": "Super Crew, 3/4 dodge", 
+            "repair_crews": 30, 
             "sequence": [
-                2
-            ],
-            "ship_success_discount": [
-                100,
-                100
-            ]
-        },
-        {
-            "name": "All in attack, with repairs",
-            "sequence": [
-                2
-            ],
-            "ship_success_discount": [
-                100,
-                100
-            ]
-        },
-        {
-            "name": "50:50, 1/2 dodge",
-            "repair_crews": 5,
-            "sequence": [
-                2,
                 1
-            ],
+            ], 
             "ship_success_discount": [
-                100,
-                70
-            ]
-        },
-        {
-            "name": "Full Repair, 2/3 dodge",
-            "sequence": [
-                2,
-                1,
-                1
-            ],
-            "ship_success_discount": [
-                90,
-                50
-            ]
-        },
-        {
-            "name": "Super Crew, 3/4 dodge",
-            "repair_crews": 30,
-            "sequence": [
-                2,
-                1,
-                1,
-                1
-            ],
-            "ship_success_discount": [
-                100,
+                100, 
                 90
             ]
         }
-    ],
+    ], 
     "sequence": [
-        2,
-        1,
+        2, 
+        1, 
         1
-    ],
-    "ship_max_damage": 20,
-    "ship_munition_storage": 4,
-    "ship_other_body": 0,
-    "ship_other_head": 0,
-    "ship_ring": 4,
-    "ship_service_room": 6,
-    "ship_special_rooms": 4,
+    ], 
+    "ship_max_damage": 20, 
+    "ship_munition_storage": 4, 
+    "ship_other_body": 0, 
+    "ship_other_head": 0, 
+    "ship_ring": 4, 
+    "ship_service_room": 6, 
+    "ship_special_rooms": 4, 
     "ship_speed": [
-        23,
-        0.5
-    ],
-    "ship_success_beam": 3,
+        24, 
+        0.25
+    ], 
+    "ship_success_beam": 3, 
     "ship_success_discount": [
-        90,
+        90, 
         50
-    ],
-    "ship_success_missile": 6,
+    ], 
+    "ship_success_missile": 6, 
     "ship_wpn_effectiveness": [
-        2.2,
+        2.2, 
         0.2
-    ],
-    "ship_wpn_head_beam": 1,
-    "ship_wpn_head_missile": 2,
-    "ship_wpn_side_beam": 4,
+    ], 
+    "ship_wpn_head_beam": 1, 
+    "ship_wpn_head_missile": 2, 
+    "ship_wpn_side_beam": 4, 
     "ship_wpn_side_missile": 7
 }

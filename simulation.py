@@ -14,13 +14,13 @@ OUTFILE = 'simuResult'
 
 DEF_SETTING = {
     'glob_tries': 100,
-    'enemy_lives': 60,
+    'enemy_lives': 100,
     'enemy_wpn_missile': 6,
     'enemy_wpn_beam': 14,
-    'enemy_success_missile': 5,
+    'enemy_success_missile': 6,
     'enemy_success_beam': 3,
     'enemy_speed': 20,
-    'ship_speed': [23, 0.5],
+    'ship_speed': [24, 0.25],
     'ship_other_head': 0,
     'ship_other_body': 0,
     'ship_munition_storage': 4,
@@ -33,46 +33,48 @@ DEF_SETTING = {
     'ship_special_rooms': 4,
     'ship_success_missile': 6,
     'ship_success_beam': 3,
-    "ship_success_discount": [90, 50],
+    "ship_success_discount": [90, 50], # How often is our targetting better 6+[], 5+[*], 4+[*,*]
     'ship_wpn_effectiveness': [2.2, 0.2],
 	'ship_max_damage': 20,
     'init_distance': 100,
     'glob_distance_close': 40,
     'glob_distance_death': 0,
-    'glob_log_out': 1,
+    'glob_log_out': 6,
     'sequence': [2, 1, 1],
     'enemy_lost_beam': 20,
     'enemy_lost_missile': 20,
     'enemy_lost_speed': 30,
     'repair_crews': 10,
     'repair_delay': 5,
+    'battle_max_time': 50,
     'scenarios': [
-        {
-            'name': 'All in attack, no repair',
-            'ship_success_discount': [100, 100],
-            'repair_crews': 0,
-            'sequence': [2],
-        },
-        {
-            'name': 'All in attack, with repairs',
-            'ship_success_discount': [100, 100],
-            'sequence': [2],
-        },
-        {
-            'name': '50:50, 1/2 dodge',
-            'ship_success_discount': [100, 70],
-            'repair_crews': 5,
-            'sequence': [2, 1],
-        },
-        {
-            'name': 'Full Repair, 2/3 dodge',
-            'ship_success_discount': [90, 50],
-            'sequence': [2, 1, 1],
-        },
+        # {
+        #     'name': 'All in attack, no repair',
+        #     'ship_success_discount': [100, 100],
+        #     'repair_crews': 0,
+        #     'sequence': [2],
+        # },
+        # {
+        #     'name': 'All in attack, with repairs',
+        #     'ship_success_discount': [100, 100],
+        #     'sequence': [2],
+        # },
+        # {
+        #     'name': '50:50, 1/2 dodge',
+        #     'ship_success_discount': [100, 70],
+        #     'repair_crews': 5,
+        #     'sequence': [2, 1],
+        # },
+        # {
+        #     'name': 'Full Repair, 2/3 dodge',
+        #     'ship_success_discount': [100, 70],
+        #     'sequence': [2, 1, 1, 1, 1],
+        #     'repair_crews': 30,
+        # },
         {
             'name': 'Super Crew, 3/4 dodge',
             'ship_success_discount': [100, 90],
-            'sequence': [2, 1, 1, 1],
+            'sequence': [1],
             'repair_crews': 30,
         }
     ],
@@ -88,7 +90,7 @@ STANDS = [
     },
     {
         'name': 'Dodge',
-        'enemy_success': 0,
+        'enemy_success': +1,
         'poll': 'poll_head',
         'weapons': 'head',
         'speed': -2,
@@ -98,14 +100,14 @@ STANDS = [
         'enemy_success': 0,
         'poll': 'poll_side',
         'weapons': 'side',
-        'speed': -10,
+        'speed': -15,
     },
     {
         'name': 'Wedge',
         'enemy_success': +2,
         'poll': 'poll_side',
         'weapons': 'none',
-        'speed': -10,
+        'speed': -15,
     },
 ]
 
@@ -227,6 +229,11 @@ def doPoll( poll, hits ):
 	selection = []
 	for i in pick: selection.append(poll[i])
 	return selection
+
+def outThePoll( poll, hits ):
+    if hits<=len(poll):
+        return 0
+    return hits - len(poll)
 
 def doDamage( hit, isDestroyed ):
 	return 1
@@ -437,23 +444,25 @@ for ch in setting['scenarios']:
             addLog(4, ' - We: '+str(we[0])+'('+str(we[1])+'), Enemy: '+str(enemy[0])+'('+str(enemy[1])+')')
     		# Enemy Fires
             hits = rollDice(enemy[0], enemy[1])
+            extraHits = outThePoll(poll[stand['poll']], hits)
+            state['damage'] += extraHits
             pollHits = doPoll(poll[stand['poll']], hits)
             state['our_damage_total'] += hits
-            addLog(3, ' - Enemy hits: +'+str(len(pollHits))+' ('+str(pollHits)+ ') (total '+str(state['our_damage_total'])+')')
+            addLog(3, ' - Enemy hits: +'+str(len(pollHits))+'(direct '+str(extraHits)+')('+str(pollHits)+ ') (total '+str(state['our_damage_total'])+')')
 
     		# Do Damage
             for hit in pollHits:
-                if ship[hit] == 2:
+                if ship[hit] == 1:
                     state['damage'] += doDamage(hit, True)
-                    ship[hit] = 3
+                    ship[hit] = 2
                     if hit in poll['poll_head']: poll['poll_head'].remove(hit)
                     poll['poll_side'].remove(hit)
                     destroyed.append(hit)
                     if hit in toRepair: toRepair.remove(hit)
 
-                elif ship[hit] == 1:
-                    state['damage'] += doDamage(hit, False)
-                    ship[hit] = 2
+                # elif ship[hit] == 1:
+                #     state['damage'] += doDamage(hit, False)
+                #     ship[hit] = 2
                 elif ship[hit] == 0:
                     ship[hit] = 1
                     toRepair.append(hit)
@@ -494,6 +503,11 @@ for ch in setting['scenarios']:
                 state['lost'] = True
                 break
 
+    		# Too Long Battle
+            if turnCount >= setting['battle_max_time']:
+                state['lost'] = True
+                break
+
     		# Win Condition
             if state['enemy_damage'] >= setting['enemy_lives']:
                 state['victory'] = True
@@ -512,8 +526,8 @@ for ch in setting['scenarios']:
     		# Lost Distance Condition
             if state['distance'] <= setting['glob_distance_death']:
                 state['distance'] = setting['glob_distance_death']
-    #            state['lost'] = True
-    #            break
+                # state['lost'] = True
+                # break
 
     		# Evasive Action
             state['stand'] = setting['sequence'][turnCount % state['sequenceLength']]
