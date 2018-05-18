@@ -1,4 +1,4 @@
-<T>Saganamiho Valecna Hra
+<T>Saganamiho Va'lec'na' Hra
 Hraje cela' skupina za jednu posa'dku lodi. Skupina si zvoli' kapita'na a ten si zvoli' hlavni' posa'dku.
 
 <C>Hlavni' posa'dka

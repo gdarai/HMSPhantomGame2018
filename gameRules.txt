@@ -1,0 +1,33 @@
+<T>Zombie Country
+Hra je kooperac'ni', zame'r'ena' na postupny' vy'voj postav a sce'na'r'e.
+
+<C>Sledovany' ci'l hry
+Na'vrh sleduje na'sleduji'ci' ci'le:
+<I>(MAPA) Souc'a'sti' by me'lo by't procha'zeni' mapy kdy hra'c'i objevuji' jednotlive' c'a'sti na'hodne'ho tere'nu
+<I>(NEZBYTNOST) Hra'c'i musi' by't pro hru nezbytni', nesmi' by't moz'ne' hru odehra't jako jediny' hra'c' za vs'echny (De''lit informace, Spolec'ne' u''koly, Spoustu informaci')
+<I>(VARIABILITA) Mi't rozs'i'r'itelnou sadu u'kolu' aby se z'a'dna' mise nestala fa'dni'
+<I>(DEFAULT) Mi't moz'nost i za'knadni' hry na vyzkous'eni', bez potr'eby sloz'ite' kampane'
+<I>(LEVELUP) Vyleps'ova'ni' postav v pru'be'hu kampane''
+<I>(MEET) Potr'eba pro hra'c'e scha'zet se ku'li vy'me''ne'' informaci' (Omezit komunikaci pokud hra'c'i nejsou na stejne'm mi'ste'')
+
+<C>Za'kladni' hra
+Bylo by dobre' aby obsahovala: Graduji'ci' proble'm, Ubi'haji'ci' c'as a potr'ebu de'lit zdroje.
+
+<C>Rozs'i'r'ena' hra
+Doplne'na' o potr'ebu myslet na pr'i's'ti' mise. Moz'nost pr'ena's'et si pr'edme'ty z mise do mise. Moz'nost opakova'ni' misi' v pr'i'pade'' selha'ni'.
+
+<C>Moz'ne' ci'le za'kladni' hry
+Nahromadit za'soby na cestu. Vyrobit dopravni' prostr'edek, Uniknout z mapy. Co graduje v takove'm sce'na'r'i? Agressivita a poc'et zombii. Co hru limituje? Bli'z'i'ci' se z'ivelna' katastrofa.
+
+<C>Zi'ska'va'ni' za'sob
+Za'soby jsou potr'eba aby mohli hra'c'i ta'hnout da'l. Za'roven' se ale take' spotr'ebova'vaji' protoz'e je hra'c' potr'ebuje na uzdravova'ni' a dopln'ova'ni' energie. Za'soby se daji' de'lit podle velikosti:
+<I>Velk'e - Jsou efektivni' pro uskladne'ni' a pouz'iti' na za've''r
+<I>Male' - Jsou snadne'ji pr'enositelne' a tudi'z' efektivne''js'i' pro pohotovostni' spotr'ebu
+Za'soby obecne'' dlouhodobe'' ubi'raji' u'navu a le'c'i' a kra'tkodobe' zvys'uji' bojovou si'lu
+
+<C>Hleda'ni' dopravy
+Chce to vi'c moz'ny'ch dopravni'ch prostr'edku'. U kaz'de'ho to chce vi'cero souc'a'stek a jde o to, ktery' z nich poskla'da'te jako prvni'. Kaz'dy' dopravni' prostr'edek je take' potr'eba sestavit a to na vhodne'm mi'ste''. Jako lod' u vody, auto u vy'jezdu z me''sta, drezi'nu na koleji'ch.
+
+<C>Strategie spra'vy majetku
+Hra'c'i mu'z'ou bud' vs'echny ve''ci stahovat do za'kladen, nebo je necha'vat kde jsou. Pokud se ne''jake' mi'sto prohleda', ve'ci automaticky dostane hra'c' a rozhoduje se, zda si je:
+<I>necha' u sebe
