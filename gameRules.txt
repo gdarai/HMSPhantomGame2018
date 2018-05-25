@@ -31,3 +31,40 @@ Chce to vi'c moz'ny'ch dopravni'ch prostr'edku'. U kaz'de'ho to chce vi'cero sou
 <C>Strategie spra'vy majetku
 Hra'c'i mu'z'ou bud' vs'echny ve''ci stahovat do za'kladen, nebo je necha'vat kde jsou. Pokud se ne''jake' mi'sto prohleda', ve'ci automaticky dostane hra'c' a rozhoduje se, zda si je:
 <I>necha' u sebe
+<I>zahodi'
+<I>schova' na pr'i's'te'' v za'kladne''
+
+<C>Proble'm s hlasitosti'
+Pole a za'kladny maji' hlasitost. Pokud je hlasitost za'kladny vys's'i' nez' hlasitost pole, pak zombi'ci u'toc'i' na za'kladnu. Pokud je hlasitost pole vys's'i' nez' hlasitost poli' v okoli' tak tam zombi'ci jdou. Pokud je pole na kraji mapy, pr'edpokla'da' se z'e hlasitost neobjeveny'ch poli' je polovic'ni' (zaokrouhleno dolu').
+
+<C>Princip nape'ti'
+Me''lo by platit, z'e pokud hra'c'i nede''laji' nic, hra zac'ne ji't do kelu. Rychle. Co to znamena' tady? R'ekne''me z'e existuje bali'c'ek uda'losti' ktery' zhors'uje stav ve me''ste''. Co v bali'ku je:
+<I>agressivni' zombi'ci napadnou hra'c'e.
+<I>ne'co pos'kodi' za'soby
+<I>nehoda te'ch co cestoji'
+<I>nehoda te'ch co kempi'
+<I>pr'i'chod novy'ch zombi'ku'
+Da'l by uz' samotna' pr'i'tomnost hra'c'u' na poli'c'ku me'la zhors'ovat hlasitost a z boje by se me'lo c'aste'ji vyji't se zrane'ni'm nez' bez ne'j.
+
+<C>Princip deadlinu
+Hra by me'la na hra'c'e tlac'it take' s deadlinem. Ne'co jako bli'z'i'ci' se potopa, nebo tr'eba bli'z'i'ci' se zima.
+
+<C>Souboj
+Boj je bud' na bli'zko, nebo na da'lku. Rozdi'l je v tom, z'e na da'lku se spotr'ebova'va' munice a na bli'zko se vi'ce zran'uje.
+R'ekne'me z'e si vezmem pr'i'klad z ??? Jak se ta hra jmenovala? Zombies maji' 1 nebo 2 z'ivoty... c'asem budou existovat i vi'cero druhu'. Boj musi' by't mega jednoduchy' a to i s mnoha zombi'ky najednou. Vs'ichni u'toc'ici' zombi'ci musi' by't poraz'eni. Kombinace zbrane' a dovednosti' urc'uje kolik zrane'ni' zombi'ku'm da'me, bez zrane'ni' c'i se sni'z'eny'm zrane'ni'm. Pokud se zombi'ky bojuje vi'c lidi' najednou, mu'z'ou si je rozde'lit jak chte'ji'.
+
+<C>Zbran' na da'lku
+Ma' napsa'no kolik na'boju' vystr'eli' nez' se zombi'ci dostanou na bli'zko. Ma' napsa'no kolik zrane'ni' kaz'dy' na'boj / da'vka da', jak jde na'boje doplnit a kolik je za'kladni' poc'et.
+
+<C>Zbran' na bli'zko
+Ma'napsa'no kolik zrane''ni' da' a o kolik sni'z'i' nepr'a'telskou odezvu. Mu'z'e mi't i dodatec'ne' vlastnosti.
+
+<C>Pru'be''h souboje
+Hra'c' vyloz'i' bojovou akci. Zhodnoti' se kolik hra'c'u' na tom poli'c'ku v ten moment bojuje. Vyloz'i' sve' zbrane' a vyleps'eni'. Berou nepr'a'tele. Nejprve ti co bojuji' na da'lku. Kdy'z u'z nestr'i'li' na da'lku, mu'z'ou se pr'idat i zbrane' na bli'zko.
+<C>Pokud dojdou na'boje a neni' v boji z'a'dna' efektivni' zbra'n na bli'zko, boj skonc'il a pr'ez'ivs'i' zombi'ci na konci kola napadnou hra'c'e na poli'c'ku. Tihle zombi'ci se na'hodne' rozde'li' mezi hra'c'e (tr'eba tak, z'e hra'c'i budou mi't pr'ide'lena' c'i'sla na kostce) a kaz'de'ho musi' hra'c'i udolat se zrane'ni'm 2ku1.
+
+<C>Kdy zombi'ci u'toc'i'
+Za ne''ktery'ch okolnosti' zombi'ci napadaji' hra'c'e. Vz'dy je na zac'a'tku kola jasne' kolik zombi'ku' u'toc'i'.
+<I>Pokud je na konci minule'ho kola kemp moc hlasity' nebo hlasite'js'i' nez' ulice, vs'ichni zombi'ci z te'hle ulice u'toc'i' na kemp.
+<I>Pokud nastane uda'lost, mu'z'ou hra'c'e napadnout zombi'ci.
+<I>Pokud hra'c' aktivne' napadne zombi'ky na poli'c'ku, napadnou pr'i's'ti' kolo zbyli' zombi'ci kemp.
