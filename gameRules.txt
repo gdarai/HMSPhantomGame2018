@@ -35,15 +35,15 @@ Hra'c'i mu'z'ou bud' vs'echny ve''ci stahovat do za'kladen, nebo je necha'vat kd
 <I>schova' na pr'i's'te'' v za'kladne''
 
 <C>Proble'm s hlasitosti'
-Pole a za'kladny maji' hlasitost. Pokud je hlasitost za'kladny vys's'i' nez' hlasitost pole, pak zombi'ci u'toc'i' na za'kladnu. Pokud je hlasitost pole vys's'i' nez' hlasitost poli' v okoli' tak tam zombi'ci jdou. Pokud je pole na kraji mapy, pr'edpokla'da' se z'e hlasitost neobjeveny'ch poli' je polovic'ni' (zaokrouhleno dolu').
+Pole maji' hlasitost. Pokud je hlasitost pole vys's'i' nez' hlasitost poli' v okoli' tak tam zombi'ci jdou. Pokud je pole na kraji mapy, pr'edpokla'da' se z'e hlasitost neobjeveny'ch poli' je polovic'ni' (zaokrouhleno dolu' ... tohle jsem sem dal proc'?). Pokud jsou na ne'jake'm poli hra'c'i, zombi'ci na ne'' zau'toc'i'.
 
 <C>Princip nape''ti'
 Me''lo by platit, z'e pokud hra'c'i nede''laji' nic, hra zac'ne ji't do kelu. Rychle. Co to znamena' tady? R'ekne''me z'e existuje bali'c'ek uda'losti' ktery' zhors'uje stav ve me''ste''. Co v bali'ku je:
-<I>agressivni' zombi'ci napadnou hra'c'e.
-<I>ne''co pos'kodi' za'soby
-<I>nehoda te''ch co cestuji'
-<I>nehoda te''ch co kempi'
-<I>pr'i'chod novy'ch zombi'ku'
+<I>Agressivni' zombi'ci napadnou hra'c'e.
+<I>Ne''co pos'kodi' za'soby
+<I>Nehoda te''ch co cestuji'
+<I>Nehoda te''ch co kempi'
+<I>Pr'i'chod novy'ch zombi'ku'
 Da'l by uz' samotna' pr'i'tomnost hra'c'u' na poli'c'ku me''la zhors'ovat hlasitost a z boje by se me''lo c'aste''ji vyji't se zrane''ni'm nez' bez ne''j.
 
 <C>Princip deadlinu
@@ -51,7 +51,10 @@ Hra by me''la na hra'c'e tlac'it take' s deadlinem. Ne''co jako bli'z'i'ci' se p
 
 <C>Souboj
 Boj je bud' na bli'zko, nebo na da'lku. Rozdi'l je v tom, z'e na da'lku se spotr'ebova'va' munice a na bli'zko se vi'ce zran'uje.
-R'ekne''me z'e si vezmem pr'i'klad z ??? Jak se ta hra jmenovala? Zombies maji' 1 nebo 2 z'ivoty... c'asem budou existovat i vi'cero druhu'. Boj musi' by't mega jednoduchy' a to i s mnoha zombi'ky najednou. Vs'ichni u'toc'ici' zombi'ci musi' by't poraz'eni. Kombinace zbrane'' a dovednosti' urc'uje kolik zrane''ni' zombi'ku'm da'me, bez zrane''ni' c'i se sni'z'eny'm zrane''ni'm. Pokud se zombi'ky bojuje vi'c lidi' najednou, mu'z'ou si je rozde''lit jak chte''ji'.
+R'ekne''me z'e si vezmem pr'i'klad z Dornu. Zombies maji' 1 nebo 2 z'ivoty... c'asem budou existovat i vi'cero druhu'. Boj musi' by't mega jednoduchy' a to i s mnoha zombi'ky najednou. Vs'ichni u'toc'ici' zombi'ci musi' by't poraz'eni. Kombinace zbrane'' a dovednosti' urc'uje kolik zrane''ni' zombi'ku'm da'me, bez zrane''ni' c'i se sni'z'eny'm zrane''ni'm. Pokud se zombi'ky bojuje vi'c lidi' najednou, mu'z'ou si je rozde''lit jak chte''ji'.
+
+<C>Tiche' a hlasite' zbrane''
+Pokud je na'stroj c'i zbran' hlasita' tak jeji' pouz'iti' zvys'uje hlasitost boje o jedna. Za'kladni' hlasitost mu'z'e by't nula tr'eba do 2 zombi'ku', pro 3 a vi'ce uz' je to jedna.
 
 <C>Zbran' na da'lku
 Ma' napsa'no kolik na'boju' vystr'eli' nez' se zombi'ci dostanou na bli'zko. Ma' napsa'no kolik zrane''ni' kaz'dy' na'boj / da'vka da', jak jde na'boje doplnit a kolik je za'kladni' poc'et.
@@ -60,14 +63,15 @@ Ma' napsa'no kolik na'boju' vystr'eli' nez' se zombi'ci dostanou na bli'zko. Ma'
 Ma'napsa'no kolik zrane''ni' da' a o kolik sni'z'i' nepr'a'telskou odezvu. Mu'z'e mi't i dodatec'ne' vlastnosti.
 
 <C>Pru'be''h souboje
-Hra'c' vyloz'i' bojovou akci. Zhodnoti' se kolik hra'c'u' na tom poli'c'ku v ten moment bojuje. Vyloz'i' sve' zbrane' a vyleps'eni'. Berou nepr'a'tele. Nejprve ti co bojuji' na da'lku. Kdy'z u'z nestr'i'li' na da'lku, mu'z'ou se pr'idat i zbrane'' na bli'zko.
+K boji docha'zi' pokud jsou hra'c'i a zombi'ci na stejne'm poli'c'ku a hra'c'i nemaji' pr'ed bojem ne'jakou ochranu. Zhodnoti' se kolik hra'c'u' na tom poli'c'ku v ten moment bojuje. Vyloz'i' sve' zbrane' a vyleps'eni'. Rozde'li' si nepr'a'tele. Nejprve ti co bojuji' na da'lku. Kdy'z u'z nestr'i'li' na da'lku, mu'z'ou se pr'idat i zbrane'' na bli'zko.
 <C>Pokud dojdou na'boje a neni' v boji z'a'dna' efektivni' zbra'n na bli'zko, boj skonc'il a pr'ez'ivs'i' zombi'ci na konci kola napadnou hra'c'e na poli'c'ku. Tihle zombi'ci se na'hodne'' rozde''li' mezi hra'c'e (tr'eba tak, z'e hra'c'i budou mi't pr'ide''lena' c'i'sla na kostce) a kaz'de'ho musi' hra'c'i udolat se zrane''ni'm 2:1.
 
-<C>Kdy zombi'ci u'toc'i'
-Za ne''ktery'ch okolnosti' zombi'ci napadaji' hra'c'e. Vz'dy je na zac'a'tku kola jasne' kolik zombi'ku' u'toc'i'.
-<I>Pokud je na konci minule'ho kola kemp moc hlasity' nebo hlasite''js'i' nez' ulice, vs'ichni zombi'ci z te'hle ulice u'toc'i' na kemp.
-<I>Pokud nastane uda'lost, mu'z'ou hra'c'e napadnout zombi'ci.
-<I>Pokud hra'c' aktivne'' napadne zombi'ky na poli'c'ku, napadnou pr'i's'ti' kolo zbyli' zombi'ci kemp.
+<C>Princip hlasitosti
+Kaz'de' poli'c'ko ma' hlasitost, urc'enou z'etonem. Me'jme z'etony pro hlasitosti 1, 2, 3 a 4. Z'a'dny' z'eton znamena' hlasitost 0. Hlasitost klesa' na kaz'de'm poli'c'ku o jedna na zac'a'tku kaz'de'ho kola. Hlasitost stoupa' podle uda'losti a podle akci' hra'c'u'.
+<I> Boj v za'kladu nezveda' hlasitost, od 3 zombi'ku' da'l uz' ale ano o 1.
+<I> Hlasite' zbrane' zvedaji' hlasitost o 1.
+<I> Aktivita hra'c'u' jako stavba skry's'e zveda' hlasitost o 1
+<I> Be'h take' zveda' hlasitost o 1 a to v kaz'de'm poli'c'ku na ktere'm hra'c'i promluvili a za kaz'de'ho mluvi'c'ho hra'c'e. Vyjji'mkou jsou hra'c'i mluvi'c' be''hem vy'me''ny.
 
 <C>Budova'ni' mapy
 Poli'c'ko mapy je c'tverec. Sousedi' s ostatni'mi poli'c'ky bud' silnici' ktera' be''z'i' po jeho hrane'' a nebo zd'i' pokud je to c'a'st ve''ts'i' budovy.
@@ -78,3 +82,13 @@ Take' by tam me''lo by't, kolik zombi'ku' je na poli'c'ku instantne''' a kolik s
 <I>Stoji' na ne''m figurky hra'c'u', zombi'ku' a dals'i'ch NPC.
 <I>Hra'c'ova figurka mu'z'e sta't v budove'', pak neodkry'va' nic. Na ulici mezi dve''ma poli'c'ky mapy, pak odkry'va' obe'' sousedni' budovy, a nebo na rohu mezi c'tyr'ma poli'c'ky, pak odkry'va' vs'echna c'tyr'i poli'c'ka mapy.
 <I>Pr'i'slus'ni' zombi'ci se na poli'c'ko umi'st'uji' hned, pr'edme'ty az' pokud ne''kdo poli'c'ko prohleda'.
+
+<C>Kolo hry
+Vs'ichni hra'c'i hraji' najednou. Kaz'dy' ma' dve' akce a be'hem pla'novaci' fa'ze se nemu'z'ou domlouvat. Pokud jsou ne'jaci' hra'c'i ve stejne' lokaci, mu'z'ou se domlouvat, pokud ne'kdo z nich da' akci vy'me'ny. Mu'z'ou se rozhodnout se bavit i jen tak, ale pak se jim hlasitost ihned zvedne o jedna.
+<I> Taz'eni' uda'losti
+<I> Posunuti' zombi'ku' podle gradientu hlasitosti.
+<I> Sni'z'eni' hlasitosti na kaz'de'm poli'c'ku o jedna.
+<I> Napla'nova'ni' akci'. Kaz'dy' hra'c' si napla'nuje sve' dve' akce.
+<I> Odehra'ni' akci'. Hra'c'i hraji' za'roven', jen si hli'daji' aby akce co ovlivn'uji' vi'ce hra'c'u', pokud jsou napla'novane' jako druhe', hra'li pouze s hra'c'i co jim tr'eba minulou akci' neutekli z poli'c'ka.
+<I> Odehra'ni' boju'.
+<I> Pr'ida'ni' novy'ch zombi'ku'.

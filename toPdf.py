@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import re
 import os
 
@@ -111,7 +113,7 @@ def expandWildchars( lst0, lstFull ):
 
 # Comments file
 print('\n--> comments.tex')
-lines = getLinesInFiles('comments.txt')
+lines = getLinesInFiles('gameRules.txt')
 f = open('comments.tex','w')
 writeLine(f,0,'\\documentclass{article}')
 writeLine(f,0,'\\usepackage[czech]{babel}')
@@ -129,6 +131,8 @@ for line in lines:
             writeLine(f,1,'\\maketitle')
         elif(line[1]=='C'):
             writeLine(f,1,'\\section{'+text+'}')
+        elif(line[1]=='I'):
+            writeLine(f,1,'\\p{'+text+'}')
         else:
             printWarning('Strange LINE: '+line+', unknown tag')
             writeLine(f,2,text)
