@@ -11,33 +11,33 @@ canPrint = True;
 # Superglobals
 
 def printError(text):
-	print('!ERR '+text);
-	canPrint = False;
+    print('!ERR '+text);
+    canPrint = False;
 
 def printWarning(text):
-	print('WARN '+text);
+    print('WARN '+text);
 
 def writeLine(f, intention, text):
-	f.write('\t'*intention+text+'\n');
+    f.write('\t'*intention+text+'\n');
 
 def writeLineCondition(f, intention, textNo, textYes, condition):
-	if(condition):
-		f.write('\t'*intention+textYes+'\n');
-	else:
-		f.write('\t'*intention+textNo+'\n');
+    if(condition):
+        f.write('\t'*intention+textYes+'\n');
+    else:
+        f.write('\t'*intention+textNo+'\n');
 
 def	writeLineBlocks(f,intention, texts):
-	allBut = texts[0:-1]
-	last = texts[-1]
-	for l in allBut:
-		writeLine(f, intention, l+',')
-	writeLine(f, intention, last)
+    allBut = texts[0:-1]
+    last = texts[-1]
+    for l in allBut:
+        writeLine(f, intention, l+',')
+        writeLine(f, intention, last)
 
 def parseLine(line):
-	line = re.sub(r"\s+#\s+","#", line)
-	line = re.sub(r"\n","", line)
-	line = re.sub(r"\r","", line)
-	return line.split("#")
+    line = re.sub(r"\s+#\s+","#", line)
+    line = re.sub(r"\n","", line)
+    line = re.sub(r"\r","", line)
+    return line.split("#")
 
 def expandCzechLetters(line):
     line = re.sub(r"\n","", line)
@@ -49,6 +49,8 @@ def expandCzechLetters(line):
     line = re.sub(r"D\'","Ď", line)
     line = re.sub(r"e\'\'","ě", line)
     line = re.sub(r"E\'\'","Ě", line)
+    line = re.sub(r"e\'","é", line)
+    line = re.sub(r"E\'","É", line)
     line = re.sub(r"i\'","í", line)
     line = re.sub(r"I\'","Í", line)
     line = re.sub(r"n\'","ň", line)
@@ -76,38 +78,38 @@ def parseName(name):
     return name
 
 def getFiles( wildch ):
-	mypath = os.getcwd()
-	onlyfiles = [f for f in os.listdir(mypath) if os.path.isfile(os.path.join(mypath, f))]
-	filtered = []
-	for f in onlyfiles:
-		if(re.match(wildch, f) != None):
-			filtered.append(f)
-	return filtered
+    mypath = os.getcwd()
+    onlyfiles = [f for f in os.listdir(mypath) if os.path.isfile(os.path.join(mypath, f))]
+    filtered = []
+    for f in onlyfiles:
+        if(re.match(wildch, f) != None):
+            filtered.append(f)
+    return filtered
 
 def getLinesInFiles( wildch ):
-	print('File search pattern: '+wildch)
-	files = getFiles(wildch)
-	print(files)
+    print('File search pattern: '+wildch)
+    files = getFiles(wildch)
+    print(files)
 
-	lines = []
-	for nm in files:
-		with open(nm) as f:
-			lns = f.readlines()
-		f.closed
-		print('File '+nm+', '+str(len(lns))+' lines')
-		lines = lines + lns
+    lines = []
+    for nm in files:
+        with open(nm) as f:
+            lns = f.readlines()
+            f.closed
+            print('File '+nm+', '+str(len(lns))+' lines')
+            lines = lines + lns
 
-	return lines
+    return lines
 
 def expandWildchars( lst0, lstFull ):
-	lst1 = []
-	for it in lst0:
-		if((it[0]=="<")and(it[-1]==">")):
-			r = re.compile(it[1:-1])
-			lst1.extend(list(filter(r.match, lstFull)))
-		else:
-			lst1.append(it)
-	return lst1
+    lst1 = []
+    for it in lst0:
+        if((it[0]=="<")and(it[-1]==">")):
+            r = re.compile(it[1:-1])
+            lst1.extend(list(filter(r.match, lstFull)))
+        else:
+            lst1.append(it)
+    return lst1
 ########
 # Process
 
@@ -117,6 +119,7 @@ lines = getLinesInFiles('gameRules.txt')
 f = open('gameRules.tex','w')
 writeLine(f,0,'\\documentclass{article}')
 writeLine(f,0,'\\usepackage[czech]{babel}')
+writeLine(f,0,'\\usepackage[utf8]{inputenc}')
 writeLine(f,0,'')
 for line in lines:
     text = expandCzechLetters(line)
@@ -132,7 +135,12 @@ for line in lines:
         elif(line[1]=='C'):
             writeLine(f,1,'\\section{'+text+'}')
         elif(line[1]=='I'):
-            writeLine(f,2,text)
+            if(line[2]=='0'):
+            	writeLine(f,2,'\\begin{itemize}')
+            elif(line[2]=='1'):
+            	writeLine(f,2,'\\end{itemize}')
+            else:
+            	writeLine(f,3,'\\item '+text)
         else:
             printWarning('Strange LINE: '+line+', unknown tag')
             writeLine(f,2,text)
@@ -140,3 +148,5 @@ for line in lines:
         writeLine(f,2,text)
 writeLine(f,0,'\end{document}')
 f.close()
+
+os.system('pdflatex gameRules.tex');
