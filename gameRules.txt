@@ -108,3 +108,34 @@ Vs'ichni hra'c'i hraji' najednou. Kaz'dy' ma' dve' akce a be'hem pla'novaci' fa'
 <I> Odehra'ni' boju'.
 <I> Pr'ida'ni' novy'ch zombi'ku'.
 <I1>
+
+<C>Karty Pr'edme''tu' a nosnost
+Hra'c' ma' urc'itou nosnost. V za'kladu r'ekne'me 5. To znamena' z'e unese 5 maly'ch pr'edme''tu', aniz' by byl pr'eti'z'eny'. Nebo jeden velky' a dva male' pr'edme'ty. Pokud ale bude chti't vzi't cokoliv vi'c tak uz' pr'eti'z'eny' bude. Pr'eti'z'eni' da'va' postih do boje a kaz'de' kolo sniz'uje kondici o jedna. Pr'edme''ty se c'leni' na Za'kladni' a Leps'i' a potom na Ji'dlo, Materia'l, Zbrane'' a vybaveni'. Na zac'a'tku jsou nami'cha'ny na'sleduji'ci' bal'ic'ky (podle druhu budovy):
+<I0>
+<I>Be''z'ne' - Hlavne'' v obytny'ch budova'ch - 10+5J, 2+0M, 5+0Z, 5+0V
+<I>Leps'i' - V ru'zny'ch obchodech - 10+10J, 2+2M, 2+5Z, 10+5V
+<I>Vojenske' - Ve vojensky zame'r'eny'ch budova'ch - 10+10J, 5+2M, 5+10Z, 10+10V
+<I>Materia'l - V ru'zny'ch sluz'ebna'ch a skladis'ti'ch - 0+1J, 10+5M, 2+0Z, 2+0V
+<I1>
+
+<C>Ji'dlo
+Ji'dlo: +1 zdravi', +1 si'la, +3 kondice
+Ji'dlo V: +1 zdravi', +max kondice
+Ji'dlo X: +2 zdravi', +mx kondice
+
+<C>Materia'l
+Materia'l: na drobne' pra'ce a opravu vybaveni'
+Materia'l V: na ve''ts'i' di'la
+Manua'l: na sloz'ite'js'i' pra'ce
+Kniha: na zleps'ova'ni' skilu'
+
+<C>Vybaveni'
+Prvni' pomoc: +2 zdravi', zme'ni' zrane'ni' na le'c'ene'
+Stimulant: +max kondice, +2 si'la
+Protila'tka: zrus'i otravu
+S'ti't: Da' ne'kolik kol odolnost na kousnuti'
+Baterka: +1 k prohleda'va'ni'
+
+<C>Zbrane'
+(u'tok, typ, hlasitost, cena munice, max)
+Kyj: 2x1xx
