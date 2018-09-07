@@ -55,9 +55,10 @@ Me''lo by platit, z'e pokud hra'c'i nede''laji' nic, hra zac'ne ji't do kelu. Ry
 Da'l by uz' samotna' pr'i'tomnost hra'c'u' na poli'c'ku me''la zhors'ovat hlasitost a z boje by se me''lo c'aste''ji vyji't se zrane''ni'm nez' bez ne''j.
 
 <C>Princip deadlinu
-Hra by me''la na hra'c'e tlac'it take' s deadlinem. Ne''co jako bli'z'i'ci' se potopa, nebo tr'eba bli'z'i'ci' se zima.
+Hra by me''la na hra'c'e tlac'it take' s deadlinem. Ne''co jako bli'z'i'ci' se potopa, nebo tr'eba bli'z'i'ci' se zima. Nebo proste' bli'z'i'c' se vec'er.
 
 <C>Souboj
+K boji docha'zi', pokud jsou hra'c'i na poli'c'ku (nebo na ulici/kr'iz'ovatce u poli'c'ka) kde jsou i zombi'ci. V pr'i'pade' ulice se berou dohromady vs'ichni zombi'ci ze sousedni'ch budov.
 Boj je bud' na bli'zko, nebo na da'lku. Rozdi'l je v tom, z'e na da'lku se spotr'ebova'va' munice a na bli'zko se vi'ce zran'uje.
 R'ekne''me z'e si vezmem pr'i'klad z Dornu. Zombies maji' 1 nebo 2 z'ivoty... c'asem budou existovat i vi'cero druhu'. Boj musi' by't mega jednoduchy' a to i s mnoha zombi'ky najednou. Vs'ichni u'toc'ici' zombi'ci musi' by't poraz'eni. Kombinace zbrane'' a dovednosti' urc'uje kolik zrane''ni' zombi'ku'm da'me, bez zrane''ni' c'i se sni'z'eny'm zrane''ni'm. Pokud se zombi'ky bojuje vi'c lidi' najednou, mu'z'ou si je rozde''lit jak chte''ji'.
 
@@ -77,12 +78,13 @@ K boji docha'zi' pokud jsou hra'c'i a zombi'ci na stejne'm poli'c'ku a hra'c'i n
 <I1>
 
 <C>Princip hlasitosti
-Kaz'de' poli'c'ko ma' hlasitost, urc'enou z'etonem. Me'jme z'etony pro hlasitosti 1, 2, 3 a 4. Z'a'dny' z'eton znamena' hlasitost 0. Hlasitost klesa' na kaz'de'm poli'c'ku o jedna na zac'a'tku kaz'de'ho kola. Hlasitost stoupa' podle uda'losti a podle akci' hra'c'u'.
+Kaz'de' poli'c'ko ma' hlasitost, urc'enou z'etonem. Me'jme z'etony pro hlasitosti 1, 2, 3 a 4. Z'a'dny' z'eton znamena' hlasitost 0. Hlasitost klesa' na kaz'de'm poli'c'ku o jedna na zac'a'tku kaz'de'ho kola. Hlasitost stoupa' podle uda'losti a podle akci' hra'c'u'. Gradient hlasitosti je maxima'lne' 1. Pokud je tedy ne'kde z'eton s hlasitosti' 3, na sousedni'ch 4 poli'c'ka'ch nemu'z'e by't hlasitost niz's'i' nez' 2.
 <I0>
 <I> Boj v za'kladu nezveda' hlasitost, od 3 zombi'ku' da'l uz' ale ano o 1.
 <I> Hlasite' zbrane' zvedaji' hlasitost o 1.
 <I> Aktivita hra'c'u' jako stavba skry's'e zveda' hlasitost o 1
-<I> Be'h take' zveda' hlasitost o 1 a to v kaz'de'm poli'c'ku na ktere'm hra'c'i promluvili a za kaz'de'ho mluvi'c'ho hra'c'e. Vyjji'mkou jsou hra'c'i mluvi'c' be''hem vy'me''ny.
+<I> Be'h take' zveda' hlasitost o 1 a to na ci'love'm poli'c'ku.
+<I> Mluveni' take' zveda' hlasitost o 1 a to na kaz'de'm poli'c'ku na ktere'm hra'c'i promluvili a za kaz'de'ho mluvi'c'ho hra'c'e. Vyjji'mkou jsou hra'c'i mluvi'c' be''hem akce vy'me''ny.
 <I1>
 
 <C>Budova'ni' mapy
@@ -109,6 +111,16 @@ Vs'ichni hra'c'i hraji' najednou. Kaz'dy' ma' dve' akce a be'hem pla'novaci' fa'
 <I> Pr'ida'ni' novy'ch zombi'ku'.
 <I1>
 
+<C>Karty akce
+<I0>
+<I>Pohyb - Hra'c' se posune do budovy na tomto poli'c'ku a nebo na ulici na sousedni' poli'c'ko. Pokud chce, mu'z'e popobe'hnout, pak tyto pohyby mu'z'e ude'lat dva ale v ci'love'm poli'c'ku zvedne hlasitost o 1.
+<I>Boj - Hra'c' pr'ichysta' past na zombi'ky a do boje toto kolo bude mi't bonus +1.
+<I>Prozkouma'va'ni' - Hra'c' zjisti', jake'jsou pr'edme''ty na tomto poli'c'ku a rozhodne se zda zaloz'i' skry's', necha' si je u sebe, nebo ne'co zahodi'.
+<I>Vy'roba - Hra'c' vyrobi' jednu z ve''ci' co umi'. Nebo co mu nabi'zi' lokace kde je, c'i tr'eba munici pro svou zbran'.
+<I>Skry'va'ni' - Hra'c' zu'stane kde je a ma' s'anci, z'e ho zombi'ci nenajdou (60%), obnovi' si jednu kondici.
+<I>Vy'me'na - Hra'c' se mu'z'e radit a vyme'n'ovat pr'edme'ty s ostatni'mi hra'c'i. Pouz'i'vat pr'edme'ty co ma', ji'st i velke' ji'dlo a tak.
+<I1>
+
 <C>Karty Pr'edme''tu' a nosnost
 Hra'c' ma' urc'itou nosnost. V za'kladu r'ekne'me 5. To znamena' z'e unese 5 maly'ch pr'edme''tu', aniz' by byl pr'eti'z'eny'. Nebo jeden velky' a dva male' pr'edme'ty. Pokud ale bude chti't vzi't cokoliv vi'c tak uz' pr'eti'z'eny' bude. Pr'eti'z'eni' da'va' postih do boje a kaz'de' kolo sniz'uje kondici o jedna. Pr'edme''ty se c'leni' na Za'kladni' a Leps'i' a potom na Ji'dlo, Materia'l, Zbrane'' a vybaveni'. Na zac'a'tku jsou nami'cha'ny na'sleduji'ci' bal'ic'ky (podle druhu budovy):
 <I0>
@@ -119,9 +131,9 @@ Hra'c' ma' urc'itou nosnost. V za'kladu r'ekne'me 5. To znamena' z'e unese 5 mal
 <I1>
 
 <C>Ji'dlo
-Ji'dlo: +1 zdravi', +1 si'la, +3 kondice
+Ji'dlo: +1 zdravi', +1 si'la, +2 kondice
 Ji'dlo V: +1 zdravi', +max kondice
-Ji'dlo X: +2 zdravi', +mx kondice
+Ji'dlo X: +2 zdravi', +max kondice
 
 <C>Materia'l
 Materia'l: na drobne' pra'ce a opravu vybaveni'
@@ -138,4 +150,24 @@ Baterka: +1 k prohleda'va'ni'
 
 <C>Zbrane'
 (u'tok, typ, hlasitost, cena munice, max)
-Kyj: 2x1xx
+Klacek: 1x1xx
+Pa'lka: 2x1xx
+Ostnaty' kyj: 3x1xx
+Prak: 1d1x3
+Luk: 2d0j4
+Kus'e V: 3d0j4
+Pistole V: 3d1m3
+Brokovnice V: 4d2m3
+Mac'eta V: 2x0xx
+Motorova' pila V: 4x2xx
+
+<C>Z'etony
+Je zjevne' z'e pro snadne' hrani' budem potr'ebovat ne''jake' z'etony. Zati'm to vypada' na figurky zombi'ku'... male' asi jako pecic'ky. moz'na' z pecic'ky a dra'tku. Da'l z'etony hlasitosti, na to se mi li'bi' pyramidky s ru'zne' barevny'mi vrcholy. A nakonec z'etony uda'losti', a z'etony skry's'i' a vybrakova'ni' poli'c'ka. Ty jsou vy'ceme'ne'' trvale' takz'e to proted' mu'z'ou by't papi'rove' terc'i'ky.
+
+<C>Kartic'ka postavy
+Postava ma' kartic'ku r'i'kaji'ci' co postava umi'. Za'kladni' informace na kartic'ce jsou
+<I0>
+<I>Zdravi' - Kolik jes'te' zvla'dne za'sahu' od zombi'ku'
+<I>Kondice - Jak dlouho jes'te' vydrz'i' nez' padne u'navou
+<I>Si'la - Kolik ve''ci' unese, nez' je pr'eti'z'ena'
+<I1>
