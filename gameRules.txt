@@ -24,7 +24,7 @@ Nahromadit za'soby na cestu. Vyrobit dopravni' prostr'edek, Uniknout z mapy. Co 
 <C>Zi'ska'va'ni' za'sob
 Za'soby jsou potr'eba aby mohli hra'c'i ta'hnout da'l. Za'roven' se ale take' spotr'ebova'vaji' protoz'e je hra'c' potr'ebuje na uzdravova'ni' a dopln'ova'ni' energie. Za'soby se daji' de''lit podle velikosti:
 <I0>
-<I>Velk'e - Jsou efektivni' pro uskladne''ni' a pouz'iti' na za've''r
+<I>Velke' - Jsou efektivni' pro uskladne''ni' a pouz'iti' na za've''r
 <I>Male' - Jsou snadne''ji pr'enositelne' a tudi'z' efektivne''js'i' pro pohotovostni' spotr'ebu
 <I1>
 Za'soby obecne'' dlouhodobe'' ubi'raji' u'navu a le'c'i' a kra'tkodobe' zvys'uji' bojovou si'lu
@@ -130,36 +130,56 @@ Hra'c' ma' urc'itou nosnost. V za'kladu r'ekne'me 5. To znamena' z'e unese 5 mal
 <I>Materia'l - V ru'zny'ch sluz'ebna'ch a skladis'ti'ch - 0+1J, 10+5M, 2+0Z, 2+0V
 <I1>
 
-<C>Ji'dlo
-Ji'dlo: +1 zdravi', +1 si'la, +2 kondice
-Ji'dlo V: +1 zdravi', +max kondice
-Ji'dlo X: +2 zdravi', +max kondice
+<C>Ji'dlo - Srdce
+<B0> l | c || c | c
+<B>Jme'no & Popis & c'et.1 & c'et.2
+<BL>
+<B>Ji'dlo & +1 zdravi', +1 si'la, +2 kondice & 10 & 0
+<B>Ji'dlo V & +1 zdravi', +max kondice & 0 & 10
+<B>Ji'dlo X & +2 zdravi', +max kondice & 0 & 5
+<B1>
 
-<C>Materia'l
-Materia'l: na drobne' pra'ce a opravu vybaveni'
-Materia'l V: na ve''ts'i' di'la
-Manua'l: na sloz'ite'js'i' pra'ce
-Kniha: na zleps'ova'ni' skilu'
+<C>Materia'l - Zeleny'
+<B0> l | c || c | c
+<B>Jme'no & Popis & c'et.1 & c'et.2
+<BL>
+<B>Materia'l & na drobne' pra'ce a opravu vybaveni' & 10 & 0
+<B>Materia'l V & na ve''ts'i' di'la & 0 & 10
+<B>Manua'l & na sloz'ite'js'i' pra'ce & 3 & 3
+<B>Kniha & na zleps'ova'ni' skilu' & 0 & 2
+<B1>
 
-<C>Vybaveni'
-Prvni' pomoc: +2 zdravi', zme'ni' zrane'ni' na le'c'ene'
-Stimulant: +max kondice, +2 si'la
-Protila'tka: zrus'i otravu
-S'ti't: Da' ne'kolik kol odolnost na kousnuti'
-Baterka: +1 k prohleda'va'ni'
+<C>Vybaveni' - Kule
+<B0> l | c || c | c
+<B>Jme'no & Popis & c'et.1 & c'et.2
+<BL>
+<B>Prvni' pomoc & +2 zdravi', zme'ni' zrane'ni' na le'c'ene' & 10 & 2
+<B>Stimulant & +max kondice, +2 si'la & 5 & 5
+<B>Protila'tka & zrus'i otravu & 5 & 5
+<B>S'ti't & Da' ne'kolik kol odolnost na kousnuti' & 2 & 10
+<B>Baterka & +1 k prohleda'va'ni' & 10 & 0
+<B1>
 
-<C>Zbrane'
-(u'tok, typ, hlasitost, cena munice, max)
-Klacek: 1x1xx
-Pa'lka: 2x1xx
-Ostnaty' kyj: 3x1xx
-Prak: 1d1x3
-Luk: 2d0j4
-Kus'e V: 3d0j4
-Pistole V: 3d1m3
-Brokovnice V: 4d2m3
-Mac'eta V: 2x0xx
-Motorova' pila V: 4x2xx
+<C>Zbrane'' - Ka'ry
+Zbrane'' jsou urc'eny k boji, lis'i' se u''c'inosti', hlasitosti' a poc'tem munice.
+<B0> l | c | c | c | c | c || c | c
+<B> Jme'no & u''tok & typ & hlas.& cena m. & max m. & c'et.1 & c'et.2
+<BL>
+<BL>
+<B> Klacek & 1 & x & 1 & x & x & 10 & 0
+<B> Pa'lka & 2 & x & 1 & x & x & 8 & 0
+<B> Ostnaty' kyj (V) & 3 & x & 1 & x & x & 4 & 0
+<BL>
+<B> Prak & 1 & d & 1 & x & 3 & 8 & 0
+<B> Luk (V) & 2 & d & 0 & j & 4 & 1 & 5
+<B> Kus'e (V) & 3 & d & 0 & j & 4 & 0 & 4
+<BL>
+<B> Pistole & 3 & d & 1 & m & 3 & 1 & 5
+<B> Brokovnice (V) & 4 & d & 2 & m & 3 & 0 & 3
+<BL>
+<B> Mac'eta (V) & 2 & x & 0 & x & x & 1 & 3
+<B> Motorova' pila (V) & 4 & x & 2 & x & x & 0 & 2
+<B1>
 
 <C>Z'etony
 Je zjevne' z'e pro snadne' hrani' budem potr'ebovat ne''jake' z'etony. Zati'm to vypada' na figurky zombi'ku'... male' asi jako pecic'ky. moz'na' z pecic'ky a dra'tku. Da'l z'etony hlasitosti, na to se mi li'bi' pyramidky s ru'zne' barevny'mi vrcholy. A nakonec z'etony uda'losti', a z'etony skry's'i' a vybrakova'ni' poli'c'ka. Ty jsou vy'ceme'ne'' trvale' takz'e to proted' mu'z'ou by't papi'rove' terc'i'ky.
@@ -171,3 +191,6 @@ Postava ma' kartic'ku r'i'kaji'ci' co postava umi'. Za'kladni' informace na kart
 <I>Kondice - Jak dlouho jes'te' vydrz'i' nez' padne u'navou
 <I>Si'la - Kolik ve''ci' unese, nez' je pr'eti'z'ena'
 <I1>
+
+<C>Mapova'ni' karet
+V za'kladu se na'm nechce vyra'be't kartic'ky, pojd'me tedy vymystet mapova'ni'. Za'klad je asi urc'it, kolik ktery'ch kartic'ek vlastne'' chceme mi't. Ma'me 4 kategorie kartic'ek: Ji'dlo, Materia'l, Vybaveni' a Zbrane'. U kaz'de' z nich ma'me be''z'ne' a vza'cne' tipy. Takz'e r'ekne'me z'e to namapujem na hraci' karty a c'etnosti zkusi'me da't pr'i'mo do tabulek ve'ci'

@@ -125,6 +125,8 @@ for line in lines:
     text = expandCzechLetters(line)
     if(line[0]=='<'):
         text = expandCzechLetters(line[3:])
+        if(line[3] == '>'):
+            text = expandCzechLetters(line[4:])
         if(line[1]=='T'):
             writeLine(f,0,'\\title{'+text+'}')
             writeLine(f,0,'\\date{2013-09-01}')
@@ -141,6 +143,17 @@ for line in lines:
             	writeLine(f,2,'\\end{itemize}')
             else:
             	writeLine(f,3,'\\item '+text)
+        elif(line[1]=='B'):
+            if(line[2]=='0'):
+            	writeLine(f,2,'\\begin{center}')
+            	writeLine(f,3,'\\begin{tabular}{'+text+'}')
+            elif(line[2]=='1'):
+            	writeLine(f,3,'\\end{tabular}')
+            	writeLine(f,2,'\\end{center}')
+            elif(line[2]=='L'):
+            	writeLine(f,4,'\\hline')
+            else:
+            	writeLine(f,4,text+'\\\\')
         else:
             printWarning('Strange LINE: '+line+', unknown tag')
             writeLine(f,2,text)
