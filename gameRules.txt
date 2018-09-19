@@ -71,6 +71,13 @@ Ma' napsa'no kolik na'boju' vystr'eli' nez' se zombi'ci dostanou na bli'zko. Ma'
 <C>Zbran' na bli'zko
 Ma' napsa'no kolik zrane''ni' da' a o kolik sni'z'i' nepr'a'telskou odezvu. Mu'z'e mi't i dodatec'ne' vlastnosti.
 
+<C>Passivni' a aktivni' zombi'ci
+Na mape'' jsou dva druhy nepr'a'tel, ti nakresleni' (passivni') a ti zobrazeni' figurkou (aktivni')
+<I0>
+<I>Passivni' zombi'ci nikdy neopous'ti' budovu, nikdy nevyvola'vaji' boj ale vz'dy se zapoji' do boje pokud v budove'' vznikne
+<I>Aktivni' zombi'ci v budove'' pr'ibi'vaji' pokaz'de' kdyz' je v okoli' (nejda'le na sousedni'm poli'c'ku a to i diagona'lne'') hra'c'. Jejich max. mnoz'stvi' v budove'' je 5, pak uz' dals'i' nepr'iby'vaji'. Mu'z'ou se ale sebe''hnout a pak jich mu'z'e by't i vi'c. Vz'dy se pohybuji'vs'ichni najednou a pokud je gradient zvuku na'hodou nerozhodny' tak proste'' stoji' a c'ekaji'.
+<I1>
+
 <C>Pru'be''h souboje
 K boji docha'zi' pokud jsou hra'c'i a zombi'ci na stejne'm poli'c'ku a hra'c'i nemaji' pr'ed bojem ne'jakou ochranu. Zhodnoti' se kolik hra'c'u' na tom poli'c'ku v ten moment bojuje. Vyloz'i' sve' zbrane' a vyleps'eni'. Rozde'li' si nepr'a'tele. Nejprve ti co bojuji' na da'lku. Kdy'z u'z nestr'i'li' na da'lku, mu'z'ou se pr'idat i zbrane'' na bli'zko.
 <I0>
@@ -110,6 +117,15 @@ Vs'ichni hra'c'i hraji' najednou. Kaz'dy' ma' dve' akce a be'hem pla'novaci' fa'
 <I> Odehra'ni' boju'.
 <I> Pr'ida'ni' novy'ch zombi'ku'.
 <I1>
+
+<C>Pohyb po mape''
+Hra'c'ova figurka mu'z'e by't na mape' na na'sleduji'ci'ch pozici'ch. Pokud figurka chce, mu'z'e tis'e pr'eji't o jeden krok. Pokud je nutne', mu'z'e take' vyignorovat bezpec'nost a pr'ebe''hnout o 2 kroky. Kaz'da' budova ma' dver'e, ty jsou na poli'c'ku, s popisky. V za'kladu nejde do budovy vstoupit jinudy nez' pr'es tohle poli'c'ko.
+<B0> p{2cm} | p{4cm} | p{4cm}
+<B> Poloha & Boj s & Kam da'l
+<BL>
+<B> V budove'' & pasivni' i aktivni' zombi'ci & Jde ji't ven na kteroukoliv ulici u vchodu
+<B> Na ulici mezi dve''ma budovami & pouze aktivni' zombi'ci z obou budov & Jde ji't na sousedni' ulici, nebo do budovy
+<B1>
 
 <C>Karty akce
 <I0>
@@ -158,6 +174,8 @@ Hra'c' ma' urc'itou nosnost. V za'kladu r'ekne'me 5. To znamena' z'e unese 5 mal
 <B>Protila'tka & zrus'i otravu & 5 & 5 & &
 <B>S'ti't & Da' ne'kolik kol odolnost na kousnuti' & 2 & 10 & &
 <B>Baterka & +1 k prohleda'va'ni' & 10 & 0 & &
+<B>Vysi'lac''ka & komunikace na da'lku & 1 & 2 & &
+<B>Na'r'adi' & sniz'uje cenu vy'roby & 4 & 1 & &
 <B1>
 
 <C>Zbrane'' - Ka'ry
@@ -187,9 +205,17 @@ Je zjevne' z'e pro snadne' hrani' budem potr'ebovat ne''jake' z'etony. Zati'm to
 <C>Kartic'ka postavy
 Postava ma' kartic'ku r'i'kaji'ci' co postava umi'. Za'kladni' informace na kartic'ce jsou
 <I0>
-<I>Zdravi' - Kolik jes'te' zvla'dne za'sahu' od zombi'ku'
-<I>Kondice - Jak dlouho jes'te' vydrz'i' nez' padne u'navou
-<I>Si'la - Kolik ve''ci' unese, nez' je pr'eti'z'ena'
+<I>Zdravi' (6) - Kolik jes'te' zvla'dne za'sahu' od zombi'ku'
+<I>Kondice (6) - Jak dlouho jes'te' vydrz'i' nez' padne u'navou
+<I>Si'la (5) - Kolik ve''ci' unese, nez' je pr'eti'z'ena'
+<I1>
+
+<C>Role hra'c'u'
+Jsou urc'ene' k tomu aby ozvla's'tnili hru. Pr'ida'vaji' hra'c'i ne''jaku dovednost, ale me'ni' mu staty.
+<I0>
+<I>Pru'zkumni'k - Doka'z'e be''zet potichu, -1 zdravi', -1 si'la
+<I>Bojovni'k - -1 Prohleda'va'ni' - +1 boj, +1 zdravi' +1 kondice
+<I>Mechanik - Ma' tas'ku s na'r'adi'm, hned od zac'a'tku a nezabi'ra' mu mi'sto, -1 zdravi', -1 kondice
 <I1>
 
 <C>Mapova'ni' karet
@@ -198,7 +224,7 @@ V za'kladu se na'm nechce vyra'be't kartic'ky, pojd'me tedy vymystet mapova'ni'.
 <C>Karty uda'losti'
 Na zac'a'tku kaz'de'ho kola se otoc'i' jedna karta, urc'uji'ci' co pu'jde hu'r' tohle kolo. Obecne' jsou karty nic, nebo s'kodive'. Pro zac'a'tek bych nic r'es'il kostkou s ne'jakou s'anci' z'e je ne'co s'patne''. V budoucnu bychom mohli tr'eba ude''lat i denni' pru'be''h, kdy na zac'a'tku bude vs'e v pohode'' a be''hem dne se ta s'ance na uda'lost bude proste'' zvys'ovat.
 
-<B0> l | c || c
+<B0> l | p{8cm} || c
 <B> Jme'no & Efekt & c'etnost
 <BL>
 <B> Hluk & +1 zvuk pr'i pohybu &
@@ -219,8 +245,20 @@ Aby hra'c' vyhra'l hru, musi' mimo jine' opustit me''sto. To znamena' sehnat dop
 <BL>
 <B> Kola & 3x naji't + okraj & 3x Maly' Materia'l
 <B> Motorky & 2x naji't + okraj & 4x Maly' Materia'l
-<B> Auto & 1x naji't + okraj & 2x Velky' Materia'l
+<B> Auto & 1x naji't + okraj & 2x Velky' Materia'l + manua'l
 <B> Vor & naji't libovolnou vodu & 2x Velky' Materia'l
 <B> Kone'' & 1x naji't & 10x Jake'koliv Ji'dlo
-<B> Vrtulni'k & 1x naji't & 4x Velky' Materia'l
+<B> Vrtulni'k & 1x naji't & 4x Velky' Materia'l + manua'l
+<B1>
+
+<C>Vy'roba
+Pokud hra'c' chce, mu'z'e postavit/vyrobit ve''ci, ktere' potr'ebuje k postupu. K tomu je akce vy'roby.
+Vy'roba mu'z'e by't s na'r'adi'm nebo bez. A jsou vy'roby, ktere' potr'ebuji' manua'l. Pokud hra'c' nema' na'r'adi', je vy'roba vz'dy o 2 male' materia'ly draz's'i'. Pokud potr'ebuje manua'l a nema' ho, nemu'z'e ve''c vyrobit. Vy'roba mu'z'e by't mala' a velka'. Pokud je vy'roba velka' pak ma' hluk +1.
+
+<B0> p{2cm} | c | p{8cm}
+<B> Jme'no & Cena & Pouz'iti'
+<BL>
+<B> Munice & Na kartic'ce & Pr'ida' jednu da'vku munice navi'c
+<B> Dopravni' prostr'edek V & Na kartic'ce & Zprovozni' dopravni' prostr'edek pro opus'te''ni' me''sta
+<B> Barika'da V & 2 VM & Opevni' budovu a pr'ida' do kaz'de'ho boje kaz'de'mu hra'c'i +1 Boj na bli'zko.
 <B1>

@@ -117,9 +117,12 @@ def expandWildchars( lst0, lstFull ):
 print('\n--> gameRules.tex')
 lines = getLinesInFiles('gameRules.txt')
 f = open('gameRules.tex','w')
-writeLine(f,0,'\\documentclass{article}')
+writeLine(f,0,'\\documentclass[a4paper]{article}')
+writeLine(f,0,'\\usepackage[a4paper]{geometry}')
 writeLine(f,0,'\\usepackage[czech]{babel}')
 writeLine(f,0,'\\usepackage[utf8]{inputenc}')
+
+writeLine(f,0,'\\renewcommand{\\arraystretch}{1.5}')
 writeLine(f,0,'')
 for line in lines:
     text = expandCzechLetters(line)
@@ -146,7 +149,7 @@ for line in lines:
         elif(line[1]=='B'):
             if(line[2]=='0'):
             	writeLine(f,2,'\\begin{center}')
-            	writeLine(f,3,'\\begin{tabular}{'+text+'}')
+            	writeLine(f,3,'\\begin{tabular}{ '+text+' }')
             elif(line[2]=='1'):
             	writeLine(f,3,'\\end{tabular}')
             	writeLine(f,2,'\\end{center}')
