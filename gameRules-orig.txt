@@ -262,3 +262,34 @@ Vy'roba mu'z'e by't s na'r'adi'm nebo bez. A jsou vy'roby, ktere' potr'ebuji' ma
 <B> Dopravni' prostr'edek V & Na kartic'ce & Zprovozni' dopravni' prostr'edek pro opus'te''ni' me''sta
 <B> Barika'da V & 2 VM & Opevni' budovu a pr'ida' do kaz'de'ho boje kaz'de'mu hra'c'i +1 Boj na bli'zko.
 <B1>
+
+<C>Prohleda'va'ni' verze 2
+Ci'l je le'pe zapracovat pr'a'ni' hra'c'e do jeho prohleda'vaci'ch moz'nosti'. Budova ve ktere' se nacha'zi' mu'z'e mi't na sobe'' z'etony ktere' ovlivn'uji' co jde naji't a co uz' se nas'lo.
+<I0>
+<I>Bez z'etonu' - Takova' jes'te'' nebyla prohleda'vana' a vs'echno prohleda'va'ni' je na ni' k dispozici.
+<I>1 Z'eton - V te'hle uz' se prohleda'valo, uz' v ni' nejde hledat vza'cne' ve'ci, leda be''z'ne', nebo kontrolovat, zda v ni' je dopravni' prostr'edek.
+<I>2 Z'etony - Tahle budova je uz' kompletne'' prohledana'. Uz' ji' jde tak maxima'lne'' zkontrolovat zda v ni' je c'i neni' dopravni' prostr'edek.
+<I>Z'eton dopravni'ho prostr'edku - Ukazuje, jak na tom tahle budova z hlediska dopravni'ho prostr'edku je.
+<I1>
+Prohleda'va'ni' funguje tak, z'e je to jedina' akce a az' pr'i vyhodnocova'ni' akci' si hra'c' vybi'ra' co vlastne' chce hledat. Na karte'' budovy je napsa'no, jak dobra' budova na prohleda'va'ni' je.
+<I0>
+<I>Typ vza'cne'ho na'lezu - Co jde v budove'' naji't jako vza'cny' na'lez
+<I>Typ dopravni'ho prostr'edku - Co jde v budove'' naji't jako dopravni' prostr'edek.
+<I>Bonus na prohleda'va'ni' - Bonus/Postih ktery' se pouz'ije pr'i hodu na na'lez.
+<I1>
+<C>Hod na be''z'ny' na'lez
+Hra'c' hodi' kostkou na nalezeni' a pr'ic'te k ni' bonus z karty.
+<I0>
+<I>Pokud je na kostce 1 nic nenas'el a na budovu pr'ida' z'eton selha'ni'.
+<I>Pokud na kostce nebyla 1 ale po odec'teni' bonusu (pokud byl za'porny') to bude 1 c'i me'ne'' sta'le hleda'ni' selhalo a pr'ida' se z'eton
+<I>Pokud je souc'et 2-5 veyme si hra'c' kartu z pr'i'slus'ne' be'z'ne' hroma'dky (Ji'dlo, Materia'l, Vybaveni', Zbran')
+<I>Pokud je souc'et 6 a vi'c, bude si bra't z hroma'dky leps'i'ch ve'ci' a ze ktere' urc'i' dals'i'm hodem kostkou. Bez pr'ic'i'ta'ni' bonusu, kde 1 a 6 nebude nic.
+<I1>
+<C>Hod na mi'stni' na'lez
+Hra'c' hodi' kostkou na nalezeni'.
+<I0>
+<I>Padne-li 1-2 nenas'el nic a pr'ida' na budovu z'eton selha'ni'.
+<I>Padne-li 3-4 vezme si be''z'ny' pr'edme''t z hroma'dky dle toho co je napsa'no z'e se tu ma' naji't.
+<I>Padne-li 5-6 vezme si vza'cny' pr'edme''t a pr'ida' z'eton selha'ni'.
+<C>Hod na dopravni' prostr'edek
+Ci'l je zjistit, co tu je. A ner'i'ct to ostatni'm. Jake' dopravni' prostr'edky jde v budove'' naji't je na budove'' napsane'. Hodi' se kostkou. Pokud je jen jeden, je s'ance na nalezeni' 4-6, pokud dva, je to 3-4 pro prvni' a 5-6 pro druhy'. Vy'sledek hodu se zaznamena' umi'ste''ni'm z'etonu na'lezu na kartu. Z'eton se da'va' li'cem dolu' at' neni' vide''t co na ne''m je. Z'eton s X znamena' z'a'dny' na'lez, z'eton s c'i'slem pr'i'slus'ny' dopravni' prostr'edek, 1 nebo 2.

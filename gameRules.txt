@@ -1,19 +1,119 @@
 <T>Zombie Country
 Kooperac'ni' hra, zaloz'ena' na sce'na'r'i'ch. Najde''te si svoji' cestu zombie apocalypsou.
 
+<C>Motivace
+Tato kooperac'ni' hra ma' splnit na'sleduji'ci' parametry. Me''la bz se skla'dat z maly'ch misi' mezi ktery'mi si hra'c'i pr'ena's'eji' postavy, dovednosti a ne''ktere' vybaveni'. Celkova' hra se pak r'i'di' sce'na'r'em, ktery' r'i'ka' jaka' je na'sleduji'ci' mise, co k ni' vede (legenda) a jake' jsou jeji' parametry a odme''ny. Hra mu''z'e postupne'' pr'ida'vat herni' prvky, jako jsou sloz'ite''js'i' u'koly, dodatec'na' pravidla, nebo komplikovane''js'i' nepr'a'tele'. A to podle toho, jak se budou hra'c'i zleps'ovat a jak se budou zleps'ovat dovenosti jejich postav.
+
+<C>Obecne' principy
+Ne'ktere' principy plati' pro vs'echny druhy misi'.
+
+<C1>Prohra a pr'ez'iti'
+Kaz'da' mise pu''jde nejenom vyhra't a nebo prohra't, ale take' pu''jde pr'ez'it. Pokud hra'c'i misi pouze pr'ez'iji', mohou se uzdravit a o misi se pokusit znovu. V plne' kampani bude u kaz'de' mise da'no, kolikra't se o ni' mohou hra'c'i pokusit.
+
+<C1>Postavy
+Hra'c'i hraji' za jednotlive' postavy. Kaz'da' postava se lis'i' charakteristikami a dovednostmi.
+Charakteristiky postavy jsou v za'kladu:
+<I0>
+<I>Zdravi' (6) - Kolik jes'te' zvla'dne za'sahu'' od zombi'ku''
+<I>Kondice (6) - Jak dlouho jes'te' vydrz'i' nez' padne u'navou - mu''z'e by't nula, ale pak nemu''z'e de''lat nic co stoji' u'navu
+<I>Si'la (5) - Kolik ve''ci' unese, nez' je pr'eti'z'ena' - postava, ktera' je pr'eti'z'ena' ztra'ci' jednu kondici kaz'de' kolo.
+<I1>
+
+<C2>Role hra'c'u''
+Pr'ida'vaji' hra'c'i ne''jakou dovednost, ale me'ni' mu staty. Umoz'n'uje dals'i' diverzifikaci hry.
+<I0>
+<I>Pru''zkumni'k - Doka'z'e be''zet potichu, -1 zdravi', -1 si'la
+<I>Bojovni'k - -1 Prohleda'va'ni' - +1 boj, +1 zdravi' +1 kondice
+<I>Mechanik - Ma' tas'ku s na'r'adi'm, hned od zac'a'tku a nezabi'ra' mu mi'sto, -1 zdravi', -1 kondice
+<I1>
+
+<C1>Budova'ni' mapy
+Poli'c'ko mapy je c'tverec a pr'edstavuje budovu nebo jeji' c'a'st. Sousedi' s ostatni'mi poli'c'ky bud' silnici' ktera' be''z'i' po jeho hrane'' a nebo zd'i' pokud je to c'a'st ve''ts'i' budovy.
+<I0>
+<I>Ma' na sobe'' 5 segmentu'' - chli'vku''. Centra'lni' s popisky co na poli'c'ku je a pak 4 po strana'ch kam se da'va' to co pu''jde pr'i's'te'' ti'm sme''rem na sousedni' poli'c'ko.
+<I>Poli'c'ko popisuje jake' pr'edme''ty a kolik se na ne''m daji' naji't. To je urc'eno pi'smenem (+xA) a bonusem na prohleda'va'ni'.
+<I>Take' je na ne'm napsa'no, kolik zombi'ku'' je na poli'c'ku instantne'' a kolik se jich kaz'de' kolo novy'ch narodi' (I/+n).
+<I>Lez'i' na ne''m z'etony oznac'uji'ci' stav poli'c'ka - Z'etony uda'losti', z'etony prohleda'ni' a z'eton skry's'e.
+<I>Stoji' na ne''m figurky hra'c'u'', zombi'ku'' a dals'i'ch NPC.
+<I1>
+
+<C1>Odkry'va'ni' mapy
+Pokud se hra'c'i pohybuji' po mape'' odkry'vaji' postupne'' jeji' di'lky. Nove' kusy mapy se odkry'vaji' okamz'ite' jakmile je splne''na podmi'nka odkryti'. Odkryti' znamena' z'e se ta'hne nova' kostic'ka budovy a ten hra'c' ktery' prvni' splnil podmi'nku odkryti' dane'ho di'lku mapy vybere jak ji' na pla'n poloz'i'. Pokud je budova souc'a'sti' ve''ts'i' budovy zabi'raji'ci' vi'cero poli'c'ek, ihned se vezme pr'i'slus'na' dopln'kova' kostic'ka a take' se umi'sti'. Pokud tam tuto dopln'kovou kostic'ku nejde umi'stit, mi'sto pu''vodni' kostic'ky budovy se tam da' jeji' druha' strana s parkem. Podmi'nky odkryti':
+<I0>
+<I>Poli'c'ko mapy se odkry'va' pokud ne''jaky' hra'c' procha'zi' nebo dos'el na hranu tohoto poli'c'ka
+<I>Poli'c'ko se take' odkry'va' pokud na ulici, ktera' konc'i' na rohu tohoto poli'c'ka dal ne'jaky' hra'c' akci prohleda'va'ni' = rozhli'z'eni'
+<I>Dovednosti a pr'edme''ty mohou take' vyvolat odkryti' poli'c'ka
+<I1>
+
+<C1>Na zac'a'tku hry
+Na zac'a'tku hra'c'i zpravidla stoji' na kraji me''sta, na ulici pr'ed prvni' budovou, kde za nima je divoc'ina. Tento kraj mapy se ta'hne rovne'' doleva i doprava do nekonec'na. Kaz'dy' sce'na'r' r'i'ka', co maji' hra'c'i do zac'a'tku za vybaveni' a jake' jsou jejich u'koly. Take' jaky'mi pravidly se r'i'di' karty uda'losti' a jaka' jsou omezeni' mapy.
+<C2>Pr'i'pravne' kroky
+Pr'ed hrou je potr'eba pr'ipravit herni' plochu. To se hodne'' lis'i' v za'vislosti na konkre'tni' misi, ale v za'kladu je potr'eba:
+<I0>
+<I>Pr'ipravit si kartu mise, aby bylo jasne' na co jsou jake' pravde''podobnosti
+<I>Pr'ipravit karty hra'c'u'' a da't jim pla'novane' vybaveni' a z'etony skry's'i'
+<I>Pr'ipravit hroma'dku budov me''sta a zami'chat do ni' na'hodne'' vybrane' specia'lni' budovy
+<I>Pr'ipravit hroma'dku karet uda'losti' a da't je vedle hraci' plochy
+<I>Pr'ipravit hroma'dky karet pr'edme''tu'
+<I1>
+
+<C1>Princip hlasitosti
+Kaz'de' poli'c'ko mapy ma' hlasitost, urc'enou z'etonem (kostkou). Z'a'dny' z'eton znamena' hlasitost 0. Hlasitost klesa' na kaz'de'm poli'c'ku o jedna na zac'a'tku kaz'de'ho kola. Hlasitost stoupa' podle uda'losti a podle akci' hra'c'u'. Gradient hlasitosti je maxima'lne' 1. Pokud je tedy ne'kde z'eton s hlasitosti' 3, na sousedni'ch 4 poli'c'ka'ch nemu'z'e by't hlasitost niz's'i' nez' 2. Z'eton hlasitosti se umist'uje jen na poli'c'ko ktere' hluk zpu''sobilo. S'i'r'eni' hluku do okoli' se dopoc'i'ta'va' ale specia'lni' z'eton se tam uz' neda'va'. Hlasitost je du''lez'ita' k urc'eni', kam se pohybuji' pr'i'padni' zombi'ci (C'i ostatni' nepr'a'tele'). Pokud je hluk v budove'' ktera' ma' vi'c nez' jedno poli'c'ko, poc'i'ta' se, jako by byla stejna' hlasitost na vs'ech poli'c'ka'ch budovy. Hluk se budovou nese.
+
+<C1>Kolo hry
+Ka'zde' kolo hry ma' ne''kolik fa'zi'. Ne'ktere' fa'ze jsou spolec'ne' a jine' se zase hraji' individua'lne''.
+<I0>
+<I> Taz'eni' uda'losti (Spolec'ne'')
+<I> Posunuti' zombi'ku'' (Spolec'ne'')
+<I> Sni'z'eni' hlasitosti (Spolec'ne'')
+<I> Napla'nova'ni' akci' (Tajne'' najednou)
+<I> Odehra'ni' akci' (Postupne'', omezene' domlouva'ni')
+<I> Odehra'ni' boju'' (Spolec'ne'')
+<I> Pr'ida'ni' novy'ch zombi'ku'' (Spolec'ne'')
+<I1>
+
+<C2> Taz'eni' uda'losti (Spolec'ne'')
+V te'to fa'zi hra'c'i hodi' kostkou aby zjistili, jestli se stala ne''jaka' uda'lost. Pokud ano, ta'hnou kartu uda'losti a pr'ec'tou si, co se stalo, nebo co plati' toto kolo.
+
+<C2> Posunuti' zombi'ku'' (Spolec'ne'')
+Vs'ichni toulavi' zombi'ci na mape' se posunou, pokud je v okoli' poli'c'ka na ktere'm stoji' (rovnobe''z'ne'', nikoliv diagona'lne'') poli'c'ko s vys's'i' hlasitosti'. De''la' se to tak, z'e hra'c'i spolu postupne'' zkontroluji' vs'echna poli'c'ka na mape'' na ktery'ch stoji' zombi'ci. Pokud:
+<I0>
+<I>Je jedno poli'c'ko v okoli' ktere' ma' nejvys's'i' hlasitost vys's'i' nez' nas'e poli'c'ko, posunou vs'echny zombi'ky na krajni' segment poli'c'ka sme''rem k tomuto hlasite'mu poli'c'ku
+<I>Ve vs'ech ostatni'ch pr'i'padech nechaji' zombi'ky na ne'm v prostr'edku poli'c'ka
+<I1>
+Kdyz' takto je cela' mapa pr'ipravena' na pr'esun, projdou ji hra'c'i znovu a zombi'ky z okrajovy'ch kusu' poli'c'ek proste'' jen pr'esunou napla'novany'm sme''rem. Pa'r pozna'mek:
+<I0>
+<I>Neni' moz'ne' aby se pr'esouvala z poli'c'ka jen c'a'st zombi'ku''. Pokud se ne''kam z poli'c'ka pohne jeden, jdou vs'ichni.
+<I>Neni' moz'ne' aby se zombi'ci rozde''lili. pokud je v okoli' vi'cero nejhlasite''js'i'ch sousedni'ch poli'c'ek, zombi'ci jsou zmateni' a nikam nejdou.
+<I1>
+
+<C2> Sni'z'eni' hlasitosti (Spolec'ne'')
+Na vs'ech kostka'ch hluku na mape'' se sni'z'i' hlasitost o jedna. Kostky, kde uz' byla hlasitost nejniz's'i' se odstrani' u'plne''.
+
+<C2> Napla'nova'ni' akci' (Tajne'' najednou)
+Ted' si hra'c'i napla'nuji' co chte''ji' toto kolo de''lat. K tomu slouz'i' sada z'etonu' kterou ma' kaz'dy' hra'c' k dispozici. Z ni' vybere sve' a'z dva z'etony akci'.
+<I0>
+<I>Pokud hra'c' nevybere z'a'dny' z'eton, toto kolo odpoc'i'va'. Nelze to jiz' zme''nit.
+<I>Pokud hra'c' vybere jen jeden z'eton, r'i'ka' ti'm, z'e se te' c'innosti chce ve'novat naplno. Chce ji' prove'st dvakra't, nebo jednou s bonusem +1 (Vysve''tleno u jednotlivy'ch akci'). Mu'z'e se provedeni' akce take' operativne'' vzda't, ale nebude se to povaz'ovat za odpoc'inek.
+<I>Pokud hra'c' vybere dve'' akce, sa'm si pak bude operativne'' vybi'rat, kterou provede jako prvni' a kterou jako druhou. Mu''z'e se take' operativne'' rozhodnout jedne' nebo obou vzda't, ale nebude se mu to poc'i'tat jako soustr'ede''ni', ani jako odpoc'inek. Vybrane' akce take' urc'i' iniciativu - vervu s jakou se hra'c' pustil do akce. Ti'm se urc'i' kdo hraje prvni' a kdo druhy'. V pr'i'pade'' shody se to na'sledne'' rozhodne kostkou.
+<I1>
+<C2> Odehra'ni' akci' (Postupne'', omezene' domlouva'ni')
+V te'to fa'zi hry hra'c'i postupne'' od zac'i'naji'ci'ho hra'c'e
+<C2> Odehra'ni' boju'' (Spolec'ne'')
+<C2> Pr'ida'ni' novy'ch zombi'ku'' (Spolec'ne'')
+
+Vs'ichni hra'c'i hraji' najednou. Kaz'dy' ma' dve' akce a be'hem pla'novaci' fa'ze se hra'c'i nemu''z'ou domlouvat co kdo chce de'lat. C'as na domluvu nastane az' kdyz' sve' akce odkryji'.
+
+
+<C1>Souboj
+
 <C>Za'kladni' hra
 Za'kladni' hra je urc'ena' k tomu, aby se hra'c'i nauc'ili herni' mechanizmy a pro testova'ni'. Pro plnou hru i pro uc'eni' v budoucnu budou pouz'i'va'ny jine' jednoduche' sce'na'r'e.
 
-<C>Ci'l hry
-Nahromadit za'soby na cestu. Vyrobit dopravni' prostr'edek, Obstarat si mapu a uniknout z mapy. A co je nejdu'lez'ite''js'i', stihnout to, nez' pr'ijde noc.
-
-<C>Postavy
-Hra'c'i hraji' za jednotlive' postavy. Kaz'da' postava se lis'i' charakteristikami a dovednostmi.
-Charakteristiky postavy jsou:
+<C1>Ci'l hry
+Pro pr'ez'iti' jako ve''ts'inou stac'i' nahromadit za'soby na cestu. Pro vi'te'zstvi' je potr'eba jes'te' vyrobit dopravni' prostr'edek a uniknout z mapy. A co je nejdu'lez'ite''js'i', stihnout to, nez' pr'ijde noc.
 <I0>
-<I>Zdravi' (6) - Kolik jes'te' zvla'dne za'sahu' od zombi'ku'
-<I>Kondice (6) - Jak dlouho jes'te' vydrz'i' nez' padne u'navou
-<I>Si'la (5) - Kolik ve''ci' unese, nez' je pr'eti'z'ena'
+<I>Pr'ez'iti' - Zi'skat tolik velky'ch ji'del, kolik je hra'c'u''
+<I>Vi'te''zstvi' - Splnit u'kol odjezd, c'etnost 1/3
+<I>Omezeni' - Stihnout vs'e pr'ed za'padem slunce - Max 20 tahu''
 <I1>
-
-<C>Mapa a pru'zkum

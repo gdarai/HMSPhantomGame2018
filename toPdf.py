@@ -63,9 +63,9 @@ def expandCzechLetters(line):
     line = re.sub(r"S\'","Š", line)
     line = re.sub(r"t\'","ť", line)
     line = re.sub(r"T\'","Ť", line)
-    line = re.sub(r"u\'\'","ú", line)
-    line = re.sub(r"U\'\'","Ú", line)
-    line = re.sub(r"u\'","ů", line)
+    line = re.sub(r"u\'\'","ů", line)
+    line = re.sub(r"u\'","ú", line)
+    line = re.sub(r"U\'","Ú", line)
     line = re.sub(r"y\'","ý", line)
     line = re.sub(r"Y\'","Ý", line)
     line = re.sub(r"z\'","ž", line)
@@ -138,7 +138,12 @@ for line in lines:
             writeLine(f,0,'\\begin{document}')
             writeLine(f,1,'\\maketitle')
         elif(line[1]=='C'):
-            writeLine(f,1,'\\section{'+text+'}')
+            if(line[2]=='1'):
+            	writeLine(f,1,'\\subsection{'+text+'}')
+            elif(line[2]=='2'):
+            	writeLine(f,1,'\\subsubsection{'+text+'}')
+            else:
+            	writeLine(f,1,'\\section{'+text+'}')
         elif(line[1]=='I'):
             if(line[2]=='0'):
             	writeLine(f,2,'\\begin{itemize}')
