@@ -20,7 +20,7 @@ Charakteristiky postavy jsou v za'kladu:
 <I1>
 
 <C2>Role hra'c'u''
-Pr'ida'vaji' hra'c'i ne''jakou dovednost, ale me'ni' mu staty. Umoz'n'uje dals'i' diverzifikaci hry.
+Pr'ida'vaji' hra'c'i ne''jakou dovednost, ale me'ni' mu staty. Umoz'n'uje dals'i' diverzifikaci hry. V budoucnu je moz'ne' podmi'nit ne'jake' dovednosti, konkre'tni' roli'. Vs'echny kampane'' by ale me''ly by't neza'visle' na tom, jake' role si hra'c'i vyberou. V pr'i'pade'' z'e budem chti't jednoho hra'c'e mi't specia'lni'ho, neude''la' se to roli' ale ne''jaky'm dodatec'ny'm odzna'c'kem.
 <I0>
 <I>Pru''zkumni'k - Doka'z'e be''zet potichu, -1 zdravi', -1 si'la
 <I>Bojovni'k - -1 Prohleda'va'ni' - +1 boj, +1 zdravi' +1 kondice
@@ -28,37 +28,74 @@ Pr'ida'vaji' hra'c'i ne''jakou dovednost, ale me'ni' mu staty. Umoz'n'uje dals'i
 <I1>
 
 <C1>Budova'ni' mapy
-Poli'c'ko mapy je c'tverec a pr'edstavuje budovu nebo jeji' c'a'st. Sousedi' s ostatni'mi poli'c'ky bud' silnici' ktera' be''z'i' po jeho hrane'' a nebo zd'i' pokud je to c'a'st ve''ts'i' budovy.
+Mapa po ktere' hra'c'i jdou je me''sto pr'i pohledu z boku. Mapa se skla'da' z karet. Kaz'da' karta pr'edstavuje budovu. Pokaz'de' kdyz' ne''jaky' hra'c' dojde na kraj mapy, ihned se ta'hne a poloz'i' nova' karta, takz'e vz'dycky vi'me, co je pr'ed na'ma pr'edti'm nez' tam vlezeme. Ma'me vi'cero hroma'dek, ze ktery'ch mu''z'eme ta'hnout dals'i' budovu. Kaz'de' me'sto (mise) ma' napsa' pravidla, jak dlouhe' ma' pr'edme'sti' a malome''sto. Pokud jiz' na stole lez'i' dost otoc'eny'ch karet pr'edme''sti', bere se da'l malome''sto, pokud uz'jste skrz malome''sto, vstoupi'te do centa. Da'l konstrukci mapy ovlivn'uji': Rozsah budovy a Kr'iz'ovatky.
+
+Poli'c'ko mapy je tedy karta. Pr'edstavuje kus ulice, na ktere' hra'c'i stoji'. Je u ni' jasne', ktera' karta je dals'i' (sme''rem k centru) a ktera' pr'edchozi'.Je na ni' napsa'no:
 <I0>
-<I>Ma' na sobe'' 5 segmentu'' - chli'vku''. Centra'lni' s popisky co na poli'c'ku je a pak 4 po strana'ch kam se da'va' to co pu''jde pr'i's'te'' ti'm sme''rem na sousedni' poli'c'ko.
-<I>Poli'c'ko popisuje jake' pr'edme''ty a kolik se na ne''m daji' naji't. To je urc'eno pi'smenem (+xA) a bonusem na prohleda'va'ni'.
-<I>Take' je na ne'm napsa'no, kolik zombi'ku'' je na poli'c'ku instantne'' a kolik se jich kaz'de' kolo novy'ch narodi' (I/+n).
-<I>Lez'i' na ne''m z'etony oznac'uji'ci' stav poli'c'ka - Z'etony uda'losti', z'etony prohleda'ni' a z'eton skry's'e.
-<I>Stoji' na ne''m figurky hra'c'u'', zombi'ku'' a dals'i'ch NPC.
+<I>Co to je za budovu a jak je velika'
+<I>Jake' se v ni' daji' naji't pr'edme''ty
+<I>Kolik zombi'ku' se v budove' schova'va'
+<I>Kolik zombi'ku' mu'z'e u te'hle budovy vyska'kat z oken a kolik vyle'zt z de'r
+<I>Kolik hra'c'u' se na te'hle karte'' mu'z'e schova'vat
+<I1>
+Na karte'' pak stoji' a lez'i:
+<I0>
+<I>Figurky hra'c'u' a zombi'ku' kter'i' na poli'c'ku jsou
+<I>Figurky pr'i'padny'ch NPC
+<I>Z'eton prohleda'va'ni'
+<I>Z'etony ru'zny'ch uda'losti', ktere' se na karte'' staly
+<I>Z'eton pr'i'padne' skry's'e, pokud tu hra'c'i ne''jakou zaloz'i'
 <I1>
 
-<C1>Odkry'va'ni' mapy
-Pokud se hra'c'i pohybuji' po mape'' odkry'vaji' postupne'' jeji' di'lky. Nove' kusy mapy se odkry'vaji' okamz'ite' jakmile je splne''na podmi'nka odkryti'. Odkryti' znamena' z'e se ta'hne nova' kostic'ka budovy a ten hra'c' ktery' prvni' splnil podmi'nku odkryti' dane'ho di'lku mapy vybere jak ji' na pla'n poloz'i'. Pokud je budova souc'a'sti' ve''ts'i' budovy zabi'raji'ci' vi'cero poli'c'ek, ihned se vezme pr'i'slus'na' dopln'kova' kostic'ka a take' se umi'sti'. Pokud tam tuto dopln'kovou kostic'ku nejde umi'stit, mi'sto pu''vodni' kostic'ky budovy se tam da' jeji' druha' strana s parkem. Podmi'nky odkryti':
+<C2>Odkry'va'ni' mapy
+Pokud se hra'c'i pohybuji', odkry'vaji' postupne'' dals'i' karty. Nove' kusy mapy se odkry'vaji' okamz'ite' jakmile je jaky'koliv hra'c' na kraji souc'asne' mapy.
+
+<C2>Rozsah budov
+Budova se mu'z'e skla'dat z vi'ce nez' jedne' karty. V takove'm pr'i'pade' je na hlavni' karte'' budovy napsa'no, jake' dals'i' karty jes'te' v budove'' jsou. Hra'c' ktery' spusti' odkryti' nove'ho poli'c'ka budovy je zodpove''dny' za kontrolu, zda uz' souc'asna' budova skonc'ila c'i ne a pokud ne, tak si vybi'ra' ktere' ze zby'vaji'ci'ch poli'c'ek umi'sti' da'l.
 <I0>
-<I>Poli'c'ko mapy se odkry'va' pokud ne''jaky' hra'c' procha'zi' nebo dos'el na hranu tohoto poli'c'ka
-<I>Poli'c'ko se take' odkry'va' pokud na ulici, ktera' konc'i' na rohu tohoto poli'c'ka dal ne'jaky' hra'c' akci prohleda'va'ni' = rozhli'z'eni'
-<I>Dovednosti a pr'edme''ty mohou take' vyvolat odkryti' poli'c'ka
+<I>Na karte' je napsa'no, kolik a ktery'ch dals'i'ch segmentu' budova ma', OSGZZ napr'i'klad znamena' z'e u te'to budovy je jedno obytne' kr'i'dlo, jeden sklad, jedna gara'z' a dve'' zahrady
+<I>Kdyz' hra'c' vcha'zi' do a z budovy, musi' pouz'i't dovoleny' vchod, v za'kladu je dovolena' jen hlavni' karta budovy
+<I>Kdyz' hra'c' jde kolem budovy, jde kolem kaz'de' karty zvla's't', kaz'da' ma' sva' okna a di'ry
+<I>Kaz'da' karta pr'ida'va' ne''co k pu'vodni' budove'', pr'edme't co jde naji't, nebo dals'i' zombi'ky, co se v budove'' ukry'vaji'
+<I>Pokud hra'c' vstoupi' do budovy, odkryje si okamz'ite'' budovu celou, aby ve''de''l, co vs'e jes'te' nas'el a koho potkal
 <I1>
+
+<C2>Kr'iz'ovatky
+Pokud hra'c' potka' kr'iz'ovatku, me'sto se mu rozdvoji'. Od ted' si mu'z'e vybra, zda chce ji't do centra po pu'vodni' ulici, nebo po te' nove'. Novou r'adu zac'ne''te prvni' kartou umi'ste''nou svisle pod kartou kr'iz'ovatky. Kartu tam dejte samozr'ejme'' az' kdyz' ne''kdo na kr'iz'ovatku pr'ijde.
+<I0>
+<I>Prvni' karta nove' ulice je od centra stejne'' daleko jako kr'iz'ovatka
+<I>Do centra (pro u'c'ely na'hody) je na karte' kr'iz'ovatky mys'leno jen po pu'vodni' r'ade'' karet
+<I>Z centra (pro u'c'ely na'hody) je na prvni' karte'' nove' ulice mys'leno na karte'' kr'iz'ovatky
+<I1>
+
+<C2>Dals'i' vstupy do me''sta
+Kaz'de' me''sto ma' vi'cero vstupu', vi'cero ulic, jen je naji't. V za'kladu se novy' vstup obe''vi' pokaz'de' kdyz' v tom pr'edchozi'm dojdete az' k pr'edme''sti'. Ale existuji' i jine' moz'nosti. Jde ho naji't v na'hoda'ch, pomoci' dovednosti postavy, nebo pomoci' specia'lni'ho pravidla mise.
 
 <C1>Na zac'a'tku hry
-Na zac'a'tku hra'c'i zpravidla stoji' na kraji me''sta, na ulici pr'ed prvni' budovou, kde za nima je divoc'ina. Tento kraj mapy se ta'hne rovne'' doleva i doprava do nekonec'na. Kaz'dy' sce'na'r' r'i'ka', co maji' hra'c'i do zac'a'tku za vybaveni' a jake' jsou jejich u'koly. Take' jaky'mi pravidly se r'i'di' karty uda'losti' a jaka' jsou omezeni' mapy.
+Na zac'a'tku hra'c'i zpravidla stoji' na kraji me''sta. Na pravo od nich je prvni' karta budovy a nalevo divoc'ina. Tento kraj mapy se ta'hne nahoru i dolu do nekonec'na. Kaz'dy' sce'na'r' r'i'ka', co maji' hra'c'i do zac'a'tku za vybaveni' a jake' jsou jejich u'koly. Take' jaky'mi pravidly se r'i'di' karty uda'losti' a jaka' jsou omezeni' mapy.
 <C2>Pr'i'pravne' kroky
 Pr'ed hrou je potr'eba pr'ipravit herni' plochu. To se hodne'' lis'i' v za'vislosti na konkre'tni' misi, ale v za'kladu je potr'eba:
 <I0>
 <I>Pr'ipravit si kartu mise, aby bylo jasne' na co jsou jake' pravde''podobnosti
 <I>Pr'ipravit karty hra'c'u'' a da't jim pla'novane' vybaveni' a z'etony skry's'i'
-<I>Pr'ipravit hroma'dku budov me''sta a zami'chat do ni' na'hodne'' vybrane' specia'lni' budovy
+<I>Pr'ipravit hroma'dky budov me''sta a zami'chat do nich na'hodne'' vybrane' specia'lni' budovy, hroma'dku pr'edme''sti', hroma'dku malome''sta, hroma'dku velkome''sta a pak hroma'dky pro pomocne' budovy: Obytne', Sklady, Gara'z'e a Zahrady'.
 <I>Pr'ipravit hroma'dku karet uda'losti' a da't je vedle hraci' plochy
-<I>Pr'ipravit hroma'dky karet pr'edme''tu'
+<I>Pr'ipravit hroma'dky karet pr'edme''tu' - Vs'ech 8: Vybaveni', Zbrane'', Materia'l a Ji'dlo, a to vz'dy be'z'ne' a vz'a'cne'
 <I1>
 
 <C1>Princip hlasitosti
-Kaz'de' poli'c'ko mapy ma' hlasitost, urc'enou z'etonem (kostkou). Z'a'dny' z'eton znamena' hlasitost 0. Hlasitost klesa' na kaz'de'm poli'c'ku o jedna na zac'a'tku kaz'de'ho kola. Hlasitost stoupa' podle uda'losti a podle akci' hra'c'u'. Gradient hlasitosti je maxima'lne' 1. Pokud je tedy ne'kde z'eton s hlasitosti' 3, na sousedni'ch 4 poli'c'ka'ch nemu'z'e by't hlasitost niz's'i' nez' 2. Z'eton hlasitosti se umist'uje jen na poli'c'ko ktere' hluk zpu''sobilo. S'i'r'eni' hluku do okoli' se dopoc'i'ta'va' ale specia'lni' z'eton se tam uz' neda'va'. Hlasitost je du''lez'ita' k urc'eni', kam se pohybuji' pr'i'padni' zombi'ci (C'i ostatni' nepr'a'tele'). Pokud je hluk v budove'' ktera' ma' vi'c nez' jedno poli'c'ko, poc'i'ta' se, jako by byla stejna' hlasitost na vs'ech poli'c'ka'ch budovy. Hluk se budovou nese.
+Kaz'dy' hra'c' ma' hlasitost, urc'enou kostkou, co ma' u sebe. V za'kladu je to nula. Hlasitost kaz'de'ho hra'c'e klesa' na zac'a'tku kaz'de'ho kola o jedna az' na 0, jak se odplavuje adrenalin. Hlasitost stoupa' podle uda'losti a podle akci' hra'c'u'. Hlasitost je du''lez'ita' k urc'eni', zda se ma'te ba't i zombi'ku' (C'i ostatni'ch nepr'a'tel), nejenom te'ch na vas'em poli'c'ku. Pokud je hluk v budove'' ktera' ma' vi'c nez' jednu kartu, poc'i'ta' se, jako by byl hluk na karte'' se vchodem do budovy.
+<C2>Co zvys'uje hlasitost
+Ne''ktere' zbrane', ne''ktere' ji zvys'uji' dokonce o vi'c nez' o jedna a ne''ktere' dokonce vs'em hra'c'u'm v boji. Take' samotny' boj, pokud je dostatec'ne'' li'ty' zvys'uje vs'em hlasitost.
+<C2>Jak se hlasitosti zbavit
+V za'kladu klesa' hlasitost sama. Pokud vs'ak hra'c'i dovedou odehra't pla'novaci' fa'zi bez jedine'ho slova, mohou si vs'ichni sni'z'it hlasitost o dals'i' 1 bod.
+<C2>Kdy je to hlasite'
+Hlasiti' jste, pokud ma'te hlasitost vys's'i' nez' je pra'h te' ktere' obludy. U za'kladni'ho zombi'ka je pra'h 1. Pokud tedy ma'te hlasitost 2 uz' po va's jdou. To znamena' z'e ve fa'zi pohybu zombi'ku' se vs'ichni z okolni'ch dvou karet sta'hnou k va'm.
+<C2>Vi'c zdroju' hlasitosti
+Pokud na obludy hluc'i'te ze dvou stran stejne'' hlasite'', jsou nerozhodni' a nikam nejdou. Pokud je jeden z va's hlasite''js'i', jdou za ni'm.
+
+<C1>Zpoz'de'ne' akce
+Jedni'm ze za'kladni'ch principu' je, z'e
 
 <C1>Kolo hry
 Ka'zde' kolo hry ma' ne''kolik fa'zi'. Ne'ktere' fa'ze jsou spolec'ne' a jine' se zase hraji' individua'lne''.
