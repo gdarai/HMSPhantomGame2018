@@ -1,0 +1,34 @@
+[
+  {
+    "_card":"mainCard",
+    "symbol":{
+      "reg": "x[A-D][1-13]"
+    },
+    "_list":{
+      "values":[
+        "item",
+        "enTop",
+        "enIn",
+        "enBot",
+        "hide",
+        "next"
+      ]
+    },
+    "_sub":[
+      {
+        "name":"Small House",
+        "item":"f",
+        "enTop":"0",
+        "enIn":"1",
+        "enBot":"1",
+        "hide":"2",
+        "next":"G",
+        "_count":2
+      },
+      {
+        "name":"Small House",
+        "values":["2f","0","2","1","1","G"]
+      }
+    ]
+  }
+]
