@@ -2,64 +2,91 @@
   "name":{
     "type":"text",
     "position":[[44,812],[580,924]],
-    "font":"FONT_1",
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
     "size":5,
+	"line":5,
+	"color":[255,0,0],
     "align":"center"
   },
   "symbol":{
     "type":"text",
     "position":[[426,44],[578,156]],
-    "font":"FONT_1",
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
     "size":5,
+	"line":2,
+	"color":[0,0,0],
     "align":"center"
   },
   "img":{
     "type":"text",
     "position":[[84,84],[544,732]],
-    "font":"FONT_1",
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
     "size":5,
+	"line":5,
+	"color":[255,0,0],
     "align":"center"
   },
   "item":{
     "type":"text",
     "position":[[312,658],[502,772]],
-    "font":"FONT_1",
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
     "size":5,
+	"line":5,
+	"color":[0,255,0],
     "align":"center"
   },
   "enTop":{
     "type":"text",
     "position":[[132,158],[310,272]],
-    "font":"FONT_1",
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
     "size":5,
+	"line":5,
+	"color":[0,0,255],
     "align":"center"
   },
   "enIn":{
     "type":"text",
     "position":[[132,658],[310,772]],
-    "font":"FONT_1",
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
     "size":5,
+	"line":5,
+	"color":[0,0,255],
     "align":"center"
   },
   "enBot":{
     "type":"text",
     "position":[[132,924],[310,1038]],
-    "font":"FONT_1",
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
     "size":5,
+	"line":5,
+	"color":[0,0,255],
     "align":"center"
   },
   "hide":{
     "type":"text",
     "position":[[312,158],[502,272]],
-    "font":"FONT_1",
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
     "size":5,
+	"line":5,
+	"color":[0,0,0],
     "align":"center"
   },
   "next":{
     "type":"text",
     "position":[[132,504],[424,620]],
-    "font":"FONT_1",
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
     "size":5,
+	"line":5,
+	"color":[0,0,0],
     "align":"center"
   }
 }
