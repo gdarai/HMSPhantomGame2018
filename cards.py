@@ -13,7 +13,13 @@ canPrint = True
 
 SETTING = 'cards.json'
 DIRECTORY = 'cards'
+TEX_FILE = 'cards.tex'
+A4_WIDTH = 21
+A4_MARGIN = 1.5
+
+A4_TEXT_W = A4_WIDTH - (2*A4_MARGIN)
 COUNTERS = dict()
+IMAGES = list()
 
 FONTS = dict()
 FONTS['HERSHEY_SIMPLEX'] = cv2.FONT_HERSHEY_SIMPLEX
@@ -46,7 +52,7 @@ def VALTYPE_STR(variable):
 	return isinstance(variable, string)
 def VALTYPE_LIST(variable):
 	return isinstance(variable, list)
-	
+
 VALTYPE = dict()
 VALTYPE['int'] = VALTYPE_INT
 VALTYPE['float'] = VALTYPE_FLOAT
@@ -55,7 +61,7 @@ VALTYPE['string'] = VALTYPE_STR
 VALTYPE['list'] = VALTYPE_LIST
 
 def representsInt(s):
-    try: 
+    try:
         int(s)
         return True
     except ValueError:
@@ -110,7 +116,7 @@ class ANALYZE_REG_FULL:
 			index = index // count
 			value = sc.getValue(idx) + value
 		return value
-			
+
 def ANALYZE_REG(regStr, counterName):
 	script = list()
 	while regStr != '':
@@ -143,9 +149,11 @@ def getFiles( wildch ):
 
 ########
 # Printing
+def writeLine(f, intention, text):
+    f.write('\t'*intention+text+'\n');
 
 def checkField(cardName, props, fieldName, values, defaultVal):
-	if fieldName not in props:	
+	if fieldName not in props:
 		if defaultVal is None:
 			print('!! Card '+cardName+' is missing mandatory field '+fieldName)
 			exit()
@@ -156,7 +164,7 @@ def checkField(cardName, props, fieldName, values, defaultVal):
 		if isinstance(values, list):
 			if value not in values:
 				print('!! Card '+cardName+' field '+fieldName+' must be one of '+str(values))
-				exit()			
+				exit()
 		else:
 			if not VALTYPE[values](value):
 				print('!! Card '+cardName+' field '+fieldName+' must be '+values)
@@ -174,7 +182,7 @@ def printCardFile(setting, name):
 		# Then assign the mask to the last channel of the image
 		rgba[:, :, 3] = np.zeros(img.shape[:2], np.uint8)
 		img = rgba
-	
+
 	for fieldName in setting['_cardParamNames']:
 		if fieldName not in setting:
 			continue
@@ -188,37 +196,40 @@ def printCardFile(setting, name):
 			checkField(cardName, props, 'align', list(ALIGN.keys()), list(ALIGN.keys())[0])
 			checkField(cardName, props, 'line', 'int', 1)
 			checkField(cardName, props, 'color', 'list', [0, 0, 0])
-			
+
 			theText = textToPlot(state)
-			
+
 			font = FONTS[props['font']]
 			thickness = props['line']
 			color = props['color']
 			tgtPos0 = props['position']
 			tgtPos1 = props['padding']
 			tgtPos = [np.add(tgtPos0[0], tgtPos1[0]), np.subtract(tgtPos0[1],tgtPos1[1])]
-				
+
 			align = ALIGN[props['align']]
 			size, _ = cv2.getTextSize(theText, font, 1, thickness)
 			if size[1]*size[0] == 0 :
 				print('!! text-to-insert is empty ... skipping.')
 				continue
-				
+
 			imgScale = min((tgtPos[1][1] - tgtPos[0][1]) / size[1], (tgtPos[1][0] - tgtPos[0][0]) / size[0])
 			finSize, _ = cv2.getTextSize(theText, font, imgScale, thickness)
-			
+
 			finPos = (align(tgtPos[0][0], tgtPos[1][0], finSize[0]), ALIGN_CENTER(tgtPos[0][1], tgtPos[1][1], finSize[1])+finSize[1])
-			
+
 			img = cv2.putText(img, theText, finPos, font, imgScale, color, thickness, cv2.LINE_AA)
-#			img[Y:Y1, X:X1] = textImg
 
 		else:
 			print('!! Card '+setting['_card']+' field '+fieldName+' is of unknown type.')
 			exit()
 	fileName = DIRECTORY+'/'+name+'.png'
 	cv2.imwrite(fileName, img[:, :, :3])
+	imageDict = dict()
+	imageDict['file'] = name
+	imageDict['onOneLine'] = setting['_onOneLine']
+	IMAGES.append(imageDict)
 	return
-	
+
 ########
 # Process
 
@@ -237,19 +248,19 @@ def readOneParameter(setting, paramName, paramSource):
 		else:
 			print('!! Parameter '+paramName+' is wrongly formated.')
 			exit()
-			
+
 	else:
 		newParam['type'] = 'value'
 		newParam['value'] = paramSource
 
-	setting[paramName] = newParam 
+	setting[paramName] = newParam
 	return setting
 
 def textToPlot(state):
 	type = state['type']
 	if type == 'value':
 		return state['value']
-	elif type == 'reg':		
+	elif type == 'reg':
 		return state['reg'].nextVal()
 	else:
 		return ''
@@ -257,7 +268,10 @@ def textToPlot(state):
 def readParameters(setting, source):
 	if '_count' in source:
 		setting['_count'] = source['_count']
-	
+
+	if '_onOneLine' in source:
+		setting['_onOneLine'] = source['_onOneLine']
+
 	if '_card' in source:
 		if setting['_card'] != '':
 			print('!! multiple cards assinged in this branch, rewriting '+setting['_card']+' with '+source['_card'])
@@ -269,7 +283,7 @@ def readParameters(setting, source):
 			exit()
 		setting['_cardParams'] = json.load(open(setting['_card']+'.json'))
 		setting['_cardParamNames'] = list(setting['_cardParams'].keys())
-	
+
 	if '_list' in source:
 		newLists = source['_list'].keys()
 		for listName in newLists:
@@ -279,7 +293,7 @@ def readParameters(setting, source):
 			else:
 				print(' - Adding list '+listName+': '+str(theList))
 			setting['_lists'][listName] = list(theList)
-	
+
 	for listName in setting['_lists']:
 		if listName in source:
 			theList = setting['_lists'][listName]
@@ -292,11 +306,11 @@ def readParameters(setting, source):
 				expLen = min(expLen, len(source[listName]))
 			for idx in range(0, expLen):
 				setting = readOneParameter(setting, theList[idx], source[listName][idx])
-	
+
 	for paramName in setting['_cardParamNames']:
 		if paramName in source:
 			setting = readOneParameter(setting, paramName, source[paramName])
-		
+
 	return setting
 
 def checkParameters(setting):
@@ -333,6 +347,17 @@ def readAndProcess(level, name, source, setting):
 		for idx in range(0, setting['_count']):
 			printCardFile(setting, name+'_'+str(idx))
 
+def printImages():
+	onOneLine = IMAGES[0]['onOneLine']
+	imgWidth = str(A4_TEXT_W / onOneLine)
+	for img in IMAGES:
+		if img['onOneLine'] != onOneLine:
+			onOneLine = img['onOneLine']
+			writeLine(f,0,'\\newline')
+			imgWidth = str(A4_TEXT_W / onOneLine)
+		writeLine(f,1,'\\includegraphics[width='+imgWidth+'cm]{'+img['file']+'}')
+
+
 ########
 # Settings file
 
@@ -353,7 +378,28 @@ if(not os.path.isdir(DIRECTORY)):
 
 setting = dict()
 setting['_count'] = 1
+setting['_onOneLine'] = 4
 setting['_cardParams'] = dict()
 setting['_card'] = ''
 setting['_lists'] = dict()
+
 readAndProcessList(0, "img", source, setting)
+
+if len(IMAGES) == 0 :
+	print('\n!! There are NO images to print, skipping PDF part')
+	exit()
+
+f = open(TEX_FILE,'w')
+imgw = A4_TEXT_W / 4
+
+writeLine(f,0,'\\documentclass[a4paper]{article}')
+writeLine(f,0,'\\usepackage[a4paper, margin='+str(A4_MARGIN)+'cm]{geometry}')
+writeLine(f,0,'\\usepackage{graphicx}')
+writeLine(f,0,'\\graphicspath{ {./cards/} }')
+writeLine(f,0,'\\setlength{\\parindent}{0cm}')
+writeLine(f,0,'\\begin{document}')
+printImages()
+writeLine(f,0,'\end{document}')
+f.close()
+
+os.system('pdflatex '+TEX_FILE);
