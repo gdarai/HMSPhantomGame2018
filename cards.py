@@ -6,6 +6,7 @@ import math
 import copy
 import cv2
 import numpy as np
+import csv
 
 ########
 # Globals
@@ -49,7 +50,7 @@ def VALTYPE_FLOAT(variable):
 def VALTYPE_IMG(variable):
 	return isinstance(variable, complex)
 def VALTYPE_STR(variable):
-	return isinstance(variable, string)
+	return isinstance(variable, basestring)
 def VALTYPE_LIST(variable):
 	return isinstance(variable, list)
 
@@ -59,6 +60,13 @@ VALTYPE['float'] = VALTYPE_FLOAT
 VALTYPE['img'] = VALTYPE_IMG
 VALTYPE['string'] = VALTYPE_STR
 VALTYPE['list'] = VALTYPE_LIST
+
+
+class ANALYZE_CONST:
+	def __init__(self, value):
+		self.value = str(value)
+	def nextVal(self):
+		return self.value
 
 def representsInt(s):
     try:
@@ -97,9 +105,10 @@ class ANALYZE_REG_RANGE:
 		return self.count
 
 class ANALYZE_REG_FULL:
-	def __init__(self, script, counterName):
+	def __init__(self, script, counterName, isMaster):
 		self.script = script
 		self.counterName = counterName
+		self.isMaster = isMaster
 		COUNTERS[counterName] = 0
 		maxIndex = 1
 		for oneItem in script:
@@ -107,7 +116,8 @@ class ANALYZE_REG_FULL:
 		self.maxIndex = maxIndex
 	def nextVal(self):
 		index = COUNTERS[self.counterName]
-		COUNTERS[self.counterName] = index + 1
+		if self.isMaster == True:
+			COUNTERS[self.counterName] = index + 1
 		index = index % self.maxIndex
 		value = ''
 		for sc in reversed(self.script):
@@ -117,7 +127,20 @@ class ANALYZE_REG_FULL:
 			value = sc.getValue(idx) + value
 		return value
 
-def ANALYZE_REG(regStr, counterName):
+class ANALYZE_LIST:
+	def __init__(self, values, counterName, isMaster):
+		self.values = values
+		self.counterName = counterName
+		self.isMaster = isMaster
+		COUNTERS[counterName] = 0
+	def nextVal(self):
+		index = COUNTERS[self.counterName]
+		if self.isMaster == True:
+			COUNTERS[self.counterName] = index + 1
+		index = index % len(self.values)
+		return str(self.values[index])
+
+def ANALYZE_REG(regStr, counterName, isMaster):
 	script = list()
 	while regStr != '':
 		nextStr = ''
@@ -134,7 +157,7 @@ def ANALYZE_REG(regStr, counterName):
 			nextStr = (regStr.split('['))[0]
 			regStr = regStr[len(nextStr):]
 			script.append(ANALYZE_REG_CONST(nextStr))
-	return ANALYZE_REG_FULL(script, counterName)
+	return ANALYZE_REG_FULL(script, counterName, isMaster)
 ########
 # Superglobals
 
@@ -186,7 +209,6 @@ def printCardFile(setting, name):
 	for fieldName in setting['_cardParamNames']:
 		if fieldName not in setting:
 			continue
-		state = setting[fieldName]
 		props = setting['_cardParams'][fieldName]
 		checkField(cardName, props, 'type', ['text'], 'text')
 		if props['type'] == 'text':
@@ -197,7 +219,7 @@ def printCardFile(setting, name):
 			checkField(cardName, props, 'line', 'int', 1)
 			checkField(cardName, props, 'color', 'list', [0, 0, 0])
 
-			theText = textToPlot(state)
+			theText = setting[fieldName].nextVal()
 
 			font = FONTS[props['font']]
 			thickness = props['line']
@@ -234,36 +256,35 @@ def printCardFile(setting, name):
 # Process
 
 def readOneParameter(setting, paramName, paramSource):
-	newParam = dict()
+	newParam = None
 	if isinstance(paramSource, dict) == True:
 		if 'value' in paramSource:
-			newParam['type'] = 'value'
-			newParam['value'] = paramSource['value']
+			newParam = ANALYZE_CONST(paramSource['value'])
 		elif 'reg' in paramSource:
 			counterName = len(list(COUNTERS.keys()))
+			isMaster = True
 			if 'counter' in paramSource:
 				counterName = paramSource['counter']
-			newParam['type'] = 'reg'
-			newParam['reg'] = ANALYZE_REG(paramSource['reg'], counterName)
+			if 'isMaster' in paramSource:
+				isMaster = paramSource['isMaster']
+			newParam = ANALYZE_REG(paramSource['reg'], counterName, isMaster)
+		elif 'list' in paramSource:
+			counterName = len(list(COUNTERS.keys()))
+			isMaster = True
+			if 'counter' in paramSource:
+				counterName = paramSource['counter']
+			if 'isMaster' in paramSource:
+				isMaster = paramSource['isMaster']
+			newParam = ANALYZE_LIST(paramSource['list'], counterName, isMaster)
 		else:
 			print('!! Parameter '+paramName+' is wrongly formated.')
 			exit()
 
 	else:
-		newParam['type'] = 'value'
-		newParam['value'] = paramSource
+		newParam = ANALYZE_CONST(paramSource)
 
 	setting[paramName] = newParam
 	return setting
-
-def textToPlot(state):
-	type = state['type']
-	if type == 'value':
-		return state['value']
-	elif type == 'reg':
-		return state['reg'].nextVal()
-	else:
-		return ''
 
 def readParameters(setting, source):
 	if '_count' in source:
@@ -297,15 +318,37 @@ def readParameters(setting, source):
 	for listName in setting['_lists']:
 		if listName in source:
 			theList = setting['_lists'][listName]
-			if isinstance(source[listName], list) == False:
-				print('!! Key List '+listName+' must contain array.')
+			theData = source[listName]
+			if isinstance(theData, list) == True:
+				expLen = len(theList)
+				if len(theData) != expLen:
+					print('!! Key List '+listName+' should be '+expLen+' long, but this may be intentional.')
+					expLen = min(expLen, len(theData))
+				for idx in range(0, expLen):
+					setting = readOneParameter(setting, theList[idx], theData[idx])
+			elif isinstance(theData, basestring) == True:
+				sourceCsv = open(theData, 'rb')
+				lineReader = csv.reader(sourceCsv, delimiter=',', quotechar='|')
+				tableData = []
+				for row in lineReader:
+					tableData.append(row)
+				tableData = np.array(tableData)
+				tableData = tableData.transpose()
+				sourceCsv.close()
+				expLen = len(theList)
+				if tableData.shape[0] != expLen:
+					print('!! Key List '+listName+' should be '+str(expLen)+' long, but this may be intentional.')
+					expLen = min(expLen, tableData.shape[0])
+				for idx in range(0, tableData.shape[0]):
+					oneData = dict()
+					oneData['list'] = list(tableData[idx])
+					print(theList[idx])
+					print(oneData)
+					setting = readOneParameter(setting, theList[idx], oneData)
+				sourceCsv.close()
+			else:
+				print('!! Key List '+listName+' must contain array or existing filename.')
 				exit()
-			expLen = len(theList)
-			if len(source[listName]) != expLen:
-				print('!! Key List '+listName+' should be '+expLen+' long, but this may be intentional.')
-				expLen = min(expLen, len(source[listName]))
-			for idx in range(0, expLen):
-				setting = readOneParameter(setting, theList[idx], source[listName][idx])
 
 	for paramName in setting['_cardParamNames']:
 		if paramName in source:
@@ -388,6 +431,8 @@ readAndProcessList(0, "img", source, setting)
 if len(IMAGES) == 0 :
 	print('\n!! There are NO images to print, skipping PDF part')
 	exit()
+
+print('\nPrinting with pdf latex\n')
 
 f = open(TEX_FILE,'w')
 imgw = A4_TEXT_W / 4
