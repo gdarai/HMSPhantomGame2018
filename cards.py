@@ -276,6 +276,7 @@ def readOneParameter(setting, paramName, paramSource):
 			if 'isMaster' in paramSource:
 				isMaster = paramSource['isMaster']
 			newParam = ANALYZE_LIST(paramSource['list'], counterName, isMaster)
+			setting['_count'] = len(paramSource['list'])
 		else:
 			print('!! Parameter '+paramName+' is wrongly formated.')
 			exit()
@@ -287,9 +288,6 @@ def readOneParameter(setting, paramName, paramSource):
 	return setting
 
 def readParameters(setting, source):
-	if '_count' in source:
-		setting['_count'] = source['_count']
-
 	if '_onOneLine' in source:
 		setting['_onOneLine'] = source['_onOneLine']
 
@@ -333,19 +331,25 @@ def readParameters(setting, source):
 				for row in lineReader:
 					tableData.append(row)
 				tableData = np.array(tableData)
-				tableData = tableData.transpose()
 				sourceCsv.close()
+
 				expLen = len(theList)
+				if tableData.shape[1] == (expLen+1):
+					print('(i) File loading with counts, _count is the first column.')
+					counts = tableData[:, 0]
+					tableDataOrig = tableData[:, 1:]
+					tableData = np.tile(tableDataOrig[0], (int(counts[0]), 1))
+					for idx in range(1, len(counts)):
+						tableData = np.append(tableData, np.tile(tableDataOrig[idx], (int(counts[idx]), 1)), axis=0)
+
+				tableData = tableData.transpose()
 				if tableData.shape[0] != expLen:
-					print('!! Key List '+listName+' should be '+str(expLen)+' long, but this may be intentional.')
 					expLen = min(expLen, tableData.shape[0])
+					print('!! Key List '+listName+' should be '+str(expLen)+' long, but this may be intentional.')
 				for idx in range(0, tableData.shape[0]):
 					oneData = dict()
 					oneData['list'] = list(tableData[idx])
-					print(theList[idx])
-					print(oneData)
 					setting = readOneParameter(setting, theList[idx], oneData)
-				sourceCsv.close()
 			else:
 				print('!! Key List '+listName+' must contain array or existing filename.')
 				exit()
@@ -353,6 +357,9 @@ def readParameters(setting, source):
 	for paramName in setting['_cardParamNames']:
 		if paramName in source:
 			setting = readOneParameter(setting, paramName, source[paramName])
+
+	if '_count' in source:
+		setting['_count'] = source['_count']
 
 	return setting
 

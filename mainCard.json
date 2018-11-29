@@ -6,7 +6,7 @@
     "font":"HERSHEY_SIMPLEX",
     "size":5,
 	"line":5,
-	"color":[255,0,0],
+	"color":[0,0,0],
     "align":"center"
   },
   "symbol":{
@@ -26,7 +26,7 @@
     "font":"HERSHEY_SIMPLEX",
     "size":5,
 	"line":5,
-	"color":[255,0,0],
+	"color":[0,0,0],
     "align":"center"
   },
   "item":{
@@ -36,7 +36,7 @@
     "font":"HERSHEY_SIMPLEX",
     "size":5,
 	"line":5,
-	"color":[0,255,0],
+	"color":[0,0,0],
     "align":"center"
   },
   "enTop":{
@@ -46,7 +46,7 @@
     "font":"HERSHEY_SIMPLEX",
     "size":5,
 	"line":5,
-	"color":[0,0,255],
+	"color":[0,0,0],
     "align":"center"
   },
   "enIn":{
@@ -56,7 +56,7 @@
     "font":"HERSHEY_SIMPLEX",
     "size":5,
 	"line":5,
-	"color":[0,0,255],
+	"color":[0,0,0],
     "align":"center"
   },
   "enBot":{
@@ -66,7 +66,7 @@
     "font":"HERSHEY_SIMPLEX",
     "size":5,
 	"line":5,
-	"color":[0,0,255],
+	"color":[0,0,0],
     "align":"center"
   },
   "hide":{
