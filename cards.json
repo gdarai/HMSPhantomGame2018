@@ -2,45 +2,35 @@
   {
     "_card":"mainCard",
     "_onOneLine":6,
-    "symbol":{ "reg": "x[A-D][1-13]" },
+    "symbol":{ "reg": "X-[A-D][1-13]" },
     "_list":{
       "values":[
+        "name",
         "item",
+        "next",
         "enTop",
         "enIn",
         "enBot",
-        "hide",
-        "next"
-      ],
-      "enemies":[
-        "enTop",
-        "enIn",
-        "enBot"
+        "hide"
       ]
     },
-    "_sub":[
-      {
-        "name":"Small House",
-        "item":"f",
-        "enTop":{ "list": [10, 20] },
-        "enIn":1,
-        "enBot":1,
-        "hide":2,
-        "next":"G"
-      },
-      {
-        "name":"Large House",
-        "values":["2f","0","2","1","1","G"]
-      },
-      {
-        "name":"Double House",
-        "values":["2f","0","2","1","1","G"],
-        "_count":3
-      },
-      {
-        "name":"Three Houses",
-        "enemies":"cards_file1.csv"
-      }
-    ]
+    "values":"cards_predmesti.csv"
+  },
+  {
+    "_card":"sideCard",
+    "_onOneLine":6,
+    "symbol":{ "reg": "Y-[A-D][1-13]" },
+    "_list":{
+      "values":[
+        "name",
+        "item",
+        "next",
+        "enTop",
+        "enIn",
+        "enBot",
+        "hide"
+      ]
+    },
+    "values":"cards_supp.csv"
   }
 ]

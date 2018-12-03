@@ -1,0 +1,46 @@
+[
+  {
+    "_card":"mainCard",
+    "_onOneLine":6,
+    "symbol":{ "reg": "x[A-D][1-13]" },
+    "_list":{
+      "values":[
+        "item",
+        "enTop",
+        "enIn",
+        "enBot",
+        "hide",
+        "next"
+      ],
+      "enemies":[
+        "enTop",
+        "enIn",
+        "enBot"
+      ]
+    },
+    "_sub":[
+      {
+        "name":"Small House",
+        "item":"f",
+        "enTop":{ "list": [10, 20] },
+        "enIn":1,
+        "enBot":1,
+        "hide":2,
+        "next":"G"
+      },
+      {
+        "name":"Large House",
+        "values":["2f","0","2","1","1","G"]
+      },
+      {
+        "name":"Double House",
+        "values":["2f","0","2","1","1","G"],
+        "_count":3
+      },
+      {
+        "name":"Three Houses",
+        "enemies":"cards_file1.csv"
+      }
+    ]
+  }
+]
