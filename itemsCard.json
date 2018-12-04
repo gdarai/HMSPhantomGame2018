@@ -1,0 +1,82 @@
+{
+  "name":{
+    "type":"text",
+    "position":[[44,158],[580,272]],
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	"line":5,
+	"color":[0,0,0],
+    "align":"center"
+  },
+  "symbol":{
+    "type":"text",
+    "position":[[426,44],[578,156]],
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	"line":2,
+	"color":[0,0,0],
+    "align":"center"
+  },
+  "pack":{
+    "type":"text",
+    "position":[[426,924],[578,1038]],
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	"line":2,
+	"color":[0,0,0],
+    "align":"center"
+  },
+  "img":{
+    "type":"text",
+    "position":[[84,84],[544,732]],
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	"line":5,
+	"color":[0,0,0],
+    "align":"center"
+  },
+  "weight":{
+    "type":"text",
+    "position":[[132,924],[310,1038]],
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	"line":5,
+	"color":[0,0,0],
+    "align":"center"
+  },
+  "line1":{
+    "type":"text",
+    "position":[[44,504],[580,620]],
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	"line":5,
+	"color":[0,0,0],
+    "align":"center"
+  },
+  "line2":{
+    "type":"text",
+    "position":[[44,658],[580,772]],
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	"line":5,
+	"color":[0,0,0],
+    "align":"center"
+  },
+  "line3":{
+    "type":"text",
+    "position":[[44,812],[580,924]],
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	"line":5,
+	"color":[0,0,0],
+    "align":"center"
+  }
+}
