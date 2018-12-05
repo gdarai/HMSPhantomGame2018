@@ -1,8 +1,9 @@
 [
   {
+    "_out":"cards_items.tex",
     "_card":"itemsCard",
     "_onOneLine":6,
-    "symbol":{ "reg": "X-[A-D][1-13]" },
+    "symbol":{ "reg": "[A-F][1-5]" },
     "_list":{
       "values":[
         "pack",
@@ -14,5 +15,41 @@
       ]
     },
     "values":"cards_items.csv"
+  },
+  {
+    "_out":"cards_cesta.tex",
+    "_card":"mainCard",
+    "_onOneLine":6,
+    "symbol":{ "reg": "[A-C][1-5]" },
+    "_list":{
+      "values":[
+        "name",
+        "item",
+        "next",
+        "enTop",
+        "enIn",
+        "enBot",
+        "hide"
+      ]
+    },
+    "values":"cards_predmesti.csv"
+  },
+  {
+    "_out":"cards_cesta.tex",
+    "_card":"sideCard",
+    "_onOneLine":6,
+    "symbol":{ "reg": "[D-F][1-5]" },
+    "_list":{
+      "values":[
+        "name",
+        "item",
+        "next",
+        "enTop",
+        "enIn",
+        "enBot",
+        "hide"
+      ]
+    },
+    "values":"cards_supp.csv"
   }
 ]

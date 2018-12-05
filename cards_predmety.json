@@ -1,5 +1,6 @@
 [
   {
+    "_out":"cards_items.tex",
     "_card":"itemCard",
     "_onOneLine":6,
     "symbol":{ "reg": "X-[A-D][1-13]" },

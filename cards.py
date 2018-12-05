@@ -20,7 +20,8 @@ A4_MARGIN = 1.5
 
 A4_TEXT_W = A4_WIDTH - (2*A4_MARGIN)
 COUNTERS = dict()
-IMAGES = list()
+IMAGES = dict()
+IMAGES[TEX_FILE] = list()
 
 FONTS = dict()
 FONTS['HERSHEY_SIMPLEX'] = cv2.FONT_HERSHEY_SIMPLEX
@@ -249,7 +250,7 @@ def printCardFile(setting, name):
 	imageDict = dict()
 	imageDict['file'] = name
 	imageDict['onOneLine'] = setting['_onOneLine']
-	IMAGES.append(imageDict)
+	IMAGES[setting['_out']].append(imageDict)
 	return
 
 ########
@@ -361,6 +362,13 @@ def readParameters(setting, source):
 	if '_count' in source:
 		setting['_count'] = source['_count']
 
+	if '_out' in source:
+		newFile = source['_out']
+		setting['_out'] = newFile
+		print('!! Swapping output to file '+newFile)
+		if newFile not in IMAGES:
+			IMAGES[newFile] = list()
+
 	return setting
 
 def checkParameters(setting):
@@ -397,7 +405,7 @@ def readAndProcess(level, name, source, setting):
 		for idx in range(0, setting['_count']):
 			printCardFile(setting, name+'_'+str(idx))
 
-def printImages():
+def printImages(IMAGES):
 	onOneLine = IMAGES[0]['onOneLine']
 	imgWidth = str(A4_TEXT_W / onOneLine)
 	for img in IMAGES:
@@ -432,26 +440,27 @@ setting['_onOneLine'] = 4
 setting['_cardParams'] = dict()
 setting['_card'] = ''
 setting['_lists'] = dict()
+setting['_out'] = TEX_FILE
 
 readAndProcessList(0, "img", source, setting)
 
-if len(IMAGES) == 0 :
-	print('\n!! There are NO images to print, skipping PDF part')
-	exit()
+for fileName in IMAGES.keys():
+	IMGS = IMAGES[fileName]
+	if len(IMGS) == 0 :
+		print('\n!! There are NO images to print, skipping PDF print '+fileName)
+		continue
 
-print('\nPrinting with pdf latex\n')
+	print('\nPrinting '+fileName+' ('+str(len(IMGS))+') with pdf latex\n')
 
-f = open(TEX_FILE,'w')
-imgw = A4_TEXT_W / 4
+	f = open(fileName,'w')
+	writeLine(f,0,'\\documentclass[a4paper]{article}')
+	writeLine(f,0,'\\usepackage[a4paper, margin='+str(A4_MARGIN)+'cm]{geometry}')
+	writeLine(f,0,'\\usepackage{graphicx}')
+	writeLine(f,0,'\\graphicspath{ {./cards/} }')
+	writeLine(f,0,'\\setlength{\\parindent}{0cm}')
+	writeLine(f,0,'\\begin{document}')
+	printImages(IMGS)
+	writeLine(f,0,'\end{document}')
+	f.close()
 
-writeLine(f,0,'\\documentclass[a4paper]{article}')
-writeLine(f,0,'\\usepackage[a4paper, margin='+str(A4_MARGIN)+'cm]{geometry}')
-writeLine(f,0,'\\usepackage{graphicx}')
-writeLine(f,0,'\\graphicspath{ {./cards/} }')
-writeLine(f,0,'\\setlength{\\parindent}{0cm}')
-writeLine(f,0,'\\begin{document}')
-printImages()
-writeLine(f,0,'\end{document}')
-f.close()
-
-os.system('pdflatex '+TEX_FILE);
+	os.system('pdflatex '+fileName);
