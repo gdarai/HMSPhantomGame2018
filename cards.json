@@ -51,5 +51,40 @@
       ]
     },
     "values":"cards_supp.csv"
+  },
+  {
+    "_out":"cards_events.tex",
+    "_card":"eventCard",
+    "_onOneLine":6,
+    "symbol":{ "reg": "[A-F][1-5]" },
+    "_list":{
+      "values":[
+        "pack",
+        "name",
+        "weight",
+        "line1",
+        "line2",
+        "line3"
+      ]
+    },
+    "values":"cards_events.csv"
+  },
+  {
+    "_out":"cards_player.tex",
+    "_card":"action2Card",
+    "_onOneLine":6,
+    "_list":{
+      "values":[
+        "action1",
+        "action2"
+      ]
+    },
+    "values":"cards_player.csv"
+  },
+  {
+    "_out":"cards_player.tex",
+    "_card":"freeCard",
+    "_count":6,
+    "_onOneLine":6
   }
 ]
