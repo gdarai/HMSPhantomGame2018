@@ -70,6 +70,23 @@
     "values":"cards_events.csv"
   },
   {
+    "_out":"cards_vehicles.tex",
+    "_card":"vehicleCard",
+    "_onOneLine":6,
+    "symbol":{ "reg": "[A-F][1-5]" },
+    "_list":{
+      "values":[
+        "pack",
+        "name",
+        "places",
+        "need",
+        "provide",
+        "occurence"
+      ]
+    },
+    "values":"cards_vehicles.csv"
+  },
+  {
     "_out":"cards_player.tex",
     "_card":"action2Card",
     "_onOneLine":6,
@@ -80,6 +97,23 @@
       ]
     },
     "values":"cards_player.csv"
+  },
+  {
+    "_out":"cards_player.tex",
+    "_card":"sixLnCard",
+    "_onOneLine":6,
+    "_list":{
+      "values":[
+        "pack",
+        "line1",
+        "line2",
+        "line3",
+        "line4",
+        "line5",
+        "line6"
+      ]
+    },
+    "values":"cards_player_2.csv"
   },
   {
     "_out":"cards_player.tex",

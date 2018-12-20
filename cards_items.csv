@@ -1,34 +1,37 @@
-10,J,Jidlo,1,+1 Zdravi,+1 Sila,+2 Stamina
-10,JJ,Velke Jidlo,2,+1 Zdravi,+max Stamina,x
-5,JJ,MRE,1,+2 Zdravi,+max Stamina,x
+30,J,Jidlo,1,+1 Zdravi,+1 Sila,+2 Stamina
+10,J,MRE,1,+3 Zdravi,+max Stamina,x
+10,JJ,Velke Jidlo,2,+2 Zdravi,+max Stamina,x
+10,JJ,MRE,1,+3 Zdravi,+max Stamina,x
 10,M,Material,1,Drobne prace,Oprava vyb.,x
 10,MM,Velky Material,3,Na vetsi dila,x,x
 3,M,Manual,1,Na slozite,prace,x
 3,MM,Manual,1,Na slozite,prace,x
 2,MM,Kniha,1,Na zlepseni,Skillu,x
-10,V,Prvni Pomoc,1,+2 Zdravi,Leci zraneni,x
+10,V,Prvni Pomoc,1,+2 Zdravi,+1 Sila,Leci zraneni
 5,V,Stimulant,1,+2 Sila,+max Stamina,x
-5,V,Protilatka,1,Zrusi otravu,x,x
+5,V,Protilatka,1,Zrusi otravu,+1 Sila,x
 2,V,Stit,2,+2 Odolnost,na kousnuti,x
 10,V,Baterka,1,+1 pri,Hledani,x
 1,V,Vysilacka,1,Komunikace,na dalku,x
-4,V,Naradi,1,-1 material,Cena vyroby,x
-2,VV,Prvni Pomoc,1,+2 Zdravi,Leci zraneni,x
+4,V,Naradi,1,-1 Cena,vyroby,x
+2,VV,Prvni Pomoc,1,+2 Zdravi,+1 Sila,Leci zraneni
 5,VV,Stimulant,1,+2 Sila,+max Stamina,x
-5,VV,Protilatka,1,Zrusi otravu,x,x
+5,VV,Protilatka,1,Zrusi otravu,+1 Sila,x
 10,VV,Stit,2,+2 Odolnost,na kousnuti,x
 2,VV,Vysilacka,1,Komunikace,na dalku,x
-1,VV,Naradi,1,-1 Cena vyroby,x,x
-10,Z,Klacek,2,Na blizko,utok 1 zvuk 1,bez munice
-8,Z,Palka,2,Na blizko,Utok 2 zvuk 1,bez munice
-4,Z,Ostnaty Kyj,3,Na blizko,Utok 3 zvuk 1,bez munice
-8,Z,Prak,1,Na Dalku,utok 1 zvuk 1,Zadarmo 3
-1,Z,Luk,2,Na Dalku,Utok 2 zvuk 0,Jidlo 4
-1,Z,Pistole,1,Na Dalku,Utok 3 zvuk 1,Material 3
-1,Z,Maceta,2,Na blizko,Utok 2 zvuk 0,bez munice
-5,ZZ,Luk,2,Na Dalku,Utok 2 zvuk 0,Jidlo 4
-5,ZZ,Pistole,1,Na Dalku,Utok 3 zvuk 1,Material 3
-3,ZZ,Maceta,2,Na blizko,Utok 2 zvuk 0,bez munice
-4,ZZ,Kuse,3,Na Dalku,Utok 3 zvuk 0,Jidlo 4
-3,ZZ,Brokovnice,3,Na Dalku,Utok 4 zvuk 2,Material 3
-2,ZZ,Motorova Pila,3,Na blizko,Utok 4 zvuk 2,bez munice
+1,VV,Naradi,1,-1 Cena,vyroby,x
+10,Z,Hul,2,Na blizko,utok 1+ zvuk 1,bez munice
+8,Z,Palka,2,Na blizko,Utok 2++ zvuk 1,bez munice
+4,Z,Ostnaty Kyj,3,Na blizko,Utok 3+ zvuk 1,bez munice
+8,Z,Prak,1,Na Dalku,utok 1++ zvuk 1,Zadarmo 3
+1,Z,Luk,2,Na Dalku,Utok 2+ zvuk 0,Jidlo 4
+1,Z,Pistole,1,Na Dalku,Utok 3++ zvuk 1,Material 3
+1,Z,Maceta,2,Na blizko,Utok 2++ zvuk 0,bez munice
+3,Z,Granat,1,Na Dalku,Utok 4X zvuk 3+1,Jednorazovy
+5,ZZ,Luk,2,Na Dalku,Utok 2+ zvuk 0,Jidlo 4
+5,ZZ,Pistole,1,Na Dalku,Utok 3++ zvuk 1,Material 3
+3,ZZ,Maceta,2,Na blizko,Utok 2++ zvuk 0,bez munice
+4,ZZ,Kuse,3,Na Dalku,Utok 3+ zvuk 0,Jidlo 4
+3,ZZ,Brokovnice,3,Na Dalku,Utok 4+ zvuk 2,Material 3
+2,ZZ,Motorova Pila,3,Na blizko,Utok 4++ zvuk 2,bez munice
+3,ZZ,Granat,1,Na Dalku,Utok 4X zvuk 3+1,Jednorazovy

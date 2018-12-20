@@ -17,6 +17,8 @@ DIRECTORY = 'cards'
 TEX_FILE = 'cards.tex'
 A4_WIDTH = 21
 A4_MARGIN = 1.5
+RESIZE_FILE = 'resize.png'
+RESIZE_HEIGHT = 300
 
 A4_TEXT_W = A4_WIDTH - (2*A4_MARGIN)
 COUNTERS = dict()
@@ -246,7 +248,9 @@ def printCardFile(setting, name):
 			print('!! Card '+setting['_card']+' field '+fieldName+' is of unknown type.')
 			exit()
 	fileName = DIRECTORY+'/'+name+'.png'
-	cv2.imwrite(fileName, img[:, :, :3])
+	cv2.imwrite(RESIZE_FILE, img[:, :, :3])
+	resizeCmd = 'convert '+RESIZE_FILE+ ' -resize '+str(setting['_resize'])+' '+fileName
+	os.system(resizeCmd)
 	imageDict = dict()
 	imageDict['file'] = name
 	imageDict['onOneLine'] = setting['_onOneLine']
@@ -361,6 +365,8 @@ def readParameters(setting, source):
 
 	if '_count' in source:
 		setting['_count'] = source['_count']
+	if '_resize' in source:
+		setting['_resize'] = source['_resize']
 
 	if '_out' in source:
 		newFile = source['_out']
@@ -436,6 +442,7 @@ if(not os.path.isdir(DIRECTORY)):
 
 setting = dict()
 setting['_count'] = 1
+setting['_resize'] = RESIZE_HEIGHT
 setting['_onOneLine'] = 4
 setting['_cardParams'] = dict()
 setting['_card'] = ''
@@ -463,4 +470,4 @@ for fileName in IMAGES.keys():
 	writeLine(f,0,'\end{document}')
 	f.close()
 
-	os.system('pdflatex '+fileName);
+	os.system('pdflatex '+fileName)

@@ -5,15 +5,15 @@
 3,Ex,Skupinka,x,2x Obluda,Vzadu,x
 3,E,Skupinka,x,2x Obluda,Na miste,x
 3,E,Balicek,x,Jidlo,Vepredu,x
-3,E,Balicek,x,Zbran,Na miste,x
-3,E,Balicek,x,Vybaveni,Vepredu,x
-3,E,Balicek,x,Jidlo,Na miste,x
 3,E,Balicek,x,Zbran,Vepredu,x
-3,E,Balicek,x,Vybaveni,Na miste,x
+3,E,Balicek,x,Vybaveni,Vepredu,x
+9,E,Balicek,x,Jidlo,Na miste,x
+9,E,Balicek,x,Zbran,Na miste,x
+9,E,Balicek,x,Vybaveni,Na miste,x
+3,E,Stado,x,+3 Hlasitost,Na miste,X = 3x Jidlo
 3,E,Stado,x,+2 Hlasitost,Na miste,X = 2x Jidlo
-3,E,Stado,x,+1 Hlasitost,Vzadu,X = 2x Jidlo
-3,Ex,Vybuch,x,+3 Hlasitost,Vepredu,XX 1 Zivot
-3,Ex,Vybuch,x,+3 Hlasitost,Vzadu,XX 1 Zivot
-3,Ex,Vybuch,x,+3 Hlasitost,Na miste,XX 1 Zivot
+2,Ex,Vybuch,x,+3 Hlasitost,Vepredu,XX
+2,Ex,Vybuch,x,+3 Hlasitost,Vzadu,XX
+4,Ex,Vybuch X,x,+3 Hlasitost,Na miste,XX -1 Zivot
 3,E,Prach,x,Obludy,neutoci,x
-3,E,Prach,x,Obludy,neutoci,1 Zivot
+3,E,Prach X,x,Obludy,neutoci,1 Zivot
