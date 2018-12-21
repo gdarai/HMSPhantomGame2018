@@ -52,7 +52,7 @@
   "line1":{
     "type":"text",
     "position":[[44,504],[580,620]],
-	"padding":[[20,20], [20,20]],
+	"padding":[[10,20], [10,20]],
     "font":"HERSHEY_SIMPLEX",
     "size":5,
 	"line":5,
@@ -62,7 +62,7 @@
   "line2":{
     "type":"text",
     "position":[[44,658],[580,772]],
-	"padding":[[20,20], [20,20]],
+	"padding":[[10,20], [10,20]],
     "font":"HERSHEY_SIMPLEX",
     "size":5,
 	"line":5,
@@ -72,7 +72,7 @@
   "line3":{
     "type":"text",
     "position":[[44,812],[580,924]],
-	"padding":[[20,20], [20,20]],
+	"padding":[[10,20], [10,20]],
     "font":"HERSHEY_SIMPLEX",
     "size":5,
 	"line":5,
