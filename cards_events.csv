@@ -19,3 +19,6 @@
 3,E,Prach X,x,Obludy,neutoci,1 Zivot
 2,E,Skrabanec,1,Otrava,Zabira misto,x
 2,E,Zraneni,1,Zraneni,Zabira misto,x
+6,E,Pruchod,x,Cesta,do vedlejsi,ulice
+3,E,Mustek,x,Cesta,do dalsiho,domu
+3,E,Strilna,x,Jit z domu,i na ostatni,karty

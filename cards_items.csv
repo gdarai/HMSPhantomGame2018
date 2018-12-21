@@ -20,18 +20,18 @@
 10,VV,Stit,2,+2 Odolnost,na kousnuti,x
 2,VV,Vysilacka,1,Komunikace,na dalku,x
 1,VV,Naradi,1,-1 Cena,vyroby,x
-10,Z,Hul,2,Na blizko,utok 1+ zvuk 1,bez munice
-8,Z,Palka,2,Na blizko,Utok 2++ zvuk 1,bez munice
-4,Z,Ostnaty Kyj,3,Na blizko,Utok 3+ zvuk 1,bez munice
-8,Z,Prak,1,Na Dalku,utok 1++ zvuk 1,Zadarmo 3
-1,Z,Luk,2,Na Dalku,Utok 2+ zvuk 0,Jidlo 4
-1,Z,Pistole,1,Na Dalku,Utok 3++ zvuk 1,Material 3
-1,Z,Maceta,2,Na blizko,Utok 2++ zvuk 0,bez munice
-3,Z,Granat,1,Na Dalku,Utok 4X zvuk 3+1,Jednorazovy
-5,ZZ,Luk,2,Na Dalku,Utok 2+ zvuk 0,Jidlo 4
-5,ZZ,Pistole,1,Na Dalku,Utok 3++ zvuk 1,Material 3
-3,ZZ,Maceta,2,Na blizko,Utok 2++ zvuk 0,bez munice
-4,ZZ,Kuse,3,Na Dalku,Utok 3+ zvuk 0,Jidlo 4
-3,ZZ,Brokovnice,3,Na Dalku,Utok 4+ zvuk 2,Material 3
-2,ZZ,Motorova Pila,3,Na blizko,Utok 4++ zvuk 2,bez munice
-3,ZZ,Granat,1,Na Dalku,Utok 4X zvuk 3+1,Jednorazovy
+10,Z,Hul,2,Na blizko +,Utok 1 zvuk 1,bez munice
+8,Z,Palka,2,Na blizko ++,Utok 2 zvuk 1,bez munice
+4,Z,Ostnaty Kyj,3,Na blizko +,Utok 3 zvuk 1,bez munice
+8,Z,Prak,1,Na Dalku ++,Utok 1 zvuk 1,Zadarmo 3
+1,Z,Luk,2,Na Dalku +,Utok 2 zvuk 0,Jidlo 4
+1,Z,Pistole,1,Na Dalku ++,Utok 3 zvuk 1,Material 3
+1,Z,Maceta,2,Na blizko ++,Utok 2 zvuk 0,bez munice
+3,Z,Granat,1,Na Dalku X,Utok 4 zvuk 3+1,Jednorazovy
+5,ZZ,Luk,2,Na Dalku +,Utok 2 zvuk 0,Jidlo 4
+5,ZZ,Pistole,1,Na Dalku ++,Utok 3 zvuk 1,Material 3
+3,ZZ,Maceta,2,Na blizko ++,Utok 2 zvuk 0,bez munice
+4,ZZ,Kuse,3,Na Dalku +,Utok 3 zvuk 0,Jidlo 4
+3,ZZ,Brokovnice,3,Na Dalku +,Utok 4 zvuk 2,Material 3
+2,ZZ,Motorova Pila,3,Na blizko ++,Utok 4 zvuk 2,bez munice
+3,ZZ,Granat,1,Na Dalku X,Utok 4 zvuk 3+1,Jednorazovy
