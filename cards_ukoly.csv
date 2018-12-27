@@ -1,0 +1,26 @@
+Ukol,Nakladak,x,Na Predmesti,U Domku,nebo,u Firmy
+Ukol,Nakladak,x,Ve Meste,U Hasicu,nebo,v Garazich
+Ukol,Nakladak,x,Ve Meste,U Hasicu,nebo,u Policie
+Ukol,Auto,x,Na Predmesti,U Domku,nebo,u Firmy
+Ukol,Auto,+Naradi,Na Predmesti,V Garazich,x,x
+Ukol,Auto,x,Ve Meste,V Garazich,G ci H,x
+Ukol,Auto,x,Ve Meste,U Hasicu,nebo,u Policie
+Ukol,Motorka,+Naradi,Na Predmesti,1 2 ci 3,x,x
+Ukol,Motorka,+Naradi,Ve Meste,1 2 ci 3,x,x
+Ukol,Sklad,x,Na Predmesti,pouze I,x,x
+Ukol,Sklad,x,Ve Meste,pouze G,x,x
+Ukol,Policie,x,x,pouze Suda,x,x
+Ukol,Policie,x,Na Predmesti,x,x,x
+Ukol,Obchodak,x,Ve Meste,pouze Licha,x,x
+Ukol,Zahrada,u Domku,Na Predmesti,pouze I,x,x
+Ukol,Budova,u Office,Ve Meste,pouze H,x,x
+Ukol,Sklad,u Bunkru,Ve Meste,x,x,x
+Ukol,Sklad,u Staveniste,Ve Meste,x,x,x
+Ukol,Material,u Policie,x,x,x,x
+Ukol,V. Material,ve Skladu,1 ci 2,Ve Meste,x,x
+Ukol,Material,v Dome,4 ci 5,Ve Meste,x,x
+Ukol,Material,u Hasicu,x,Ve Meste,x,x
+Ukol,Vybaveni,C,v Dome,Na Predmesti,x,x
+Ukol,V. Vybaveni,B,u Office,v Garazi,x,x
+Ukol,Vybaveni,E ci F,ve Skladu,Na Predmesti,x,x
+Ukol,Zbran,ve Skladu,Na Predmesti,x,x,x

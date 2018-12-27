@@ -36,9 +36,27 @@
   },
   {
     "_out":"cards_cesta.tex",
-    "_card":"sideCard",
+    "_card":"mainCard2",
     "_onOneLine":6,
     "symbol":{ "reg": "[D-F][1-5]" },
+    "_list":{
+      "values":[
+        "name",
+        "item",
+        "next",
+        "enTop",
+        "enIn",
+        "enBot",
+        "hide"
+      ]
+    },
+    "values":"cards_mesto.csv"
+  },
+  {
+    "_out":"cards_cesta.tex",
+    "_card":"sideCard",
+    "_onOneLine":6,
+    "symbol":{ "reg": "[G-I][1-5]" },
     "_list":{
       "values":[
         "name",
@@ -120,5 +138,22 @@
     "_card":"freeCard",
     "_count":6,
     "_onOneLine":6
+  },
+  {
+    "_out":"cards_quests.tex",
+    "_card":"sixLnCard",
+    "_onOneLine":6,
+    "_list":{
+      "values":[
+        "pack",
+        "line1",
+        "line2",
+        "line3",
+        "line4",
+        "line5",
+        "line6"
+      ]
+    },
+    "values":"cards_ukoly.csv"
   }
 ]

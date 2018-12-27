@@ -8,27 +8,14 @@ Tato kooperac'ni' hra ma' splnit na'sleduji'ci' parametry. Me''la bz se skla'dat
 Ne'ktere' principy plati' pro vs'echny druhy misi'.
 
 <C1>Prohra a pr'ez'iti'
-Kaz'da' mise pu''jde nejenom vyhra't a nebo prohra't, ale take' pu''jde pr'ez'it. Pokud hra'c'i misi pouze pr'ez'iji', mohou se uzdravit a o misi se pokusit znovu. V plne' kampani bude u kaz'de' mise da'no, kolikra't se o ni' mohou hra'c'i pokusit.
-
-<C1>Postavy
-Hra'c'i hraji' za jednotlive' postavy. Kaz'da' postava se lis'i' charakteristikami a dovednostmi.
-Charakteristiky postavy jsou v za'kladu:
+Kaz'da' mise pu''jde nejenom vyhra't a nebo prohra't, ale take' pu''jde pr'ez'it. Pokud hra'c'i misi pouze pr'ez'iji', mohou se uzdravit a o misi se pokusit znovu. V plne' kampani bude u kaz'de' mise da'no, kolikra't se o ni' mohou hra'c'i pokusit, nez' ji' prohraji' i kdyz' ji' pr'ez'iji'.
 <I0>
-<I>Zdravi' (6) - Kolik jes'te' zvla'dne za'sahu'' od zombi'ku''
-<I>Kondice (6) - Jak dlouho jes'te' vydrz'i' nez' padne u'navou - mu''z'e by't nula, ale pak nemu''z'e de''lat nic co stoji' u'navu
-<I>Si'la (5) - Kolik ve''ci' unese, nez' je pr'eti'z'ena' - postava, ktera' je pr'eti'z'ena' ztra'ci' jednu kondici kaz'de' kolo.
-<I1>
-
-<C2>Role hra'c'u''
-Pr'ida'vaji' hra'c'i ne''jakou dovednost, ale me'ni' mu staty. Umoz'n'uje dals'i' diverzifikaci hry. V budoucnu je moz'ne' podmi'nit ne'jake' dovednosti, konkre'tni' roli'. Vs'echny kampane'' by ale me''ly by't neza'visle' na tom, jake' role si hra'c'i vyberou. V pr'i'pade'' z'e budem chti't jednoho hra'c'e mi't specia'lni'ho, neude''la' se to roli' ale ne''jaky'm dodatec'ny'm odzna'c'kem.
-<I0>
-<I>Pru''zkumni'k - Doka'z'e be''zet potichu, -1 zdravi', -1 si'la
-<I>Bojovni'k - -1 Prohleda'va'ni' - +1 boj, +1 zdravi' +1 kondice
-<I>Mechanik - Ma' tas'ku s na'r'adi'm, hned od zac'a'tku a nezabi'ra' mu mi'sto, -1 zdravi', -1 kondice
+<I>Pr'ez'iti' mise = Opustit me'sto a mi't alespon' 1 ji'dlo pro kaz'de'ho hra'c'e + 1 za kaz'de'ho mrtve'ho, zrane'ne'ho nebo otra'vene'ho.
+<I>Vy'hra mise = Dle parametru' kampane'', v za'kladu je to opustit me''sto a mi't alsepon' 3 ji'dla pro kaz'de'ho hra'c'e.
 <I1>
 
 <C1>Budova'ni' mapy
-Mapa po ktere' hra'c'i jdou je me''sto pr'i pohledu z boku. Mapa se skla'da' z karet. Kaz'da' karta pr'edstavuje budovu. Pokaz'de' kdyz' ne''jaky' hra'c' dojde na kraj mapy, ihned se ta'hne a poloz'i' nova' karta, takz'e vz'dycky vi'me, co je pr'ed na'ma pr'edti'm nez' tam vlezeme. Ma'me vi'cero hroma'dek, ze ktery'ch mu''z'eme ta'hnout dals'i' budovu. Kaz'de' me'sto (mise) ma' napsa' pravidla, jak dlouhe' ma' pr'edme'sti' a malome''sto. Pokud jiz' na stole lez'i' dost otoc'eny'ch karet pr'edme''sti', bere se da'l malome''sto, pokud uz'jste skrz malome''sto, vstoupi'te do centa. Da'l konstrukci mapy ovlivn'uji': Rozsah budovy a Kr'iz'ovatky.
+Mapa po ktere' hra'c'i jdou je me''sto pr'i pohledu z boku. Mapa se skla'da' z karet. Kaz'da' karta pr'edstavuje budovu. Pokaz'de' kdyz' ne''jaky' hra'c' dojde na kraj mapy, ihned se ta'hne a poloz'i' nova' karta, takz'e vz'dycky vi'me, co je pr'ed na'ma pr'edti'm nez' tam vlezeme. Ma'me vi'cero hroma'dek, ze ktery'ch mu''z'eme ta'hnout dals'i' budovu. V za'kladni' hr'e se pr'edpokla'da' z'e pr'edme''sti', me''sto i centrum maji' velikost 6 budov. Pokud jiz' na stole lez'i' dost otoc'eny'ch karet pr'edme''sti', bere se da'l malome''sto, pokud uz'jste skrz malome''sto, vstoupi'te do centa. Da'l konstrukci mapy ovlivn'uji': Rozsah budovy a Kr'iz'ovatky.
 
 Poli'c'ko mapy je tedy karta. Pr'edstavuje kus ulice, na ktere' hra'c'i stoji'. Je u ni' jasne', ktera' karta je dals'i' (sme''rem k centru) a ktera' pr'edchozi'.Je na ni' napsa'no:
 <I0>
@@ -69,10 +56,34 @@ Pokud hra'c' potka' kr'iz'ovatku, me'sto se mu rozdvoji'. Od ted' si mu'z'e vybr
 <I1>
 
 <C2>Dals'i' vstupy do me''sta
-Kaz'de' me''sto ma' vi'cero vstupu', vi'cero ulic, jen je naji't. V za'kladu se novy' vstup obe''vi' pokaz'de' kdyz' v tom pr'edchozi'm dojdete az' k pr'edme''sti'. Ale existuji' i jine' moz'nosti. Jde ho naji't v na'hoda'ch, pomoci' dovednosti postavy, nebo pomoci' specia'lni'ho pravidla mise.
+Kaz'de' me''sto ma' vi'cero vstupu', vi'cero ulic, jen je naji't. Do zac'a'tku je otevr'eno tolik vstupu'', kolik je hra'c'u''. Novy' vstup se obe''vi' pokaz'de' kdyz' v tom pr'edchozi'm projdete cele' pr'edme''sti'. Ale existuji' i jine' moz'nosti. Jde ho naji't v na'hoda'ch, pomoci' dovednosti postavy, nebo pomoci' specia'lni'ho pravidla mise. Je li hra'c' mimo me''sto, mu'z'e krokem vpr'ed vstoupit do ktere'hokoliv vstupu do me''sta.
+
+
+
+
+
+<C>Nezar'azena' pravidla
 
 <C1>Na zac'a'tku hry
-Na zac'a'tku hra'c'i zpravidla stoji' na kraji me''sta. Na pravo od nich je prvni' karta budovy a nalevo divoc'ina. Tento kraj mapy se ta'hne nahoru i dolu do nekonec'na. Kaz'dy' sce'na'r' r'i'ka', co maji' hra'c'i do zac'a'tku za vybaveni' a jake' jsou jejich u'koly. Take' jaky'mi pravidly se r'i'di' karty uda'losti' a jaka' jsou omezeni' mapy.
+Na zac'a'tku hra'c'i stoji' na kraji me''sta. Na pravo od nich je prvni' karta budovy a nalevo divoc'ina. Tento kraj mapy se ta'hne nahoru i dolu do nekonec'na. Kaz'dy' sce'na'r' r'i'ka', co maji' hra'c'i do zac'a'tku za vybaveni' a jake' jsou jejich u'koly. Take' jaky'mi pravidly se r'i'di' karty uda'losti' a jaka' jsou omezeni' mapy.
+
+<C1>Postavy
+Hra'c'i hraji' za jednotlive' postavy. Kaz'da' postava se lis'i' charakteristikami a dovednostmi.
+Charakteristiky postavy jsou v za'kladu:
+<I0>
+<I>Zdravi' (6) - Kolik jes'te' zvla'dne za'sahu'' od zombi'ku''
+<I>Kondice (6) - Jak dlouho jes'te' vydrz'i' nez' padne u'navou - mu''z'e by't nula, ale pak nemu''z'e de''lat nic co stoji' u'navu
+<I>Si'la (5) - Kolik ve''ci' unese, nez' je pr'eti'z'ena' - postava, ktera' je pr'eti'z'ena' ztra'ci' jednu kondici kaz'de' kolo.
+<I1>
+
+<C2>Role hra'c'u''
+Pr'ida'vaji' hra'c'i ne''jakou dovednost, ale me'ni' mu staty. Umoz'n'uje dals'i' diverzifikaci hry. V budoucnu je moz'ne' podmi'nit ne'jake' dovednosti, konkre'tni' roli'. Vs'echny kampane'' by ale me''ly by't neza'visle' na tom, jake' role si hra'c'i vyberou. V pr'i'pade'' z'e budem chti't jednoho hra'c'e mi't specia'lni'ho, neude''la' se to roli' ale ne''jaky'm dodatec'ny'm odzna'c'kem.
+<I0>
+<I>Pru''zkumni'k - Doka'z'e be''zet potichu, -1 zdravi', -1 si'la
+<I>Bojovni'k - -1 Prohleda'va'ni' - +1 boj, +1 zdravi' +1 kondice
+<I>Mechanik - Ma' tas'ku s na'r'adi'm, hned od zac'a'tku a nezabi'ra' mu mi'sto, -1 zdravi', -1 kondice
+<I1>
+
 <C2>Pr'i'pravne' kroky
 Pr'ed hrou je potr'eba pr'ipravit herni' plochu. To se hodne'' lis'i' v za'vislosti na konkre'tni' misi, ale v za'kladu je potr'eba:
 <I0>
