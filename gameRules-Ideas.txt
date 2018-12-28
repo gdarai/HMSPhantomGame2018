@@ -19,19 +19,19 @@ Tip budovy, cast mesta, omezeni na pismena nebo cisla.
 5) Hledani konkretniho vybaveni
 Tip vybaveni, cast mesta / budova, omezeni
 
-6) Rozmanitost nepratel - Priklady
+6) Rozmanitost nepratel
 Pocet zivotu, Rychlost, zvlastni schopnosti
 
 7) Schopnosti postav
 Stromy dovednosti a jejich ceny v XP, Zpusob ziskavani XP
 
-8) Hledani na mape - Priklady
+8) Hledani na mape
 Mapa obsahuje kod dvou budov a presne na karticce mezi nimi je vas cil
 
-9) Specialni budovy - Karty + Priklady ukolu
+9) Specialni budovy
 Pristav, Most, Letiste, Bunkr
 
-10) Povolani - Priklady
+10) Povolani
 Davaji postave urcite zakladni smerovani, davaji nejake skill stromy levnejsi, nektere drazsi, nektere nemozne.
 
 11) Osobni ukoly - Priklady
