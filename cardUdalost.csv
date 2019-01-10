@@ -1,0 +1,19 @@
+7,Ex,Minibos,x,Silna Obluda,Vepredu,x
+7,Ex,Minibos,x,Silna Obluda,Vzadu,x
+10,Ex,Minibos,x,Silna Obluda,Na miste,x
+3,Ex,Vybuch,x,+3 Hlasitost,Vepredu,XX
+3,Ex,Vybuch,x,+3 Hlasitost,Vzadu,XX
+3,Ex,Vybuch X,x,+3 Hlasitost,Na miste,XX -1 Zivot
+3,Eu,Balicek,x,Predmet,Vepredu,x
+3,Eu,Balicek,x,Predmet,Vzadu,x
+9,Eu,Balicek,x,Predmet,Na miste,x
+6,Eu,Pruchod,x,Cesta,do vedlejsi,ulice
+3,Eu,Mustek,x,Cesta,do dalsiho,domu
+3,Eu,Strilna,x,Jit z domu,i na ostatni,karty
+6,Eu,Mapa,x,Novy vstup,do mesta,
+6,E,Stado,x,+3 Hlasitost,Na miste,X = Jidlo z 5
+6,E,Stado,x,+2 Hlasitost,Na miste,X = Jidlo z 5
+8,E,Prach,x,Obludy,neutoci,x
+5,E,Prach X,x,Obludy,neutoci,1 Zivot
+4,E,Skrabanec,1,Otrava,Zabira misto,x
+4,E,Zraneni,1,Zraneni,Zabira misto,x

@@ -1,0 +1,19 @@
+[
+  {
+    "_out":"cards_items.tex",
+    "_card":"itemCard",
+    "_onOneLine":6,
+    "symbol":{ "reg": "X-[A-D][1-13]" },
+    "_list":{
+      "values":[
+        "pack",
+        "name",
+        "weight",
+        "line1",
+        "line2",
+        "line3"
+      ]
+    },
+    "values":"cards_items.csv"
+  }
+]

@@ -1,0 +1,13 @@
+10,Garaz,V,x,0,0,1,1
+10,Garaz,V,x,0,1,1,1
+10,Garaz,V,x,1,1,1,1
+11,Sklad,M,x,1,0,1,2
+11,Sklad,M,x,1,1,0,2
+11,Sklad,M,x,1,2,1,2
+13,Budova,J,x,1,1,1,2
+13,Budova,J,x,1,2,0,1
+13,Budova,J,x,2,2,0,2
+9,Zahrada,x,x,0,0,0,0
+9,Zahrada,x,x,1,0,0,1
+9,Zahrada,x,x,0,0,1,1
+6,Zahrada,Kriz,x,1,0,2,1

@@ -1,0 +1,16 @@
+4,Domek,x,1,1,2,1,x
+4,Domek,x,2,1,1,1,x
+4,Domek,x,2,1,2,1,x
+2,Kram,x,1,1,0,1,x
+2,Kram,x,1,2,0,1,x
+1,Policie,x,0,0,1,1,x
+1,Policie,x,1,1,1,1,x
+3,Lekarna,x,0,0,1,0,x
+2,Garaze,x,0,0,2,1,x
+2,Garaze,x,1,0,1,2,x
+2,Sklad,x,1,1,2,2,x
+2,Sklad,x,2,2,1,2,x
+2,Firma,x,1,1,2,1,x
+2,Firma,x,2,1,1,2,x
+2,Firma,x,2,2,1,2,x
+5,Park,x,1,1,0,2,x

@@ -36,3 +36,49 @@ Davaji postave urcite zakladni smerovani, davaji nejake skill stromy levnejsi, n
 
 11) Osobni ukoly - Priklady
 Spojene s postavou, povolanim, nebo dovednosti
+
+
+
+=========>
+Zjednoduseni
+=========>
+
+1) Mene balicku karet
+    1 Balicek doplnujicich budov
+    1 Balicek veci, J + JJ + M + MM + V + Z, pomer: 40J / 10M / 20V / 30Z
+    1 Balicek vozidel
+2) Mene akci na ruce
+    Vpred, Vzad, Boj, Batoh
+    Kde Batoh
+      1 utility akce
+        Manipulace s vecmi, (Hledani / Sbirani / Vymena)
+        Krafteni
+      1 uzdravene zdravi
+      1 uzdravena stamina
+    Kde Boj
+      (Jit ven+) Utok venku
+      (Jit dovnitr+) Utok vevnitr
+3) Stamina
+    + 1 Akce za 1 Staminu
+    Omezeni na max utracene staminy
+    Omezeni na max staminy = max nosnost
+4) Minimalisticka verze
+    Ukol ziskat jidlo,
+    Ukol zprovoznit vozidlo,
+    Zrusit skryti,
+    Zrusit druh predmetu v budove
+5) Castejsi boj s lepsimi neprately
+    Kazde kolo +1 boss k nejhlasitejsimu
+    Utility / Event / Super boss = 1/1/1
+    Hod: UP / DOWN / VPREDU / VZADU / BOSS / EVENT
+6) Zjednoduseni hlasitosti
+    Pouze mluveni / nemluveni
+7) Zakladni role
+    Zdravi/Sila/Spend/+
+    Ninja - 6/8/2
+    Rvac - 8/6/1
+    Medic - 6/7/1 +Lecba
+    Scout - 6/10/1 +Batoh
+8) Upravit Hledani
+    Male Hledani = 1 ze 2
+    Velke Hledani = 1 ze 3 nebo 2 z 5

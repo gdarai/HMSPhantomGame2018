@@ -1,0 +1,12 @@
+3,8 +,Auto,3,( 2x m ),+ MM,na G
+3,8 +,Auto,3,( MM + m ),+ m,na G
+3,8 +,Auto,4,( 2x m ),+ MM,na G
+3,8 +,Auto,4,( 2x MM + m ),+ m,na G
+3,8 +,Nakladak,7,( 2x MM ),+ MM + m,na G
+3,8 +,Nakladak,7,( 3x MM ),+ MM,na G
+3,7 +,Kolo,1,( m ),'+ m,na B S G
+3,7 +,Kolo,1,( 2x m ),x,na B S G
+3,7 +,Motorka,2,( 2x m ),+ m,na B S G
+3,7 +,Motorka,2,( MM ),x,na B S G
+3,7 +,Motorka,3,( 2x m ),+ 2x m,na B S G
+3,7 +,Motorka,3,( MM ),+ m,na B S G

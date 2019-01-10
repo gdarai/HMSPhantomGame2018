@@ -1,0 +1,41 @@
+Ukol,Nakladak,x,Na Predmesti,U Domku,nebo,u Firmy
+Ukol,Nakladak,x,Ve Meste,U Hasicu,nebo,v Garazich
+Ukol,Nakladak,x,Ve Meste,U Hasicu,nebo,u Policie
+Ukol,Auto,x,Na Predmesti,U Domku,nebo,u Firmy
+Ukol,Auto,+Naradi,Na Predmesti,V Garazich,x,x
+Ukol,Auto,x,Ve Meste,V Garazich,G ci H,x
+Ukol,Auto,x,Ve Meste,U Hasicu,nebo,u Policie
+Ukol,Motorka,+Naradi,Na Predmesti,1 2 ci 3,x,x
+Ukol,Motorka,+Naradi,Ve Meste,1 2 ci 3,x,x
+Ukol,Sklad,x,Na Predmesti,pouze I,x,x
+Ukol,Sklad,x,Ve Meste,pouze G,x,x
+Ukol,Policie,x,x,pouze Suda,x,x
+Ukol,Policie,x,Na Predmesti,x,x,x
+Ukol,Obchodak,x,Ve Meste,pouze Licha,x,x
+Ukol,Zahrada,u Domku,Na Predmesti,pouze I,x,x
+Ukol,Budova,u Office,Ve Meste,pouze H,x,x
+Ukol,Sklad,u Bunkru,Ve Meste,x,x,x
+Ukol,Sklad,u Staveniste,Ve Meste,x,x,x
+Ukol,Material,u Policie,x,x,x,x
+Ukol,V. Material,ve Skladu,1 ci 2,Ve Meste,x,x
+Ukol,Material,v Dome,4 ci 5,Ve Meste,x,x
+Ukol,Material,u Hasicu,x,Ve Meste,x,x
+Ukol,Vybaveni,C,v Dome,Na Predmesti,x,x
+Ukol,V. Vybaveni,B,u Office,v Garazi,x,x
+Ukol,Vybaveni,E ci F,ve Skladu,Na Predmesti,x,x
+Ukol,Zbran,ve Skladu,Na Predmesti,x,x,x
+Ukol,Mezi budovami,Sklad,jen 1,Hasici,,
+Ukol,Mezi budovami,Garaze,ve Meste,x,Lekarna,Na Predmesti
+Ukol,Mezi budovami,Domek,jen A,x,Office,x
+Ukol,Mezi budovami,Zahrada,jen 1 ci 2,x,Lekarna,Ve Meste
+Ukol,Mezi budovami,Dum,Ve Meste,jen E 1 az 3,Firma,jen Suda
+Ukol,Mezi budovami,Garaz,Na Predmesti,jen 1,x,Poliklinika
+Ukol,Najit Special,x,Kostelik,3x,x,x
+Ukol,Najit Special,x,Zakladnu,1x,x,x
+Ukol,Najit Special,x,Most,1x,ujit 4+4,za most
+Ukol,Najit Special,x,Pristav,1x,4MM,na vor
+Ukol,Najit Special,x,Staje,1x,5JJ,pro kone
+Ukol,Najit Special,x,Letiste,1x,5M+2MM,na letadlo
+Ukol,Najit Special,x,Heliport,1x,2MM cislo 1,na vrtulnik
+Ukol,Postupny,x,V Kostele,Ve Meste,x,Dalsi Ukol
+Ukol,Postupny,x,U Hasicu,Ve Meste,x,Dalsi Ukol

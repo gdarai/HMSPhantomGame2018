@@ -1,0 +1,12 @@
+3,8 +,Auto,3,( 2x m ),(rep) / +give,+ MM
+3,8 +,Auto,3,( MM + m ),(rep) / +give,+ m
+3,8 +,Auto,4,( 2x m ),(rep) / +give,+ MM
+3,8 +,Auto,4,( 2x MM + m ),(rep) / +give,+ m
+3,8 +,Nakladak,7,( 2x MM ),(rep) / +give,+ MM + m
+3,8 +,Nakladak,7,( 3x MM ),(rep) / +give,+ MM
+3,7 +,Kolo,1,( m ),(rep) / +give,+ m
+3,7 +,Kolo,1,( 2x m ),(rep) / +give,x
+3,7 +,Motorka,2,( 2x m ),(rep) / +give,+ m
+3,7 +,Motorka,2,( MM ),(rep) / +give,x
+3,7 +,Motorka,3,( 2x m ),(rep) / +give,+ 2x m
+3,7 +,Motorka,3,( MM ),(rep) / +give,+ m
