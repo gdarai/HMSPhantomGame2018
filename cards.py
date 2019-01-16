@@ -424,6 +424,8 @@ def printImages(IMAGES):
 
 ########
 # Settings file
+if(len(sys.argv) > 1):
+	SETTING = sys.argv[1]
 
 print('\nReading input file --> '+SETTING)
 files = getFiles(SETTING)
