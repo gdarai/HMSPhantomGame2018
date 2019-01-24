@@ -1,3 +1,4 @@
+import sys
 import re
 import os
 import json
@@ -14,6 +15,8 @@ canPrint = True
 
 SETTING = 'cards.json'
 DIRECTORY = 'cards'
+BREAK_CHAR = '|'
+Y_SPACE = 5
 TEX_FILE = 'cards.tex'
 A4_WIDTH = 21
 A4_MARGIN = 1.5
@@ -223,6 +226,7 @@ def printCardFile(setting, name):
 			checkField(cardName, props, 'color', 'list', [0, 0, 0])
 
 			theText = setting[fieldName].nextVal()
+			theText = theText.split(setting['_break'])
 
 			font = FONTS[props['font']]
 			thickness = props['line']
@@ -232,18 +236,28 @@ def printCardFile(setting, name):
 			tgtPos = [np.add(tgtPos0[0], tgtPos1[0]), np.subtract(tgtPos0[1],tgtPos1[1])]
 
 			align = ALIGN[props['align']]
-			size, _ = cv2.getTextSize(theText, font, 1, thickness)
-			if size[1]*size[0] == 0 :
+			size = []
+			sizeCheck = 0
+			sizeTotal = [0, -setting['_yspace']]
+			for ln in theText:
+				oneSize, _ = cv2.getTextSize(ln, font, 1, thickness)
+				size.append(oneSize)
+				sizeCheck = max(sizeCheck, oneSize[1]*oneSize[0])
+				sizeTotal[0] = max(sizeTotal[0], oneSize[0])
+				sizeTotal[1] = sizeTotal[1]+oneSize[1]+setting['_yspace']
+			if sizeCheck == 0 :
 				print('!! text-to-insert is empty ... skipping.')
 				continue
+			imgScale = min((float(tgtPos[1][1]) - tgtPos[0][1]) / sizeTotal[1], (float(tgtPos[1][0]) - tgtPos[0][0]) / sizeTotal[0])
+			finSizeY = int(imgScale * sizeTotal[1])
+			oneSizeY = int(finSizeY / len(theText))
+			shiftY = finSizeY
 
-			imgScale = min((tgtPos[1][1] - tgtPos[0][1]) / size[1], (tgtPos[1][0] - tgtPos[0][0]) / size[0])
-			finSize, _ = cv2.getTextSize(theText, font, imgScale, thickness)
-
-			finPos = (align(tgtPos[0][0], tgtPos[1][0], finSize[0]), ALIGN_CENTER(tgtPos[0][1], tgtPos[1][1], finSize[1])+finSize[1])
-
-			img = cv2.putText(img, theText, finPos, font, imgScale, color, thickness, cv2.LINE_AA)
-
+			for ln in theText:
+				finSize, _ = cv2.getTextSize(ln, font, imgScale, thickness)
+				finPos = (align(tgtPos[0][0], tgtPos[1][0], finSize[0]), ALIGN_CENTER(tgtPos[0][1], tgtPos[1][1], finSizeY)+shiftY)
+				img = cv2.putText(img, ln, finPos, font, imgScale, color, thickness, cv2.LINE_AA)
+				shiftY = shiftY - oneSizeY
 		else:
 			print('!! Card '+setting['_card']+' field '+fieldName+' is of unknown type.')
 			exit()
@@ -367,7 +381,10 @@ def readParameters(setting, source):
 		setting['_count'] = source['_count']
 	if '_resize' in source:
 		setting['_resize'] = source['_resize']
-
+	if '_break' in source:
+		setting['_break'] = source['_break']
+	if '_yspace' in source:
+		setting['_yspace'] = source['_yspace']
 	if '_out' in source:
 		newFile = source['_out']
 		setting['_out'] = newFile
@@ -445,6 +462,8 @@ if(not os.path.isdir(DIRECTORY)):
 setting = dict()
 setting['_count'] = 1
 setting['_resize'] = RESIZE_HEIGHT
+setting['_break'] = BREAK_CHAR
+setting['_yspace'] = Y_SPACE
 setting['_onOneLine'] = 4
 setting['_cardParams'] = dict()
 setting['_card'] = ''
