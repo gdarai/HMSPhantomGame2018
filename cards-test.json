@@ -1,0 +1,28 @@
+[
+  {
+    "_out":"card_out.tex",
+    "_card":"sixLnCard",
+    "_onOneLine":6,
+    "_sub":[
+      {
+        "pack":"a",
+        "line1":"AA",
+        "line2":"BBB",
+        "line3":"CCCC",
+        "line4":"DDDDD",
+        "line5":"EEEEEE",
+        "line6":"FFFFFFF"
+      },
+      {
+        "pack":"b",
+        "line1":"XXXXXX|AA",
+        "line2":"XXXXXX-BBB",
+        "line3":"XXXXXX-CCCC",
+        "line4":"XXXXXX-DDDDD",
+        "line5":"XXXXXX-EEEEEE",
+        "line6":"XXXXXX-FFFFFFF"
+      }
+    ],
+    "values":"cardPom.csv"
+  }
+]

@@ -82,3 +82,14 @@ Zjednoduseni
 8) Upravit Hledani
     Male Hledani = 1 ze 2
     Velke Hledani = 1 ze 3 nebo 2 z 5
+
+----------------
+
+1) Rozlysit budovy podle toho jak dobre v nich jde hledat, park = vubec ne
+2) Rozlozit prohledavani jinak 5 !== 6
+3) Zvysit hlasitost kdyz beres DMG + Ninja ne
+4) Vetsi variabilita v budovach - pridat dovednosti, rozmelnit poced pridomku
+5) Upresnit dovednosti = berou / neberou staminu
+6) Upresnit leceni zraneni = jidlem
+
+Zacit sepisovat pravidla
