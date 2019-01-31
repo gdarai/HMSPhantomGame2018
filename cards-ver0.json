@@ -133,5 +133,22 @@
       ]
     },
     "values":"cardNepritel.csv"
+  },
+  {
+    "_out":"card_out_Vozidla.tex",
+    "_card":"vehicleCard",
+    "_onOneLine":6,
+    "symbol":{ "reg": "[A-F][1-5]" },
+    "_list":{
+      "values":[
+        "pack",
+        "name",
+        "places",
+        "need",
+        "provide",
+        "occurence"
+      ]
+    },
+    "values":"cardVozidla.csv"
   }
 ]

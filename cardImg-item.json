@@ -49,34 +49,14 @@
 	  "color":[0,0,0],
     "align":"center"
   },
-  "line1":{
+  "text":{
     "type":"text",
-    "position":[[44,504],[580,620]],
+    "position":[[40,578],[580,927]],
 	  "padding":[[10,20], [10,20]],
     "font":"HERSHEY_SIMPLEX",
     "size":5,
 	  "line":5,
   	"color":[0,0,0],
-    "align":"center"
-  },
-  "line2":{
-    "type":"text",
-    "position":[[44,658],[580,772]],
-	  "padding":[[10,20], [10,20]],
-    "font":"HERSHEY_SIMPLEX",
-    "size":5,
-	"line":5,
-	"color":[0,0,0],
-    "align":"center"
-  },
-  "line3":{
-    "type":"text",
-    "position":[[44,812],[580,924]],
-	"padding":[[10,20], [10,20]],
-    "font":"HERSHEY_SIMPLEX",
-    "size":5,
-	"line":5,
-	"color":[0,0,0],
     "align":"center"
   }
 }
