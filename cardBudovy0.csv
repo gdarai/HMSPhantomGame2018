@@ -1,7 +1,14 @@
-8,Budova,x,x,2,1,1,x
-10,Budova,x,x,1,0,1,x
-10,Budova,x,x,1,1,2,x
-6,Zahrada,x,x,0,0,0,x
-6,Zahrada,x,x,1,0,0,x
-4,Zahrada,x,x,0,0,1,x
-4,Zahrada,Kriz,x,1,0,2,x
+2,Budova,2,0,1,-1 Parkovani|aut
+2,Budova,1,0,2,-1 Parkovani|aut
+2,Budova,0,1,1,-1 Parkovani|aut|Predmet navic
+2,Budova,1,1,1,x
+2,Budova,1,1,0,Zablokovane dvere|2 akce Inv|na odblokovani|Predmet navic
+2,Garaz,0,0,0,+1 Parkovani|aut
+2,Garaz,0,0,2,+1 Parkovani|aut|Predmet navic
+2,Garaz,0,1,1,+1 Parkovani|aut
+2,Kulna,1,0,2,Zarucene|kolo ci motorka|Predmet navic
+2,Kulna,1,1,1,Zablokovane dvere|2 akce Inv|na odblokovani|Predmet navic
+2,Zahrada,1,0,1,x
+2,Zahrada,1,0,1,Predmet navic
+2,Zahrada,1,0,1,x
+2,Zahrada,1,0,1,Krizovatka

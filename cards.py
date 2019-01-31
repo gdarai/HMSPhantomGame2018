@@ -251,13 +251,13 @@ def printCardFile(setting, name):
 			imgScale = min((float(tgtPos[1][1]) - tgtPos[0][1]) / sizeTotal[1], (float(tgtPos[1][0]) - tgtPos[0][0]) / sizeTotal[0])
 			finSizeY = int(imgScale * sizeTotal[1])
 			oneSizeY = int(finSizeY / len(theText))
-			shiftY = finSizeY
+			shiftY = oneSizeY
 
 			for ln in theText:
 				finSize, _ = cv2.getTextSize(ln, font, imgScale, thickness)
 				finPos = (align(tgtPos[0][0], tgtPos[1][0], finSize[0]), ALIGN_CENTER(tgtPos[0][1], tgtPos[1][1], finSizeY)+shiftY)
 				img = cv2.putText(img, ln, finPos, font, imgScale, color, thickness, cv2.LINE_AA)
-				shiftY = shiftY - oneSizeY
+				shiftY = shiftY + oneSizeY
 		else:
 			print('!! Card '+setting['_card']+' field '+fieldName+' is of unknown type.')
 			exit()

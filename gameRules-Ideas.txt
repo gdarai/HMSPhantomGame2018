@@ -91,5 +91,11 @@ Zjednoduseni
 4) Vetsi variabilita v budovach - pridat dovednosti, rozmelnit poced pridomku
 5) Upresnit dovednosti = berou / neberou staminu
 6) Upresnit leceni zraneni = jidlem
+7) Nahoda na zabiti - platit staminou
+8) Granaty = zvlast na kazdeho na policku, staminou platit nejde
+9) Nahoda 5 = Boss + Nahoda
+10) Akce 2x stejna zakazano, Strelba povolena podle too jak rychla je zbran
+11) Licitovani hry = za zabiti dost zombiku se zmeni sance, ze zombici budou bossove
+
 
 Zacit sepisovat pravidla
