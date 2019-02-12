@@ -1,6 +1,34 @@
 [
   {
     "_out":"card_out.tex",
+    "_card":"cardImg-item",
+    "_onOneLine":6,
+    "symbol":{ "reg": "[A-F][1-5]" },
+    "_sub":[
+      {
+        "pack":"a",
+        "name":"A",
+        "weight":"xxx",
+        "text":"orig img"
+      },
+      {
+        "pack":"a",
+        "name":"A",
+        "weight":"xxx",
+        "text":"img from|subfolder",
+        "img":"actionSquareCard.png"
+      },
+      {
+        "pack":"a",
+        "name":"A",
+        "weight":"xxx",
+        "text":"changed img",
+        "img":"actionSquareCard.png"
+      }
+    ]
+  },
+  {
+    "_out":"card_out.tex",
     "_card":"sixLnCard",
     "_onOneLine":6,
     "_sub":[
@@ -22,7 +50,6 @@
         "line5":"XXXXXX-EEEEEE",
         "line6":"XXXXXX-FFFFFFF"
       }
-    ],
-    "values":"cardPom.csv"
+    ]
   }
 ]

@@ -1,0 +1,52 @@
+{
+  "name":{
+    "type":"text",
+    "position":[[44,158],[580,272]],
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	"line":5,
+	"color":[0,0,0],
+    "align":"center"
+  },
+  "symbol":{
+    "type":"text",
+    "position":[[426,44],[578,156]],
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	"line":2,
+	"color":[0,0,0],
+    "align":"center"
+  },
+  "pack":{
+    "type":"text",
+    "position":[[44,44],[200,156]],
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	"line":2,
+	"color":[0,0,0],
+    "align":"center"
+  },
+  "img":{
+    "type":"text",
+    "position":[[84,84],[544,732]],
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	"line":5,
+	"color":[0,0,0],
+    "align":"center"
+  },
+  "text":{
+    "type":"text",
+    "position":[[44,548],[580,1044]],
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	"line":5,
+	"color":[0,0,0],
+    "align":"center"
+  }
+}

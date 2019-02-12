@@ -216,7 +216,7 @@ def printCardFile(setting, name):
 		if fieldName not in setting:
 			continue
 		props = setting['_cardParams'][fieldName]
-		checkField(cardName, props, 'type', ['text'], 'text')
+		checkField(cardName, props, 'type', ['text', 'img'], 'text')
 		if props['type'] == 'text':
 			checkField(cardName, props, 'position', 'list', None)
 			checkField(cardName, props, 'padding', 'list', [[0, 0], [0, 0]])
@@ -258,6 +258,10 @@ def printCardFile(setting, name):
 				finPos = (align(tgtPos[0][0], tgtPos[1][0], finSize[0]), ALIGN_CENTER(tgtPos[0][1], tgtPos[1][1], finSizeY)+shiftY)
 				img = cv2.putText(img, ln, finPos, font, imgScale, color, thickness, cv2.LINE_AA)
 				shiftY = shiftY + oneSizeY
+		elif props['type'] == 'img':
+			checkField(cardName, props, 'position', 'list', None)
+			theImg = cv2.imread(setting[fieldName].nextVal())
+			print('!! text-to-insert is empty ... skipping.')
 		else:
 			print('!! Card '+setting['_card']+' field '+fieldName+' is of unknown type.')
 			exit()

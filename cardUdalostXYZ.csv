@@ -1,0 +1,17 @@
+4,X,Ticho a klid,Predmet|na miste|Pridej X kartu|-1 hlasitost
+4,X,Na obzoru,1 nepritel X|ve predu|Pridej X kartu
+4,X,Konec klidu,1 nepritel X|na miste|Pridej X kartu
+2,X,Na stope,1 nepritel X|vzadu|Tahni udalost
+6,X,Zvlastni udalost,Tahni udalost|Pridej X kartu|-1 hlasitost
+2,X,Zdanlivy klid,Predmet|na miste|Pridej Y kartu|-1 hlasitost
+4,Y,Poplach,Predmet|na miste|Pridej Z kartu
+3,Y,Hlidka,nepritel Y|ve predu|Pridej Y kartu
+3,Y,Majordomus,nepritel Y|na miste|Pridej Y kartu
+3,Y,Pronasledovani,nepritel Y|vzadu|Pridej Y kartu
+8,Y,Vyruseni,nepritel X|na miste|Tahni udalost
+1,Y,Mistni boss,nepritel Z|a predmet|na miste
+2,Z,Zmatek,Tahni udalost|Odstran X kartu
+4,Z,Protiutok,nepritel Z|ve predu|Pridej Z kartu
+2,Z,Prepadeni,nepritel Z|vzadu|Pridej Z kartu
+4,Z,Obkliceni,nepritel Z|na miste|Odstran X kartu
+2,Z,Rabovani,Utok|z ulice|do domu
