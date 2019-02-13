@@ -52,7 +52,7 @@ ALIGN['center'] = ALIGN_CENTER
 def VALTYPE_INT(variable):
 	return isinstance(variable, int)
 def VALTYPE_FLOAT(variable):
-	return isinstance(variable, (float, double))
+	return isinstance(variable, (float))
 def VALTYPE_IMG(variable):
 	return isinstance(variable, complex)
 def VALTYPE_STR(variable):
@@ -260,8 +260,49 @@ def printCardFile(setting, name):
 				shiftY = shiftY + oneSizeY
 		elif props['type'] == 'img':
 			checkField(cardName, props, 'position', 'list', None)
+			checkField(cardName, props, 'mask', 'list', [0, 0])
+			checkField(cardName, props, 'maskTolerance', 'float', 0.05)
+			pos = props['position']
+			size = [pos[1][0]-pos[0][0], pos[1][1]-pos[0][1]]
+			pos = pos[0]
+			print('--------------')
+			print('Pos: '+str(pos))
+			print('Size: '+str(size))
+			maskPos = props['mask']
+			maskTol = props['maskTolerance']
 			theImg = cv2.imread(setting[fieldName].nextVal())
-			print('!! text-to-insert is empty ... skipping.')
+			# RGB to RGBA
+			if theImg.shape[2] == 3:
+				# First create the image with alpha channel
+				rgba = cv2.cvtColor(theImg, cv2.COLOR_RGB2RGBA)
+				# Then assign the mask to the last channel of the image
+				rgba[:, :, 3] = np.zeros(theImg.shape[:2], np.uint8)
+				theImg = rgba
+
+			hsvImg = cv2.cvtColor(theImg, cv2.COLOR_BGR2HSV)
+			thePixel = hsvImg[maskPos[0], maskPos[1]]
+			thePixel0 = hsvImg[maskPos[0], maskPos[1]]-(125*maskTol)
+			thePixel1 = hsvImg[maskPos[0], maskPos[1]]+(125*maskTol)
+			imgSize = theImg.shape[:2]
+			imgScale = min(float(size[0])/imgSize[1], float(size[1])/imgSize[0])
+			print('Scale: '+str(imgScale))
+			theImg = cv2.resize(theImg, None, fx=imgScale, fy=imgScale)
+			imgSize = theImg.shape[:2]
+			print('Size2: '+str(imgSize))
+			pos = [pos[0]+int((size[0]-imgSize[1])/2), pos[1]+int((size[1]-imgSize[0])/2)]
+			print('Pos2: '+str(pos))
+			thePaste = np.zeros((img.shape[0], img.shape[1], 4), np.uint8)
+			thePaste[pos[1]:pos[1]+imgSize[0], pos[0]:pos[0]+imgSize[1]] = theImg
+
+			theMask = np.full((img.shape[0], img.shape[1]), 4, dtype=np.uint8)
+			hsvImg = cv2.cvtColor(theImg, cv2.COLOR_BGR2HSV)
+			subMask = cv2.bitwise_not(cv2.inRange(hsvImg, thePixel0, thePixel1))
+			theMask[pos[1]:pos[1]+imgSize[0], pos[0]:pos[0]+imgSize[1]] = subMask
+
+			maskedImg = cv2.bitwise_or(thePaste, thePaste, mask=theMask)
+			maskedMainImg = cv2.bitwise_or(img, img, mask=cv2.bitwise_not(theMask))
+
+			img = cv2.bitwise_or(maskedMainImg, maskedImg)
 		else:
 			print('!! Card '+setting['_card']+' field '+fieldName+' is of unknown type.')
 			exit()

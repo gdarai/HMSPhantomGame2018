@@ -19,15 +19,19 @@
   	"color":[0,0,0],
     "align":"center"
   },
-  "img":{
+  "pack":{
     "type":"text",
-    "position":[[84,84],[544,732]],
-	  "padding":[[20,20], [20,20]],
+    "position":[[44,44],[200,156]],
+  	"padding":[[20,20], [20,20]],
     "font":"HERSHEY_SIMPLEX",
     "size":5,
-	  "line":5,
-	  "color":[0,0,0],
+  	"line":2,
+  	"color":[0,0,0],
     "align":"center"
+  },
+  "img":{
+    "type":"img",
+    "position":[[46,318],[578,570]]
   },
   "item":{
     "type":"text",
@@ -37,16 +41,6 @@
     "size":5,
 	  "line":5,
   	"color":[0,0,0],
-    "align":"center"
-  },
-  "enTop":{
-    "type":"text",
-    "position":[[152,44],[320,156]],
-  	"padding":[[20,20], [20,20]],
-    "font":"HERSHEY_SIMPLEX",
-    "size":5,
-	  "line":5,
-	  "color":[0,0,0],
     "align":"center"
   },
   "enIn":{
@@ -59,7 +53,7 @@
     "color":[0,0,0],
     "align":"center"
   },
-  "enBot":{
+  "enOut":{
     "type":"text",
     "position":[[152,924],[320,1038]],
 	  "padding":[[20,20], [20,20]],

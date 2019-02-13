@@ -22,9 +22,9 @@
     "_list":{
       "values":[
         "name",
-        "enTop",
+        "img",
         "enIn",
-        "enBot",
+        "enOut",
         "text"
       ]
     },
@@ -38,9 +38,9 @@
     "_list":{
       "values":[
         "name",
-        "enTop",
+        "img",
         "enIn",
-        "enBot",
+        "enOut",
         "item",
         "next",
         "text"
