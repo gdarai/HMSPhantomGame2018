@@ -1,0 +1,43 @@
+{
+  "players": [2],
+  "cardsPerPlayer":[1],
+  "packets": [
+    {
+      "name": "X",
+      "cardsTotal": [20],
+      "addExtra": [0.5],
+      "removeOld": [0],
+      "cards": {
+        "Item": [0.1],
+        "Enemy X": [0.1],
+        "Event": [0.1]
+      }
+    },
+    {
+      "name": "X",
+      "cardsTotal": [20],
+      "addExtra": [0.5],
+      "removeOld": [0],
+      "cards": {
+        "Enemy Y": [0.1],
+        "Event": [0.1]
+      }
+    },
+    {
+      "name": "Z",
+      "cardsTotal": [20],
+      "addExtra": [0.5],
+      "removeOld": [0],
+      "cards": {
+        "Enemy Z": [0.1],
+        "Event": [0.1]
+      }
+    }
+  ],
+  "events": {
+    "Item": [0.3],
+    "Enemy Y": [0.1],
+    "Enemy X": [0.3],
+    "Weather": [0.2],
+  }
+}
