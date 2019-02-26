@@ -31,12 +31,34 @@ def getFiles( wildch ):
 ########
 # Processing setting file
 def processingSettings( lines, setting ):
-    if 'players' in lines:
-        setting['players'] = lines['players']
-    if 'cardsPerPlayer' in lines:
-        setting['cardsPerPlayer'] = lines['cardsPerPlayer']
-    if 'events' in lines:
-        
+    checkForKeys('root', ['players', 'cardsPerPlayer', 'initialPackage', 'events', 'packets'], lines)
+    addKeyAndCheck(lines, setting, setting, 'players', 'glob_')
+    addKeyAndCheck(lines, setting, setting, 'cardsPerPlayer', 'glob_')
+    addKeyAndCheck(lines, setting, setting, 'initialPackage', 'glob_')
+    for eventName in lines['events']:
+        addKeyAndCheck(lines['events'], setting['events'], setting, eventName, 'events_')
+        setting['state']['events'][eventName] = 0
+    packetIdx = 0
+    for packet in lines['packets']:
+        packetIdx += 1
+        checkForKeys('packet_'+str(packetIdx), ['name', 'cardsTotal', 'addExtra', 'removeOld'], packet)
+        newPacket = dict()
+        newPacket['name'] = packet['name']
+        newPacket['idx'] = packetIdx
+        packCheckKey = 'pack_'+str(packetIdx)+'_'
+        addKeyAndCheck(packet, newPacket, setting, 'cardsTotal', packCheckKey)
+        addKeyAndCheck(packet, newPacket, setting, 'addExtra', packCheckKey)
+        addKeyAndCheck(packet, newPacket, setting, 'removeOld', packCheckKey)
+
+def checkForKeys( inSource, keys, theSource ):
+    for keyName in keys:
+        if keyName not in theSource:
+            print('!! missing key '+keyName+' in source '+inSource )
+            exit()
+
+def addKeyAndCheck(source, target, checkTarget, keyName, prefix):
+    target[keyName] = source[keyName]
+    checkTarget['check'][prefix+keyName] = len(source[keyName])
 
 ########
 # Settings file
@@ -61,7 +83,12 @@ if(not os.path.isdir(DIRECTORY)):
 setting = dict()
 setting['_round'] = 0
 setting['state'] = dict()
+setting['state']['events'] = dict()
+setting['state']['packets'] = dict()
 setting['players'] = [2]
-setting['events'] = []
-
+setting['events'] = dict()
+setting['packets'] = dict()
+setting['check'] = dict()
+setting['check']['glob_players'] = 1
 processingSettings( source, setting )
+print(setting)
