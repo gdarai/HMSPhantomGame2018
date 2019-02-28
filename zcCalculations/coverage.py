@@ -41,14 +41,24 @@ def processingSettings( lines, setting ):
     packetIdx = 0
     for packet in lines['packets']:
         packetIdx += 1
-        checkForKeys('packet_'+str(packetIdx), ['name', 'cardsTotal', 'addExtra', 'removeOld'], packet)
+        checkForKeys('packet_'+str(packetIdx), ['name', 'cardsTotal', 'addExtra', 'removeOld', 'cards'], packet)
         newPacket = dict()
         newPacket['name'] = packet['name']
         newPacket['idx'] = packetIdx
         packCheckKey = 'pack_'+str(packetIdx)+'_'
+        cardCheckKey = 'pack_'+str(packetIdx)+'_card_'
         addKeyAndCheck(packet, newPacket, setting, 'cardsTotal', packCheckKey)
         addKeyAndCheck(packet, newPacket, setting, 'addExtra', packCheckKey)
         addKeyAndCheck(packet, newPacket, setting, 'removeOld', packCheckKey)
+        cardIdx = 0
+        newCards = dict()
+        for card in packet['cards'].keys():
+			cardIdx += 1
+			addKeyAndCheck(packet['cards'], newCards, setting, card, packCheckKey)
+        newPacket['cards'] = newCards
+        setting['packets'][packetIdx] = newPacket
+    setting['packets']['count'] = packetIdx
+	setting['currentPacket'] = dict()
 
 def checkForKeys( inSource, keys, theSource ):
     for keyName in keys:
@@ -59,6 +69,11 @@ def checkForKeys( inSource, keys, theSource ):
 def addKeyAndCheck(source, target, checkTarget, keyName, prefix):
     target[keyName] = source[keyName]
     checkTarget['check'][prefix+keyName] = len(source[keyName])
+
+########
+# One Round
+def doNextDraw( setting ):
+
 
 ########
 # Settings file
@@ -90,5 +105,15 @@ setting['events'] = dict()
 setting['packets'] = dict()
 setting['check'] = dict()
 setting['check']['glob_players'] = 1
+setting['run'] = True
+setting['idx'] = 0
 processingSettings( source, setting )
 print(setting)
+
+for x in range(0, setting['initialPackage'][setting['idx']]):
+	doNextDraw(setting)
+
+while setting['run']:
+	print('Round: '+str(setting['_round']))
+	doNextDraw(setting)
+	setting['run'] = False
