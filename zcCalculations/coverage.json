@@ -1,37 +1,46 @@
 {
   "players": [2],
+  "rounds": [80],
   "cardsPerPlayer":[1],
   "initialPackage":[6],
   "packets": [
     {
       "name": "X",
       "cardsTotal": [20],
-      "addExtra": [0.5],
+      "addExtra": [0.9],
       "removeOld": [0],
+      "chanceToShuffle": [0.5],
       "cards": {
-        "Item": [0.1],
-        "Enemy X": [0.1],
-        "Event": [0.1]
+        "Item": [0.2],
+        "Event": [0.4],
+        "Silence": [0.6],
+        "Enemy X": [0.5]
       }
     },
     {
       "name": "Y",
       "cardsTotal": [20],
-      "addExtra": [0.5],
+      "addExtra": [0.7],
       "removeOld": [0],
+      "chanceToShuffle": [0.5],
       "cards": {
-        "Enemy Y": [0.1],
-        "Event": [0.1]
+        "Item": [0.25],
+        "Event": [0.4],
+        "Enemy X": [0.4],
+        "Enemy Y": [0.45],
+        "Enemy Z": [0.05]
       }
     },
     {
       "name": "Z",
-      "cardsTotal": [20],
-      "addExtra": [0.5],
-      "removeOld": [0],
+      "cardsTotal": [14],
+      "addExtra": [0.4],
+      "removeOld": [0.4],
+      "chanceToShuffle": [0.5],
       "cards": {
-        "Enemy Z": [0.1],
-        "Event": [0.1]
+        "Event": [0.15],
+        "Enemy Z": [0.7],
+        "Attack": [0.15]
       }
     }
   ],
