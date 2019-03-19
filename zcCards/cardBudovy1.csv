@@ -1,16 +1,16 @@
-2,Domek,imgs-town1.png,2,1,+1,2,Zablokovane dvere|2 akce Inv|na odblokovani
-2,Domek,imgs-town1.png,1,1,+1,1,Kazde kolo|1 novy nepritel|uvnitr|2 Jidla navic
-2,Domek,imgs-town1.png,2,1,+1,1,Zablokovane dvere|1 akce Inv|na odblokovani
-1,Kram,imgs-town1.png,0,1,+1,2,Predmet navic
-1,Kram,imgs-town1.png,0,1,+1,1,Predmet navic
-1,Policie,imgs-town1.png,1,1,+0,0,Zbran navic|Naboje zadarmo
-1,Policie,imgs-town1.png,1,1,+0,1,Zbran navic|Naboje zadarmo
-2,Lekarna,imgs-town1.png,0,0,-1,0,Leceni zadarmo
-1,Garaze,imgs-town1.png,2,1,+1,2,Material navic
-1,Garaze,imgs-town1.png,1,2,+1,3,Material navic
-1,Sklad,imgs-town1.png,2,2,+2,2,Zablokovane dvere|2 akce Inv|na odblokovani|Velky material
-1,Sklad,imgs-town1.png,1,2,+2,2,Zablokovane dvere|2 akce Inv|na odblokovani|Velky material
-1,Firma,imgs-town1.png,2,1,+0,2,Kazde kolo|1 novy nepritel|uvnitr
-1,Firma,imgs-town1.png,1,2,+0,2,Kazde kolo|1 novy nepritel|uvnitr
-1,Firma,imgs-town1.png,1,2,+0,1,Kazde kolo|1 novy nepritel|uvnitr
-5,Park,imgs-town1.png,0,2,x,0,Nejde jit dovnitr|Nejde prohledavat
+2,Domek,imgs-town1.png,imgs-block2.png,2,1,+1,2,
+2,Domek,imgs-town1.png,,1,1,+1,1,Kazde kolo|1 novy nepritel|uvnitr|2 Jidla navic
+2,Domek,imgs-town1.png,imgs-block1.png,2,1,+1,1,
+1,Kram,imgs-town1.png,,0,1,+1,2,Predmet navic
+1,Kram,imgs-town1.png,,0,1,+1,1,Predmet navic
+1,Policie,imgs-town1.png,,1,1,+0,0,Zbran navic|Naboje zadarmo
+1,Policie,imgs-town1.png,,1,1,+0,1,Zbran navic|Naboje zadarmo
+2,Lekarna,imgs-town1.png,,0,0,-1,0,Leceni zadarmo
+1,Garaze,imgs-town1.png,,2,1,+1,2,Material navic
+1,Garaze,imgs-town1.png,,1,2,+1,3,Material navic
+1,Sklad,imgs-town1.png,imgs-block2.png,2,2,+2,2,Velky material
+1,Sklad,imgs-town1.png,imgs-block2.png,1,2,+2,2,Velky material
+1,Firma,imgs-town1.png,,2,1,+0,2,Kazde kolo|1 novy nepritel|uvnitr
+1,Firma,imgs-town1.png,,1,2,+0,2,Kazde kolo|1 novy nepritel|uvnitr
+1,Firma,imgs-town1.png,,1,2,+0,1,Kazde kolo|1 novy nepritel|uvnitr
+5,Park,imgs-town1.png,imgs-block.png,0,2,x,0,Nejde jit dovnitr|Nejde prohledavat

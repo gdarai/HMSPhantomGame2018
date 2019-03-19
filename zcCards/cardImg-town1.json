@@ -33,6 +33,10 @@
     "type":"img",
     "position":[[46,318],[578,570]]
   },
+  "extra":{
+    "type":"img",
+    "position":[[235,64],[395,152]]
+  },
   "item":{
     "type":"text",
     "position":[[400,195],[579,312]],

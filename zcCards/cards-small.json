@@ -1,0 +1,38 @@
+[
+  {
+    "_out":"card_out_Cesta.tex",
+    "_card":"cardImg-town0",
+    "_onOneLine":6,
+    "symbol":{ "reg": "[A-C][1-5]" },
+    "_list":{
+      "values":[
+        "name",
+        "img",
+        "enIn",
+        "enOut",
+        "extra",
+        "text"
+      ]
+    },
+    "values":"cardBudovy0.csv"
+  },
+  {
+    "_out":"card_out_Cesta.tex",
+    "_card":"cardImg-town1",
+    "_onOneLine":6,
+    "symbol":{ "reg": "[A-C][1-5]" },
+    "_list":{
+      "values":[
+        "name",
+        "img",
+        "extra",
+        "enIn",
+        "enOut",
+        "item",
+        "next",
+        "text"
+      ]
+    },
+    "values":"cardBudovy1.csv"
+  }
+]

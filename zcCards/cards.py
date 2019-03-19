@@ -259,6 +259,10 @@ def printCardFile(setting, name):
 				img = cv2.putText(img, ln, finPos, font, imgScale, color, thickness, cv2.LINE_AA)
 				shiftY = shiftY + oneSizeY
 		elif props['type'] == 'img':
+			fileName = setting[fieldName].nextVal()
+			if fileName == '' :
+				print('!! image-to-insert is empty ... skipping.')
+				continue
 			checkField(cardName, props, 'position', 'list', None)
 			checkField(cardName, props, 'mask', 'list', [0, 0])
 			checkField(cardName, props, 'maskTolerance', 'float', 0.05)
@@ -267,7 +271,7 @@ def printCardFile(setting, name):
 			pos = pos[0]
 			maskPos = props['mask']
 			maskTol = props['maskTolerance']
-			theImg = cv2.imread(setting[fieldName].nextVal())
+			theImg = cv2.imread(fileName)
 			# RGB to RGBA
 			if theImg.shape[2] == 3:
 				# First create the image with alpha channel

@@ -1,9 +1,9 @@
 3,Ex,Boss,Nepritel Y|Vepredu
 3,Ex,Boss,Nepritel Y|Vzadu
 5,Ex,Boss,Nepritel Y|Na miste
-2,Ex,Vybuch,Vepredu|+3 Hlasitost|zabije obludy
-2,Ex,Vybuch,Vzadu|+3 Hlasitost|zabije obludy
-2,Ex,Vybuch X,Na miste|+3 Hlasitost|zabije obludy|-1 Zivot
+2,Ex,Vybuch,Vse vepredu|+3 Hlasitost|zabije obludy
+2,Ex,Vybuch,Vse vzadu|+3 Hlasitost|zabije obludy
+2,Ex,Vybuch X,Vse na miste|+3 Hlasitost|zabije obludy|-1 Zivot
 4,Eu,Balicek,Predmet|Vepredu
 4,Eu,Balicek,Predmet|Vzadu
 7,Eu,Balicek,Predmet|Na miste
@@ -11,9 +11,9 @@
 2,Eu,Mustek,Cesta|do dalsiho|domu
 2,Eu,Strilna,Dvere|na vsechny|karty domu
 3,Eu,Mapa,Novy vstup|do mesta
-3,E,Stado,+3 Hlasitost|Navic za kazdou|akci utok|2 Jidla
-3,E,Stado,+2 Hlasitost|Navic za kazdou|akci utok|2 Jidla
-4,E,Prach,Obludy neutoci
-2,E,Prach X,Obludy neutoci|-1 Zivot
-2,E,Skrabanec,Otrava|Zabira 1 misto|inventare
-2,E,Zraneni,Zraneni|Zabira 1 misto|inventare
+3,E,Stado,+3 Hlasitost||Navic 2 Jidla|za kazdy utok
+3,E,Stado,+2 Hlasitost||Navic 2 Jidla|za kazdy utok
+4,E,Prach,Obludy|neutoci
+2,E,Prach X,Obludy|neutoci||-1 Zivot
+2,E,Otrava krve,Zabira|1 misto|inventare||Potreba|protilatka
+2,E,Zraneni,Zabira|1 misto|inventare||Potreba|leceni
