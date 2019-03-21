@@ -8,5 +8,15 @@
 	"line":5,
 	"color":[0,0,0],
     "align":"center"
+  },
+  "text":{
+    "type":"text",
+    "position":[[44,70],[580,760]],
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	"line":5,
+	"color":[0,0,0],
+    "align":"center"
   }
 }

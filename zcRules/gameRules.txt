@@ -1,7 +1,61 @@
 <T>Zombie Country
 Kooperac'ni' hra, zaloz'ena' na sce'na'r'i'ch. Najde''te si svoji' cestu zombie apocalypsou.
 Superskracena pravidla
-<C>Na zac'a'tku
+
+<C>Pr'i'prava hraci' plochy
+Cely' stu'l me'jme rozde'leny' do zo'n, abychom se le'pe vyznali v tom, co kde ma' by't. Tohle na'm nahradi' komplikovanou herni' desku.
+<I0>
+<I> Zo'na me'sta *) Je dlouha' a aspon' 4 karty vysoka' zo'na pr'i'mo uprostr'ed stolu. Z leva do prava se v ni' budou postupne' vykla'dat karty me'sta. Male'', jednoduche'' me'sto tomu stac'i' mi't jednu ulici s cca 20 kartami. Pro pokroc'ile'' hry vs'ak tahle zo'na mu'z'e by't i celkem velka'.
+<I> Zo'na karet *) Je 2 karty vysoka' zo'na hned nad zo'nou me'sta. (Je to horni' okraj hraci' plochy) Bude v ni' cca 5 bali'c'ku' karet + odkla'daci' prostor na karty uz' otoc'ene''.
+<I> Zo'na z'etonu' *) By me'la by't v horni' c'a'sti hraci' plochy vedle zo'ny karet.
+<I> Zo'na nepr'a'tel je mala' oblast uprostr'ed spodni'ho okraje herni' plochy kde budou 3 vzloy'ene'' karty nepr'a'tel.
+<I> Zo'na pro hra'c'e by me'la zabi'rat cely' zbytek spodni'ho okraje a popr'i'pade' levy' a pravy' okraj herni' plochy.
+<I1>
+Na zac'a'tku hry se pr'ipravi' bali'c'ky herni'ch karet, pr'ipravi' se vstup do me'sta, bali'c'ek pr'edme'tu', nepr'a'tele' a kaz'dy' hra'c' si pr'ipravi' svou postavu.
+<I0>
+<I>Bali'c'ek uda'losti' 1) Zami'chej uda'losti Z a umi'sti je do zo'ny karet. Pak zami'chej uda'losti Y a dej je na ne' a pak zami'chej uda'losti X a dej je navrch.
+<I>Bali'c'ek uda'losti' 2) Li'zni z bali'c'ku uda'losti' prvni'ch (3 * poc'et hra'c'u') karet, zami'chej je a vytvor' z nich Bali'c'ek aktivni'ch uda'losti'. Ten take' umi'sti do zo'ny karet.
+<I>Bali'c'ek uda'losti' 3) Zami'chej bali'c'ek specia'lni'ch uda'losti' a umi'sti ho do zo'ny karet.
+<I>Karty me'sta 1) Zami'chej bali'c'ek budov a umi'sti ho do zo'ny karet. Zami'chej a umi'sti hned vedle bali'c'ek pr'i'stavku'.
+<I>Karty me'sta 2) Z bali'c'ku budov li'zni 2 karty budov. To jsou vas'e, na zac'a'tku hry zna'me'', vstupy do me'sta. Umi'sti je co nejvi'c nalevo do zo'ny me'sta.
+<I>Bali'c'ek pr'edme'tu' *) Zami'chej bali'c'ek pr'edme'tu' a umi'sti ho do zo'ny karet.
+<I>Definice nepr'a'tel 1) Umi'sti oznac'ovac'e nepr'i'tele X (bi'ly'), Y (z'luty') a Z (c'erveny') do zo'ny nepr'a'tel a na X dej kartu Li'na' Zombice, na Y kartu Zombice a na Z kartu Raubi'r'e.
+<I>Definice nepr'a'tel 2) Umi'sti do zo'ny z'etonu' z'etony potr'ebne' ke hr'e.
+<I>Pr'i'prava postavy 1) Kaz'dy' hra'c' si vezme kartu postavy a umi'sti' si ji' do sve'' c'a'sti zo'ny pro hra'c'e. Li'zne si tolik karet akci' kolik je na karte' postavy napsa'no, pr'ida' k nim specia'lni' karty akci' dle sve' postavy a takovy'to bali'c'ek akci' poloz'i' nad svou kartu postavy.
+<I>Pr'i'prava postavy 2) Hra'c' potr'ebuje na postave' oznac'it zdravi', staminu a hlasitost. Hlasitost a stamina se oznac'uji' kostkami. Kaz'dy' hra'c' si tedy vezme kostku hlasitosti (k6) a kostku staminy (k10). Kostku hlasitosti pro ted' da' mimo svou kartu postavy a ti'm naznac'i' z'e ted' z'a'dnou hlasitost nema'. Na kostce staminy nastavi' svu'j souc'asny' maxima'lni' stav a da' ji' na kartu postavy. Zdravi' se bude oznac'ovat z'etony zrane'ni' (c'ervene''), takz'e do zac'a'tku nebude mi't postava z'a'dne''.
+<I>Pr'i'prava postavy 3) Kaz'dy' hra'c' umi'sti' na svou kartu postavy z'eton ticha v barve' sve' postavy. A ve stejne'' barve' umi'sti' figurku sve'' postavy na levo na zac'a'tek me'sta.
+<I>Pr'i'prava postavy 4) Kaz'dy' hra'c' dostane kartu kola, aby ve'de'l, co ho kaz'de' kolo c'eka'. Tu si umi'sti' kam potr'ebuje. Lze mi't take'' pouze jednu pro cely' ty'm, umi'ste'nou vedle Zo'ny nepr'a'tel.
+<I>Pr'i'prava postavy 5) Kaz'dy' hra'c' si vyloz'i' skryte' jednu kartu akce nastavenou na pohyb do me'sta jako svou prvni' akci.
+<I1>
+
+<C>Vlastnosti postavy
+Kaz'da' postava ma' pa'r parametru' ktere' urc'uji' v c'em je o ne'co leps'i' nez' ostatni' a v c'em je hors'i'
+<I0>
+<I> Zdravi' *) R'i'ka' kolik postava vydrz'i' za'sahu', nez' umr'e.
+<I> Poc'et akci' *) R'i'ka' kolik ma' postava k dispozici karet univerza'lni'ch akci', jak moc je verzatilni'.
+<I> Specia'lni' akce *) R'i'ka' jake' dals'i' karty do sve'ho bali'c'ku akci' postava ma' k dispozici.
+<I> Si'la *) R'i'ka' jak dobra' je postava v boji beze zbrane'.
+<I> Rychlost *) R'i'ka' jak rychly' je u'tok beze zbrane' postavy.
+<I> Stamina *) R'i'ka' jak moc je postava schopna' se pr'epi'nat a de'lat hrdinske' kousky.
+<I1>
+
+<C>Jedno kolo hry
+Kaz'de' kolo se skla'da' z ne'kolika atomicky'ch kroku' z nichs' ve'ts'inu hraji' hra'c'i dohromady. Jediny' krok ktery' hra'c'i musi' vyhodnotit postupne' je hrani' akci', aby bylo jasne' jak moc si navza'jem pr'eka'z'i' c'i ne.
+<I0>
+<I> U'prava hlasitosti *) Kaz'dy' hra'c' si sni'z'i' hlasitost o 1 nebo vra'ti' z'eton ticha zpe't na kartu hra'c'e.
+<I> Migrace nepr'a'tel *) Nepr'a'tele' kter'i' jsou da'l nez' 3 karty me'sta od hra'c'e se odstrani' z pla'nu. Vs'ichi ostatni' si zkontroluji', zda hra'c'i nemaji' dostatec'nou hlasitost. Pokud ano, posunou se o 1 kartu sme'rem k hra'c'i.
+<I> Uda'lost *) Postupne' kaz'dy' hra'c' ta'hne kartu uda'losti a ude'la' co je na ni' napsa'no.
+<I> Pla'nova'ni' *) Hra'c'i otoc'i' svou kartu napla'novane'' akce a na jeji' mi'sto, tajne' a bez r'ec'i' pr'ipravi' novou.
+<I> Provedeni' akce *) Postupne' kaz'dy' hra'c' provede akci, kterou me'l napla'novanou z minule'ho kola.
+<I> Protiu'tok *) Pokud jsou u hra'c'u' ne'jaci' z'ivi' nepr'a'tele'', kaz'dy' provede u'tok na hra'c'e. Hra'c'i si bez ve'ts'i' domluvy rozebi'raji' kdo se postara' o koho.
+<I1>
+
+<C1> U'prava hlasitosti
+Pokud ma' hra'c' z'eton ticha mimo svou kartu postavy, znamena' to, z'e minule'' kolo byl hlasity' a tudi'z' si nemu'z'e sni'z'it hlasitost. Pokud hlasity' nebyl, vz'dy si sni'z'i' hlasitost o 1.
+
+<C1> Migrace nepr'a'tel
+
+
 <I0>
 <I>Kaz'dy' hra'c' dostane Karu Prohleda'va'ni', Kartu kola, Kartu na'hody a Karty ke sve' postave''.
 <I>Na zac'a'tku se otoc'i' 2 vchody do me''sta. Hra'c'i se dohodnou, kde kdo bude sta't. Stoji' vz'dy na ulici pr'ed vybranou prvni' budovou.

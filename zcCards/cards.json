@@ -137,7 +137,8 @@
     "_onOneLine":6,
     "_list":{
       "values":[
-        "name"
+        "name",
+        "text"
       ]
     },
     "values":"cardRole1.csv"
