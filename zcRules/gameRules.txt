@@ -46,12 +46,17 @@ Novi' nepr'a'tele' se na kartu mu'z'ou dostat dve'ma zpu'soby.
 <I>Mu'z'ou se objevit z popudu uda'losti (Objeveni')
 V pr'i'pade' Objeveni' plati' Limit poc'tu nepr'a'tel na karte'. Na karte' se uz' novi' nepr'a'tele'' neobjevuji' pokud jich tam je alespon' 2x tolik, kolik je hra'c'u' ve hr'e. V takove'm pr'i'pade' se pouze nahrazuji' pr'i'padni' uz' pr'itomni' slabs'i' nepr'a'tele'' novy'mi, pokud jsou ti silne'js'i'.
 
-<C>Princip hlasitosti
-Tahle hra se snaz'i' propagovat schopnost hra'c'u' odhadnout co pla'nuji' ostatni'. Pokud hra'c' doka'z'e udrz'et svou zve'davost na uzde' a neprobi'rat be'hem herni'ho kola strateegii se svy'mi kolegy, je takzvane' tichy'. To znamena' z'e mu'z'e poslouchat co r'i'kaji' a mu'z'e s nimi i mluvit tak dlouho dokud se zdrz'i' komenta'r'u' o pla'nech nebo tom co ma' na ruce c'i co vi'. Dokud je hra'c' tichy', da'va' to najevo ti'm, z'e ma' na karte' sve'' postavy z'eton ticha. Jakmile se pror'ekne, at' uz' u'myslne' c'i omylem, z'eton odstrani' a po zbytek kola si uz' mu'z'e r'i'kat co chce, tichy' uz' neni'. Kaz'dy' hra'c' ma' jednu kostku r'ikaji'ci' jaka' je jeho souc'asna' hlasitost. Kaz'de' kolo kdy je hra'c' tichy', jeho hlasitost se sniz'uje kaz'de' kolo. Je vi'cero ve'ci' ktere' naopak hlasitost zvys'uji':
+<C>Princip utajeni'
+Tahle hra se snaz'i' propagovat schopnost hra'c'u' odhadnout co pla'nuji' ostatni'. Pokud hra'c' doka'z'e udrz'et svou zve'davost na uzde' a neprobi'rat be'hem herni'ho kola strateegii se svy'mi kolegy, je takzvane' tichy'. To znamena' z'e mu'z'e poslouchat co r'i'kaji' a mu'z'e s nimi i mluvit tak dlouho dokud se zdrz'i' komenta'r'u' o pla'nech nebo tom co ma' na ruce c'i co vi'. Dokud je hra'c' tichy', da'va' to najevo ti'm, z'e ma' na karte' sve'' postavy z'eton ticha. Jakmile se pror'ekne, at' uz' u'myslne' c'i omylem, z'eton odstrani' a po zbytek kola si uz' mu'z'e r'i'kat co chce, tichy' uz' neni'. Kaz'dy' hra'c' ma' jednu kostku r'ikaji'ci' jaka' je jeho souc'asna' hlasitost. Kaz'de' kolo kdy je hra'c' tichy', jeho hlasitost se sniz'uje kaz'de' kolo o jedna. Je vi'cero ve'ci' ktere' naopak hlasitost zvys'uji':
 <I0>
-<I>
+<I> Pokud ma' pouz'i'vana' zbran' hlasitost >0, pak zvys'uje hlasitost kaz'dy' vy'str'el.
+<I> Kaz'dy' za'sah od nepr'i'tele zveda' hlasitost o 1.
+<I> Pokud na karte' kde je hra'c' bojuje vi'c jak polovina vs'ech hra'c'u' zvys'uje se vs'em na poli'c'ku hlasitost o 1.
 <I1>
-Kaz'dy' hra'c' ma'
+A k c'emu hlasitost slouz'i'? Ne'ktere'' dovednosti jsou podmi'ne'ne'' ti'm z'e je hra'c' tichy'. Navi'c pokud je hra'c' hlasity', pak provokuje nepr'a'tele v okoli', viz 2. fa'ze kola - Migrace nepr'a'tel.
+
+<C>Karty me'sta
+Me'sto se skla'da' z karet budov a karet pr'i'stavku'. Kaz'da' budova se c'te odleva do prava. Nejvi'c nalevo je karta budovy, ktera' mimo jine' r'i'ka' kolik pr'i'stavku' ma' budova mi't. Karta budovy je take' jedina' karta na ktere'' se da' ji't do/z budovy a pro u'c'ely urc'ova'ni' kde hra'c'i jsou, pokud jsou v budove', jsou na te''to karte'. Pokud hra'c' jde kolem budovy, musi' samozr'ejme' ji't zvla's't' pr'es kaz'dou kartu pr'i'stavku co u budovy je. A pokud chce do budovy veji't, musi' nejprve doji't ke karte' budovy, pr'i'stavkem do budovy vstoupit nejde.
 
 <C>Jedno kolo hry
 Kaz'de' kolo se skla'da' z ne'kolika atomicky'ch kroku' z nichs' ve'ts'inu hraji' hra'c'i dohromady. Jediny' krok ktery' hra'c'i musi' vyhodnotit postupne' je hrani' akci', aby bylo jasne' jak moc si navza'jem pr'eka'z'i' c'i ne.
@@ -65,7 +70,7 @@ Kaz'de' kolo se skla'da' z ne'kolika atomicky'ch kroku' z nichs' ve'ts'inu hraji
 <I1>
 
 <C1> U'prava hlasitosti
-Pokud ma' hra'c' z'eton ticha mimo svou kartu postavy, znamena' to, z'e minule'' kolo byl hlasity' a tudi'z' si nemu'z'e sni'z'it hlasitost. Pokud hlasity' nebyl, vz'dy si sni'z'i' hlasitost o 1, pouze vra'tit tento z'eton zpa'tky na kartu. Pokud ale uz' z'eton na karte' ma', znamena' to z'e byl potichu a mu'z'e si sni'z'it hlasitost o 1.
+Pokud ma' hra'c' z'eton ticha mimo svou kartu postavy, znamena' to, z'e minule'' kolo byl hlasity' a tudi'z' si nemu'z'e sni'z'it hlasitost. Pokud hlasity' nebyl, vz'dy si sni'z'i' hlasitost o 1, pouze vra'tit tento z'eton zpa'tky na kartu. Pokud ale uz' z'eton na karte' ma', znamena' to z'e byl potichu a mu'z'e si sni'z'it hlasitost o 1. Vi'ce bylo popsa'no v Principu utajeni'.
 
 <C1> Migrace nepr'a'tel
 Ma' dve' fa'ze.
@@ -93,7 +98,23 @@ Z bali'c'ku Aktivni'ch Uda'losti' ta'hne kaz'dy' hra'c' jednu kartu. Pokud tam k
 <I1>
 
 <C1> Pla'nova'ni' akce
+V tenhle moment kaz'dy' hra'c' otoc'i' co napla'noval minule' kolo, z'e bude de'lat tak, aby to kaz'dy' vide'l a zac'ne pla'novat, co ude'la' pr'i's'ti' kolo. Snaz'i' se pr'itom dodrz'et Princip utajeni'. Na konci bude mi't kaz'dy' hra'c' krome' odkryty'ch karet kaci' na toto kolo nove' pr'ipravene'' zati'm skryte' akce na kolo pr'i's'ti'. Hra'c' nemusi' napla'novat z'a'dnou akci, pokud nechce. Mu'z'e jich take'' napla'novat vi'c nez' jednu. Za kaz'dou akci >1 ale musi' uz' pr'i pla'nova'ni' zaplatit jednu staminu. Moz'nosti maji' na'sleduji'ci' omezeni'.
+<I0>
+<I> Unika'tnost *) Kaz'da' akce (U'tok/Hleda'ni'/Krok vpr'ed) mu'z'e by't kaz'de' kolo napla'novana' jen jedna. Nelze tedy v za'kladu ude'lat v jednom kole dva kroky vpr'ed.
+<I> Dispozice *) Hra'c' mu'z'e zahra't jen tolik akci', kolik ma' karet akce na ruce. Kdyz' ma' celkem 3 karty akce a dve' uz' ma' napla'novane'' na minule'' kolo, zby'va' mu jen jedna a to je jeho limit.
+<I> Specia'ly *) Specia'lni' akce de'laji' c'asto tote''z' jako norma'lni' akce, ale jinak se jmenuji', mohou by't tedy zahra'ny spolu s te'mi norma'lni'mi. Za specia'lni' i norma'lni' akce >1 se plati' staminou dohromady. Tedy za 2 norma'lni' akce a jednu specia'lni' se zaplati' 2 staminy.
+<I> Cena *) Pokud staminy neni' dost, nejde dals'i' akci ani napla'novat, ani prove'st.
+<I1>
 
+<C2> Za'kladni' akce k dispozici
+Hra'c' ma' v za'kladu k dispozici karty univerza'lni'ch akci'. Ty je potr'eba na stu'l da'vat tak, aby bylo jasne', ktera' hrana karty je ta platna' = ta vybrana'. Dobry' zvyk je napr'i'klad povaz'ovat za vybranou vz'dy tu horni' hranu karty (tu nejda'l od hra'c'e) a pr'i ota'c'eni' karty dba't na to z'e karty ota'c'i'me do boku aby se hrana co je nahor'e nezme'nila. Na'sleduji'ci' za'kladni' akce jsou k dispozici
+<I0>
+<I> Pohyb vpr'ed *) Figurka hra'c'e ude'la' jeden krok z poli'c'ka kde je na poli'c'ko na'sleduji'ci'. Pokud je v budove' mu'z'e zdarma z budovy vyji't ven pr'ed kartu budovy a popoji't o tu ky'z'enou kartu vpr'ed. Pokud je hra'c' c'i budova na kr'iz'ovatce, jde takto ji't i do odboc'uji'ci' ulice. Je li hra'c' u pru'chodu jde proji't pru'chodem do sousedni' ulice.
+<I> Pohyb vzad *) Funguje jako pohyb vpr'ed s ti'm rozdi'lem, z'e se hra'c' pohybuje sme'rem ven z me'sta. Nejde ji't do odboc'uji'ci' ulice, ale do sousedni' ano. A jde se takto z odboc'uji'ci' ulice vra'tit, jsme-li v ni' na prvni' karte'.
+<I> U'tok - Na Bli'zko 1) Hra'c' vezme jednu ze svy'ch nabity'ch zbrani' na bli'zko (nebo pe'st) a zau'toc'i' na libovolne''ho nepr'i'tele, dle pravidel boj. Jde takto u'toc'it pouze na nepr'a'tele na stejne''m poli'c'ku a pokud hra'c' pak nema' jinou akci, ktera' ho pr'emi'sti' tak po u'toku zu'stane na mi'ste' kde na obludu zau'toc'il. Nejde tedy napr'iklad takto u'toc'it na zombi'ka pr'ed budovou a zase se sta'hnout zpa'tky do budovy. Pokud ale hra'c' pr'ida' druhou akci, tr'eba akci inventa'r', tak to uz' se sta'hnout zpe't do budovy mu'z'e a inventa'r' prohraba'vat tam.
+<I> U'tok - Na Da'lku 2) Hra'c' vezme jednu ze svy'ch nabity'ch zbrani' na da'lku a zau'toc'i' na libovolne''ho nepr'i'tele na sve'm nebo sousedni'm poli'c'ku, vs'e podle pravidel pro boj. Pokud byl pr'ed u'tokem na karte' budovy a ne pr'i'stavku, mu'z'e si po u'toku vybrat zda chce by't uvnitr' nebo venku.
+<I> Inventa'r' 0) Akce Inventa'r'e je univerza'lni' a hra'c' si sa'm vybi'ra' pr'i prova'de'ni' akce, co ti'm vlastne' myslel a co chce ude'lat. Obecne' plati' z'e pokud je na karte' budovy, mu'z'e se pro provedeni' akce pr'esunout do/z budovy, ale po provedeni' akce uz' zu'stane, kde je.
+<I1>
 
 
 <I0>
