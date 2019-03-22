@@ -13,8 +13,8 @@ Cely' stu'l me'jme rozde'leny' do zo'n, abychom se le'pe vyznali v tom, co kde m
 <I1>
 Na zac'a'tku hry se pr'ipravi' bali'c'ky herni'ch karet, pr'ipravi' se vstup do me'sta, bali'c'ek pr'edme'tu', nepr'a'tele' a kaz'dy' hra'c' si pr'ipravi' svou postavu.
 <I0>
-<I>Bali'c'ek uda'losti' 1) Zami'chej uda'losti Z a umi'sti je do zo'ny karet. Pak zami'chej uda'losti Y a dej je na ne' a pak zami'chej uda'losti X a dej je navrch.
-<I>Bali'c'ek uda'losti' 2) Li'zni z bali'c'ku uda'losti' prvni'ch (3 * poc'et hra'c'u') karet, zami'chej je a vytvor' z nich Bali'c'ek aktivni'ch uda'losti'. Ten take' umi'sti do zo'ny karet.
+<I>Bali'c'ek Uda'losti' 1) Zami'chej uda'losti Z a umi'sti je do zo'ny karet. Pak zami'chej uda'losti Y a dej je na ne' a pak zami'chej uda'losti X a dej je navrch.
+<I>Bali'c'ek Uda'losti' 2) Li'zni z bali'c'ku uda'losti' prvni'ch (3 * poc'et hra'c'u') karet, zami'chej je a vytvor' z nich Bali'c'ek Aktivni'ch Uda'losti'. Ten take' umi'sti do zo'ny karet.
 <I>Bali'c'ek uda'losti' 3) Zami'chej bali'c'ek specia'lni'ch uda'losti' a umi'sti ho do zo'ny karet.
 <I>Karty me'sta 1) Zami'chej bali'c'ek budov a umi'sti ho do zo'ny karet. Zami'chej a umi'sti hned vedle bali'c'ek pr'i'stavku'.
 <I>Karty me'sta 2) Z bali'c'ku budov li'zni 2 karty budov. To jsou vas'e, na zac'a'tku hry zna'me'', vstupy do me'sta. Umi'sti je co nejvi'c nalevo do zo'ny me'sta.
@@ -39,6 +39,20 @@ Kaz'da' postava ma' pa'r parametru' ktere' urc'uji' v c'em je o ne'co leps'i' ne
 <I> Stamina *) R'i'ka' jak moc je postava schopna' se pr'epi'nat a de'lat hrdinske' kousky.
 <I1>
 
+<C>Limit Nepr'a'tel
+Novi' nepr'a'tele' se na kartu mu'z'ou dostat dve'ma zpu'soby.
+<I0>
+<I>Mu'z'ou pr'iji't z jine'' karty (Migrace)
+<I>Mu'z'ou se objevit z popudu uda'losti (Objeveni')
+V pr'i'pade' Objeveni' plati' Limit poc'tu nepr'a'tel na karte'. Na karte' se uz' novi' nepr'a'tele'' neobjevuji' pokud jich tam je alespon' 2x tolik, kolik je hra'c'u' ve hr'e. V takove'm pr'i'pade' se pouze nahrazuji' pr'i'padni' uz' pr'itomni' slabs'i' nepr'a'tele'' novy'mi, pokud jsou ti silne'js'i'.
+
+<C>Princip hlasitosti
+Tahle hra se snaz'i' propagovat schopnost hra'c'u' odhadnout co pla'nuji' ostatni'. Pokud hra'c' doka'z'e udrz'et svou zve'davost na uzde' a neprobi'rat be'hem herni'ho kola strateegii se svy'mi kolegy, je takzvane' tichy'. To znamena' z'e mu'z'e poslouchat co r'i'kaji' a mu'z'e s nimi i mluvit tak dlouho dokud se zdrz'i' komenta'r'u' o pla'nech nebo tom co ma' na ruce c'i co vi'. Dokud je hra'c' tichy', da'va' to najevo ti'm, z'e ma' na karte' sve'' postavy z'eton ticha. Jakmile se pror'ekne, at' uz' u'myslne' c'i omylem, z'eton odstrani' a po zbytek kola si uz' mu'z'e r'i'kat co chce, tichy' uz' neni'. Kaz'dy' hra'c' ma' jednu kostku r'ikaji'ci' jaka' je jeho souc'asna' hlasitost. Kaz'de' kolo kdy je hra'c' tichy', jeho hlasitost se sniz'uje kaz'de' kolo. Je vi'cero ve'ci' ktere' naopak hlasitost zvys'uji':
+<I0>
+<I>
+<I1>
+Kaz'dy' hra'c' ma'
+
 <C>Jedno kolo hry
 Kaz'de' kolo se skla'da' z ne'kolika atomicky'ch kroku' z nichs' ve'ts'inu hraji' hra'c'i dohromady. Jediny' krok ktery' hra'c'i musi' vyhodnotit postupne' je hrani' akci', aby bylo jasne' jak moc si navza'jem pr'eka'z'i' c'i ne.
 <I0>
@@ -51,9 +65,35 @@ Kaz'de' kolo se skla'da' z ne'kolika atomicky'ch kroku' z nichs' ve'ts'inu hraji
 <I1>
 
 <C1> U'prava hlasitosti
-Pokud ma' hra'c' z'eton ticha mimo svou kartu postavy, znamena' to, z'e minule'' kolo byl hlasity' a tudi'z' si nemu'z'e sni'z'it hlasitost. Pokud hlasity' nebyl, vz'dy si sni'z'i' hlasitost o 1.
+Pokud ma' hra'c' z'eton ticha mimo svou kartu postavy, znamena' to, z'e minule'' kolo byl hlasity' a tudi'z' si nemu'z'e sni'z'it hlasitost. Pokud hlasity' nebyl, vz'dy si sni'z'i' hlasitost o 1, pouze vra'tit tento z'eton zpa'tky na kartu. Pokud ale uz' z'eton na karte' ma', znamena' to z'e byl potichu a mu'z'e si sni'z'it hlasitost o 1.
 
 <C1> Migrace nepr'a'tel
+Ma' dve' fa'ze.
+<I0>
+<I>Odchod nepr'a'tel, co jsou pr'i'lis' pozadu a vzdali to.
+<I>Posunuti' nepr'a'tel, co jsou dost bli'zko a jste na ne' moc hlasiti'.
+<I1>
+Vs'echny karty budov, ktere'' jsou od va's daleko o vi'c jak o 3 vypra'zdne'te. Ve smyslu, odstran'te vs'echny nepr'a'tele na ulici pr'ed te'mito kartami. Vs'ichni ostatni' nepr'a'tele' va's mohou slys'et, pokud:
+<I0>
+<I> Jste max 3 karty od nich.
+<I> Vas'e hlasitost je alespon' takova' jako jejich pra'h vni'ma'ni'.
+<I1>
+Pokud obe' podmi'nky spln'ujete, posunou se nepr'a'tele o jednu kartu sme'rem k va'm. Takto se mohou nepr'a'tele' i nakupit a mu'z'e jich by't na jednom poli'c'ku i mnohona'sobne' vi'c nez' je Limit Nepr'a'tel.
+Pokud je ne'jaky' nepr'i'tel ta'hnuty' vi'ce sme'ry, je neroznodny' a zu'stane sta't.
+
+<C1> Uda'lost
+Z bali'c'ku Aktivni'ch Uda'losti' ta'hne kaz'dy' hra'c' jednu kartu. Pokud tam karty dojdou, zami'cha' se bali'c'ek a jede se znovu. Na karte' uda'losti mohou by't ru'zne'' ve'ci, co se maji' sta't, c'asto jich je tam i vi'cero najednou.
+<I0>
+<I> Ta'hni kartu uda'losti *) V takove'm pr'i'pade' krome' taz'ene' karty pr'idej do odhazovaci'ho bali'c'ku i jednu novou kartu z bali'c'ku uda'losti'.
+<I> Zami'chej bali'c'ek *) Vezmi vs'echny karty Aktivni'ho bali'c'ku, vc'etne' te'ch uz' taz'eny'ch, zami'chej je a obnov tak bali'c'ek.
+<I> Pr'idej kartu pr'edme'tu *) Na popsane''m poli'c'ku, pr'ed budovou pr'ed/u/za hr'ac'em se na ulici objevila nova' karta pr'edme'tu. Pro zac'atek skryta', otoc'ena' li'cem dolu'.
+<I> Objeveni' X/Y/Z nepr'i'tele *) Na popsane''m poli'c'ku, pr'ed budovou pr'ed/u/za hr'ac'em se objevila skupina X/Y/Z nepr'a'tel. Poc'et urc'uje Intenzita Nepr'a'tel na karte' budovy. Dodrz' pravidlo o Limitu Nepr'a'tel.
+<I> Specia'lni' uda'lost *) Krome' te''to karty ta'hni i kartu uda'losti z bali'c'ku specia'lni'ch uda'losti'. Ude'lej co je na ni' napsa'no a pote' ji' odhod' do odhazovaci'ho bali'c'ku specia'lni'ch uda'losti'.
+<I> U'tok nepr'a'tel do domu *) Tato uda'lost na jedno kolo ovlivn'uje chova'ni' nepr'a'tel na poli'c'ku kde v momentu otoc'eni' karty' stoji' hra'c'. Nepr'a'tele'' i hra'c'i jednaji', jako by mimo a v budove' bylo jedno mi'sto. Hra'c'i mohou prohleda'vat i u'toc'it venku i vevnitr' a v protiu'toku nepr'a'tel budou u'toc'it na hra'c'e vs'echny obludy neza'visle kde na zac'a'tku byly. Po u'toku nepr'a'tel si kaz'dy' hra'c' vybere kde chce nakonci zu'stat, jestli venku nebo vevnitr'. Nepr'a'tele'' zu'stanou, kde byli na zac'a'tku.
+<I1>
+
+<C1> Pla'nova'ni' akce
+
 
 
 <I0>
