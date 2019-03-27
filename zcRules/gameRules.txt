@@ -5,11 +5,11 @@ Superskracena pravidla
 <C>Pr'i'prava hraci' plochy
 Cely' stu'l me'jme rozde'leny' do zo'n, abychom se le'pe vyznali v tom, co kde ma' by't. Tohle na'm nahradi' komplikovanou herni' desku.
 <I0>
-<I> Zo'na me'sta *) Je dlouha' a aspon' 4 karty vysoka' zo'na pr'i'mo uprostr'ed stolu. Z leva do prava se v ni' budou postupne' vykla'dat karty me'sta. Male'', jednoduche'' me'sto tomu stac'i' mi't jednu ulici s cca 20 kartami. Pro pokroc'ile'' hry vs'ak tahle zo'na mu'z'e by't i celkem velka'.
-<I> Zo'na karet *) Je 2 karty vysoka' zo'na hned nad zo'nou me'sta. (Je to horni' okraj hraci' plochy) Bude v ni' cca 5 bali'c'ku' karet + odkla'daci' prostor na karty uz' otoc'ene''.
-<I> Zo'na z'etonu' *) By me'la by't v horni' c'a'sti hraci' plochy vedle zo'ny karet.
-<I> Zo'na nepr'a'tel je mala' oblast uprostr'ed spodni'ho okraje herni' plochy kde budou 3 vzloy'ene'' karty nepr'a'tel.
-<I> Zo'na pro hra'c'e by me'la zabi'rat cely' zbytek spodni'ho okraje a popr'i'pade' levy' a pravy' okraj herni' plochy.
+<I>Zo'na me'sta *) Je dlouha' a aspon' 4 karty vysoka' zo'na pr'i'mo uprostr'ed stolu. Z leva do prava se v ni' budou postupne' vykla'dat karty me'sta. Male'', jednoduche'' me'sto tomu stac'i' mi't jednu ulici s cca 20 kartami. Pro pokroc'ile'' hry vs'ak tahle zo'na mu'z'e by't i celkem velka'.
+<I>Zo'na karet *) Je 2 karty vysoka' zo'na hned nad zo'nou me'sta. (Je to horni' okraj hraci' plochy) Bude v ni' cca 5 bali'c'ku' karet + odkla'daci' prostor na karty uz' otoc'ene''.
+<I>Zo'na z'etonu' *) By me'la by't v horni' c'a'sti hraci' plochy vedle zo'ny karet.
+<I>Zo'na nepr'a'tel je mala' oblast uprostr'ed spodni'ho okraje herni' plochy kde budou 3 vzloy'ene'' karty nepr'a'tel.
+<I>Zo'na pro hra'c'e by me'la zabi'rat cely' zbytek spodni'ho okraje a popr'i'pade' levy' a pravy' okraj herni' plochy.
 <I1>
 Na zac'a'tku hry se pr'ipravi' bali'c'ky herni'ch karet, pr'ipravi' se vstup do me'sta, bali'c'ek pr'edme'tu', nepr'a'tele' a kaz'dy' hra'c' si pr'ipravi' svou postavu.
 <I0>
@@ -31,12 +31,12 @@ Na zac'a'tku hry se pr'ipravi' bali'c'ky herni'ch karet, pr'ipravi' se vstup do 
 <C>Vlastnosti postavy
 Kaz'da' postava ma' pa'r parametru' ktere' urc'uji' v c'em je o ne'co leps'i' nez' ostatni' a v c'em je hors'i'
 <I0>
-<I> Zdravi' *) R'i'ka' kolik postava vydrz'i' za'sahu', nez' umr'e.
-<I> Poc'et akci' *) R'i'ka' kolik ma' postava k dispozici karet univerza'lni'ch akci', jak moc je verzatilni'.
-<I> Specia'lni' akce *) R'i'ka' jake' dals'i' karty do sve'ho bali'c'ku akci' postava ma' k dispozici.
-<I> Si'la *) R'i'ka' jak dobra' je postava v boji beze zbrane'.
-<I> Rychlost *) R'i'ka' jak rychly' je u'tok beze zbrane' postavy.
-<I> Stamina *) R'i'ka' jak moc je postava schopna' se pr'epi'nat a de'lat hrdinske' kousky.
+<I>Zdravi' *) R'i'ka' kolik postava vydrz'i' za'sahu', nez' umr'e.
+<I>Poc'et akci' *) R'i'ka' kolik ma' postava k dispozici karet univerza'lni'ch akci', jak moc je verzatilni'.
+<I>Specia'lni' akce *) R'i'ka' jake' dals'i' karty do sve'ho bali'c'ku akci' postava ma' k dispozici.
+<I>Si'la *) R'i'ka' jak dobra' je postava v boji beze zbrane'.
+<I>Rychlost *) R'i'ka' jak rychly' je u'tok beze zbrane' postavy.
+<I>Stamina *) R'i'ka' jak moc je postava schopna' se pr'epi'nat a de'lat hrdinske' kousky.
 <I1>
 
 <C>Limit Nepr'a'tel
@@ -49,30 +49,63 @@ V pr'i'pade' Objeveni' plati' Limit poc'tu nepr'a'tel na karte'. Na karte' se uz
 <C>Princip utajeni'
 Tahle hra se snaz'i' propagovat schopnost hra'c'u' odhadnout co pla'nuji' ostatni'. Pokud hra'c' doka'z'e udrz'et svou zve'davost na uzde' a neprobi'rat be'hem herni'ho kola strateegii se svy'mi kolegy, je takzvane' tichy'. To znamena' z'e mu'z'e poslouchat co r'i'kaji' a mu'z'e s nimi i mluvit tak dlouho dokud se zdrz'i' komenta'r'u' o pla'nech nebo tom co ma' na ruce c'i co vi'. Dokud je hra'c' tichy', da'va' to najevo ti'm, z'e ma' na karte' sve'' postavy z'eton ticha. Jakmile se pror'ekne, at' uz' u'myslne' c'i omylem, z'eton odstrani' a po zbytek kola si uz' mu'z'e r'i'kat co chce, tichy' uz' neni'. Kaz'dy' hra'c' ma' jednu kostku r'ikaji'ci' jaka' je jeho souc'asna' hlasitost. Kaz'de' kolo kdy je hra'c' tichy', jeho hlasitost se sniz'uje kaz'de' kolo o jedna. Je vi'cero ve'ci' ktere' naopak hlasitost zvys'uji':
 <I0>
-<I> Pokud ma' pouz'i'vana' zbran' hlasitost >0, pak zvys'uje hlasitost kaz'dy' vy'str'el.
-<I> Kaz'dy' za'sah od nepr'i'tele zveda' hlasitost o 1.
-<I> Pokud na karte' kde je hra'c' bojuje vi'c jak polovina vs'ech hra'c'u' zvys'uje se vs'em na poli'c'ku hlasitost o 1.
+<I>Pokud ma' pouz'i'vana' zbran' hlasitost >0, pak zvys'uje hlasitost kaz'dy' vy'str'el.
+<I>Kaz'dy' za'sah od nepr'i'tele zveda' hlasitost o 1.
+<I>Pokud na karte' kde je hra'c' bojuje vi'c jak polovina vs'ech hra'c'u' zvys'uje se vs'em na poli'c'ku hlasitost o 1.
 <I1>
 A k c'emu hlasitost slouz'i'? Ne'ktere'' dovednosti jsou podmi'ne'ne'' ti'm z'e je hra'c' tichy'. Navi'c pokud je hra'c' hlasity', pak provokuje nepr'a'tele v okoli', viz 2. fa'ze kola - Migrace nepr'a'tel.
 
 <C>Karty me'sta
 Me'sto se skla'da' z karet budov a karet pr'i'stavku'. Kaz'da' budova se c'te odleva do prava. Nejvi'c nalevo je karta budovy, ktera' mimo jine' r'i'ka' kolik pr'i'stavku' ma' budova mi't. Karta budovy je take' jedina' karta na ktere'' se da' ji't do/z budovy a pro u'c'ely urc'ova'ni' kde hra'c'i jsou, pokud jsou v budove', jsou na te''to karte'. Pokud hra'c' jde kolem budovy, musi' samozr'ejme' ji't zvla's't' pr'es kaz'dou kartu pr'i'stavku co u budovy je. A pokud chce do budovy veji't, musi' nejprve doji't ke karte' budovy, pr'i'stavkem do budovy vstoupit nejde.
 
+<C>Ve'ci a majetek
+Kaz'da' postava vlastni', taha' sebou a nebo ne'kde shran'uje ru'zne'' nesmysly o ktery'ch si mysli' z'e jsou uz'itec'ne''. Z hlediska znalosti' jsou pr'edme'ty ktere':
+<I0>
+<I>Ma' postava u sebe - jsou skryte', podle''haji' omezeni' nosnosti a postava se mu'z'e kdy'koliv podi'vat co mezi nimi je.
+<I>Jsou zna'me'' - lez'i' ne'kde ve me'ste' ale uz' je ne'kdy ne'kdo nas'el. Takove' pr'edme'ty mu'z'e ktera'koliv postava prohrabat, pokud na tom same'm mi'ste' da' pr'i'slus'nou akci Inventa'r'e.
+<I>Jsou nezna'me'' - lez'i' ne'kde ve me'ste' a jes'te' je nikdo neodhalil. Takovy'ch mu'z'e by't kdekoliv na pla'nu libovolne'' mnoz'stvi'. Nez' si je ne'kdo bude moct prohle'dnout, musi' je nejdr'i'v ne'kdo naji't pr'i'slus'nou akci' Inventa'r'e.
+<I>Jsou obecne' zna'me' - Ne'ktere' pr'edme'ty, hlavne' stavby a vozidla, jsou tak velke'', z'e je nema' smysl schova'vat. Jsou tedy obecne' zna'me'' a uz' od obe'veni' na mape' jsou vs'em zna'me'' a da' se s nimi operovat.
+<I>Jsou mimo me'sto - Ne'ktere'' pr'edme'ty postava vlastni' ale netaha' je sebou do me'sta. Ty si hra'c' shran'uje u sebe u, nebo pod kartou postavy a snaz'i' se aby mu nezasahovali do hry.
+<I1>
+
+<C>Nosnost postav
+Kaz'da' postava ma' ne'jak omezenou nosnost. V za'kladu je nosnost postavy 6. Kaz'dy' pr'edme't ma' napsa'no, kolik va'z'i'. Pokud v souc'tu vs'echny pr'edme'ty, ktere'' ma' postava u sebe nepr'ekrac'uji' nosnost postavy, je postava v por'a'dku. Pokud pr'edme'ty nosnost postavy pr'ekrac'uji' (jde pouze o 1) je postava pr'eti'z'ena'. To ma' pa'r du'sledku'.
+<I0>
+<I>Takova' postava uz' nemu'z'e zbi'rat z'a'dne' dals'i' pr'edme'ty.
+<I>Takova' postava ztrati' jednu staminu na zac'a'tku kaz'de'' fa'ze hrani' akci'.
+<I1>
+
+<C>Prohleda'va'ni' me'sta
+Ru'zne'' lokace ve me'ste' jdou prohleda'vat. V za'kladu jsou prohleda'vat vs'echny budovy, krome' Parku'. To znamena' z'e postava musi' by't v budove', nebo na poli'c'ku se vstupem do budovy (a budova nesmi' mi't zablokovane'' dver'e) a musi' da't akci Inventa'r' a hra't ji' jako Inventa'r' - Prohleda'va'ni'. Pak se pr'i prova'd'e'ni' akce pr'esune do budovy a ne'co najde. Kaz'da' takova' budova jde prohleda'vat por'a'd dokola, dokud na ni' neni' poloz'eny' z'eton Pra'zdna'. Dokonce, pokud se ma' toto kolo uz' na budovu poloz'it z'eton Pra'zdna', por'a'd jde v budove' jes'te' naposled ne'co naji't kaz'dou akci' prohleda'va'ni' kterou postavy maji' napla'novanou. Jedno hleda'ni' se de'la' hodem kostkou. K hodu se pr'ic'te bonus (odec'te postih) na prohleda'va'ni', ktery' je napsany' na budove' nebo na pr'edme'tech c'i dovednostech ktere'' postava ma' (baterka).
+Vy'sledek se porovna' s kartou prohleda'va'ni'. C'i'slo na karte' znamena' kolik karet ve'ci' se ma' ta'hnout a kolik si jich z toho ma' postava nechat (zbytek zahodit). Tedy 4/1 znamena' z'e ta'hne 4 karty a jednu z nich si necha'.
+<C1>Kdy je budova Pra'zdna'
+Vykr'ic'ni'ky na karte' prohleda'va'ni' naznac'uji' kdy se ma' budova prohla'sit za Pra'zdnou.
+<I0>
+<I>Pokud je celkovy' vy'sledek hodu + bonusy mens'i' nez' 3.
+<I>Pokud je samotny' hod 1.
+<I1>
+<C1>Kdyz' je v budove' pr'edme't
+V ne'ktery'ch budova'ch je napsa'no, z'e tam je urc'ite' ne'jaky' pr'edme't. V takove''m pr'i'pade' po prvni'm prohleda'va'ni' najde'te v bali'c'ku pr'edme'tu' prvni' takovy' ktery' odpovi'da' popisku a pr'idejte ho k nalezeny'm v'e'cem. Pokud tedy hra'c' najde 4/1 a ma' navi'c naji't Materia'l, ta'hne si 4 karty pr'edme'tu', z toho si 1 necha' a jes'te' si najde a necha' prvni' dals'i' pr'edme't - materia'l, ktery' v bali'c'ku pr'edme'tu' najde.
+<C1>Bali'c'ek pr'edme'tu'
+Zjevne' se spousta pr'edme'tu' dostane do odhazovaci'ho bali'c'ku, aniz' by je kdykoliv kdokoliv nas'el. Ty se vs'echny vra'ti' do hry, kdyz' se bali'c'ek pr'edme'tu' doli'z'e, zami'cha' a obnovi'.
+<C1>Klasifikace pr'edme'tu'
+Pro ru'zne'' u'c'ely, napr'i'klad pro specifikaci, ktery' pr'edme't se ma' specia'lne' navi'c naji't v budove' jsou pr'edme'ty rozde'leny do 2x4 kategorii'. Mala' (j) a velka' (JJ) ji'dla, male'' (v) a velke'' (VV) vybaveni', male'' (z) a velke'' (ZZ) zbrane' a maly' (m) a velky' (MM) materia'l. Vs'echny pr'edme'ty tvor'i' jednu hroma'dku a pokud se ta'hne pr'edme't na'hodne' tak je na'hoda a jedno co se vyta'hne.
+
 <C>Jedno kolo hry
 Kaz'de' kolo se skla'da' z ne'kolika atomicky'ch kroku' z nichs' ve'ts'inu hraji' hra'c'i dohromady. Jediny' krok ktery' hra'c'i musi' vyhodnotit postupne' je hrani' akci', aby bylo jasne' jak moc si navza'jem pr'eka'z'i' c'i ne.
 <I0>
-<I> U'prava hlasitosti *) Kaz'dy' hra'c' si sni'z'i' hlasitost o 1 nebo vra'ti' z'eton ticha zpe't na kartu hra'c'e.
-<I> Migrace nepr'a'tel *) Nepr'a'tele' kter'i' jsou da'l nez' 3 karty me'sta od hra'c'e se odstrani' z pla'nu. Vs'ichi ostatni' si zkontroluji', zda hra'c'i nemaji' dostatec'nou hlasitost. Pokud ano, posunou se o 1 kartu sme'rem k hra'c'i.
-<I> Uda'lost *) Postupne' kaz'dy' hra'c' ta'hne kartu uda'losti a ude'la' co je na ni' napsa'no.
-<I> Pla'nova'ni' *) Hra'c'i otoc'i' svou kartu napla'novane'' akce a na jeji' mi'sto, tajne' a bez r'ec'i' pr'ipravi' novou.
-<I> Provedeni' akce *) Postupne' kaz'dy' hra'c' provede akci, kterou me'l napla'novanou z minule'ho kola.
-<I> Protiu'tok *) Pokud jsou u hra'c'u' ne'jaci' z'ivi' nepr'a'tele'', kaz'dy' provede u'tok na hra'c'e. Hra'c'i si bez ve'ts'i' domluvy rozebi'raji' kdo se postara' o koho.
+<I>U'prava hlasitosti *) Kaz'dy' hra'c' si sni'z'i' hlasitost o 1 nebo vra'ti' z'eton ticha zpe't na kartu hra'c'e.
+<I>Migrace nepr'a'tel *) Nepr'a'tele' kter'i' jsou da'l nez' 3 karty me'sta od hra'c'e se odstrani' z pla'nu. Vs'ichi ostatni' si zkontroluji', zda hra'c'i nemaji' dostatec'nou hlasitost. Pokud ano, posunou se o 1 kartu sme'rem k hra'c'i.
+<I>Uda'lost *) Postupne' kaz'dy' hra'c' ta'hne kartu uda'losti a ude'la' co je na ni' napsa'no.
+<I>Pla'nova'ni' *) Hra'c'i otoc'i' svou kartu napla'novane'' akce a na jeji' mi'sto, tajne' a bez r'ec'i' pr'ipravi' novou.
+<I>Provedeni' akce *) Postupne' kaz'dy' hra'c' provede akci, kterou me'l napla'novanou z minule'ho kola.
+<I>Protiu'tok *) Pokud jsou u hra'c'u' ne'jaci' z'ivi' nepr'a'tele'', kaz'dy' provede u'tok na hra'c'e. Hra'c'i si bez ve'ts'i' domluvy rozebi'raji' kdo se postara' o koho.
 <I1>
 
-<C1> U'prava hlasitosti
+<C1>U'prava hlasitosti
 Pokud ma' hra'c' z'eton ticha mimo svou kartu postavy, znamena' to, z'e minule'' kolo byl hlasity' a tudi'z' si nemu'z'e sni'z'it hlasitost. Pokud hlasity' nebyl, vz'dy si sni'z'i' hlasitost o 1, pouze vra'tit tento z'eton zpa'tky na kartu. Pokud ale uz' z'eton na karte' ma', znamena' to z'e byl potichu a mu'z'e si sni'z'it hlasitost o 1. Vi'ce bylo popsa'no v Principu utajeni'.
 
-<C1> Migrace nepr'a'tel
+<C1>Migrace nepr'a'tel
 Ma' dve' fa'ze.
 <I0>
 <I>Odchod nepr'a'tel, co jsou pr'i'lis' pozadu a vzdali to.
@@ -80,62 +113,61 @@ Ma' dve' fa'ze.
 <I1>
 Vs'echny karty budov, ktere'' jsou od va's daleko o vi'c jak o 3 vypra'zdne'te. Ve smyslu, odstran'te vs'echny nepr'a'tele na ulici pr'ed te'mito kartami. Vs'ichni ostatni' nepr'a'tele' va's mohou slys'et, pokud:
 <I0>
-<I> Jste max 3 karty od nich.
-<I> Vas'e hlasitost je alespon' takova' jako jejich pra'h vni'ma'ni'.
+<I>Jste max 3 karty od nich.
+<I>Vas'e hlasitost je alespon' takova' jako jejich pra'h vni'ma'ni'.
 <I1>
 Pokud obe' podmi'nky spln'ujete, posunou se nepr'a'tele o jednu kartu sme'rem k va'm. Takto se mohou nepr'a'tele' i nakupit a mu'z'e jich by't na jednom poli'c'ku i mnohona'sobne' vi'c nez' je Limit Nepr'a'tel.
 Pokud je ne'jaky' nepr'i'tel ta'hnuty' vi'ce sme'ry, je neroznodny' a zu'stane sta't.
 
-<C1> Uda'lost
+<C1>Uda'lost
 Z bali'c'ku Aktivni'ch Uda'losti' ta'hne kaz'dy' hra'c' jednu kartu. Pokud tam karty dojdou, zami'cha' se bali'c'ek a jede se znovu. Na karte' uda'losti mohou by't ru'zne'' ve'ci, co se maji' sta't, c'asto jich je tam i vi'cero najednou.
 <I0>
-<I> Ta'hni kartu uda'losti *) V takove'm pr'i'pade' krome' taz'ene' karty pr'idej do odhazovaci'ho bali'c'ku i jednu novou kartu z bali'c'ku uda'losti'.
-<I> Zami'chej bali'c'ek *) Vezmi vs'echny karty Aktivni'ho bali'c'ku, vc'etne' te'ch uz' taz'eny'ch, zami'chej je a obnov tak bali'c'ek.
-<I> Pr'idej kartu pr'edme'tu *) Na popsane''m poli'c'ku, pr'ed budovou pr'ed/u/za hr'ac'em se na ulici objevila nova' karta pr'edme'tu. Pro zac'atek skryta', otoc'ena' li'cem dolu'.
-<I> Objeveni' X/Y/Z nepr'i'tele *) Na popsane''m poli'c'ku, pr'ed budovou pr'ed/u/za hr'ac'em se objevila skupina X/Y/Z nepr'a'tel. Poc'et urc'uje Intenzita Nepr'a'tel na karte' budovy. Dodrz' pravidlo o Limitu Nepr'a'tel.
-<I> Specia'lni' uda'lost *) Krome' te''to karty ta'hni i kartu uda'losti z bali'c'ku specia'lni'ch uda'losti'. Ude'lej co je na ni' napsa'no a pote' ji' odhod' do odhazovaci'ho bali'c'ku specia'lni'ch uda'losti'.
-<I> U'tok nepr'a'tel do domu *) Tato uda'lost na jedno kolo ovlivn'uje chova'ni' nepr'a'tel na poli'c'ku kde v momentu otoc'eni' karty' stoji' hra'c'. Nepr'a'tele'' i hra'c'i jednaji', jako by mimo a v budove' bylo jedno mi'sto. Hra'c'i mohou prohleda'vat i u'toc'it venku i vevnitr' a v protiu'toku nepr'a'tel budou u'toc'it na hra'c'e vs'echny obludy neza'visle kde na zac'a'tku byly. Po u'toku nepr'a'tel si kaz'dy' hra'c' vybere kde chce nakonci zu'stat, jestli venku nebo vevnitr'. Nepr'a'tele'' zu'stanou, kde byli na zac'a'tku.
+<I>Ta'hni kartu uda'losti *) V takove'm pr'i'pade' krome' taz'ene' karty pr'idej do odhazovaci'ho bali'c'ku i jednu novou kartu z bali'c'ku uda'losti'.
+<I>Zami'chej bali'c'ek *) Vezmi vs'echny karty Aktivni'ho bali'c'ku, vc'etne' te'ch uz' taz'eny'ch, zami'chej je a obnov tak bali'c'ek.
+<I>Pr'idej kartu pr'edme'tu *) Na popsane''m poli'c'ku, pr'ed budovou pr'ed/u/za hr'ac'em se na ulici objevila nova' karta pr'edme'tu. Pro zac'atek skryta', otoc'ena' li'cem dolu'.
+<I>Objeveni' X/Y/Z nepr'i'tele *) Na popsane''m poli'c'ku, pr'ed budovou pr'ed/u/za hr'ac'em se objevila skupina X/Y/Z nepr'a'tel. Poc'et urc'uje Intenzita Nepr'a'tel na karte' budovy. Dodrz' pravidlo o Limitu Nepr'a'tel.
+<I>Specia'lni' uda'lost *) Krome' te''to karty ta'hni i kartu uda'losti z bali'c'ku specia'lni'ch uda'losti'. Ude'lej co je na ni' napsa'no a pote' ji' odhod' do odhazovaci'ho bali'c'ku specia'lni'ch uda'losti'.
+<I>U'tok nepr'a'tel do domu *) Tato uda'lost na jedno kolo ovlivn'uje chova'ni' nepr'a'tel na poli'c'ku kde v momentu otoc'eni' karty' stoji' hra'c'. Nepr'a'tele'' i hra'c'i jednaji', jako by mimo a v budove' bylo jedno mi'sto. Hra'c'i mohou prohleda'vat i u'toc'it venku i vevnitr' a v protiu'toku nepr'a'tel budou u'toc'it na hra'c'e vs'echny obludy neza'visle kde na zac'a'tku byly. Po u'toku nepr'a'tel si kaz'dy' hra'c' vybere kde chce nakonci zu'stat, jestli venku nebo vevnitr'. Nepr'a'tele'' zu'stanou, kde byli na zac'a'tku.
 <I1>
 
-<C1> Pla'nova'ni' akce
+<C1>Pla'nova'ni' akce
 V tenhle moment kaz'dy' hra'c' otoc'i' co napla'noval minule' kolo, z'e bude de'lat tak, aby to kaz'dy' vide'l a zac'ne pla'novat, co ude'la' pr'i's'ti' kolo. Snaz'i' se pr'itom dodrz'et Princip utajeni'. Na konci bude mi't kaz'dy' hra'c' krome' odkryty'ch karet kaci' na toto kolo nove' pr'ipravene'' zati'm skryte' akce na kolo pr'i's'ti'. Hra'c' nemusi' napla'novat z'a'dnou akci, pokud nechce. Mu'z'e jich take'' napla'novat vi'c nez' jednu. Za kaz'dou akci >1 ale musi' uz' pr'i pla'nova'ni' zaplatit jednu staminu. Moz'nosti maji' na'sleduji'ci' omezeni'.
 <I0>
-<I> Unika'tnost *) Kaz'da' akce (U'tok/Hleda'ni'/Krok vpr'ed) mu'z'e by't kaz'de' kolo napla'novana' jen jedna. Nelze tedy v za'kladu ude'lat v jednom kole dva kroky vpr'ed.
-<I> Dispozice *) Hra'c' mu'z'e zahra't jen tolik akci', kolik ma' karet akce na ruce. Kdyz' ma' celkem 3 karty akce a dve' uz' ma' napla'novane'' na minule'' kolo, zby'va' mu jen jedna a to je jeho limit.
-<I> Specia'ly *) Specia'lni' akce de'laji' c'asto tote''z' jako norma'lni' akce, ale jinak se jmenuji', mohou by't tedy zahra'ny spolu s te'mi norma'lni'mi. Za specia'lni' i norma'lni' akce >1 se plati' staminou dohromady. Tedy za 2 norma'lni' akce a jednu specia'lni' se zaplati' 2 staminy.
-<I> Cena *) Pokud staminy neni' dost, nejde dals'i' akci ani napla'novat, ani prove'st.
+<I>Unika'tnost *) Kaz'da' akce (U'tok/Hleda'ni'/Krok vpr'ed) mu'z'e by't kaz'de' kolo napla'novana' jen jedna. Nelze tedy v za'kladu ude'lat v jednom kole dva kroky vpr'ed.
+<I>Dispozice *) Hra'c' mu'z'e zahra't jen tolik akci', kolik ma' karet akce na ruce. Kdyz' ma' celkem 3 karty akce a dve' uz' ma' napla'novane'' na minule'' kolo, zby'va' mu jen jedna a to je jeho limit.
+<I>Specia'ly *) Specia'lni' akce de'laji' c'asto tote''z' jako norma'lni' akce, ale jinak se jmenuji', mohou by't tedy zahra'ny spolu s te'mi norma'lni'mi. Za specia'lni' i norma'lni' akce >1 se plati' staminou dohromady. Tedy za 2 norma'lni' akce a jednu specia'lni' se zaplati' 2 staminy.
+<I>Cena *) Pokud staminy neni' dost, nejde dals'i' akci ani napla'novat, ani prove'st.
 <I1>
 
-<C2> Za'kladni' akce k dispozici
+<C2>Za'kladni' akce k dispozici
 Hra'c' ma' v za'kladu k dispozici karty univerza'lni'ch akci'. Ty je potr'eba na stu'l da'vat tak, aby bylo jasne', ktera' hrana karty je ta platna' = ta vybrana'. Dobry' zvyk je napr'i'klad povaz'ovat za vybranou vz'dy tu horni' hranu karty (tu nejda'l od hra'c'e) a pr'i ota'c'eni' karty dba't na to z'e karty ota'c'i'me do boku aby se hrana co je nahor'e nezme'nila. Na'sleduji'ci' za'kladni' akce jsou k dispozici
 <I0>
-<I> Pohyb vpr'ed *) Figurka hra'c'e ude'la' jeden krok z poli'c'ka kde je na poli'c'ko na'sleduji'ci'. Pokud je v budove' mu'z'e zdarma z budovy vyji't ven pr'ed kartu budovy a popoji't o tu ky'z'enou kartu vpr'ed. Pokud je hra'c' c'i budova na kr'iz'ovatce, jde takto ji't i do odboc'uji'ci' ulice. Je li hra'c' u pru'chodu jde proji't pru'chodem do sousedni' ulice.
-<I> Pohyb vzad *) Funguje jako pohyb vpr'ed s ti'm rozdi'lem, z'e se hra'c' pohybuje sme'rem ven z me'sta. Nejde ji't do odboc'uji'ci' ulice, ale do sousedni' ano. A jde se takto z odboc'uji'ci' ulice vra'tit, jsme-li v ni' na prvni' karte'.
-<I> U'tok - Na Bli'zko 1) Hra'c' vezme jednu ze svy'ch nabity'ch zbrani' na bli'zko (nebo pe'st) a zau'toc'i' na libovolne''ho nepr'i'tele, dle pravidel boj. Jde takto u'toc'it pouze na nepr'a'tele na stejne''m poli'c'ku a pokud hra'c' pak nema' jinou akci, ktera' ho pr'emi'sti' tak po u'toku zu'stane na mi'ste' kde na obludu zau'toc'il. Nejde tedy napr'iklad takto u'toc'it na zombi'ka pr'ed budovou a zase se sta'hnout zpa'tky do budovy. Pokud ale hra'c' pr'ida' druhou akci, tr'eba akci inventa'r', tak to uz' se sta'hnout zpe't do budovy mu'z'e a inventa'r' prohraba'vat tam.
-<I> U'tok - Na Da'lku 2) Hra'c' vezme jednu ze svy'ch nabity'ch zbrani' na da'lku a zau'toc'i' na libovolne''ho nepr'i'tele na sve'm nebo sousedni'm poli'c'ku, vs'e podle pravidel pro boj. Pokud byl pr'ed u'tokem na karte' budovy a ne pr'i'stavku, mu'z'e si po u'toku vybrat zda chce by't uvnitr' nebo venku.
-<I> Inventa'r' 0) Akce Inventa'r'e je univerza'lni' a hra'c' si sa'm vybi'ra' pr'i prova'de'ni' akce, co ti'm vlastne' myslel a co chce ude'lat. Obecne' plati' z'e pokud je na karte' budovy, mu'z'e se pro provedeni' akce pr'esunout do/z budovy, ale po provedeni' akce uz' zu'stane, kde je.
+<I>Pohyb vpr'ed *) Figurka hra'c'e ude'la' jeden krok z poli'c'ka kde je na poli'c'ko na'sleduji'ci'. Pokud je v budove' mu'z'e zdarma z budovy vyji't ven pr'ed kartu budovy a popoji't o tu ky'z'enou kartu vpr'ed. Pokud je hra'c' c'i budova na kr'iz'ovatce, jde takto ji't i do odboc'uji'ci' ulice. Je li hra'c' u pru'chodu jde proji't pru'chodem do sousedni' ulice.
+<I>Pohyb vzad *) Funguje jako pohyb vpr'ed s ti'm rozdi'lem, z'e se hra'c' pohybuje sme'rem ven z me'sta. Nejde ji't do odboc'uji'ci' ulice, ale do sousedni' ano. A jde se takto z odboc'uji'ci' ulice vra'tit, jsme-li v ni' na prvni' karte'.
+<I>U'tok - Na Bli'zko 1) Hra'c' vezme jednu ze svy'ch nabity'ch zbrani' na bli'zko (nebo pe'st) a zau'toc'i' na libovolne''ho nepr'i'tele, dle pravidel boj. Jde takto u'toc'it pouze na nepr'a'tele na stejne''m poli'c'ku a pokud hra'c' pak nema' jinou akci, ktera' ho pr'emi'sti' tak po u'toku zu'stane na mi'ste' kde na obludu zau'toc'il. Nejde tedy napr'iklad takto u'toc'it na zombi'ka pr'ed budovou a zase se sta'hnout zpa'tky do budovy. Pokud ale hra'c' pr'ida' druhou akci, tr'eba akci inventa'r', tak to uz' se sta'hnout zpe't do budovy mu'z'e a inventa'r' prohraba'vat tam.
+<I>U'tok - Na Da'lku 2) Hra'c' vezme jednu ze svy'ch nabity'ch zbrani' na da'lku a zau'toc'i' na libovolne''ho nepr'i'tele na sve'm nebo sousedni'm poli'c'ku, vs'e podle pravidel pro boj. Pokud byl pr'ed u'tokem na karte' budovy a ne pr'i'stavku, mu'z'e si po u'toku vybrat zda chce by't uvnitr' nebo venku.
+<I>Inventa'r' 0) Akce Inventa'r'e je univerza'lni' a hra'c' si sa'm vybi'ra' pr'i prova'de'ni' akce, co ti'm vlastne' myslel a co chce ude'lat. Obecne' plati' z'e pokud je na karte' kde je vchod do budovy, mu'z'e se pro provedeni' akce pr'esunout do/z budovy, ale po provedeni' akce uz' zu'stane, kde je.
+<I>Inventa'r' - Koordinace 1) Pr'i koordinaci postava mu'z'e bez postihu volne' mluvit s ostatni'mi postavami. Vs'ichni, kter'i' jsou toto kolo na stejne'm mi'ste' si mu'z'ou z'eton ticha vra'tit zpa'tky na kartu postavy. Pr'i koordinaci si postava odpoc'ine. Doplni' si staminu na maximum. Pr'i koordinaci si postava mu'z'e volne' vyme'n'ovat pr'edme'ty s ostatni'mi postavami na mi'ste' a take' ve'ci odkla'dat a zbi'rat ze zeme'. Vyji'mkou jsou pr'edme'ty na zemi, ktere'' jes'te' nejsou otoc'ene'', s te'mi manipulovat nemu'z'e. Take' mu'z'e ude'lat jednu malou vy'robu.
+<I>Inventa'r' - Velka' vy'roba 2) Pokud de'la' postava velkou vy'robu, ve'nuje se naplno tomuhle u'kolu a nema' z'a'dne'' z vy'hod odpoc'inku. Dals'i' moz'nost je ude'lat az' 3 male' vy'roby mi'sto jedne'' velke''.
+<I>Inventa'r' - Prohleda'va'ni' 3) Pokud postava prohleda'va', odkryje vs'ehny zati'm neodkryte'' pr'edme'ty na mi'ste'. Take'', pokud je v budove', bude se r'i'dit podle pravidla o prohleda'va'ni'. Takova' postava sta'le mu'z'e zvedat a pokla'dat ve'ci, ale nemu'z'e je pr'eda'vat ostatni'm postava'm, ani nema' z'a'dnou jinou vy'hodu akce Inventa'r' - Koordinace.
 <I1>
 
+<C1>Hrani' akci'
+Kaz'dy' hra'c' nyni' odehraje vs'echny sve'' napla'novane'' akce.
+<C2>Por'adi'
+Ve hr'e je z'eton zac'i'naji'ci'ho hra'c'e, ktery' se posune o jednoho hra'c'e na zac'a'tku kaz'de''ho kola. Pro u'c'ely koordinace je leps'i' akce postav odehra't postupne' od zac'i'naji'ci'ho hra'c'e vz'dy kaz'dy' hra'c' jednu akci. Neni' du'lez'ite'' v jake''m por'adi' byly akce napla'novane'', odehraje si je kaz'dy' hra'c' v jake''m por'adi' chce.
+<C2>Zme'na pla'nu'
+Pokud ne'jakou akci nechce odehra't, mu'z'e v tuhle chvi'li zaplatit 2 body staminy a napla'novanou akci zrus'it. Jinak je odehra'ni' akce povinne''. Pokud hra'c' zjisti' z'e hrozne' moc chce zahra't ne'jakou akci, ale nema' ji' napla'novanou, take' mu'z'e ale bude ho to sta't dodatec'ne'' 3 body staminy.
 
-<I0>
-<I>Kaz'dy' hra'c' dostane Karu Prohleda'va'ni', Kartu kola, Kartu na'hody a Karty ke sve' postave''.
-<I>Na zac'a'tku se otoc'i' 2 vchody do me''sta. Hra'c'i se dohodnou, kde kdo bude sta't. Stoji' vz'dy na ulici pr'ed vybranou prvni' budovou.
-<I>Vyberou se karty nepr'a'tel, v za'kladu 3 - Li'na' Zombie, Zombie a Raubi'r'
-<I1>
-<C>Schopnosti hra'c'e
-Kaz'dy' hra'c' ma' karty a kostky sve' postavy. Kostky urc'uji' hlasitost (0 - 5) a ubranou Staminu (0 - 5). Hlasitost nemu'z'e by't ve''ts'i' nez' 5, max staminu urc'uje karta hra'c'e. Ta take' urc'uje kolik ma' hra'c' zdravi' a akc'ni'ch karet a jakou ma' za'kladni' dovednost.
-<C1>Dovednosti
-Me'lo by na nich by't napsa'no, jestli stoji' staminu nebo ne a kdy se daji' pouz'i't popr'i'pade' jak se daji' nabi'jet.
-<C>Mapa
-Pokaz'de' kdyz' ne'jaky' hra'c' vstoupi' na kraj mapy (na posledni' odkryte' poli'c'ko) ihned se odkryje nova' mapa (nova' karta)
-<C1>Karta budovy
-Obsahuje na'sleduji'ci' informace:
-<I0>
-<I>Kolik nepr'a'tel pr'icha'zi' zezhora, zespoda a je uvnitr'
-<I>Kolik za touhle kartou na'sleduje maly'ch budov
-<I>Jak dobr'e jde prohleda'vat
-<I>Jaka' je zvla's'tni' vlastnost budovy
-<I1>
-<C1>Vozidla
-Pokud je nova' mapa pomocna' budova, hned se li'zne nova' karta vozidla, hodi' se kostkou aby se zjistilo, zda na tom di'lku vozidlo je, c'i ne.
-<C>Kolo hry
+<C1>Protiu'tok nepr'i'tele
+Pokud jsou v tenhle moment ne'jaci' hra'c'i v dosahu/dostr'elu nepr'a'tel, provedou tito nepr'a'tele'' protiu'tok. Narozdi'l od hra'c'u' si nepr'a'tele'' nemusi' ha'zet na za'sah, vz'dy trefi'. Na kaz'de'' karte' nepr'i'tele je napsa'no, kolik u'toku' kaz'dy' z nich ude'la' (kaz'dy' za 1 zrane'ni'). Kdo zrane'ni' dostane si rozde'li' v ra'mci kola a moz'nosti' vs'echny pr'i'tomne'' postavy rovnome'rne'. Od zac'i'naji'ci'ho hra'c'e (se z'etonem).
+<C2>Obraha postav
+Nezapomen'te, z'e postavy nejsou bezbranne'' a pokud maji' rychlost u'toku stejnou nebo rychlejs'i' nez' u'toc'i'ci' nepr'i'tel, mu'z'ou do ne'j v zoufalstvi' jes'te' jednou pras'tit, r'i'znout nebo str'elit. Pokud ma' tedy nepr'i'tel (Vlk) rychlost + musi' hra'c' mi't rychlost take'' + nebo ++.
+<C2>Zve'ts'eny' dosah nepr'i'tele
+Ne'kter'i' nepr'a'tele' maji' napsa'no z'e u'toc'i' na da'lku. V takove'm pr'i'pade' se do boje zapoji' i kdyz' jsou na jine'm poli'c'ku nez' postavy.
+<C2>U'tok v dome'
+Pokud jsou postavy v dome' a jes'te' neporazili vs'echny nepr'a'tele, zaby'vaji'ci' nepr'a'tele'' na ne' take'' zau'toc'i'. V dome' se v za'kladu vz'dy bojuje s nepr'a'teli X.
+<C2>U'tok do domu
+Ve specia'lni'm pr'i'pade' (uda'lost) mohou nepr'a'tele'' pr'ed domem zau'toc'it i do domu. V takove'm pr'i'pade' se chovej, jako by pro protiu'tok nepr'a'tel bylo pr'ed domem a v dome' jen jedna lokace.
+
+<C>Pravidla boje
