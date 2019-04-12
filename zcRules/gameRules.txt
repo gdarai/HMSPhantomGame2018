@@ -69,7 +69,7 @@ Kaz'da' postava vlastni', taha' sebou a nebo ne'kde shran'uje ru'zne'' haraburdi
 <I1>
 
 <C>Nosnost postav
-Kaz'da' postava ma' ne'jak omezenou nosnost. V za'kladu je nosnost postavy 6. Kaz'dy' pr'edme't ma' napsa'no, kolik va'z'i'. Pokud v souc'tu vs'echny pr'edme'ty, ktere'' ma' postava u sebe nepr'ekrac'uji' nosnost postavy, je postava v por'a'dku. Pokud pr'edme'ty nosnost postavy pr'ekrac'uji' (nejde o vi'c jak o 1) je postava pr'eti'z'ena'. To ma' pa'r du''sledku'.
+Kaz'da' postava ma' ne'jak omezenou nosnost (cca 6) jak uva'di' karta postavy. Kaz'dy' pr'edme't ma' napsa'no, kolik va'z'i'. Pokud v souc'tu vs'echny pr'edme'ty, ktere'' ma' postava u sebe nepr'ekrac'uji' nosnost postavy, je postava v por'a'dku. Pokud pr'edme'ty nosnost postavy pr'ekrac'uji' (nejde o vi'c jak o 1) je postava pr'eti'z'ena'. To ma' pa'r du''sledku'.
 <I0>
 <I>Takova' postava uz' nemu'z'e sbi'rat z'a'dne' dals'i' pr'edme'ty.
 <I>Takova' postava ztrati' jednu staminu na zac'a'tku kaz'de'' fa'ze hrani' akci'.
@@ -159,8 +159,8 @@ Ve hr'e je z'eton zac'i'naji'ci'ho hra'c'e, ktery' se posune o jednoho hra'c'e n
 <C2>Zme'na pla'nu'
 Pokud ne'jakou akci nechce odehra't, mu'z'e v tuhle chvi'li zaplatit 2 body staminy a napla'novanou akci zrus'it. Jinak je odehra'ni' akce povinne''. Pokud hra'c' zjisti' z'e hrozne' moc chce zahra't ne'jakou akci, ale nema' ji' napla'novanou, take' mu'z'e ale bude ho to sta't dodatec'ne'' 3 body staminy.
 
-<C1>Protiu'tok nepr'i'tele
-Pokud jsou v tenhle moment ne'jaci' hra'c'i v dosahu/dostr'elu nepr'a'tel, provedou tito nepr'a'tele'' protiu'tok. Narozdi'l od hra'c'u' si nepr'a'tele'' nemusi' ha'zet na za'sah, vz'dy trefi'. Na kaz'de'' karte' nepr'i'tele je napsa'no, kolik u'toku' kaz'dy' z nich ude'la' (kaz'dy' za 1 zrane'ni'). Kdo zrane'ni' dostane si rozde'li' v ra'mci kola a moz'nosti' vs'echny pr'i'tomne'' postavy rovnome'rne'. Od zac'i'naji'ci'ho hra'c'e (se z'etonem).
+<C1>Protiu''tok nepr'i'tele
+Pokud jsou v tenhle moment ne'jaci' hra'c'i v dosahu/dostr'elu nepr'a'tel, provedou tito nepr'a'tele'' protiu'tok. Na kaz'de'' karte' nepr'i'tele je napsa'no, kolik u'toku' kaz'dy' ma' a jake'' je jeho u''toc'ne'' a obranne'' c'i'slo, stejne' jako pro hra'c'e. Nepr'a'tele'' postupne' u''toc'i' od zac'i'naji'ci'ho hra'c'e poctive' kaz'de'mu po jednom u'toku dokud maji' z c'eho bra't. Vi'c k tomu v kapitole Pravidla boje.
 <C2>Obraha postav
 Nezapomen'te, z'e postavy nejsou bezbranne'' a pokud maji' rychlost u'toku stejnou nebo rychlejs'i' nez' u'toc'i'ci' nepr'i'tel, mu'z'ou do ne'j v zoufalstvi' jes'te' jednou pras'tit, r'i'znout nebo str'elit. Pokud ma' tedy nepr'i'tel (Vlk) rychlost + musi' hra'c' mi't rychlost take'' + nebo ++.
 <C2>Zve'ts'eny' dosah nepr'i'tele
@@ -172,7 +172,7 @@ Ve specia'lni'm pr'i'pade' (uda'lost) mohou nepr'a'tele'' pr'ed domem zau'toc'it
 
 <C>Pravidla boje
 Pokud nepr'i'tel u'toc'i' na hra'c'e jsou pravidla jina' nez' kdyz' hra'c' u'toc'i' na nepr'itele. V prvni' r'ade' je potr'eba tyto dve' situace rozlys'it.
-<C1>Kdyz' postava u'toc'i'
+<C1>Kdyz' postava u''toc'i'
 Postava u'toc'i' bud' ci'lene', nebo obranne'.
 Ci'lene' u'toc'i' pokaz'de'' kdyz' hra'c' zahraje ne'jakou kartu u'toku. Neza'visi' na tom, jestli ma' postava na koho, nebo c'i'm u'toc'it. Obranne' postava u'toc'i' (tentokra't pouze pokud hra'c' chce) je kdyz' na jeho polohu u'toc'i' ne'jaky' nepr'i'tel. To je ale podmi'ne'no.
 <I0>
@@ -187,20 +187,21 @@ Munice je nezbytnou podmi'nkou fungova'ni' zbrane'. I zbrane' na bli'zko maji' n
 <C2>Hlasitost
 Kdyz' postava u'toc'i', zvys'uje se ji' hlasitost. A to podle pouz'ite'' zbrane' a take'' podle intenzity boje. Hlasitost zbrane' r'i'ka' o kolik se zvedne hlasitost postavy pokud toto kolo zbran' pouz'ije. Neza'visle na tom kolikra't ji' pouz'ije, pokud alespon' jednou, ihned se ji' zvedne hlasitost o danou hodnotu. Navi'c plati' pravidlo o Intenzite' boje. Pokud vi'c jak polovina postav co jsou ve hr'e je na stejne'm poli'c'ku (at' uz' venku nebo vevnitr') a u'toc'i', vs'ichni si zvednou hlasitost o dals'i' 1.
 <C2>Kdy zran'uje
-V za'kladu ma' kaz'da' zbran' ne'jakou pr'esnost. (C'i'slo pr'ed rychlosti' zbrane' 4++ znamena' pr'esnost 4) Kaz'da' postava mu'z'e mi't dovednosti, ktere'' pak pr'esnost s jednotlivy'mi zbrane'mi zleps'uje. Pr'i kaz'de''m u'toku si hra'c' hodi' na za'sah. 1k6 + pr'esnost = u'toc'ne'' c'i'slo. Kaz'dy' nepr'i'tel ma' sve'' obranne'' c'i'slo.
+V za'kladu ma' kaz'da' zbran' ne'jakou pr'esnost. (To za'porne'' c'i'slo pr'ed rychlosti' zbrane' -4 ++ znamena' pr'esnost 4) Kaz'da' postava mu'z'e mi't dovednosti, ktere'' pak pr'esnost s jednotlivy'mi zbrane'mi jes'te' zleps'uje. Pokud hra'c' bojuje beze zbrane' pouz'ije pr'esnost jakou ma' na sve'' karte' postavy (ope't to za'porne'' c'i'slo). Kaz'dy' nepr'i'tel pak ma' ne'jakou obranu (kladne'' c'i'slo vedle s'ti'tu). Vy'sledek boje se urc'i' tak, z'e se sec'te u'toc'ne'' c'i'slo u''toc'i'ci'ho (hra'c'e) a obranne'' c'i'slo nepr'i'tele a pr'ic'te se hod 1k6 kostkou.
 <I0>
-<I>Pokud je u'toc'ne'' c'i'slo mens'i' nez' obranne'', postava minula.
-<I>Pokud je stejne'' nebo ve'ts'i', postava trefila a zranila nepr'i'tele za 1.
-<I>Pokud je ve'ts'i' alespon' o 3, postava zranila ne za 1 ale za 2.
+<I>Pokud je vy'sledek me''ne' jak nula, postava minula.
+<I>Pokud je alespon' nula, postava trefila a zranila nepr'i'tele za 1.
+<I>Pokud je 3 a vi'c, postava zranila ne za 1 ale za 2.
 <I1>
 <C2>Zdravi' nepr'i'tele
 Kaz'dy' nepr'i'tel ma' ne'jake' zdravi'. To r'i'ka' kolik zrane'ni' vydrz'i'. Pokud je v ne'jake''m kole nepr'i'tel jen zrane'ny', ne vs'ak zabity', tak se mezi koly uzdravi'. Vyji'mkou je jedno zrane'ni' ktere' se poloz'i' na kartu nepr'i'tele. Ten znamena' z'e prvni' u'tok na jake'hokoliv nepr'i'tele tohohle tipu bude v pr'i's'ti' kolo da'vat o jedna silne'js'i' zrane'ni'. Ale jen ten prvni'. Pak se z'eton zase odstrani'.
 <C2>U'tok na vs'echny
 Ne'ktere'' zbrane', napr'i'klad grana'ty, u'toc'i' na vi'cero nepr'a'tel najednou. V takove'm pr'i'pade' si hod'te na obranu u kaz'de''ho nepr'i'tele zvla's't'.
-<C1>Kdyz' nepr'i'tel u'toc'i'
-Nepr'i'tel u'toc'i ve fa'zi kola Protiu'tok nepr'i'tele, kdykoliv jsou postavy v jeho dosahu/dostr'elu. Nepr'i'tel vz'dy trefi' a vz'dy za jedna. Ne'kter'i' nepr'a'tele'' u'toc'i' vi'ckra't nez' jednou. V takove''m pr'i'pade' to jsou dva samostatne'' u'toky, klidne' i na dva jine'' hra'c'e.
+<C1>Kdyz' nepr'i'tel u''toc'i'
+Nepr'i'tel u''toc'i ve fa'zi kola Protiu''tok nepr'i'tele, kdykoliv jsou postavy v jeho dosahu/dostr'elu.
+Ne'kter'i' nepr'a'tele'' u''toc'i' vi'ckra't nez' jednou. V takove''m pr'i'pade' to jsou dva samostatne'' u''toky, klidne' i na dva jine'' hra'c'e. U'tok nepr'i'tele probi'ha' stejne' jako u''tok hra'c'e, az' na to, z'e u''toc'ne'' c'i'slo se bere od nepr'i'tele a obranne'' od hra'c'e. Zase se sec'tou, pr'ic'te se 1k6 a porovna'va' se s nulou.
 <C2>Rozkla'da'ni' zrane'ni'
-V momente' kdy vyhodnocujete u'tok nepr'i'tele, spoc'te'te, za kolik va'm dohromady nepr'a'tele'' daji'. Zrane'ni' si mezi sebou rozde'lte pravidelne' a pr'ebytek rozdejte po jednom zrane'ni' od zac'i'naji'ci'ho hra'c'e. Vs'echna zrane'ni' rozda'va'te samozr'ejme' pouze mezi hra'c'e, kter'i' byli pr'i'tomni te'' ktere'' bitce.
+Kdyz' maji' nepr'a'tele'' vi'c ci'lu', postupne' u'toc'i' od zac'i'naji'ci'ho hra'c'e, po sme'ru hry, na kaz'de''ho v dosahu, dokud maji' volne'' u'toky.
 
 <C>Vi'te'zstvi' v za'kladni' hr'e
 Ci'l postav v za'kladni' hr'e je naji't jedno velke'' ji'dlo (nebo 3 male'') pro kaz'dou postavu a naji't a zprovoznit dopravni' prostr'edek(y) pro vs'echny postavy. Pokud tedy na konci kola budou vs'echny postavy u ne'jake'ho zprovozne'ne''ho dopravni'ho prostr'edku a bude v ne'm pro ne' mi'sto a na poli'c'ku kde stoji' bude dostatek ji'dla, automaticky vyhra'vaji'.

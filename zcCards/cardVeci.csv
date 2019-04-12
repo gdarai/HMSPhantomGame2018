@@ -1,20 +1,20 @@
-20,J,Jidlo,1,+1 Zdravi|nebo|+1 Sila|nebo|+2 Stamina
-10,J,MRE,1,+3 Zdravi|nebo|+max Stamina
-10,JJ,Velke Jidlo,2,+2 Zdravi|nebo|+max Stamina|Muzes rozebrat|na 3 jidla
+20,J,Jidlo,1,+1 Zdravi|ci +1 Sila|ci +2 Stamina
+10,J,MRE,1,+3 Zdravi|ci +max Stamina
+10,JJ,Velke Jidlo,2,+2 Zdravi|ci +max Stamina|Muzes rozebrat|na 3 jidla
 14,M,Material,1,Pouzij 3|misto|jednoho velkeho
 6,MM,Velky Material,2,Muzes rozebrat|na 3 male
 5,V,Stimulant,0,+2 Sila|nebo|+max Stamina
-5,V,Protilatka,0,Zrusi otravu|a|+1 Sila
+5,V,Protilatka,0,Zrusi otravu|a +1 Sila
 5,V,Stit,2,ochrani pred|2 zranenimi
 5,V,Baterka,0,+1 na|hledani
-2,Z,Hul,1,Na blizko +|Utok 1 Zvuk 1|Bez munice
-2,Z,Palka,1,Na blizko ++|Utok 2 Zvuk 1|Bez munice
-2,Z,Ostnaty Kyj,2,Na blizko +|Utok 3 Zvuk 1|Zadarmo 3
-3,Z,Prak,0,Na Dalku ++|Utok 1 Zvuk 1|Zadarmo 3
-2,Z,Luk,2,Na Dalku +|Utok 2 Zvuk 0|Za Jidlo 4
-3,Z,Pistole,0,Na Dalku ++|Utok 3 Zvuk 1|Za Material 3
-2,Z,Maceta,1,Na blizko ++|Utok 2 Zvuk 0|Bez munice
-6,Z,Granat,0,Na Dalku X|Utok 4 Zvuk 3+1|Jednorazovy
-2,Z,Kuse,2,Na Dalku +|Utok 3 Zvuk 0|Za Jidlo 4
-2,Z,Brokovnice,2,Na Dalku +|Utok 4 Zvuk 2|Za Material 3
-2,Z,Motorova Pila,2,Na blizko ++|Utok 4 Zvuk 2|Bez Munice
+2,Z,Hul,1,Na blizko +|Utok -4 Zvuk 1|Bez munice
+2,Z,Palka,1,Na blizko ++|Utok -5 Zvuk 1|Bez munice
+2,Z,Ostnaty Kyj,2,Na blizko +|Utok -6 Zvuk 1|Zadarmo 3
+3,Z,Prak,0,Na Dalku ++|Utok -5 Zvuk 1|Zadarmo 3
+2,Z,Luk,2,Na Dalku +|Utok -6 Zvuk 0|Za Jidlo 4
+3,Z,Pistole,0,Na Dalku ++|Utok -4 Zvuk 1|Za Material 3
+2,Z,Maceta,1,Na blizko ++|Utok -5 Zvuk 0|Bez munice
+6,Z,Granat,0,Na Dalku X|Utok -4 Zvuk 3+1|Jednorazovy
+2,Z,Kuse,2,Na Dalku +|Utok -6 Zvuk 0|Za Jidlo 4
+2,Z,Brokovnice,2,Na Dalku +|Utok -7 Zvuk 2|Za Material 3
+2,Z,Motorova Pila,2,Na blizko ++|Utok -7 Zvuk 2|Bez Munice

@@ -9,26 +9,6 @@
 	"color":[0,0,0],
     "align":"center"
   },
-  "symbol":{
-    "type":"text",
-    "position":[[426,44],[578,156]],
-	"padding":[[20,20], [20,20]],
-    "font":"HERSHEY_SIMPLEX",
-    "size":5,
-	"line":2,
-	"color":[0,0,0],
-    "align":"center"
-  },
-  "level":{
-    "type":"text",
-    "position":[[42,44],[195,156]],
-	"padding":[[20,20], [20,20]],
-    "font":"HERSHEY_SIMPLEX",
-    "size":5,
-	"line":2,
-	"color":[0,0,0],
-    "align":"center"
-  },
   "img":{
     "type":"text",
     "position":[[84,84],[544,732]],
@@ -41,7 +21,7 @@
   },
   "text":{
     "type":"text",
-    "position":[[44,580],[580,924]],
+    "position":[[44,580],[580,780]],
 	"padding":[[20,20], [20,20]],
     "font":"HERSHEY_SIMPLEX",
     "size":5,
@@ -49,9 +29,39 @@
 	"color":[0,0,0],
     "align":"center"
   },
-  "power":{
+  "health":{
     "type":"text",
-    "position":[[117,924],[218,1038]],
+    "position":[[158,44],[308,156]],
+	"padding":[[0,20], [0,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	"line":2,
+	"color":[0,0,0],
+    "align":"center"
+  },
+  "level":{
+    "type":"text",
+    "position":[[420,44],[580,156]],
+	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	"line":2,
+	"color":[0,0,0],
+    "align":"center"
+  },
+  "attack":{
+    "type":"text",
+    "position":[[150,811],[300,924]],
+	"padding":[[0,20], [0,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	"line":2,
+	"color":[0,0,0],
+    "align":"center"
+  },
+  "defense":{
+    "type":"text",
+    "position":[[400,811],[570,924]],
 	"padding":[[0,20], [0,20]],
     "font":"HERSHEY_SIMPLEX",
     "size":5,
@@ -61,7 +71,7 @@
   },
   "speed":{
     "type":"text",
-    "position":[[288,924],[389,1038]],
+    "position":[[158,924],[308,1038]],
 	"padding":[[0,20], [0,20]],
     "font":"HERSHEY_SIMPLEX",
     "size":5,
@@ -69,9 +79,9 @@
 	"color":[0,0,0],
     "align":"center"
   },
-  "health":{
+  "awareness":{
     "type":"text",
-    "position":[[484,924],[580,1038]],
+    "position":[[420,924],[580,1038]],
 	"padding":[[0,20], [0,20]],
     "font":"HERSHEY_SIMPLEX",
     "size":5,
