@@ -1,6 +1,6 @@
 2,Domek,imgs-town1.png,imgs-block2.png,2,1,+1,2,
 2,Domek,imgs-town1.png,,1,1,+1,1,Kazde kolo|1 novy nepritel|uvnitr|2 Jidla navic
-2,Domek,imgs-town1.png,imgs-block1.png,2,1,+1,1,
+2,Domek,imgs-town1.png,imgs-block1.png,2,1,+1,1,Utok|vsech -1|uvnitr
 1,Kram,imgs-town1.png,,0,1,+1,2,Predmet navic
 1,Kram,imgs-town1.png,,0,1,+1,1,Predmet navic
 1,Policie,imgs-town1.png,,1,1,+0,0,Zbran navic|Naboje zadarmo

@@ -13,7 +13,7 @@
 3,Eu,Mapa,Novy vstup|do mesta
 3,E,Stado,+3 Hlasitost||Navic 2 Jidla|za kazdy utok
 3,E,Stado,+2 Hlasitost||Navic 2 Jidla|za kazdy utok
-4,E,Prach,Obludy|neutoci
-2,E,Prach X,Obludy|neutoci||-1 Zivot
+4,E,Prach,Vsechny|utoky -2
+2,E,Prach X,Vsechny|utoky -2||-1 Zivot
 2,E,Otrava krve,Zabira|1 misto|inventare||Potreba|protilatka
 2,E,Zraneni,Zabira|1 misto|inventare||Potreba|leceni

@@ -1,14 +1,14 @@
 2,Budova,imgs-town0.png,0,1,,-1 Parkovani|aut
 2,Budova,imgs-town0.png,0,2,,-1 Parkovani|aut
 2,Budova,imgs-town0.png,1,1,,-1 Parkovani|aut|Predmet
-2,Budova,imgs-town0.png,1,1,,Obrana +1|na ulici
+2,Budova,imgs-town0.png,1,1,,Protiutok|nepratel -1|na ulici
 2,Budova,imgs-town0.png,1,0,imgs-block1.png,2 Predmety
 2,Garaz,imgs-town0.png,0,0,,+1 Parkovani|aut
 2,Garaz,imgs-town0.png,0,2,,+1 Parkovani|aut|Predmet
 2,Garaz,imgs-town0.png,1,1,,+1 Parkovani|aut
 2,Kulna,imgs-town0.png,0,2,,Zarucene|kola ci motorky|Predmet
 2,Kulna,imgs-town0.png,1,1,imgs-block1.png,2 Predmety
-2,Zahrada,imgs-town0.png,0,1,,Obrana +1|na ulici
+2,Zahrada,imgs-town0.png,0,1,,Protiutok|nepratel -1|na ulici
 2,Zahrada,imgs-town0.png,0,1,,Predmet navic
-2,Zahrada,imgs-town0.png,0,1,,Obrana +1|na ulici
+2,Zahrada,imgs-town0.png,0,1,,Protiutok|nepratel -1|na ulici
 2,Zahrada,imgs-town0.png,0,1,,Krizovatka
