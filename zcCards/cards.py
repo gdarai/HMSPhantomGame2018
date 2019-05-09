@@ -311,6 +311,7 @@ def printCardFile(setting, name):
 	imageDict = dict()
 	imageDict['file'] = name
 	imageDict['onOneLine'] = setting['_onOneLine']
+	imageDict['randomize'] = setting['_randomize']
 	IMAGES[setting['_out']].append(imageDict)
 	return
 
@@ -434,6 +435,8 @@ def readParameters(setting, source):
 		print('!! Swapping output to file '+newFile)
 		if newFile not in IMAGES:
 			IMAGES[newFile] = list()
+	if '_randomize' in source:
+		setting['_randomize'] = source['_randomize'] == 'True'
 
 	return setting
 
@@ -473,7 +476,10 @@ def readAndProcess(level, name, source, setting):
 
 def printImages(IMAGES):
 	onOneLine = IMAGES[0]['onOneLine']
+	doRandom = IMAGES[0]['randomize']
 	imgWidth = str(A4_TEXT_W / onOneLine)
+	if doRandom:
+		random.shuffle(IMAGES)
 	for img in IMAGES:
 		if img['onOneLine'] != onOneLine:
 			onOneLine = img['onOneLine']
@@ -512,6 +518,8 @@ setting['_cardParams'] = dict()
 setting['_card'] = ''
 setting['_lists'] = dict()
 setting['_out'] = TEX_FILE
+setting['_randomize'] = True
+
 
 readAndProcessList(0, "img", source, setting)
 

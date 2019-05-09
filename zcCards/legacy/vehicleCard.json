@@ -69,7 +69,7 @@
 	"color":[0,0,0],
     "align":"center"
   },
-  "occurence":{
+  "occurrence":{
     "type":"text",
     "position":[[44,812],[580,924]],
 	"padding":[[20,20], [20,20]],

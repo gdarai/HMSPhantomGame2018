@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.15)  24 APR 2019 16:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.15)  9 MAY 2019 16:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -278,120 +278,160 @@ File: ./cards/img-7_9.png Graphic file (type png)
 Package pdftex.def Info: ./cards/img-7_9.png used on input line 20.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-8_0.png, id=15, 301.125pt x 524.96124pt>
+<./cards/img-7_10.png, id=15, 301.125pt x 524.96124pt>
+File: ./cards/img-7_10.png Graphic file (type png)
+
+<use ./cards/img-7_10.png>
+Package pdftex.def Info: ./cards/img-7_10.png used on input line 21.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-8_0.png, id=16, 301.125pt x 524.96124pt>
 File: ./cards/img-8_0.png Graphic file (type png)
 
 <use ./cards/img-8_0.png>
-Package pdftex.def Info: ./cards/img-8_0.png used on input line 21.
+Package pdftex.def Info: ./cards/img-8_0.png used on input line 22.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-8_1.png, id=16, 301.125pt x 524.96124pt>
+<./cards/img-8_1.png, id=17, 301.125pt x 524.96124pt>
 File: ./cards/img-8_1.png Graphic file (type png)
 
 <use ./cards/img-8_1.png>
-Package pdftex.def Info: ./cards/img-8_1.png used on input line 22.
+Package pdftex.def Info: ./cards/img-8_1.png used on input line 23.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-8_2.png, id=17, 301.125pt x 524.96124pt>
+<./cards/img-8_2.png, id=18, 301.125pt x 524.96124pt>
 File: ./cards/img-8_2.png Graphic file (type png)
 
 <use ./cards/img-8_2.png>
-Package pdftex.def Info: ./cards/img-8_2.png used on input line 23.
+Package pdftex.def Info: ./cards/img-8_2.png used on input line 24.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-8_3.png, id=18, 301.125pt x 524.96124pt>
+<./cards/img-8_3.png, id=19, 301.125pt x 524.96124pt>
 File: ./cards/img-8_3.png Graphic file (type png)
 
 <use ./cards/img-8_3.png>
-Package pdftex.def Info: ./cards/img-8_3.png used on input line 24.
+Package pdftex.def Info: ./cards/img-8_3.png used on input line 25.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-8_4.png, id=19, 301.125pt x 524.96124pt>
+<./cards/img-8_4.png, id=20, 301.125pt x 524.96124pt>
 File: ./cards/img-8_4.png Graphic file (type png)
 
 <use ./cards/img-8_4.png>
-Package pdftex.def Info: ./cards/img-8_4.png used on input line 25.
+Package pdftex.def Info: ./cards/img-8_4.png used on input line 26.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-8_5.png, id=20, 301.125pt x 524.96124pt>
+<./cards/img-8_5.png, id=21, 301.125pt x 524.96124pt>
 File: ./cards/img-8_5.png Graphic file (type png)
 
 <use ./cards/img-8_5.png>
-Package pdftex.def Info: ./cards/img-8_5.png used on input line 26.
+Package pdftex.def Info: ./cards/img-8_5.png used on input line 27.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-8_6.png, id=21, 301.125pt x 524.96124pt>
+<./cards/img-8_6.png, id=22, 301.125pt x 524.96124pt>
 File: ./cards/img-8_6.png Graphic file (type png)
 
 <use ./cards/img-8_6.png>
-Package pdftex.def Info: ./cards/img-8_6.png used on input line 27.
+Package pdftex.def Info: ./cards/img-8_6.png used on input line 28.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-8_7.png, id=22, 301.125pt x 524.96124pt>
+<./cards/img-8_7.png, id=23, 301.125pt x 524.96124pt>
 File: ./cards/img-8_7.png Graphic file (type png)
 
 <use ./cards/img-8_7.png>
-Package pdftex.def Info: ./cards/img-8_7.png used on input line 28.
+Package pdftex.def Info: ./cards/img-8_7.png used on input line 29.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-9_0.png, id=23, 301.125pt x 524.96124pt>
+<./cards/img-8_8.png, id=24, 301.125pt x 524.96124pt>
+File: ./cards/img-8_8.png Graphic file (type png)
+
+<use ./cards/img-8_8.png>
+Package pdftex.def Info: ./cards/img-8_8.png used on input line 30.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-8_9.png, id=25, 301.125pt x 524.96124pt>
+File: ./cards/img-8_9.png Graphic file (type png)
+
+<use ./cards/img-8_9.png>
+Package pdftex.def Info: ./cards/img-8_9.png used on input line 31.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-8_10.png, id=26, 301.125pt x 524.96124pt>
+File: ./cards/img-8_10.png Graphic file (type png)
+
+<use ./cards/img-8_10.png>
+Package pdftex.def Info: ./cards/img-8_10.png used on input line 32.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-8_11.png, id=27, 301.125pt x 524.96124pt>
+File: ./cards/img-8_11.png Graphic file (type png)
+
+<use ./cards/img-8_11.png>
+Package pdftex.def Info: ./cards/img-8_11.png used on input line 33.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-9_0.png, id=28, 301.125pt x 524.96124pt>
 File: ./cards/img-9_0.png Graphic file (type png)
 
 <use ./cards/img-9_0.png>
-Package pdftex.def Info: ./cards/img-9_0.png used on input line 29.
+Package pdftex.def Info: ./cards/img-9_0.png used on input line 34.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-9_1.png, id=24, 301.125pt x 524.96124pt>
+<./cards/img-9_1.png, id=29, 301.125pt x 524.96124pt>
 File: ./cards/img-9_1.png Graphic file (type png)
 
 <use ./cards/img-9_1.png>
-Package pdftex.def Info: ./cards/img-9_1.png used on input line 30.
+Package pdftex.def Info: ./cards/img-9_1.png used on input line 35.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-9_2.png, id=25, 301.125pt x 524.96124pt>
+<./cards/img-9_2.png, id=30, 301.125pt x 524.96124pt>
 File: ./cards/img-9_2.png Graphic file (type png)
 
 <use ./cards/img-9_2.png>
-Package pdftex.def Info: ./cards/img-9_2.png used on input line 31.
+Package pdftex.def Info: ./cards/img-9_2.png used on input line 36.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-9_3.png, id=26, 301.125pt x 524.96124pt>
+<./cards/img-9_3.png, id=31, 301.125pt x 524.96124pt>
 File: ./cards/img-9_3.png Graphic file (type png)
 
 <use ./cards/img-9_3.png>
-Package pdftex.def Info: ./cards/img-9_3.png used on input line 32.
+Package pdftex.def Info: ./cards/img-9_3.png used on input line 37.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-9_4.png, id=27, 301.125pt x 524.96124pt>
+<./cards/img-9_4.png, id=32, 301.125pt x 524.96124pt>
 File: ./cards/img-9_4.png Graphic file (type png)
 
 <use ./cards/img-9_4.png>
-Package pdftex.def Info: ./cards/img-9_4.png used on input line 33.
+Package pdftex.def Info: ./cards/img-9_4.png used on input line 38.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-9_5.png, id=28, 301.125pt x 524.96124pt>
+<./cards/img-9_5.png, id=33, 301.125pt x 524.96124pt>
 File: ./cards/img-9_5.png Graphic file (type png)
 
 <use ./cards/img-9_5.png>
-Package pdftex.def Info: ./cards/img-9_5.png used on input line 34.
+Package pdftex.def Info: ./cards/img-9_5.png used on input line 39.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-Overfull \hbox (11.11101pt too wide) in paragraph at lines 7--35
+Overfull \hbox (11.11101pt too wide) in paragraph at lines 7--40
 [][] [] [] [] [] []
  []
 
 
-Overfull \hbox (11.11101pt too wide) in paragraph at lines 7--35
+Overfull \hbox (11.11101pt too wide) in paragraph at lines 7--40
 [] [] [] [] [] []
  []
 
 
-Overfull \hbox (11.11101pt too wide) in paragraph at lines 7--35
+Overfull \hbox (11.11101pt too wide) in paragraph at lines 7--40
 [] [] [] [] [] []
  []
 
 
-Overfull \hbox (11.11101pt too wide) in paragraph at lines 7--35
+Overfull \hbox (11.11101pt too wide) in paragraph at lines 7--40
+[] [] [] [] [] []
+ []
+
+
+Overfull \hbox (11.11101pt too wide) in paragraph at lines 7--40
 [] [] [] [] [] []
  []
 
@@ -401,25 +441,27 @@ Overfull \hbox (11.11101pt too wide) in paragraph at lines 7--35
 rds/img-6_1.png> <./cards/img-6_2.png> <./cards/img-6_3.png> <./cards/img-7_0.p
 ng> <./cards/img-7_1.png> <./cards/img-7_2.png> <./cards/img-7_3.png> <./cards/
 img-7_4.png> <./cards/img-7_5.png> <./cards/img-7_6.png> <./cards/img-7_7.png> 
-<./cards/img-7_8.png> <./cards/img-7_9.png> <./cards/img-8_0.png> <./cards/img-
-8_1.png> <./cards/img-8_2.png> <./cards/img-8_3.png> <./cards/img-8_4.png> <./c
-ards/img-8_5.png> <./cards/img-8_6.png> <./cards/img-8_7.png> <./cards/img-9_0.
-png> <./cards/img-9_1.png> <./cards/img-9_2.png> <./cards/img-9_3.png> <./cards
-/img-9_4.png> <./cards/img-9_5.png>] (./card_out_Role.aux) ) 
+<./cards/img-7_8.png> <./cards/img-7_9.png> <./cards/img-7_10.png> <./cards/img
+-8_0.png> <./cards/img-8_1.png> <./cards/img-8_2.png> <./cards/img-8_3.png> <./
+cards/img-8_4.png> <./cards/img-8_5.png> <./cards/img-8_6.png> <./cards/img-8_7
+.png> <./cards/img-8_8.png> <./cards/img-8_9.png> <./cards/img-8_10.png> <./car
+ds/img-8_11.png> <./cards/img-9_0.png> <./cards/img-9_1.png> <./cards/img-9_2.p
+ng>] [2 <./cards/img-9_3.png> <./cards/img-9_4.png> <./cards/img-9_5.png>]
+(./card_out_Role.aux) ) 
 Here is how much of TeX's memory you used:
- 2075 strings out of 493029
- 30876 string characters out of 6136234
+ 2100 strings out of 493029
+ 31421 string characters out of 6136234
  93447 words of memory out of 5000000
- 5593 multiletter control sequences out of 15000+600000
+ 5613 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,4n,32p,252b,120s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on card_out_Role.pdf (1 page, 1119746 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb>
+Output written on card_out_Role.pdf (2 pages, 1357033 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
- 7 compressed objects within 1 object stream
+ 48 PDF objects out of 1000 (max. 8388607)
+ 9 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
