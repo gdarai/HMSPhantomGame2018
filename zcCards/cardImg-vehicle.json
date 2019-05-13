@@ -1,0 +1,66 @@
+{
+  "name":{
+    "type":"text",
+    "position":[[44,158],[580,272]],
+	  "padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	  "line":5,
+	  "color":[0,0,0],
+    "align":"center"
+  },
+  "symbol":{
+    "type":"text",
+    "position":[[44,44],[194,156]],
+	  "padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	  "line":2,
+  	"color":[0,0,0],
+    "align":"center"
+  },
+  "chance":{
+    "type":"text",
+    "position":[[430,46],[578,156]],
+	  "padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	  "line":2,
+	  "color":[0,0,0],
+    "align":"center"
+  },
+  "img":{
+    "type":"img",
+    "position":[[87,279],[534,570]]
+  },
+  "places":{
+    "type":"text",
+    "position":[[450,450],[580,580]],
+	  "padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	  "line":8,
+	  "color":[0,0,0],
+    "align":"center"
+  },
+  "repair":{
+    "type":"text",
+    "position":[[44,850],[580,1038]],
+  	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+  	"line":5,
+	  "color":[0,0,0],
+    "align":"center"
+  },
+  "text":{
+    "type":"text",
+    "position":[[44,585],[580,850]],
+	  "padding":[[10,20], [10,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	  "line":5,
+  	"color":[0,0,0],
+    "align":"center"
+  }
+}
