@@ -1,17 +1,17 @@
-4,X,Ticho a klid,Predmet||Pridej kartu||-1 hlasitost
-4,X,Na obzoru,nepritel X|ve predu||Pridej kartu||Zamichej
-4,X,Konec klidu,nepritel X||Pridej kartu||Zamichej
-2,X,Na stope,nepritel X|vzadu||Tahni udalost||Zamichej
-6,X,Zvlastni udalost,Tahni udalost||Pridej kartu||-1 hlasitost
-2,X,Zdanlivy klid,Predmet||Pridej kartu||-1 hlasitost
-4,Y,Poplach,Predmet||Pridej kartu
-3,Y,Hlidka,nepritel Y|ve predu||Pridej kartu||Zamichej
+4,X,Ticho a klid,+1 Predmet||Pridej kartu||-1 hlasitost
+4,X,Na obzoru,nepritel X|ve predu|a u tebe||Pridej kartu
+4,X,Konec klidu,nepritel X||2x Pridej kartu||Rozbresk
+2,X,Na stope,nepritel Y|vzadu||Tahni udalost
+6,X,Zvlastni udalost,Tahni udalost||2x Pridej kartu||-1 hlasitost
+2,X,Zdanlivy klid,+1 Predmet||Pridej kartu||Tahni udalost
+4,Y,Poplach,Predmet||Pridej kartu||Rozbresk
+3,Y,Hlidka,nepritel Y|ve predu||Pridej kartu||Tahni udalost
 3,Y,Majordomus,nepritel Y|na miste||Pridej kartu||Zamichej
-3,Y,Pronasledovani,nepritel Y|vzadu||Pridej kartu||Zamichej
-8,Y,Vyruseni,nepritel X||Tahni udalost
-1,Y,Mistni boss,nepritel Z||a predmet
-2,Z,Zmatek,Tahni udalost||Odstran X kartu
+3,Y,Pronasledovani,nepritel Y|vzadu||Pridej kartu||Tahni udalost
+8,Y,Vyruseni,nepritel X||Tahni udalost||Rozbresk
+1,Y,Mistni boss,nepritel Z||a +1 Predmet
+2,Z,Zmatek,Tahni udalost||Odstran X kartu||Rozbresk
 4,Z,Protiutok,nepritel Z|ve predu||Pridej kartu||Zamichej
 2,Z,Prepadeni,nepritel Z|vzadu||Pridej kartu||Zamichej
-4,Z,Obkliceni,nepritel Z||Odstran kartu
-2,Z,Rabovani,Utok|z ulice|do domu
+4,Z,Obkliceni,nepritel Z||Odstran kartu||Rozbresk
+2,Z,Rabovani,Utok nepratel|z ulice|do domu

@@ -6,15 +6,15 @@
 5,V,Stimulant,0,imgs-item-tool.png,+2 Sila|nebo|+max Stamina
 5,V,Protilatka,0,imgs-item-tool.png,Zrusi otravu|a +1 Sila
 5,V,Stit,2,imgs-item-tool.png,ochrani pred|2 zranenimi
-5,V,Baterka,0,imgs-item-tool.png,+1 na|hledani
-2,Z,Hul,1,imgs-item-club.png,Na blizko +|Utok 4 Zvuk 1|Bez munice
-2,Z,Palka,1,imgs-item-club.png,Na blizko ++|Utok 5 Zvuk 1|Bez munice
-2,Z,Ostnaty Kyj,2,imgs-item-club.png,Na blizko +|Utok 6 Zvuk 1|Zadarmo 3
-3,Z,Prak,0,imgs-item-gun.png,Na Dalku ++|Utok 5 Zvuk 1|Zadarmo 3
-2,Z,Luk,2,imgs-item-gun.png,Na Dalku +|Utok 6 Zvuk 0|Za Jidlo 4
-3,Z,Pistole,0,imgs-item-gun.png,Na Dalku ++|Utok 4 Zvuk 1|Za Material 3
-2,Z,Maceta,1,imgs-item-club.png,Na blizko ++|Utok 5 Zvuk 0|Bez munice
-6,Z,Granat,0,imgs-item-gun.png,Na Dalku X|Utok 4 Zvuk 3+1|Jednorazovy
-2,Z,Kuse,2,imgs-item-gun.png,Na Dalku +|Utok 6 Zvuk 0|Za Jidlo 4
-2,Z,Brokovnice,2,imgs-item-gun.png,Na Dalku +|Utok 7 Zvuk 2|Za Material 3
-2,Z,Motorova Pila,2,imgs-item-club.png,Na blizko ++|Utok 7 Zvuk 2|Bez Munice
+5,V,Baterka,0,imgs-item-tool.png,+1|na hledani||rusi 'mozna'|konec hledani|(hod 2)
+2,Z,Hul,1,imgs-item-club.png,Na blizko spd 3|Utok 4 Zvuk 1|Bez munice
+2,Z,Palka,1,imgs-item-club.png,Na blizko spd 4|Utok 5 Zvuk 1|Bez munice
+2,Z,Ostnaty Kyj,2,imgs-item-club.png,Na blizko spd 3|Utok 6 Zvuk 1|Zadarmo 3
+3,Z,Prak,0,imgs-item-gun.png,Na Dalku spd 4|Utok 5 Zvuk 1|Zadarmo 3
+2,Z,Luk,2,imgs-item-gun.png,Na Dalku spd 3|Utok 6 Zvuk 0|Za Jidlo 4
+3,Z,Pistole,0,imgs-item-gun.png,Na Dalku spd 4|Utok 4 Zvuk 1|Za Material 3
+2,Z,Maceta,1,imgs-item-club.png,Na blizko spd 4|Utok 5 Zvuk 0|Bez munice
+6,Z,Granat,0,imgs-item-gun.png,Na Dalku spd X|Utok 4 Zvuk 3+1|Jednorazovy
+2,Z,Kuse,2,imgs-item-gun.png,Na Dalku spd 3|Utok 6 Zvuk 0|Za Jidlo 4
+2,Z,Brokovnice,2,imgs-item-gun.png,Na Dalku spd 3|Utok 7 Zvuk 2|Za Material 3
+2,Z,Motorova Pila,2,imgs-item-club.png,Na blizko spd 4|Utok 7 Zvuk 2|Bez Munice

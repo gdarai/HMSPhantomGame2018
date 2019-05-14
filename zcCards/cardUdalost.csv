@@ -1,13 +1,13 @@
 3,Ex,Boss,Nepritel Y|Vepredu
 3,Ex,Boss,Nepritel Y|Vzadu
 5,Ex,Boss,Nepritel Y|Na miste
-2,Ex,Vybuch,Vse vepredu|+3 Hlasitost|zabije obludy
-2,Ex,Vybuch,Vse vzadu|+3 Hlasitost|zabije obludy
-2,Ex,Vybuch X,Vse na miste|+3 Hlasitost|zabije obludy|-1 Zivot
-4,Eu,Balicek,Predmet|Vepredu
-4,Eu,Balicek,Predmet|Vzadu
-7,Eu,Balicek,Predmet|Na miste
-3,Eu,Pruchod,Cesta|do vedlejsi|ulice
+2,Ex,Vybuch,Vse vepredu|+3 Hlasitost|zabije obludy|(vsechny)
+2,Ex,Vybuch,Vse vzadu|+3 Hlasitost|zabije obludy|(vsechny)
+2,Ex,Vybuch X,Vse na miste|+3 Hlasitost|zabije obludy|(vsechny)|-1 Zivot
+4,Eu,Balicek,+1 Predmet|Vepredu
+4,Eu,Balicek,+1 Predmet|Vzadu
+7,Eu,Balicek,+1 Predmet|Na miste
+3,Eu,Krizovatka,Cesta|do vedlejsi|ulice
 2,Eu,Mustek,Cesta|do dalsiho|domu
 2,Eu,Strilna,Dvere|na vsechny|karty domu
 3,Eu,Mapa,Novy vstup|do mesta
