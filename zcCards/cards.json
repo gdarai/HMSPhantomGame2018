@@ -163,5 +163,18 @@
       ]
     },
     "values":"cardVozidla.csv"
+  },
+  {
+    "_out":"card_out_Udalost_plus.tex",
+    "_card":"freeCard",
+    "_onOneLine":6,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "name",
+        "text"
+      ]
+    },
+    "values":"cardUdalostPlus.csv"
   }
 ]
