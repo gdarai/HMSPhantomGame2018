@@ -1,14 +1,14 @@
-2,Budova,imgs-town0.png,0,1,,Parkuji jen|kola a motorky
-2,Budova,imgs-town0.png,0,2,,Parkuji jen|kola a motorky
-2,Budova,imgs-town0.png,1,1,,Parkuji jen|kola a motorky||+1 Predmet
+2,Budova,imgs-town0.png,0,1,,Parkuje jen|kolo ci motorka|bez nahody
+2,Budova,imgs-town0.png,0,2,,Parkuje jen|kolo ci motorka|bez nahody
+2,Budova,imgs-town0.png,1,1,,Parkuje jen|kolo ci motorka|bez nahody||+1 Predmet
 2,Budova,imgs-town0.png,1,1,,-1 utok nepratel|na ulici
 2,Budova,imgs-town0.png,1,0,imgs-block1.png,+2 Predmety
-2,Garaz,imgs-town0.png,0,0,,Vozidlo|zaruceno
-2,Garaz,imgs-town0.png,0,2,,Vozidlo|zaruceno||+1 Predmet
-2,Garaz,imgs-town0.png,1,1,,Vozidlo|zaruceno
-2,Kulna,imgs-town0.png,0,2,,Parkuji jen|kola a motorky||+1 Predmet
+2,Garaz,imgs-town0.png,0,0,,Parkuje jen|motorka ci auto|bez nahody
+2,Garaz,imgs-town0.png,0,2,,Parkuje jen|motorka ci auto|bez nahody||+1 Predmet
+2,Garaz,imgs-town0.png,1,1,,Parkuje jen|motorka ci auto|bez nahody
+2,Kulna,imgs-town0.png,0,2,,Parkuje jen|kolo ci motorka|bez nahody||+1 Predmet
 2,Kulna,imgs-town0.png,1,1,imgs-block1.png,+2 Predmety
 2,Zahrada,imgs-town0.png,0,1,,-1 utok nepratel|na ulici
 2,Zahrada,imgs-town0.png,0,1,,+1 Predmet
 2,Zahrada,imgs-town0.png,0,1,,-1 utok nepratel|na ulici
-2,Zahrada,imgs-town0.png,0,1,,Krizovatka|Krokem dopredu|muzes do sousedni|ulicky
+2,Zahrada,imgs-town0.png,0,1,,Krizovatka|do sousedni ulicky||Parkuje|auto ci nakladak|bez nahody

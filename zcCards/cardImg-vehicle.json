@@ -43,6 +43,16 @@
 	  "color":[0,0,0],
     "align":"center"
   },
+  "cargo":{
+    "type":"text",
+    "position":[[70,450],[230,580]],
+	  "padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	  "line":8,
+	  "color":[0,0,0],
+    "align":"center"
+  },
   "repair":{
     "type":"text",
     "position":[[44,850],[580,1038]],

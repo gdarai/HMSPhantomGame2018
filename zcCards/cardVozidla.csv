@@ -1,12 +1,12 @@
-3,6,Auto,,3,potrebuje 2m|rozebrat na MM,-1 na utok|nepratel||Pohyb 3 za|max hlasitost
-3,6,Auto,,3,potrebuje 4m|rozebrat na m,-1 na utok|nepratel||Pohyb 3 za|max hlasitost
-3,6,Auto,,4,potrebuje 2m|rozebrat na MM,-1 na utok|nepratel||Pohyb 3 za|max hlasitost
-3,6,Auto,,4,potrebuje 2MM|rozebrat na m,-1 na utok|nepratel||Pohyb 3 za|max hlasitost
-3,6,Nakladak,,7,potrebuje 2MM|rozebrat na MM,-2 na utok|nepratel||Pohyb 2 za|max hlasitost
-3,6,Nakladak,,7,potrebuje 3MM|rozebrat na MM,-2 na utok|nepratel||Pohyb 2 za|max hlasitost
-3,5 - 6,Kolo,,1,potrebuje m|rozebrat na m,nest sebou|+1 nosnost||Pohyb 2 za|+2 hlasitost
-3,5 - 6,Kolo,,1,potrebuje 2m|nelze rozebrat,nest sebou|+1 nosnost||Pohyb 2 za|+2 hlasitost
-3,5 - 6,Motorka,,2,potrebuje 2m|rozebrat na m,Pohyb 2 za|max hlasitost
-3,5 - 6,Motorka,,2,potrebuje MM|nelze rozebrat,Pohyb 2 za|max hlasitost
-3,5 - 6,Motorka,,3,potrebuje 2m|rozebrat na 2m,Pohyb 2 za|max hlasitost
-3,5 - 6,Motorka,,3,potrebuje MM|rozebrat na m,Pohyb 2 za|max hlasitost
+3,6+,Auto,,3,8,potrebuje 2m|rozebrat na MM,-1 na utok|nepratel||Pohyb 3 za|max hlasitost
+3,6+,Auto,,3,8,potrebuje 4m|rozebrat na m,-1 na utok|nepratel||Pohyb 3 za|max hlasitost
+3,6+,Auto,,4,8,potrebuje 2m|rozebrat na MM,-1 na utok|nepratel||Pohyb 3 za|max hlasitost
+3,6+,Auto,,4,8,potrebuje 2MM|rozebrat na m,-1 na utok|nepratel||Pohyb 3 za|max hlasitost
+3,6+,Nakladak,,7,15,potrebuje 2MM|rozebrat na MM,-2 na utok|nepratel||Pohyb 2 za|max hlasitost
+3,6+,Nakladak,,7,15,potrebuje 3MM|rozebrat na MM,-2 na utok|nepratel||Pohyb 2 za|max hlasitost
+3,5+,Kolo,,1,4,potrebuje m|rozebrat na m,nest sebou|+1 nosnost||Pohyb 2 za|+2 hlasitost
+3,5+,Kolo,,1,4,potrebuje 2m|nelze rozebrat,nest sebou|+1 nosnost||Pohyb 2 za|+2 hlasitost
+3,5+,Motorka,,2,6,potrebuje 2m|rozebrat na m,Pohyb 2 za|max hlasitost
+3,5+,Motorka,,2,6,potrebuje MM|nelze rozebrat,Pohyb 2 za|max hlasitost
+3,5+,Motorka,,3,6,potrebuje 2m|rozebrat na 2m,Pohyb 2 za|max hlasitost
+3,5+,Motorka,,3,6,potrebuje MM|rozebrat na m,Pohyb 2 za|max hlasitost

@@ -1,16 +1,31 @@
 [
   {
-    "_out":"card_out_Udalost_plus.tex",
-    "_card":"freeCard",
+    "_out":"card_out_Role.tex",
+    "_card":"cardImg-event",
     "_onOneLine":6,
     "_randomize":"False",
     "_list":{
       "values":[
+        "pack",
         "name",
         "text"
       ]
     },
     "values":"cardUdalostPlus.csv"
+  },
+  {
+    "_out":"card_out_Role.tex",
+    "_card":"freeCardPic",
+    "_onOneLine":6,
+    "_randomize":"False",
+    "_count": 4,
+    "_sub": [
+      {
+        "img": "extra_card_inventoryTable.png"
+      },
+      {
+        "img": "extra_card_sliders.png"
+      }
+    ]
   }
-
 ]
