@@ -200,6 +200,76 @@ def checkField(cardName, props, fieldName, values, defaultVal):
 				exit()
 	return
 
+def int_to_bool_list(num, maxL):
+    return [bool(num & (1<<n)) for n in range(maxL)]
+
+def addLine(out, size, newLine, data):
+	newLineString = ' '.join(newLine)
+	out.append(newLineString)
+	lnSize, _ = cv2.getTextSize(newLineString, data['font'], 1, data['line'])
+	size[0] = max(size[0], lnSize[0])
+	size[1] = size[1] + lnSize[1]
+
+def getNewTextAnalysis(index, data):
+	indexSplit = int_to_bool_list(index, data['maxBitIdx'])
+	out = list()
+	size = [0, 0]
+	indexInUse = 0
+	for lnIdx in range(0, len(data['text'])):
+		ln = data['text'][lnIdx]
+		if lnIdx > 0:
+			addLine(out, size, newLine, data)
+		newLine = list()
+
+		for wIdx in range(0, len(ln)):
+			if wIdx == 0:
+				newLine.append(ln[wIdx])
+			else:
+				if indexSplit[indexInUse]:
+					addLine(out, size, newLine, data)
+					newLine = list()
+				newLine.append(ln[wIdx])
+				indexInUse = indexInUse + 1
+	if len(newLine) > 0:
+		addLine(out, size, newLine, data)
+
+	scale = [1, 1];
+	if size[0] > 0:
+		scale[0] = data['size'][0] / size[0];
+	spacing = (len(out) - 1) * data['space'];
+	if size[1] > 0:
+		scale[1] = (data['size'][1] - spacing) / size[1];
+
+	result = dict()
+	result['score'] = min(scale[0], scale[1])
+	result['text'] = out
+	return result
+
+def analyzeTextSplit(theText, tgtSize, yspace, font, lineTh, separator):
+	data = dict()
+	data['size'] = [float(tgtSize[1][0]-tgtSize[0][0]), float(tgtSize[1][1]-tgtSize[0][1])]
+	data['space'] = yspace
+	data['font'] = font
+	data['line'] = lineTh
+	data['text'] = theText.split(separator)
+	data['maxBitIdx'] = 1
+	for i in range(0, len(data['text'])):
+		data['text'][i] = data['text'][i].split(' ')
+		data['maxBitIdx'] = data['maxBitIdx'] + len(data['text'][i]) - 1
+	data['maxIdx'] = 2 ** data['maxBitIdx']
+
+	bestAnalysis = dict()
+	nextIndex = 0
+	bestAnalysis['score'] = 0
+	bestAnalysis['text'] = theText.split(separator)
+	while nextIndex < data['maxIdx']:
+		newAnalysis = getNewTextAnalysis(nextIndex, data)
+		if newAnalysis['score'] > bestAnalysis['score']:
+			bestAnalysis = newAnalysis
+		nextIndex = nextIndex + 1
+
+	return bestAnalysis['text']
+
 def printCardFile(setting, name):
 	cardName = setting['_card']
 	img = cv2.imread(cardName+'.png')
@@ -223,10 +293,8 @@ def printCardFile(setting, name):
 			checkField(cardName, props, 'font', list(FONTS.keys()), list(FONTS.keys())[0])
 			checkField(cardName, props, 'align', list(ALIGN.keys()), list(ALIGN.keys())[0])
 			checkField(cardName, props, 'line', 'int', 1)
+			checkField(cardName, props, 'fixed', 'int', 1)
 			checkField(cardName, props, 'color', 'list', [0, 0, 0])
-
-			theText = setting[fieldName].nextVal()
-			theText = theText.split(setting['_break'])
 
 			font = FONTS[props['font']]
 			thickness = props['line']
@@ -234,6 +302,12 @@ def printCardFile(setting, name):
 			tgtPos0 = props['position']
 			tgtPos1 = props['padding']
 			tgtPos = [np.add(tgtPos0[0], tgtPos1[0]), np.subtract(tgtPos0[1],tgtPos1[1])]
+
+			theText = setting[fieldName].nextVal()
+			if props['fixed'] == 1:
+				theText = theText.split(setting['_break'])
+			else:
+				theText = analyzeTextSplit(theText, tgtPos, setting['_yspace'], font, thickness, setting['_break'])
 
 			align = ALIGN[props['align']]
 			size = []

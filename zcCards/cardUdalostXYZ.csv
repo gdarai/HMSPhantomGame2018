@@ -1,21 +1,21 @@
-4,X,Ticho a klid,+1 Predmet||-1 hlasitost
-4,X,Na obzoru,nepritel X|ve predu|a u tebe
+4,X,Ticho a klid,+1 Predmet||-1 Hlasitost
+4,X,Na obzoru,nepritel X ve predu a u tebe
 4,X,Konec klidu,nepritel X||Rozbresk
-2,X,Na stope,nepritel Y|vzadu||Tahni udalost
-6,X,Zvlastni udalost,Tahni udalost||-1 hlasitost
+2,X,Na stope,nepritel Y vzadu||Tahni udalost
+6,X,Zvlastni udalost,Tahni udalost||-1 Hlasitost
 2,X,Zdanlivy klid,+1 Predmet||Tahni udalost
-2,Y,Vsude kolem,nepritel X|ve predu|a v zadu
+2,Y,Vsude kolem,nepritel X ve predu a v zadu
 4,Y,Poplach,Predmet||Rozbresk
-3,Y,Hlidka,nepritel Y|ve predu||Tahni udalost
-3,Y,Majordomus,Nepritel Y|Na miste
-3,Y,Pronasledovani,nepritel Y|vzadu||Tahni udalost
+3,Y,Hlidka,nepritel Y ve predu||Tahni udalost
+3,Y,Majordomus,Nepritel Y na miste
+3,Y,Pronasledovani,nepritel Y vzadu||Tahni udalost
 8,Y,Vyruseni,nepritel X||Tahni udalost||Rozbresk
-1,Y,Mistni boss,nepritel Z||a +1 Predmet
-2,Z,Vsude kolem,nepritel X|ve predu|a v zadu
-3,Z,Obkliceni,nepritel Y|ve predu||a v zadu
-3,Z,Prekvapeni,nepritel Y|u tebe||a v zadu
+1,Y,Mistni boss,nepritel Z||+1 Predmet
+2,Z,Vsude kolem,nepritel X ve predu a v zadu
+3,Z,Obkliceni,nepritel Y ve predu a v zadu
+3,Z,Prekvapeni,nepritel Y u tebe a v zadu
 2,Z,Zmatek,Tahni udalost||Rozbresk
-4,Z,Protiutok,nepritel Z|ve predu
-2,Z,Prepadeni,nepritel Z|vzadu
-4,Z,Strazce,nepritel Z|u tebe||Rozbresk
-2,Z,Rabovani,Utok nepratel|z ulice|do domu
+4,Z,Protiutok,nepritel Z ve predu
+2,Z,Prepadeni,nepritel Z vzadu
+4,Z,Strazce,nepritel Z u tebe||Rozbresk
+2,Z,Rabovani,Utok vsech nepratel z ulice do domu

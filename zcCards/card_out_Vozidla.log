@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.15)  29 MAY 2019 12:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.15)  31 MAY 2019 12:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -189,60 +189,60 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-<./cards/img-13_4.png, id=1, 301.125pt x 524.96124pt>
-File: ./cards/img-13_4.png Graphic file (type png)
+<./cards/img-13_8.png, id=1, 301.125pt x 524.96124pt>
+File: ./cards/img-13_8.png Graphic file (type png)
 
-<use ./cards/img-13_4.png>
-Package pdftex.def Info: ./cards/img-13_4.png used on input line 7.
+<use ./cards/img-13_8.png>
+Package pdftex.def Info: ./cards/img-13_8.png used on input line 7.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-13_7.png, id=2, 301.125pt x 524.96124pt>
-File: ./cards/img-13_7.png Graphic file (type png)
-
-<use ./cards/img-13_7.png>
-Package pdftex.def Info: ./cards/img-13_7.png used on input line 8.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_15.png, id=3, 301.125pt x 524.96124pt>
-File: ./cards/img-13_15.png Graphic file (type png)
-
-<use ./cards/img-13_15.png>
-Package pdftex.def Info: ./cards/img-13_15.png used on input line 9.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_33.png, id=4, 301.125pt x 524.96124pt>
-File: ./cards/img-13_33.png Graphic file (type png)
-
-<use ./cards/img-13_33.png>
-Package pdftex.def Info: ./cards/img-13_33.png used on input line 10.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_9.png, id=5, 301.125pt x 524.96124pt>
+<./cards/img-13_9.png, id=2, 301.125pt x 524.96124pt>
 File: ./cards/img-13_9.png Graphic file (type png)
 
 <use ./cards/img-13_9.png>
-Package pdftex.def Info: ./cards/img-13_9.png used on input line 11.
+Package pdftex.def Info: ./cards/img-13_9.png used on input line 8.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-13_0.png, id=6, 301.125pt x 524.96124pt>
+<./cards/img-13_31.png, id=3, 301.125pt x 524.96124pt>
+File: ./cards/img-13_31.png Graphic file (type png)
+
+<use ./cards/img-13_31.png>
+Package pdftex.def Info: ./cards/img-13_31.png used on input line 9.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_0.png, id=4, 301.125pt x 524.96124pt>
 File: ./cards/img-13_0.png Graphic file (type png)
 
 <use ./cards/img-13_0.png>
-Package pdftex.def Info: ./cards/img-13_0.png used on input line 12.
+Package pdftex.def Info: ./cards/img-13_0.png used on input line 10.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-13_27.png, id=7, 301.125pt x 524.96124pt>
-File: ./cards/img-13_27.png Graphic file (type png)
+<./cards/img-13_12.png, id=5, 301.125pt x 524.96124pt>
+File: ./cards/img-13_12.png Graphic file (type png)
 
-<use ./cards/img-13_27.png>
-Package pdftex.def Info: ./cards/img-13_27.png used on input line 13.
+<use ./cards/img-13_12.png>
+Package pdftex.def Info: ./cards/img-13_12.png used on input line 11.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-13_17.png, id=8, 301.125pt x 524.96124pt>
-File: ./cards/img-13_17.png Graphic file (type png)
+<./cards/img-13_15.png, id=6, 301.125pt x 524.96124pt>
+File: ./cards/img-13_15.png Graphic file (type png)
 
-<use ./cards/img-13_17.png>
-Package pdftex.def Info: ./cards/img-13_17.png used on input line 14.
+<use ./cards/img-13_15.png>
+Package pdftex.def Info: ./cards/img-13_15.png used on input line 12.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_10.png, id=7, 301.125pt x 524.96124pt>
+File: ./cards/img-13_10.png Graphic file (type png)
+
+<use ./cards/img-13_10.png>
+Package pdftex.def Info: ./cards/img-13_10.png used on input line 13.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_13.png, id=8, 301.125pt x 524.96124pt>
+File: ./cards/img-13_13.png Graphic file (type png)
+
+<use ./cards/img-13_13.png>
+Package pdftex.def Info: ./cards/img-13_13.png used on input line 14.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
 <./cards/img-13_23.png, id=9, 301.125pt x 524.96124pt>
@@ -252,193 +252,193 @@ File: ./cards/img-13_23.png Graphic file (type png)
 Package pdftex.def Info: ./cards/img-13_23.png used on input line 15.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-13_34.png, id=10, 301.125pt x 524.96124pt>
-File: ./cards/img-13_34.png Graphic file (type png)
-
-<use ./cards/img-13_34.png>
-Package pdftex.def Info: ./cards/img-13_34.png used on input line 16.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_24.png, id=11, 301.125pt x 524.96124pt>
-File: ./cards/img-13_24.png Graphic file (type png)
-
-<use ./cards/img-13_24.png>
-Package pdftex.def Info: ./cards/img-13_24.png used on input line 17.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_29.png, id=12, 301.125pt x 524.96124pt>
+<./cards/img-13_29.png, id=10, 301.125pt x 524.96124pt>
 File: ./cards/img-13_29.png Graphic file (type png)
 
 <use ./cards/img-13_29.png>
-Package pdftex.def Info: ./cards/img-13_29.png used on input line 18.
+Package pdftex.def Info: ./cards/img-13_29.png used on input line 16.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-13_18.png, id=13, 301.125pt x 524.96124pt>
-File: ./cards/img-13_18.png Graphic file (type png)
-
-<use ./cards/img-13_18.png>
-Package pdftex.def Info: ./cards/img-13_18.png used on input line 19.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_10.png, id=14, 301.125pt x 524.96124pt>
-File: ./cards/img-13_10.png Graphic file (type png)
-
-<use ./cards/img-13_10.png>
-Package pdftex.def Info: ./cards/img-13_10.png used on input line 20.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_12.png, id=15, 301.125pt x 524.96124pt>
-File: ./cards/img-13_12.png Graphic file (type png)
-
-<use ./cards/img-13_12.png>
-Package pdftex.def Info: ./cards/img-13_12.png used on input line 21.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_31.png, id=16, 301.125pt x 524.96124pt>
-File: ./cards/img-13_31.png Graphic file (type png)
-
-<use ./cards/img-13_31.png>
-Package pdftex.def Info: ./cards/img-13_31.png used on input line 22.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_5.png, id=17, 301.125pt x 524.96124pt>
-File: ./cards/img-13_5.png Graphic file (type png)
-
-<use ./cards/img-13_5.png>
-Package pdftex.def Info: ./cards/img-13_5.png used on input line 23.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_1.png, id=18, 301.125pt x 524.96124pt>
-File: ./cards/img-13_1.png Graphic file (type png)
-
-<use ./cards/img-13_1.png>
-Package pdftex.def Info: ./cards/img-13_1.png used on input line 24.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_28.png, id=19, 301.125pt x 524.96124pt>
-File: ./cards/img-13_28.png Graphic file (type png)
-
-<use ./cards/img-13_28.png>
-Package pdftex.def Info: ./cards/img-13_28.png used on input line 25.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_14.png, id=20, 301.125pt x 524.96124pt>
-File: ./cards/img-13_14.png Graphic file (type png)
-
-<use ./cards/img-13_14.png>
-Package pdftex.def Info: ./cards/img-13_14.png used on input line 26.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_25.png, id=21, 301.125pt x 524.96124pt>
+<./cards/img-13_25.png, id=11, 301.125pt x 524.96124pt>
 File: ./cards/img-13_25.png Graphic file (type png)
 
 <use ./cards/img-13_25.png>
-Package pdftex.def Info: ./cards/img-13_25.png used on input line 27.
+Package pdftex.def Info: ./cards/img-13_25.png used on input line 17.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-13_21.png, id=22, 301.125pt x 524.96124pt>
-File: ./cards/img-13_21.png Graphic file (type png)
-
-<use ./cards/img-13_21.png>
-Package pdftex.def Info: ./cards/img-13_21.png used on input line 28.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_11.png, id=23, 301.125pt x 524.96124pt>
-File: ./cards/img-13_11.png Graphic file (type png)
-
-<use ./cards/img-13_11.png>
-Package pdftex.def Info: ./cards/img-13_11.png used on input line 29.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_16.png, id=24, 301.125pt x 524.96124pt>
-File: ./cards/img-13_16.png Graphic file (type png)
-
-<use ./cards/img-13_16.png>
-Package pdftex.def Info: ./cards/img-13_16.png used on input line 30.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_19.png, id=25, 301.125pt x 524.96124pt>
-File: ./cards/img-13_19.png Graphic file (type png)
-
-<use ./cards/img-13_19.png>
-Package pdftex.def Info: ./cards/img-13_19.png used on input line 31.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_3.png, id=26, 301.125pt x 524.96124pt>
+<./cards/img-13_3.png, id=12, 301.125pt x 524.96124pt>
 File: ./cards/img-13_3.png Graphic file (type png)
 
 <use ./cards/img-13_3.png>
-Package pdftex.def Info: ./cards/img-13_3.png used on input line 32.
+Package pdftex.def Info: ./cards/img-13_3.png used on input line 18.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-13_35.png, id=27, 301.125pt x 524.96124pt>
-File: ./cards/img-13_35.png Graphic file (type png)
+<./cards/img-13_7.png, id=13, 301.125pt x 524.96124pt>
+File: ./cards/img-13_7.png Graphic file (type png)
 
-<use ./cards/img-13_35.png>
-Package pdftex.def Info: ./cards/img-13_35.png used on input line 33.
+<use ./cards/img-13_7.png>
+Package pdftex.def Info: ./cards/img-13_7.png used on input line 19.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-13_30.png, id=28, 301.125pt x 524.96124pt>
-File: ./cards/img-13_30.png Graphic file (type png)
-
-<use ./cards/img-13_30.png>
-Package pdftex.def Info: ./cards/img-13_30.png used on input line 34.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_2.png, id=29, 301.125pt x 524.96124pt>
-File: ./cards/img-13_2.png Graphic file (type png)
-
-<use ./cards/img-13_2.png>
-Package pdftex.def Info: ./cards/img-13_2.png used on input line 35.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_32.png, id=30, 301.125pt x 524.96124pt>
-File: ./cards/img-13_32.png Graphic file (type png)
-
-<use ./cards/img-13_32.png>
-Package pdftex.def Info: ./cards/img-13_32.png used on input line 36.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_22.png, id=31, 301.125pt x 524.96124pt>
-File: ./cards/img-13_22.png Graphic file (type png)
-
-<use ./cards/img-13_22.png>
-Package pdftex.def Info: ./cards/img-13_22.png used on input line 37.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_8.png, id=32, 301.125pt x 524.96124pt>
-File: ./cards/img-13_8.png Graphic file (type png)
-
-<use ./cards/img-13_8.png>
-Package pdftex.def Info: ./cards/img-13_8.png used on input line 38.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_13.png, id=33, 301.125pt x 524.96124pt>
-File: ./cards/img-13_13.png Graphic file (type png)
-
-<use ./cards/img-13_13.png>
-Package pdftex.def Info: ./cards/img-13_13.png used on input line 39.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_20.png, id=34, 301.125pt x 524.96124pt>
-File: ./cards/img-13_20.png Graphic file (type png)
-
-<use ./cards/img-13_20.png>
-Package pdftex.def Info: ./cards/img-13_20.png used on input line 40.
-(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
-
-<./cards/img-13_6.png, id=35, 301.125pt x 524.96124pt>
+<./cards/img-13_6.png, id=14, 301.125pt x 524.96124pt>
 File: ./cards/img-13_6.png Graphic file (type png)
 
 <use ./cards/img-13_6.png>
-Package pdftex.def Info: ./cards/img-13_6.png used on input line 41.
+Package pdftex.def Info: ./cards/img-13_6.png used on input line 20.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
-<./cards/img-13_26.png, id=36, 301.125pt x 524.96124pt>
+<./cards/img-13_27.png, id=15, 301.125pt x 524.96124pt>
+File: ./cards/img-13_27.png Graphic file (type png)
+
+<use ./cards/img-13_27.png>
+Package pdftex.def Info: ./cards/img-13_27.png used on input line 21.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_35.png, id=16, 301.125pt x 524.96124pt>
+File: ./cards/img-13_35.png Graphic file (type png)
+
+<use ./cards/img-13_35.png>
+Package pdftex.def Info: ./cards/img-13_35.png used on input line 22.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_24.png, id=17, 301.125pt x 524.96124pt>
+File: ./cards/img-13_24.png Graphic file (type png)
+
+<use ./cards/img-13_24.png>
+Package pdftex.def Info: ./cards/img-13_24.png used on input line 23.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_19.png, id=18, 301.125pt x 524.96124pt>
+File: ./cards/img-13_19.png Graphic file (type png)
+
+<use ./cards/img-13_19.png>
+Package pdftex.def Info: ./cards/img-13_19.png used on input line 24.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_1.png, id=19, 301.125pt x 524.96124pt>
+File: ./cards/img-13_1.png Graphic file (type png)
+
+<use ./cards/img-13_1.png>
+Package pdftex.def Info: ./cards/img-13_1.png used on input line 25.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_26.png, id=20, 301.125pt x 524.96124pt>
 File: ./cards/img-13_26.png Graphic file (type png)
 
 <use ./cards/img-13_26.png>
-Package pdftex.def Info: ./cards/img-13_26.png used on input line 42.
+Package pdftex.def Info: ./cards/img-13_26.png used on input line 26.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_22.png, id=21, 301.125pt x 524.96124pt>
+File: ./cards/img-13_22.png Graphic file (type png)
+
+<use ./cards/img-13_22.png>
+Package pdftex.def Info: ./cards/img-13_22.png used on input line 27.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_28.png, id=22, 301.125pt x 524.96124pt>
+File: ./cards/img-13_28.png Graphic file (type png)
+
+<use ./cards/img-13_28.png>
+Package pdftex.def Info: ./cards/img-13_28.png used on input line 28.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_21.png, id=23, 301.125pt x 524.96124pt>
+File: ./cards/img-13_21.png Graphic file (type png)
+
+<use ./cards/img-13_21.png>
+Package pdftex.def Info: ./cards/img-13_21.png used on input line 29.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_18.png, id=24, 301.125pt x 524.96124pt>
+File: ./cards/img-13_18.png Graphic file (type png)
+
+<use ./cards/img-13_18.png>
+Package pdftex.def Info: ./cards/img-13_18.png used on input line 30.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_34.png, id=25, 301.125pt x 524.96124pt>
+File: ./cards/img-13_34.png Graphic file (type png)
+
+<use ./cards/img-13_34.png>
+Package pdftex.def Info: ./cards/img-13_34.png used on input line 31.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_20.png, id=26, 301.125pt x 524.96124pt>
+File: ./cards/img-13_20.png Graphic file (type png)
+
+<use ./cards/img-13_20.png>
+Package pdftex.def Info: ./cards/img-13_20.png used on input line 32.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_30.png, id=27, 301.125pt x 524.96124pt>
+File: ./cards/img-13_30.png Graphic file (type png)
+
+<use ./cards/img-13_30.png>
+Package pdftex.def Info: ./cards/img-13_30.png used on input line 33.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_11.png, id=28, 301.125pt x 524.96124pt>
+File: ./cards/img-13_11.png Graphic file (type png)
+
+<use ./cards/img-13_11.png>
+Package pdftex.def Info: ./cards/img-13_11.png used on input line 34.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_5.png, id=29, 301.125pt x 524.96124pt>
+File: ./cards/img-13_5.png Graphic file (type png)
+
+<use ./cards/img-13_5.png>
+Package pdftex.def Info: ./cards/img-13_5.png used on input line 35.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_2.png, id=30, 301.125pt x 524.96124pt>
+File: ./cards/img-13_2.png Graphic file (type png)
+
+<use ./cards/img-13_2.png>
+Package pdftex.def Info: ./cards/img-13_2.png used on input line 36.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_17.png, id=31, 301.125pt x 524.96124pt>
+File: ./cards/img-13_17.png Graphic file (type png)
+
+<use ./cards/img-13_17.png>
+Package pdftex.def Info: ./cards/img-13_17.png used on input line 37.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_16.png, id=32, 301.125pt x 524.96124pt>
+File: ./cards/img-13_16.png Graphic file (type png)
+
+<use ./cards/img-13_16.png>
+Package pdftex.def Info: ./cards/img-13_16.png used on input line 38.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_33.png, id=33, 301.125pt x 524.96124pt>
+File: ./cards/img-13_33.png Graphic file (type png)
+
+<use ./cards/img-13_33.png>
+Package pdftex.def Info: ./cards/img-13_33.png used on input line 39.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_4.png, id=34, 301.125pt x 524.96124pt>
+File: ./cards/img-13_4.png Graphic file (type png)
+
+<use ./cards/img-13_4.png>
+Package pdftex.def Info: ./cards/img-13_4.png used on input line 40.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_32.png, id=35, 301.125pt x 524.96124pt>
+File: ./cards/img-13_32.png Graphic file (type png)
+
+<use ./cards/img-13_32.png>
+Package pdftex.def Info: ./cards/img-13_32.png used on input line 41.
+(pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
+
+<./cards/img-13_14.png, id=36, 301.125pt x 524.96124pt>
+File: ./cards/img-13_14.png Graphic file (type png)
+
+<use ./cards/img-13_14.png>
+Package pdftex.def Info: ./cards/img-13_14.png used on input line 42.
 (pdftex.def)             Requested size: 85.35826pt x 148.80647pt.
 
 Overfull \hbox (11.11101pt too wide) in paragraph at lines 7--43
@@ -472,18 +472,18 @@ Overfull \hbox (11.11101pt too wide) in paragraph at lines 7--43
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./cards/img-13_4.png> <./c
-ards/img-13_7.png> <./cards/img-13_15.png> <./cards/img-13_33.png> <./cards/img
--13_9.png> <./cards/img-13_0.png> <./cards/img-13_27.png> <./cards/img-13_17.pn
-g> <./cards/img-13_23.png> <./cards/img-13_34.png> <./cards/img-13_24.png> <./c
-ards/img-13_29.png> <./cards/img-13_18.png> <./cards/img-13_10.png> <./cards/im
-g-13_12.png> <./cards/img-13_31.png> <./cards/img-13_5.png> <./cards/img-13_1.p
-ng> <./cards/img-13_28.png> <./cards/img-13_14.png> <./cards/img-13_25.png> <./
-cards/img-13_21.png> <./cards/img-13_11.png> <./cards/img-13_16.png> <./cards/i
-mg-13_19.png> <./cards/img-13_3.png> <./cards/img-13_35.png> <./cards/img-13_30
-.png> <./cards/img-13_2.png> <./cards/img-13_32.png>] [2 <./cards/img-13_22.png
-> <./cards/img-13_8.png> <./cards/img-13_13.png> <./cards/img-13_20.png> <./car
-ds/img-13_6.png> <./cards/img-13_26.png>] (./card_out_Vozidla.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./cards/img-13_8.png> <./c
+ards/img-13_9.png> <./cards/img-13_31.png> <./cards/img-13_0.png> <./cards/img-
+13_12.png> <./cards/img-13_15.png> <./cards/img-13_10.png> <./cards/img-13_13.p
+ng> <./cards/img-13_23.png> <./cards/img-13_29.png> <./cards/img-13_25.png> <./
+cards/img-13_3.png> <./cards/img-13_7.png> <./cards/img-13_6.png> <./cards/img-
+13_27.png> <./cards/img-13_35.png> <./cards/img-13_24.png> <./cards/img-13_19.p
+ng> <./cards/img-13_1.png> <./cards/img-13_26.png> <./cards/img-13_22.png> <./c
+ards/img-13_28.png> <./cards/img-13_21.png> <./cards/img-13_18.png> <./cards/im
+g-13_34.png> <./cards/img-13_20.png> <./cards/img-13_30.png> <./cards/img-13_11
+.png> <./cards/img-13_5.png> <./cards/img-13_2.png>] [2 <./cards/img-13_17.png>
+ <./cards/img-13_16.png> <./cards/img-13_33.png> <./cards/img-13_4.png> <./card
+s/img-13_32.png> <./cards/img-13_14.png>] (./card_out_Vozidla.aux) ) 
 Here is how much of TeX's memory you used:
  2115 strings out of 493029
  32061 string characters out of 6136234
@@ -494,7 +494,7 @@ Here is how much of TeX's memory you used:
  37i,4n,32p,255b,120s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on card_out_Vozidla.pdf (2 pages, 1988771 bytes).
+Output written on card_out_Vozidla.pdf (2 pages, 1988762 bytes).
 PDF statistics:
  51 PDF objects out of 1000 (max. 8388607)
  9 compressed objects within 1 object stream

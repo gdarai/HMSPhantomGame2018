@@ -1,9 +1,41 @@
 [
   {
-    "_out":"card_out_Role.tex",
+    "_yspace":20,
+    "_out":"card_out_Rozbresk.tex",
+    "_card":"cardImg-event1",
+    "_onOneLine":6,
+    "symbol":{ "reg": "[A-F][1-5]" },
+    "_list":{
+      "values":[
+        "pack",
+        "name",
+        "text"
+      ]
+    },
+    "values":"cardUdalost.csv"
+  },
+  {
+    "_yspace":20,
+    "_out":"card_out_Rozbresk.tex",
     "_card":"cardImg-event",
     "_onOneLine":6,
+    "symbol":{ "reg": "[A-F][1-5]" },
+    "_list":{
+      "values":[
+        "pack",
+        "name",
+        "text"
+      ]
+    },
+    "values":"cardUdalostXYZ.csv"
+  },
+  {
+    "_yspace":20,
+    "_out":"card_out_Rozbresk.tex",
+    "_card":"cardImg-event",
     "_randomize":"False",
+    "_onOneLine":6,
+    "symbol":{ "reg": "[A-F][1-5]" },
     "_list":{
       "values":[
         "pack",
@@ -14,18 +46,18 @@
     "values":"cardUdalostPlus.csv"
   },
   {
-    "_out":"card_out_Role.tex",
-    "_card":"freeCardPic",
+    "_yspace":20,
+    "_out":"card_out_Rozbresk.tex",
+    "_card":"cardImg-event2",
     "_onOneLine":6,
-    "_randomize":"False",
-    "_count": 4,
-    "_sub": [
-      {
-        "img": "extra_card_inventoryTable.png"
-      },
-      {
-        "img": "extra_card_sliders.png"
-      }
-    ]
+    "symbol":{ "reg": "[A-F][1-5]" },
+    "_list":{
+      "values":[
+        "pack",
+        "name",
+        "text"
+      ]
+    },
+    "values":"cardRozbresk.csv"
   }
 ]

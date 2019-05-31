@@ -42,11 +42,12 @@
   "text":{
     "type":"text",
     "position":[[44,548],[580,1044]],
-	"padding":[[20,20], [20,20]],
+	  "padding":[[20,20], [20,20]],
     "font":"HERSHEY_SIMPLEX",
     "size":5,
-	"line":5,
-	"color":[0,0,0],
+    "fixed":0,
+	  "line":5,
+	  "color":[0,0,0],
     "align":"center"
   }
 }

@@ -1,12 +1,12 @@
-2,U,Komando,+Nepritel Z|Vzadu|a u tebe|Ale pouze 1
-2,U,Poplach,Trvale|X ci Y v nahode|tak navic|+Nepritel X|v zadu
-2,U,Zurivost,Trvale|Kazdy nepritel Z|u hrace|jde v dalsi akci|i do domu
-2,U,Vybuch,Vsichni hraci|-1 zivot|+2 hlasitost
-2,U,Shnila podlaha,Vsichni hraci|v budove|-2 zivoty|+2 hlasitost
-2,U,Rozzureny dav,Pokud nepritel|u vozidla|tak ho znici
-2,U,Dest,Trvale|Vsichni hraci|-1 k Boji
-2,U,Kysely Dest,Trvale|Kdyz je hrac|na ulici|tak -1|Stamina
-2,U,Skazene jidlo,Trvale|Na konci|kazdy hrac|musi mit|+1 jidlo
-4,U,Zoufalstvi,Trvale|Vsichni hraci|-1 max|Zdravi
-4,U,Unava,Trvale|Vsichni hraci|-1 max|Stamina
-2,U,Nastvani mistni,Trvale|Pokud zraneni|tak toto kolo|+Nepritel X|na miste
+2,U,Komando,+Nepritel Z vzadu a u tebe||Ale pouze 1
+2,U,Poplach,Trvale|X ci Y v nahode tak navic +Nepritel X v zadu
+2,U,Zurivost,Trvale|Kazdy nepritel Z u hrace jde v dalsi akci i do domu
+2,U,Vybuch,Jednorazove|Vsichni -1 zivot +2 hlasitost
+2,U,Shnila podlaha,Jednorazove|Vsichni v budove -2 zivoty +2 hlasitost
+2,U,Rozzureny dav,Jednorazove|Kazde vozidlo u ktereho je nepritel je zniceno
+2,U,Dest,Trvale|Vsichni hraci -1 k Boji
+2,U,Kysely Dest,Trvale|Kdyz je hrac na ulici tak -1 Stamina
+2,U,Skazene jidlo,Trvale|Na konci kazdy hrac musi mit +1 jidlo
+4,U,Zoufalstvi,Trvale|Vsichni hraci -1 max Zdravi
+4,U,Unava,Trvale|Vsichni hraci -1 max Stamina
+2,U,Nastvani mistni,Trvale|Pokud se hrac zrani tak na zacatku dalsiho kola +Nepritel X na miste

@@ -1,19 +1,19 @@
-3,Ex,Boss,Nepritel Y|Vepredu
-3,Ex,Boss,Nepritel Y|Vzadu
-5,Ex,Boss,Nepritel Y|Na miste
-2,Ex,Vybuch,Vse vepredu|+3 Hlasitost|zabije obludy|(vsechny)
-2,Ex,Vybuch,Vse vzadu|+3 Hlasitost|zabije obludy|(vsechny)
-2,Ex,Vybuch X,Vse na miste|+3 Hlasitost|zabije obludy|(vsechny)|-1 Zivot
-4,Eu,Balicek,+1 Predmet|Vepredu
-4,Eu,Balicek,+1 Predmet|Vzadu
-7,Eu,Balicek,+1 Predmet|Na miste
-3,Eu,Krizovatka,Cesta|do vedlejsi|ulice
-2,Eu,Mustek,Cesta|do dalsiho|domu
-2,Eu,Strilna,Dvere|na vsechny|karty domu
-3,Eu,Mapa,Novy vstup|do mesta
-3,E,Stado,+3 Hlasitost||Navic 2 Jidla|za kazdy utok
-3,E,Stado,+2 Hlasitost||Navic 2 Jidla|za kazdy utok
-4,E,Prach,Vsechny|utoky -2
-2,E,Prach X,Vsechny|utoky -2||-1 Zivot
-2,E,Otrava krve,Zabira|1 misto|inventare||Potreba|protilatka
-2,E,Zraneni,Zabira|1 misto|inventare||Potreba|leceni
+3,Ex,Boss,Nepritel Y vepredu
+3,Ex,Boss,Nepritel Y vzadu
+5,Ex,Boss,Nepritel Y na miste
+2,Ex,Vybuch,Vse vepredu +3 Hlasitost a zabije obludy (vsechny)
+2,Ex,Vybuch,Vse vzadu +3 Hlasitost a zabije obludy (vsechny)
+2,Ex,Vybuch X,Vse na miste +3 Hlasitost a zabije obludy (vsechny)||-1 Zivot
+4,Eu,Balicek,+1 Predmet vepredu
+4,Eu,Balicek,+1 Predmet vzadu
+7,Eu,Balicek,+1 Predmet na miste
+3,Eu,Krizovatka,Cesta do vedlejsi ulice
+2,Eu,Mustek,Z domu vede cesta do dalsiho domu
+2,Eu,Strilna,Tento dum ma dvere na vsechny sve karty
+3,Eu,Mapa,Pridej si novy vstup do mesta
+3,E,Stado,+3 Hlasitost||+2 Jidla za kazdou obetovanou akci utok
+3,E,Stado,+2 Hlasitost||+2 Jidla za kazdou obetovanou akci utok
+4,E,Prach,Vsechny utoky -2
+2,E,Prach X,Vsechny utoky -2||-1 Zivot
+2,E,Otrava krve,Zabira 1 misto inventare||Leci se protilatkou
+2,E,Zraneni,Zabira 1 misto inventare||Leci se jidlem jako zraneni
