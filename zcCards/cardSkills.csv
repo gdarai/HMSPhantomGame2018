@@ -1,0 +1,78 @@
+2,Mechanik,Oprava,1,Pouzite vybaveni lze opravit za 1m
+2,Mechanik,Prorazeni pruchodu,2,Za 1m lze prorazit vchod do budovy z pristavku
+2,Mechanik,Pruzkumny bot,3,Obeveni budov a vozidel na 5 karet daleko
+2,Mechanik,Rozebrani prekazky,1,Odstraneni kazdeho bloku pridava 2m
+2,Mechanik,Skrys,1,Vybudovani skryse v budove 3 hluboko. Kapacita 5
+2,Mechanik,Vylepseni zbrane,3,Za 2m zvysi trvale ucinek zbrane o 1
+2,Mechanik,Obranne postaveni I,1,Za 1m. Zvysi obranu na policku o 1
+2,Mechanik,Obranne postaveni II,2,Za 1m. Zvysi obranu na policku o 2
+2,Mechanik,Zvetseni zasobniku,2,Za 1m Zvysi trvale kapacitu zasobniku o 2
+2,Medic,Organizace,1,Pri akci inventare muze delat vse bez omezeni
+2,Medic,Obranna palba,2,Pri obranne strelnou zbrani muze palit 2x
+2,Medic,Lecba zraneni I,1,Leci 1 Zivot hraci na stejnem miste
+2,Medic,Lecba zraneni II,3,Leci az 2 Zivoty hracum na stejnem miste
+2,Medic,Male zbrane I,1,+1 Utok se zbrani s vahou 0
+2,Medic,Male zbrane II,2,+1 Utok se zbrani s vahou 0
+2,Medic,Lecba otravy,1,Leci otravu postavy na stejnem miste
+2,Medic,Otraveni hrotu zbrane,3,+1 Utok se zbrani co ma ostri (cepel / sip)
+2,Medic,Resuscitace,2,1 za misi jde ozivit vyrazenou postavu s 2 Zivoty
+2,Ninja,Hbitost I,1,Pokud hlasitost < 2 pak na nej nepratele neutoci
+2,Ninja,Hbitost II,3,Ztiseni snizuje hlasitost o 2
+2,Ninja,Jako blesk,2,Druhy utok zbrani na blizko
+2,Ninja,Kopnuti,1,Pri obrane beze zbrane muze utocit 2x
+2,Ninja,Manipulace I,2,Vybira na koho budou utocit nepratele X na karte
+2,Ninja,Manipulace II,3,Vybira na koho budou utocit nepratele Y na karte
+2,Ninja,Oblibena ticha zbran,1,Muze si nest zbran s hlasitosti 0 do dalsi mise
+2,Ninja,Rozkladani sily,2,Kazde kolo obnova 1 Staminy zadarmo
+2,Ninja,Ticha zbran,1,Pouzivana zbran ma hlasitost -1
+2,Rvac,Boj v dome,1,Pri boji v dome +1
+2,Rvac,Domaci vybusniny,3,Za 1m muze vyrobit granat||Na Dalku spd X Utok 4 Zvuk 3+1
+2,Rvac,Na blizko I,1,Pri boji zbrani na blizko +1
+2,Rvac,Na blizko II,2,Pri boji zbrani na blizko +1
+2,Rvac,Oblibena chladna zbran,2,Muze si nest zbran na blizko do dalsi mise
+2,Rvac,Skryti,3,U vozidla kulny ci skladu|Kdyz nebojuje nepratele neutoci
+2,Rvac,Tvrdy Uder,2,Za 1 Staminu|Zraneni pesti +1
+2,Rvac,Uder pesti,1,Druha Akce Utok pesti
+2,Rvac,Vniknuti,1,Do budovy muze za 1 Staminu vstoupit odkudkoliv
+2,Strelec,Dobre kryti,1,Obrana +1
+2,Strelec,Lehkost,2,Z domu muze za 2 Staminy preskocit do sousedniho domu
+2,Strelec,Munice po ruce,1,Kazdou druhou munici vyrabi zadarmo
+2,Strelec,Na Dalku I,1,Pri boji na dalku (na sousedni pole) +1
+2,Strelec,Na Dalku II,2,Pri boji na dalku (na sousedni pole) +1
+2,Strelec,Oblibena puska,2,Muze si nest zbran na dalku do dalsi mise
+2,Strelec,Odhad nepritele,3,Muze za 1 Staminu snizit obranu vsech nepratel na karte -1
+2,Strelec,Rychly vystrel,3,Druha Akce utok strelnou zbrani
+2,Strelec,Vystrel oknem,1,Umi strilet do domu
+2,Strojnik,Detonace,3,Za 1m umisti bombu ktera vybuchne pristi kolo|Utok X Zvuk 4+1
+2,Strojnik,Granat I,1,Utok granatem +1
+2,Strojnik,Granat II,2,Granatomet misto karty granat|munice 2 za m
+2,Strojnik,Kryci palba,3,Za 1 munici -1 k boji nepratel na karte
+2,Strojnik,Oblibena tezka zbran,1,Zbran s vahou >1 nebo granat muze vzit do dalsi mise
+2,Strojnik,Prurazna zbran,2,Pri boji zbrani s vahou >1 +1 Zraneni
+2,Strojnik,Rozptylena palba,1,Strelba na 2 nepratele zaroven za 1 munici|-1 k boji
+2,Strojnik,Strelba na blizko I,1,Pri strelbe na blizko +1
+2,Strojnik,Strelba na blizko II,2,Pri strelbe na blizko +1
+2,Zalesak,Boj se zviraty I,1,Pri boji proti zviratum +1
+2,Zalesak,Boj se zviraty II,2,Pri boji proti zviratum +1
+2,Zalesak,Lov I,1,Pri lovu stada +1 jidlo
+2,Zalesak,Lov II,2,+3 jidla pro tabor za den
+2,Zalesak,Oblibene vybaveni,2,Jedno vybaveni muze vzit do dalsi mise
+2,Zalesak,Pohyb zeleni,3,V parku nebo na zahrade|Kdyz nebojuje nepratele neutoci
+2,Zalesak,Prepadeni,1,Pokud bojuje na karte kam ted prisel +1
+2,Zalesak,Rychly Inventar,1,Dalsi akce Inventare
+2,Zalesak,Vyroba pasti,3,Vyroba za 1m|Pasti muze nest 2 polozit zadarmo|Utok 5
+2,Zalesak,Znalost prostredi,2,Obrana mimo budovu +1
+2,Univerzal,Jidlo,1,V kazdem parku ci zahrade 4+ na jidlo navic
+2,Univerzal,Material,1,V kazde kulne ci skladisti 4+ na material navic
+2,Univerzal,Nosnost I,1,+1 Max Nosnost
+2,Univerzal,Nosnost II,2,+1 Max Nosnost
+2,Univerzal,Pruzkum I,1,+1 Karta na vyber pri pruzkumu
+2,Univerzal,Pruzkum II,2,+1 Karta na vyber pri pruzkumu
+2,Univerzal,Zdravi I,1,+1 Max Zdravi
+2,Univerzal,Zdravi II,2,+1 Max Zdravi
+2,Univerzal,Kondice I,1,+1 Max Stamina
+2,Univerzal,Kondice II,2,+1 Max Stamina
+2,Univerzal,Odpocinek I,1,+1 Regenerace staminy
+2,Univerzal,Odpocinek II,2,+1 Regenerace staminy
+2,Univerzal,Boj pesti I,1,+1 Utok beze zbrane
+2,Univerzal,Boj pesti II,2,+1 Utok beze zbrane

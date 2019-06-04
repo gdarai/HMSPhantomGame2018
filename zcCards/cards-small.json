@@ -1,63 +1,35 @@
 [
   {
     "_yspace":20,
-    "_out":"card_out_Rozbresk.tex",
-    "_card":"cardImg-event1",
+    "_out":"card_out_Skills.tex",
+    "_card":"cardImg-skill",
     "_onOneLine":6,
-    "symbol":{ "reg": "[A-F][1-5]" },
-    "_list":{
-      "values":[
-        "pack",
-        "name",
-        "text"
-      ]
-    },
-    "values":"cardUdalost.csv"
-  },
-  {
-    "_yspace":20,
-    "_out":"card_out_Rozbresk.tex",
-    "_card":"cardImg-event",
-    "_onOneLine":6,
-    "symbol":{ "reg": "[A-F][1-5]" },
-    "_list":{
-      "values":[
-        "pack",
-        "name",
-        "text"
-      ]
-    },
-    "values":"cardUdalostXYZ.csv"
-  },
-  {
-    "_yspace":20,
-    "_out":"card_out_Rozbresk.tex",
-    "_card":"cardImg-event",
     "_randomize":"False",
-    "_onOneLine":6,
-    "symbol":{ "reg": "[A-F][1-5]" },
     "_list":{
       "values":[
-        "pack",
+        "role",
         "name",
+        "level",
         "text"
       ]
     },
-    "values":"cardUdalostPlus.csv"
+    "values":"cardSkills.csv"
   },
   {
     "_yspace":20,
-    "_out":"card_out_Rozbresk.tex",
-    "_card":"cardImg-event2",
+    "_out":"card_out_Missions.tex",
+    "_card":"cardImg-mission",
     "_onOneLine":6,
     "symbol":{ "reg": "[A-F][1-5]" },
+    "_randomize":"False",
     "_list":{
       "values":[
         "pack",
         "name",
-        "text"
+        "text",
+        "reward"
       ]
     },
-    "values":"cardRozbresk.csv"
+    "values":"cardHlavniMise.csv"
   }
 ]

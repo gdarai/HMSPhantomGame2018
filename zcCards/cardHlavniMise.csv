@@ -1,0 +1,25 @@
+0,Zaloz Utociste,Prohledej aspon 4 domy|Dovez aspon 4 materialy,Zakladas Utociste|HPO 5 / 2 / 5
+1,Nova krev,Zvedni populaci o 2,HPO +1 / +0 / -1
+1,Beznadej,Nadeje -1|Zvedni nadeji o 3,Populace +1
+1,Zakon,Poradek -1|Zvedni poradek o 3,Nadeje +1
+1,Expanze,Vybuduj 2 kempy,HPO +0 / +1 / -1
+1,Zasobovani,Proved mise ve 2 novych mestech,Nadeje +1
+1,Lepsi domov,Prestehuj Utociste,HPO +1 / -1 / +1
+1,Usazeni se,Postav novou budovu,Nadeje +1
+2,Pod utokem,Populace -1|Dal -1 kazdy tyden|Zvedni populaci o 4,HPO +1 / +0 / -1
+2,Tvrda rana,Nadeje -2|Dal -1 kazdy tyden|Zvedni nadeji o 5,Poradek +1
+2,Rebelie,Poradek -2|Dal -1 kazdy tyden|Zvedni poradek o 5,Nadeje +1
+2,Najezdy,Znic 2 Kempy|Postav 4 nove kempy,HPO -2 / -1 / -1
+2,Nekde Jinde,Nadeje -1 kazdy tyden|Proved mise ve 2 novych mestech,HPO +1 / +1 / +0
+2,Smrtelne Ohrozeni,Obev nove misto a Prestehuj Utociste,HPO -1 / -1 / -2
+2,Pocit Rozvoje,Poradek -1 kazdy tyden|Obev a postav 2 nove budovy,HPO +0 / +1 / +1
+3,Doprava,Dovez do kempu 2 nakladaky,Nadeje +1
+3,Vzdaleny Cil,Proved misi ve meste o 5 dni dal nez je tve ted nejvzdalenejsi,Nadeje +1
+3,Spokojenost,Nahromad 10 jidel pro kazdeho clena utociste,Nadeje +1
+3,Velka Stavba,Nahromad 20 zasob materialu,Nadeje +1
+3,Obrana,Nahromad 10 novych zbrani,Nadeje +1
+3,Specialni zbran,Najdi a dones ze 3 mest zbran se symbolem A,Nadeje +1
+3,Specialni vybaveni,Najdi a dones ze 3 mest vybaveni se symbolem B,Nadeje +1
+3,Pruzkum center,Dones ze 2 mest predmet C|Hledej v budove 10+ hluboko,Nadeje +1
+3,Preventivni uder,Odpal granat nebo jinou vybusninu ve 3 budovach 10+ hluboko,Nadeje +1
+3,Zvlastni rukojmi,Prozkoumej v poslednim obevenem meste budovu 15+ hluboko,Nadeje +1
