@@ -1,5 +1,5 @@
 {
-  "pack":{
+  "name":{
     "type":"text",
     "position":[[44,40],[580,156]],
 	"padding":[[20,20], [20,20]],
@@ -9,19 +9,9 @@
 	"color":[0,0,0],
     "align":"center"
   },
-  "name":{
-    "type":"text",
-    "position":[[44,158],[580,272]],
-	"padding":[[20,20], [20,20]],
-    "font":"HERSHEY_SIMPLEX",
-    "size":5,
-	"line":5,
-	"color":[0,0,0],
-    "align":"center"
-  },
   "text":{
     "type":"text",
-    "position":[[44,272],[580,774]],
+    "position":[[44,158],[580,480]],
 	  "padding":[[20,20], [20,20]],
     "font":"HERSHEY_SIMPLEX",
     "size":5,
@@ -32,8 +22,74 @@
   },
   "reward":{
     "type":"text",
-    "position":[[44,825],[580,1024]],
+    "position":[[44,710],[580,800]],
 	  "padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+  	"line":5,
+  	"color":[0,0,0],
+    "fixed":0,
+    "align":"center"
+  },
+  "price":{
+    "type":"text",
+    "position":[[44,542],[580,650]],
+	  "padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+  	"line":5,
+  	"color":[0,0,0],
+    "fixed":0,
+    "align":"center"
+  },
+  "B_name":{
+    "type":"text",
+    "position":[[44,812],[458,896]],
+	  "padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+  	"line":5,
+  	"color":[0,0,0],
+    "fixed":0,
+    "align":"center"
+  },
+  "B_text":{
+    "type":"text",
+    "position":[[44,910],[458,1024]],
+	  "padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+  	"line":5,
+  	"color":[0,0,0],
+    "fixed":0,
+    "align":"center"
+  },
+  "B_cost_w":{
+    "type":"text",
+    "position":[[516,825],[580,886]],
+	  "padding":[[10,10], [10,10]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+  	"line":5,
+  	"color":[0,0,0],
+    "fixed":0,
+    "align":"center"
+  },
+  "B_cost_1":{
+    "type":"text",
+    "position":[[516,886],[580,956]],
+	  "padding":[[10,10], [10,10]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+  	"line":5,
+  	"color":[0,0,0],
+    "fixed":0,
+    "align":"center"
+  },
+  "B_cost_2":{
+    "type":"text",
+    "position":[[516,956],[580,1024]],
+	  "padding":[[10,10], [10,10]],
     "font":"HERSHEY_SIMPLEX",
     "size":5,
   	"line":5,

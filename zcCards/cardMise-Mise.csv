@@ -1,0 +1,15 @@
+Domaci zver,4 zvirata|kazde vazi 2 a je jedno v kazdem parku / zahrade,Nadeje +2,Nadeje a Poradek -1,Mala Farma,Jidlo +2,5,4,1
+Hledani semen,6 pytlu semen|kazdy vazi 2 a je jeden v kazdem skladu / kulne,Nadeje +2,Nadeje a Poradek -1,Mala Obilnice,Jidlo +2,4,4,0
+Ztracene dokumenty,Prohledat 3 domky nebo firmy,Nadeje +4 Poradek -1,Nadeje -2,Nic,,,,
+Ztracene dite,Prohledat 2 parky,Nadeje +4 Poradek -1,Nadeje -2,Nic,,,,
+Vojenske zasoby,Dovezt 7 Zbrani a 3 Vybaven,Nadeje +4,Nadeje a Poradek -2,Straznice,Poradek +4,4,1,2
+Vojensky konvoj,Pred domem v hloubce 8! je Nakladak + 3Z|Ziskat nakladak,Nadeje a Poradek +2,Poradek -1,Sluzebna,Poradek +2,3,1,1
+Lepsi ubytovani,Prohledat 5 kramu skladu nebo domku,Nadeje a Poradek +3,Nadeje a Poradek -2,Ubytovna,Populace +1,5,1,2
+Pomsta,Zabit 5 nepratel Z,Nadeje +3 Poradek +2,Nadeje a Populace -1,Nic,,,,
+Redukce ohrozeni,Zabit 20 nepratel,Nadeje +3 Poradek +2,Nadeje a Populace -1,Nic,,,,
+Zachrana znamych,Prohledat Domek A ci B v hloubce 5+,Populace +1,Nadeje -1,Herna,Nadeje +2,3,1,1
+Chybejici vybaveni,Prohledat Garaze nebo 2 Domy s garazi|Rozebrat 2 vozidla,Poradek +2,Nadeje -1,Garaz,Vzdalenost -1,4,1,3
+Pristav,Najit ve meste Pristav||Zamichat 2 do 2. poloviny balicku,Poradek +2,Nadeje -1,Rybarna,Jidlo +2,3,1,1
+Letiste,Najit ve meste Letiste||Zamichat 2 do 2. poloviny balicku,Populace +1,Nadeje -1,Komunikacni vez,Vzdalenost -1,5,2,3
+Jizdarna,Najit ve meste Jizdarnu||Zamichat 2 do 2. poloviny balicku,Populace +1,Poradek -1,Zasobovaci trasa,Vzdalenost -1,3,4,2
+Vojensky Bunkr,Najit ve meste Bunkr||Zamichat 4 do celeho balicku,Populace +1,Poradek -2,Strelnice,Poradek +2,3,2,1

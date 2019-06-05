@@ -4,18 +4,18 @@
 1,Nepritel X,X|Bily|nepritel
 1,Nepritel Y,Y|Zluty|nepritel
 1,Nepritel Z,Z|Cerveny|nepritel
-4,Akce Jdi,Akce||Krok|Vpred
-4,Akce Z,Akce||Krok|Vzad
-4,Akce I,Akce||Inventar||Koordinace|Vyroba|Prohledavani
-4,Akce U,Akce||Utok
-2,Aktivni Akce,Pro Hrace||Akce|na toto|kolo
-2,Nove Akce,Pro Hrace||Akce|na pristi|kolo
-2,Predmety,Pro Hrace||Predmety|postavy||Pozor na|max|nosnost
+8,Akce Jdi,Akce||Krok|Vpred
+8,Akce Z,Akce||Krok|Vzad
+8,Akce I,Akce||Inventar||Koordinace|Vyroba|Prohledavani
+8,Akce U,Akce||Utok
+4,Aktivni Akce,Pro Hrace||Akce|na toto|kolo
+4,Nove Akce,Pro Hrace||Akce|na pristi|kolo
+4,Predmety,Pro Hrace||Predmety|postavy||Pozor na|max|nosnost
 1,Budovy,Balicek|Budovy
 1,Pristavky,Balicek|Male Budovy
 1,Nahoda,Balicek|Nahody|XYZ
 1,Udalost,Balicek|Udalosti
 1,Predmety,Balicek|Predmety
 1,Vozidla,Balicek|Vozidla
-1,Rozbresk,Balicek|Karty Rozbresk
+1,Rozbresk,Balicek|Karty Rozbresku
 1,Vstupy,Balicek||Tazene|vstupy|do mesta

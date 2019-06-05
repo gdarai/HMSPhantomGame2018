@@ -14,3 +14,7 @@
 1,Firma,imgs-town1.png,,1,2,+0,2,Kazde kolo|1 novy nepritel|uvnitr
 1,Firma,imgs-town1.png,,1,2,+0,1,Kazde kolo|1 novy nepritel|uvnitr
 5,Park,imgs-town1.png,imgs-block.png,0,2,x,0,Nejde jit dovnitr|Nejde prohledavat
+2,Pristav,imgs-town2.png,,2,2,+2,3,CIL MISE||+1 Velky Material
+2,Jizdarna,imgs-town2.png,,3,2,+2,3,CIL MISE||+1 Velke Jidlo
+2,Letiste,imgs-town2.png,,1,2,+2,3,CIL MISE||+1 Velky Material
+4,Bunkr,imgs-town2.png,,3,1,+1,0,CIL MISE||+1 Zbran
