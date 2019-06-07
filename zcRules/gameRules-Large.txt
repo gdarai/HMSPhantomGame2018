@@ -1,0 +1,170 @@
+<T>Zombie Country
+Kooperac'ni' hra, zaloz'ena' na sce'na'r'i'ch. Najde''te si svoji' cestu zombie apocalypsou.
+
+<C>Koncept
+Tenhle soubor pravidel ma' nastavit hru Zombie Country jako hru na pokrac'ova'ni' kde hra'c'i rozhoduji' za sve'' nove' zaloz'ene'' u''toc'is'te'. Vybi'raji' kam se maji' si'ly jejich enkla'vy napnout da'l a ti'm definuji' sce''na'r'e ZC, ktere'' na'sledne' hraji'.
+Kaz'da' ZC hra je vy'pravou odva'z'ny'ch z u''toc'is'te' do bli'zky'ch me'st. Hledaji' za'soby co u''toc'iste' potr'ebuje a plni' mise, ktere' se jim tam naskytly.
+<C>Pr'ed prvni' hrou
+Prvni' hra je u''vodni' a je pevne' dana'. Hra'c'i v ni' sbi'raji' pr'ez'ivs'i' a materia'l na zaloz'eni' u'toc'is'te'. Do hry budou hra'c'i potr'ebovat sve'' postavy u ktery'ch budou muset ude'lat za'kladni' nastaveni' (viz Postavy - nova' postava) a kartu ci'le, ktera' ma' titulek ZAC'A'TEK.
+<C>Postavy
+Hra'c'i mimo mise hraji' za vedeni' u''toc'is't'e', v misi vs'ak hraji' za sve'' postavy.
+<C1>Nova' postava
+Potr'eba vytvor'it novou postavu mu'z'e pr'iji't jak na zac'a'tku tak v pru'be'hu hry. Postavy mohou by't zrane'ny, mohou by't i zabity. Cena za vytvor'eni' nove'' postavy je 1 ji'dlo, na zac'a'tku hry zadarmo.
+<C2>U''vodni' statistiky
+V za'kladu ma' kaz'da' postava zdravi', staminu a nosnost 6. Si'lu u''deru 3 a rychlost 1. Obranu -6. Vyberte ji' jme'no a pr'ipis'te ne'jakou zaji'mavost.
+<C2>U''vodni' dovednost
+Kaz'da' postava zac'i'na' na u''rovni 1. Ma' tedy k dispozici 1 dovednost u''rovne' jedna dle sve'' vlastni' volby. Pro zac'i'naji'ci' hra'c'e doporuc'ujeme zbavit se rozhodovaci' paraly'zy zu'z'eni'm vy'be'ru na:
+<I0>
+<I>Medic - Le''c'ba zrane''ni' 1
+<I>Univerza'l - Boj pe'sti' 1
+<I>Rva'c' - U''der pe'sti'
+<I>Za'lesa'k - Rychly' inventa'r'
+<I1>
+<C1>Zrane'ni' postavy
+Kdykoliv je postava v misi zrane'na', i kdyz' se vyle''c'i' je po misi v rekonvalescenci a na dals'i' misi nemu'z'e. A to na pra've' jednu na'sleduji'ci' misi. Pote'' je ope't zdrava' a mu'z'e pokrac'ovat v boji. Doporuc'eni' je napsat, ktere'' postavy byly zrane'ne'' ke kaz'de''mu za'znamu mise.
+<C1>Zkus'enosti a nove'' dovednosti
+Kaz'da' postava zi'ska'va' zkus'enosti za u''c'ast v misi'ch a to 1 zkus'enost:
+<I0>
+<I>Za dokonc'enou misi (at' uz' dopadla jakkoliv)
+<I>+1 Navi'c pokud mise dokonc'ila ci'l X nebo Y
+<I>+2 Navi'c pokud mise dokonc'ila ci'l Z
+<I1>
+Zkus'enosti se u postav hromadi' a ihned po misi je mohou vyme'nit za nove'' dovednosti. Cena se poc'i'ta' jako souc'et:
+<I0>
+<I>Poc'tu dovednosti' ktere'' uz' postava ma'
+<I>U''roven' dovednosti uvedene'' pr'i'mo na jeji' karte' (1 - 3)
+<I>+1 Pokud je to prvni' dovednost z toho bali'c'ku, kterou se postava uc'i'
+<I1>
+Pr'i'klad: Pokud ma' postava 2 univerza'lni' dovednosti a jednu dovednost z bali'c'ku Rva'c', dovednost u'rovne' 1 z bali'c'ku Za'lesa'k ji' bude sta't 5 zkus'enosti'
+<I0>
+<I>3 za dovednosti co uz' ma'
+<I>jednu za u'roven' dovednosti
+<I>jednu protoz'e ti'm otvi'ra' novy' bali'c'ek dovednosti'
+<I1>
+<C2>Posloupnost uc'eni'
+V ra'mci jednoho bali'c'ku dovednosti' postava nemu'z'e zi'skat dovednost u'rovne' 2 pokud nema' dovednost u'rovne' 1. Tote''z' pro u'roven' 3 pokud jes'te' nema' 2.
+<C2>Pr'ekryti'
+Dovednosti jsou unika'tni'. Nejde, aby vs'ichi ume'li vs'echno. Duplikace dovednosti' je podmi'ne'na' poc'tem postav v misi:
+<I0>
+<I>Pro 1 - 3 postavy musi' by't vs'echny dovednosti v misi jen jednou.
+<I>Pro 4 - 6 postav se mu'z'e kaz'da' dovednost vyskytovat 2x.
+<I1>
+Pokud se z ne'jake'ho du'vodu hra'c'i rozhodli hra't v me''ne' postava'ch hru, kterou pu'vodne' hra'li ve vi'cero, mohlo by se sta't, z'e najednou maji' v misi pro 1 - 3 hra'c'e dve' postavy se stejnou dovednosti'. V takove''m pr'i'pade' se musi' dohodnout, ktera' postava svou dovednost nemu'z'e v te''to misi pouz'i'vat.
+<C> Po prvni' misi
+Pokud jste prohra'li, zkuste ji' zahra't znova, Bez jaky'chkoliv u''prav. Pokud jste vyhra'li (splnili misi a u''spe's'ne' opustili me'sto) gratuluji, nyni' ma'te sve'' u''toc'is'te' a je nac'ase se o ne'j zac'i't starat. Zac'ne'me zaloz'eni'm denni'ku u''toc'is'te'.
+<C1>Denni'k u''toc'is'te'
+Protoz'e se nepr'edpokla'da' z'e si budou hra'c'i pamatovat vs'e a hra samotna' se mu'z'e pr'es jednotlive'' mise rozloz'it do mnoha me'si'cu' je dobr'e'' si zaznamena'vat, jak na tom jste. Denni'k obsahuje ne'kolik za'sadni'ch c'a'sti':
+<I0>
+<I>Za'kladni' informace - Jky' druh apokalypsy hrajete a jak se jmenuje vas'e u''toc'is'te'
+<I>Statistiku u''toc'is'te' - Poli'c'ka, kde si budete udrz'ovat aktualni' Hodnoty u''toc'is'te' (nade'ji, populaci a por'a'dek), stav Materia'lu (Ji'dlo, Za'soby a Suroviny) a take'' svou u''roven' drzosti hrdinu', ktera' je do zac'a'tku 0
+<I>Seznam nalezeny'ch me'st - Tady v zac'a'tku vyplni'te vas'e prvni' me'sto, to ze ktere'ho jste pra've' vys'li a u ktere''ho jste zaloz'ili sve'' u''toc'is'te'
+<I>Seznam postaveny'ch budov a ta'boru' - Pokaz'de'' kdyz' vybudujete ne'co nove'ho, tak si to sem mu'z'ete pr'ipsat
+<I>Denni'k uda'losti' - Tady je to hlavni'. Tady budete psa't kaz'dy' den, kdyz' se cokoliv stane. Pr'ijde novy' ci'l, nova' mise, nebo kdyz' se postavy z ne'jake' mise vra'ti'
+<I1>
+<C1>Co vyplnit do zac'a'tku
+Ma'te denni'k v ruce poprve'', vypln'te jme''no u''toc'is'te', zapis'te prvni' misi (den 0, zaloz'eni' u'toc'is'te', ve ktere''m me'ste' mise byla kdo se u''c'astnil a kdo byl zrane'ny').
+<C1>Prvni' me'sto
+Zapis'te prvni' me'sto. Je ve vzda'lenosti 1, ma' tere'n 0 (u''doli') a z'a'dne'' suroviny a je u ne'j vas'e u''toc'is'te'.
+<C1>Prvni' ci'l
+Cela' hra je o plne'ni' ci'lu'. Aby u''toc'is'te' pr'ez'ilo a zkve''talo, musi'te pro ne'j ne'co ude'lat. Zac'ne'te ti'm z'e si ta'hnete na'hodny' Ci'l X a zapis'te si ho do denni'ku. Pokud je u ci'le i ne'jaka' cena, tak tu ihned zaplat'.
+<C>Jeden den
+Ted' to hlavni', co je potr'eba de'lat, aby hra fungovala? Zaprve', zkontrolujte, jestli uz' je prvni' den dals'i'ho ty'dne c'i ne.
+Ty'den ma' 7 dni', pokud tedy je posledni' za'pis 0, 7, 14 atd, je dnes prvni' den dals'i'ho ty'dne. Dny se v te''to hr'e toc'i' pokud jsou postavy na misi. Ne'kdy to trva' i de'le nez' 1 den, pak je zapsa'no tr'eba mise den 7-8 a dnes bude den 9 coz' je por'a'd novy' ty'den. Pokud NENI' novy' ty'den, nic se nede'je a mu'z'ete pr'eji't k pla'novaci' fa'zi. Pokud ale novy' ty'den JE je potr'eba ude'lat nejprve fa'zi vyhodnoceni'.
+<C1>Fa'ze vyhodnoceni'
+Je tedy zac'a'tek ty'dne. Je potr'eba zhodnotit ten minuly' ty'den a pr'ipravit novy'. Fa'zi zhodnoceni' minule'ho ty'dne pr'eskoc'te, pokud je to prvni' ty'den
+<C2>Zhodnoceni' minule''ho
+Jak va'm tedy minuly' ty'den s'el? Prvne' se podi'vejte na statistiku sve''ho u''toc'is'te'. Pokud je v tento moment Nade'je, Populace nebo Por'a'dek 0 c'i me''ne', prohra'li jste. Da'le zhodnot'te zda ma'te dost ji'dla na nakrmeni' u''toc'is'te'. Od sve'' populace odec'ti produkci ji'dla u''toc'is'te'. Vy'sledek musi's' pokry't za'sobami (sniz' poc'i'tadlo ji'dla o tu hodnotu). Pokud jich nema's' dost, sne'z vs'e co ma's' (sniz' poc'i'tadlo ji'dla na 0) a u''toc'is'te' bude tento ty'den hladove't. Sniz' Nade'ji i Por'a'dek o 1. Tohle jes'te' neni' prohra, ma'te ty'den s ti'm ne'co ude'lat.
+Da'le odstran'te vs'echny mise, ktere' jste nestihli splnit. Pokud ne'jakou misi plnily postavy na pr'elomu ty'dne (tr'eba ve dnech 7-8) mu'z'ou ten pokus dokonc'it bez starosti'. Pak ale i tuto misi odstran'te neza'visle na tom, zda ji' zdolali c'i ne.
+<C2>Hladove'ni'
+Pokud u''toc'is'te' hladovi', maji' postavy na zac'a'tku kaz'de'' mise tento ty'den -2 k maxima'lni' stamine'. Pokud by se me'lo hladove't i druhy' ty'den, lide'' va'm pr'estanou ve'r'it a ti'm skonc'i' cela' hra.
+<C2>Pr'i'prava nove''ho
+Novy' ty'den zac'i'na' ti'm, z'e rozvrhnete nove' mise. Postupne' pro kaz'de' me'sto ktere'' zna'te ta'hne'te 2 karty mise. Jednu vyberte a tu me'stu pr'ir'ad'te. Nevyuz'itou misi zase vrat'te do bali'c'ku at' je k dispozici pro na'sleduji'ci' me'sto. Kdyz' budete mi't taz'eno pro kaz'de'' me'sto, ude'lejte z toho za'pis do denni'ku at' vi'te co se uda'lo. Take'' hned upravte statistiku vas'eho u'toc'is'te' o vs'e co na taz'eny'ch misi'ch bylo napsa'no.
+Pr'i'klad: Pokud jste ta'hli pro prvni' me'sto misi Letis'te' a pro druhe' misi Leps'i' ubytova'ni', musi'te ihned sni'z'it Nade'ji o 3 a Por'a'dek o 2. A jste pr'ipraveni vrhnout se do akce.
+<C1>Fa'ze pla'nova'ni'
+A co budete de'lat ted'? To je jen a jen na va's. Moz'nosti se de'li' na moz'nosti u''toc'is'te' a moz'nosti postav. Oboje funguje neza'visle na sobe'. Pokud tedy postavy be'z'i' na misi do 2 dny vzda'lene''ho me'sta, u''toc'is'te' meziti'm klidne' stavi' stra'z'nici. Pokud ale postavy be'z'i' na misi, nemohou v tu samou dobu pa'trat po nove''m me'ste'.
+<B0> l || c
+<B>Vykonavatel & Moz'nost
+<BL>
+<B>Postavy & Vy'prava na misi
+<B>Postavy & Na'hodna' mise
+<B>Postavy & Pru'zkum
+<B>U''toc'is'te' & Ste'hova'ni'
+<B>U''toc'is'te' & Stavba budovy
+<B>U''toc'is'te' & Stavba kempu
+<B>U''toc'is'te' & Happenning
+<B>U''toc'is'te' & Sbe'r
+<B1>
+<C2>Vy'prava na misi
+Pokud se postavy vypravi' na misi, znamena' to, z'e jdou do zvolene''ho me'sta a chte'ji' se v ne'm pokusit splnit misi ktera' tam na tento ty'den je. Pokud ve me'ste' uz' z'a'dna' mise neni', postavy ji splnili jiz' dr'i've tento ty'den, mohou ji't postavy do me'sta i jen tak, na lov za'sob. Vy'prava bude postava'm trvat podle toho, jak je me'sto daleko + jaky' je pod ni'm tere''n.
+Pr'i'klad: Pokud je to me'sto na Pahorkatine' 2 dny daleko, pu'jde se tam a zpe't celkem 3 dny (2 za vzda'lenost a 1 za pahorkatinu).
+Da'l se mu'z'e vzda'lenost sniz'ovat, pokud maji' postavy k dispozici ne'jakou budovu jako je tr'eba Gara'z' nebo Komunikac'ni' ve'z'. Kaz'da' takova' sniz'uje vzda'lenost o jedna. Mise vz'dy trva' aspon' 1 den. Postup tedy je, z'e se domluvi' kam se pu'jde, ktere'' postavy a co si vezmou sebou a jde se. Vi'ce o misi'ch v kapitole mise.
+<C2>Na'hodna' mise
+Pokud ve me'ste' mise neni', mohou postavy chti't misi na'hodnou. V takove'm pr'i'pade' si mohou ta'hnout 3 na'hodne'' mise a vybrat si, ktera' ve me'ste' je. Postup tedy je, z'e se domluvi' kam se pu'jde, ktere'' postavy a co si vezmou sebou a az' teprve pak se ta'hne na'hodna' mise. Vi'ce o misi'ch v kapitole mise.
+<C2>Pru'zkum
+Postavy mohou mi'sto mise jes'te' pa'trat po nove'm me'ste'. Potr'ebujete 2 c'i'sla:
+<I0>
+<I>Radius - To je jak je daleko nejvzda'lene'js'i' ted' zna'me'' me'sto (bez postihu' za tere''n).
+<I>Saturace - To je kolik me'st uz' na radiusu je.
+<I1>
+Pru'zkum bude trvat "Radius" dni'. Hra'c'i hodi' k6 kostkou pokud padne alespon' "Saturace", bude nove' me'sto por'a'd ve vzda'lenosti "Radius" jinak bude o 1 da'le. Ta'hne'te kartu tere''nu at' se dozvi'te jaky' je postih za tere''n a jake'' jsou k dispozici suroviny.
+Jme'no, vzda'lenost, tere'n a suroviny definuji' nove'' me'sto, zapis'te si ho do denni'ku. V pra've' objevene''m me'ste' prozati'm neni' z'a'dna' mise, az' na zac'a'tku dals'i'ho ty'dne.
+<C2>Ste'hova'ni'
+C'as od c'asu mu'z'e by't nutne'' cele'' u''toc'is'te' pr'este'hovat. Vyber me'sto ke ktere''mu se chcete pr'esunout a je to.
+Ha'c'ek je v tom, z'e c'i'm vi'c jste se uz' usadili, ti'm te'z's'i' je se pr'este'hovat. V za'kladu stoji' ste'hova'ni' tolik za'sob, kolik je populace u'toc'is'te' a tolik dni' kolik je vzda'lenost ci'love'ho me'sta (bez vlivu tere''nu). Za kaz'dou budovu kterou chcete s u'toc'is'te'm pr'este'hovat se cena zvys'uje o 1 den a 1 surovinu.
+Pr'i'klad: Chcete pr'este'hovat u''toc'is'te' s populaci' 4 do 3 dny vzda'lene''ho me'sta. Ma'te postavene'' 3 budovy ale jen 2 chcete pr'este'hovat. Cena tedy bude 5 dni', 4 za'soby a 2 suroviny.
+Po pr'este'hova'ni' oznac'te nove' me'sto jako z'e ted' je u''toc'is'te' u ne'j a pr'epoc'i'tejte vzda'lenosti.
+Pr'i'klad: Me'li jste me'sta se vzda'lenostmi: 3 3y 2 2 1x 1 2z 2 kde to "x" znamena' z'e tady je ted' u''toc'is'te' a k "y" c'i "z" se chcete posunout. Pak budou vzda'lenosti v prvni'm pr'i'pade' 1 1x 2 2 3 3 4 4, a v druhe''m pr'i'kladu 4 4 3 3 2 2 1x 1.
+<C2>Stavba budovy
+Pokud jste splnili ne'jakou misi co va'm dala k dispozici budovu, mu'z'ete budovu postavit. Jak dlouho to bude trvat je na budove' napsane''. Take'' tam je napsana' cena v Za'soba'ch a Surovina'ch. Ty musi'te mi't k dispozici pr'ed zac'a'tkem stavby. Pokud ma'te ne'jake' kempy, ktere'' va'm suroviny poskytuji', sni'z'i' se cena o jejich produkci. Kaz'dou budovu jde mi't jen jednou.
+<C2>Stavba kempu
+Pokud ma'te me'sto u ktere''ho jsou k dispozici ne'jake'' zdroje, mu'z'ete postavit kemp a zdroje zac'i't vyuz'i'vat. Kemp se stavi' stejne' dlouho, jak dlouho trva' mise do pr'i'slus'ne''ho me'sta a jeho stavba stoji' 2 ji'dla a 2 za'soby, tyto nelze platit z jiny'ch kempu', musi' by't v podobe' nahromade'ne''ho materia'lu. U kaz'de''ho me'sta mu'z'e by't jen jeden kemp. Od momentu kdy je kemp postaveny' produkuje dany' zdroj (Ji'dlo, Za'soby c'i Suroviny). To znamena' z'e stavba budov ktera' tyto zdroje potr'ebuje je odted' levne'js'i', nebo je potr'eba me''ne' nahromade'ne''ho ji'dla na konci ty'dne, aby u''toc'is'te' nehladove'lo.
+<C2>Happenning
+Pokud u''toc'is'te' potr'ebuje, mu'z'e odpoc'i'vat c'i utuz'ovat kolektiv. To bude sta't jedno ji'dlo, ktere' musi' by't v podobe' nahromade'ne''ho materia'lu. Happenning zvys'uje Nade'ji, nebo Por'a'dek v u''toc'is'ti o 1, dle volby hra'c'u'.
+<C2>Sbe'r
+Pokud je potr'eba, mu'z'ou obyvatele' u''toc'is'te' vyrazit i na pru'zkum okraje me'sta. Hod' k6, hod 1-3 donesou 1 ji'dlo, hod 4-5 donesou 1 za'soby, hod 6 donesou 1 suroviny.
+<C>Mise
+Tady je ta velka' interakce se za'kladni' hrou. Co se tedy me'ni'? Pr'edne' do mise se ted' vstupuje s:
+<I0>
+<I>Kartou mise (moz'na' ne)
+<I>Pr'ipraveny'mi postavami a dovednostmi
+<I>S postihem na Staminu pokud hladovi'te
+<I>S hodnotou drzosti vas'ich postav
+<I>S u''rovni' skupiny
+<I1>
+U''rovni' skupiny se mysli' pru'me'rne'' mnoz'stvi' dovednosti' na postavu, zaokrouhleno dolu'.
+<C1>Pr'i'prava pr'ed misi'
+Je pa'r ve'ci' na ktere'' se musi'te soustr'edit, nez' zac'nete hra't.
+<I0>
+<I>Drzost postav - Pokud jste tak neude'lali uz' na konci minule'' mise, pr'imi'chejte do bali'c'ku' Na'hod X Y a Z tolik karet "+" kolik je drzost vas'ich postav
+<I>Specifika mise - Pr'ec'te'te si kartu mise a pokud jsou u ni' ne'jake'' instrukce k pr'i'prave', r'id'te se jimi
+<I>Hlad - Pokud maji' vas'e postavy postih za hlad, maji' jak startovni' staminu tak max. staminu sni'z'enou
+<I>Vy'be'r nepr'a'tel - Podle u''rovne' vas'i' skupiny U, vyberte na'hodne' trojici nepr'a'tel tak, aby me'li u''roven' U, U+1 a U+2
+<I1>
+<C1>Odehra'ni' mise
+Misi odehrajte jako obvykle. Snaz'te se splnit za'kladni' ci'l mise:
+<I0>
+<I>Opravit vozidel dost na to aby odvezly vs'echny postavy v misi
+<I>Zi'skat 3 ji'dla pro kaz'dou postavu na misi
+<I>Zi'skat 1 ji'dlo za kaz'de'' 2 zrane'ni' se ktery'mi postavy z mise odcha'zi'
+<I>Moz'na' ne'co navi'c ku'li karta'm u''svitu
+<I1>
+Navi'c se pokuste splnit ci'l, ktery' va'm pr'edepisuje mise. Na za've'r misi zapis'te do denni'ku.
+<C1>Takticky' u''stup
+V misi selz'ete, pokud misi opusti'te aniz' by ste me'li vs'echny ci'le splne'ne''. Pokud ale ma'te alespon' dost ji'dla na pokryti' zrane'ni' a 1 ji'dlo pro kaz'de''ho, mu'z'ete ude'lat takticky' u'stup a misi restartovat.
+<I0>
+<I>Kaz'dou misi jde restartovat jen 2x
+<I>Pokud je ne'jaka' postava v misi zabita', takticky' u'stup ji' neoz'ivi'
+<I1>
+<C2>Vyr'azeni' postavy
+Pokud postava v misi umr'e, skonc'ila. Do restartovane'' mise za ni' nastupuje nova' postava s u''rovni' 1. Vyji'mkou je pokud va's' medik umi' ne''st postavu nebo resuscitovat. Odnesenou postavu jde po misi vyle''c'it stejne' jako zrane'nou postavu.
+<C1>Vy'hra
+Hura', uspe'li jste. Zvys'te drzost postav o 1. Rozde'lte zkus'enosti a zamyslete se nad novy'mi dovednostmi, ted' je c'as si ne'jake'' por'i'dit. Zjiste'te kolik ji'dla a materia'lu ma'te potom co odec'tete to co po va's chte'la mise. Zkonvertujte je na ji'dlo, za'soby c'i suroviny v na'sleduji'ci'm pome'ru, zaokrouhlujte dolu':
+<I0>
+<I>Za velke'' ji'dlo pr'idej 1 ji'dlo do rezerv u''toc'is'te'
+<I>Za 3 male'' materia'ly pr'idej 1 za'soby do rezerv u''toc'is'te'
+<I>Za 5 maly'ch materia'lu' pr'idej 1 surovinu do rezerv u''toc'is'te'
+<I1>
+<C1>Vzda'ni' mise
+Pokud se va'm zdar'i' takticky' u'stup, mu'z'ete se rozhodnout misi vzda't a prohra't ji', s ti'm rozdi'lem, z'e se pr'ez'ivs'i' postavy vra'ti' do u''toc'is'te'. Nepr'ivezete z'a'dny' materia'l. Vs'echny postavy budou zrane'ne'', ale z'ive'' a zi'ska'te tu 1 zkus'enost za pr'ez'itou misi. Sniz'te drzost postav na 0.
+<C1>Prohra
+Pokud v misi zcela selz'ete, nepr'a'tele'' va's dohnali a sne'dli, nez' jste dosa'hli u''toc'is'te'. Mise zu'sta'va' na vyr'es'eni' pro jinou skupinu. Postavy jsou mrtve''. Sniz'te drzost postav na 0.

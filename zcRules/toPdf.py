@@ -114,9 +114,9 @@ def expandWildchars( lst0, lstFull ):
 # Process
 
 # Comments file
-print('\n--> gameRules.tex')
-lines = getLinesInFiles('gameRules.txt')
-f = open('gameRules.tex','w')
+print('\n--> gameRules-Large.tex')
+lines = getLinesInFiles('gameRules-Large.txt')
+f = open('gameRules-Large.tex','w')
 writeLine(f,0,'\\documentclass[a4paper]{article}')
 writeLine(f,0,'\\usepackage[a4paper]{geometry}')
 writeLine(f,0,'\\usepackage[czech]{babel}')
@@ -170,4 +170,4 @@ for line in lines:
 writeLine(f,0,'\end{document}')
 f.close()
 
-os.system('pdflatex gameRules.tex');
+os.system('pdflatex gameRules-Large.tex');
