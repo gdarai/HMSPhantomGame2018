@@ -1,11 +1,20 @@
-1,Lina Zombie,0,1,3,1,-6,4,Pomalejsi nez pest
-1,Zombie,1,2,4,2,-8,4,x
-1,Zombie Kapitan,2,2,5,2,-9,3,x
-1,Vlk,1,1,3,3,-10,1,x
-1,Slizecka,1,2,5,2,-7,x,Bez pohybu
-1,Raubir,2,2,5,2,-8,3,x
-1,Bijec,2,2,5,1,-7,5,2 Utoky
-1,Lupic,3,2,6,2,-9,3,Dostrel 1
-1,Gangster,4,2,7,3,-8,4,Dostrel 1|2 Utoky
-1,Se Stitem,3,3,7,1,-7,3,Imunita|na Strelne|i Vybusniny
-1,Medved,3,4,8,1,-7,3,Imunita|na zbrane < 2|2 Utoky
+Lina Zombie,0,1,3,1,-6,4,-- Proste jen pomala
+Zombie Kokon,0,2,2,2,-5,6,Misto zasahu aplikuje otravu (-1 nosnost)
+Zombie Letavec,0,1,2,2,-7,5,Zvire|Ubira staminu misto zdravi
+Chodici Smrt,0,2,4,1,-6,6,-- Utoci jen zridka
+Zombie,1,1,4,2,-8,4,-- Chodici mrtvola
+Zombie Bezec,1,1,4,3,-8,5,Posouva se o 2
+Naslouchac,1,2,5,2,-7,2,Utoci jen kdyz jste nahlas
+Zombie vlk,1,1,3,4,-8,3,Zvire|Ubira staminu a zdravi
+Zombie Kapitan,2,2,5,2,-9,3,-- Vetsi a chytrejsi
+Silna Zombie,2,2,4,2,-9,5,Zranuje za 2
+Zombie Medved,2,3,6,1,-7,4,Zvire|Imunita na zbrane < 2|2 Utoky
+Zombie Kridlo,2,1,6,3,-10,4,Zvire|Posouva se o 2
+Zombie Bijec,3,2,5,2,-10,5,Zranuje za 2
+Pozirac Mrtvol,3,3,5,2,-9,5,Pokud zrani hrace uzdravi se o 1
+Vrhac Ostnu,3,3,6,3,-7,4,Zvire|Dostrel 1
+Zombie Velitel,3,2,7,2,-8,3,Pokud sam - hned privola X
+Zombie Komando,4,2,8,4,-10,2,-- Nejvetsi drsnak
+Elitni Zombie,4,2,8,3,-8,2,Dostrel 1|Zranuje za 2
+Balon Smrti,4,3,6,3,-8,3,K zasahu aplikuje i otravu (-1 nosnost)
+Zombie Behemonth,4,4,6,1,-9,5,Zvire|Imunita na zbrane < 2

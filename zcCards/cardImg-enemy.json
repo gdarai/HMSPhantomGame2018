@@ -27,7 +27,8 @@
     "size":5,
 	"line":5,
 	"color":[0,0,0],
-    "align":"center"
+    "align":"center",
+    "fixed":0    
   },
   "health":{
     "type":"text",
