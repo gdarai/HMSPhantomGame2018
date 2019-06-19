@@ -13,8 +13,8 @@ Cil Y,Najezdy,Postav 4 nove kempy,Vse -1 a Nadeje -1,Znic 2 Kempy
 Cil Y,Nekde Jinde,-1 Nadeje kazdy tyden|Proved mise ve 2 novych mestech,Nadeje a Populace +1,Nadeje -1
 Cil Y,Smrtelne Ohrozeni,Obev nove misto a Prestehuj Utociste,Nadeje a Populace -1,Populace a Poradek -1
 Cil Y,Pocit Rozvoje,-1 Poradek kazdy tyden|Obev a postav 2 nove budovy,Populace a Poradek +1,Nadeje -1
-Cil Z,Doprava,Dovez do kempu 2 nakladaky,Nadeje +1,Nic
-Cil Z,Vzdaleny Cil,Proved misi ve meste o 5 dni dal nez je tve ted nejvzdalenejsi,Nadeje +1,Nic
+Cil Z,Doprava,Dovez do utociste 2 nakladaky,Nadeje +1,Nic
+Cil Z,Vzdaleny Cil,Proved misi ve meste o 2 dny dal nez je tve ted nejvzdalenejsi,Nadeje +1,Nic
 Cil Z,Spokojenost,Nahromad 10 jidel pro kazdeho clena utociste,Nadeje +1,Nic
 Cil Z,Velka Stavba,Nahromad 20 zasob materialu,Nadeje +1,Nic
 Cil Z,Obrana,Nahromad 10 novych zbrani,Nadeje +1,Nic
@@ -23,3 +23,12 @@ Cil Z,Specialni vybaveni,Najdi a dones ze 3 mest vybaveni se symbolem B,Nadeje +
 Cil Z,Pruzkum center,Dones ze 2 mest predmet C|Hledej v budove 10+ hluboko,Nadeje +1,Nic
 Cil Z,Preventivni uder,Odpal granat nebo jinou vybusninu ve 3 budovach 10+ hluboko,Nadeje +1,Nic
 Cil Z,Zvlastni rukojmi,Obsad v poslednim obevenem meste budovu 15+ hluboko,Nadeje +1,Nic
+Osobni,Pomsta,Najit budovu A a Zabit u ni nepritele Z,+1 Zkusenost,Osobni ukol
+Osobni,Ztrata,Sezbirat osobni veci ze 2 budov B,+1 Zkusenost,Osobni ukol
+Osobni,Opustene misto,Donest 3 materialy do skladu,+1 Zkusenost,Osobni ukol
+Osobni,Opusteny vuz,Prohledat auto alespon 5 budov hluboko,+1 Zkusenost,Osobni ukol
+Osobni,Tajna skrys,Prohledat kulnu u budovy aspon 4 hluboko,+1 Zkusenost,Osobni ukol
+Osobni,Sejf,Donest osobni vec A B a C do Domku,+1 Zkusenost,Osobni ukol
+Osobni,Hledani stop,Prozkoumat 2 zahrady,+1 Zkusenost,Osobni ukol
+Osobni,Voditka,Prozkoumat policejni stanici,+1 Zkusenost,Osobni ukol
+Osobni,Strach,Vstoupit na policko s alespon 4 neprateli,+1 Zkusenost,Osobni ukol

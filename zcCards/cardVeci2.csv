@@ -1,0 +1,30 @@
+A1,Knizka,0,,Set +1 Hledani
+A2,Zaznamnik,0,,Set +1 Hledani
+A3,Dalekohled,0,,+1 Dohled||Set +1 Hledani
+A4,Slozena mapa,0,,Set +1 Hledani
+A5,Slozka dokumentu,1,,Set +1 Hledani
+B1,Personal B1,0,,Set +1 Nosnost
+B2,Personal B2,0,,Set +1 Nosnost
+B3,Personal B3,0,,Set +1 Nosnost
+B4,Personal B4,0,,Set +1 Nosnost
+B5,Armadni Batoh,1,,+1 Zdravi||Set +1 Nosnost
+C1,Personal C1,0,,Set +1 Stamina
+C2,Personal C2,0,,Set +1 Stamina
+C3,Personal C3,0,,Set +1 Stamina
+C4,Camel-Back,0,,+1 Nosnost||Set +1 Stamina
+C5,Personal C5,1,,Set +1 Stamina
+D1,Personal D1,0,,Set +1 Munice
+D2,Personal D2,0,,+1 Hledani||Set +1 Munice
+D3,Personal D3,1,,Set +1 Munice
+D4,Personal D4,1,,Set +1 Munice
+D5,Personal D5,1,,Set +1 Munice
+E1,Personal E1,0,,Set +1 Utok
+E2,Personal E2,0,,Set +1 Utok
+E3,Personal E3,1,,Set +1 Utok
+E4,Personal E4,1,,-1 Hlasitost zbrane||Set +1 Utok
+E5,Personal E5,1,,Set +1 Utok
+F1,Personal F1,0,,Set +1 Obrana
+F2,Personal F2,0,,Set +1 Obrana
+F3,Personal F3,1,,+1 Zdravi||Set +1 Obrana
+F4,Personal F4,1,,Set +1 Obrana
+F5,Personal F5,1,,Set +1 Obrana

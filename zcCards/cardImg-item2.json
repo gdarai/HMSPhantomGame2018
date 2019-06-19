@@ -1,0 +1,47 @@
+{
+  "name":{
+    "type":"text",
+    "position":[[44,158],[580,272]],
+	  "padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	  "line":5,
+	  "color":[0,0,0],
+    "align":"center"
+  },
+  "symbol":{
+    "type":"text",
+    "position":[[426,44],[578,156]],
+	  "padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	  "line":2,
+  	"color":[0,0,0],
+    "align":"center"
+  },
+  "img":{
+    "type":"img",
+    "position":[[87,279],[534,570]]
+  },
+  "weight":{
+    "type":"text",
+    "position":[[132,924],[310,1038]],
+  	"padding":[[20,20], [20,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+  	"line":5,
+	  "color":[0,0,0],
+    "align":"center"
+  },
+  "text":{
+    "type":"text",
+    "position":[[40,578],[580,927]],
+	  "padding":[[10,20], [10,20]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	  "line":5,
+    "fixed":0,
+  	"color":[0,0,0],
+    "align":"center"
+  }
+}

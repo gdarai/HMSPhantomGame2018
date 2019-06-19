@@ -16,6 +16,21 @@
     "values":"cardVeci.csv"
   },
   {
+    "_out":"card_out_Veci2.tex",
+    "_card":"cardImg-item2",
+    "_onOneLine":6,
+    "_list":{
+      "values":[
+        "symbol",
+        "name",
+        "weight",
+        "img",
+        "text"
+      ]
+    },
+    "values":"cardVeci2.csv"
+  },
+  {
     "_out":"card_out_Cesta.tex",
     "_card":"cardImg-town0",
     "_onOneLine":6,

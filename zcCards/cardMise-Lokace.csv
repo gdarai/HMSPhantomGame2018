@@ -3,8 +3,6 @@
 3,Lokace,Pahorkatina,1,Suroviny
 3,Lokace,Mokrina,1,Jidlo
 3,Lokace,Hory,2,Suroviny
-3,Lokace,Udoli,0,Nic
-3,Lokace,Rovina,0,Nic
-3,Lokace,Pahorkatina,1,Nic
-3,Lokace,Mokrina,1,Nic
-3,Lokace,Hory,2,Nic
+5,Lokace,Pustina,0,Nic
+5,Lokace,Poust,1,Nic
+3,Lokace,Skaliska,2,Nic
