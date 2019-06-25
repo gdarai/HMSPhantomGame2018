@@ -50,7 +50,13 @@ Dovednosti jsou unika'tni'. Nejde, aby vs'ichi ume'li vs'echno. Duplikace dovedn
 <I>Pro 4 - 6 postav se mu'z'e kaz'da' dovednost vyskytovat 2x.
 <I1>
 Pokud se z ne'jake''ho du'vodu hra'c'i rozhodli hra't v me''ne' postava'ch hru, kterou pu'vodne' hra'li ve vi'cero, mohlo by se sta't, z'e najednou maji' v misi pro 1 - 3 hra'c'e dve' postavy se stejnou dovednosti'. V takove''m pr'i'pade' se musi' dohodnout, ktera' postava svou dovednost nemu'z'e v te''to misi pouz'i'vat.
-<C> Po prvni' misi
+<C1>Osobni' pr'edme'ty
+S vy'vojem postav pr'icha'zi' do hry i osobni' pr'edme'ty. Ty se do hry dosta'vaji' jako novy' bali'c'ek karet a jeden osobni' pr'edme't vypadne z kaz'de''ho nepr'i'tele X zabite'ho na ulici. Osobni' pr'edme'ty se sbi'raji' a vyme'n'uji' stejne' jako norma'lni' pr'edme'ty.
+<C2>U'c'inky
+Ne'ktere'' osobni' pr'edme'ty maji' samy o sobe' ne'jaky' u'c'inek, ale ve'ts'ina funguje az' jako set, tedy, pokud ma' postava u sebe alespon' 3 pr'edme'ty ze stejne'' se''rie, pak dohromady da'vaji' set-bonus.
+<C1>Osobni' mise
+Kaz'da' postava ma' ne'jaky' pr'i'be'h, ne'co co potr'ebuji', po c'em touz'i', co ztratili a co musi' dode'lat. Kaz'da' postava si ta'hne osobni' ci'l. Na tom je napsa'no, co se pr'i'padne' stane kdyz' v misi osobni' ci'l nesplni' (c'asto nic). Pokud ale ci'l splni', zi'ska' dals'i' bod zkus'enosti navi'c.
+<C>Po prvni' misi
 Pokud jste prohra'li, zkuste ji' zahra't znova. Bez jaky'chkoliv u''prav. Pokud jste vyhra'li (splnili misi a u''spe's'ne' opustili me'sto) gratuluji, nyni' ma'te sve'' u''toc'is'te' a je nac'ase se o ne'j zac'i't starat. Zac'ne'me zaloz'eni'm denni'ku u''toc'is'te'.
 <C1>Denni'k u''toc'is'te'
 Protoz'e se nepr'edpokla'da' z'e si budou hra'c'i pamatovat vs'e a hra samotna' se mu'z'e pr'es jednotlive'' mise rozloz'it do mnoha me'si'cu' je dobre'' si zaznamena'vat, jak na tom jste. Denni'k obsahuje ne'kolik za'sadni'ch c'a'sti':
